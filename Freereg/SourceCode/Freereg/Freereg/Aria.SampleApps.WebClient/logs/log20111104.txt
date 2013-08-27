@@ -1,0 +1,8 @@
+04/11/2011 05:36:56 p.m.|hgomez|'acctcountryDropDownList' tiene un SelectedValue que no es válido porque no existe en la lista de elementos.
+Nombre del parámetro: value|System.Web|   en System.Web.UI.WebControls.ListControl.set_SelectedValue(String value)
+   en ARIA.Pages.RegisterNewAccount.LoadStatesProvinces(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 524
+   en System.Web.UI.WebControls.ListControl.OnSelectedIndexChanged(EventArgs e)
+   en System.Web.UI.WebControls.DropDownList.RaisePostDataChangedEvent()
+   en System.Web.UI.WebControls.DropDownList.System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent()
+   en System.Web.UI.Page.RaiseChangedEvents()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

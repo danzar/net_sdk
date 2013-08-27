@@ -1,0 +1,643 @@
+31/10/2011 09:11:49 a.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 09:19:08 a.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 09:19:46 a.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 09:22:57 a.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 09:27:43 a.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 09:38:17 a.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 03:24:27 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 03:27:12 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 03:33:20 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 03:37:34 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 383
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 03:52:12 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 04:10:38 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 04:26:11 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 04:43:45 p.m.|HGOMEZ$|No se encontró el elemento de extremo predeterminado que hace referencia al contrato 'AriaComplete.completePort' en la sección de configuración de cliente de ServiceModel. La razón puede ser que no se encontró ningún archivo de configuración para la aplicación o que no se encontró ningún elemento de extremo correspondiente a este contrato en el elemento de cliente.|System.ServiceModel|   en System.ServiceModel.Description.ConfigLoader.LoadChannelBehaviors(ServiceEndpoint serviceEndpoint, String configurationName)
+   en System.ServiceModel.ChannelFactory.ApplyConfiguration(String configurationName, Configuration configuration)
+   en System.ServiceModel.ChannelFactory.ApplyConfiguration(String configurationName)
+   en System.ServiceModel.ChannelFactory.InitializeEndpoint(String configurationName, EndpointAddress address)
+   en System.ServiceModel.ChannelFactory`1..ctor(String endpointConfigurationName, EndpointAddress remoteAddress)
+   en System.ServiceModel.EndpointTrait`1.CreateSimplexFactory()
+   en System.ServiceModel.EndpointTrait`1.CreateChannelFactory()
+   en System.ServiceModel.ClientBase`1.CreateChannelFactoryRef(EndpointTrait`1 endpointTrait)
+   en System.ServiceModel.ClientBase`1.InitializeChannelFactoryRef()
+   en System.ServiceModel.ClientBase`1..ctor()
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient..ctor()
+   en Aria.SDK.AriaServices.AriaWebServices.AriaBillingComplete..ctor()
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 46
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 04:45:37 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 04:54:42 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:01:44 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:01:44 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:01:51 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:02:27 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:03:07 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:08:19 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:09:29 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+31/10/2011 05:27:55 p.m.|HGOMEZ$|No se pudo conectar a https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php. Código de error TCP 10061: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 64.238.195.76:443. |mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   en System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   en System.ServiceModel.Channels.HttpChannelFactory.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_reg_uss_config_params(get_reg_uss_config_paramsRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.GetLabelsDictionary() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 55
+   en Aria.SampleApps.WebClient.Shell.Presenters.RegisterNewAccountPresenter.LoadLabelsList() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\RegisterNewAccountPresenter.cs:línea 29
+   en ARIA.Pages.RegisterNewAccount.Page_Load(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\RegisterNewAccount.aspx.cs:línea 387
+   en System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   en System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.BasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\BasePage.cs:línea 95
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

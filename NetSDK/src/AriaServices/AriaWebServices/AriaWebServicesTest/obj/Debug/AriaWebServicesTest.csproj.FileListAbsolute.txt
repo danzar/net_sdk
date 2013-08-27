@@ -1,0 +1,9 @@
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\bin\Debug\AriaWebServicesTest.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\bin\Debug\AriaWebServicesTest.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\bin\Debug\AriaWebServicesTest.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\bin\Debug\AriaWebServices.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\bin\Debug\nunit.framework.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\bin\Debug\AriaWebServices.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\obj\Debug\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\obj\Debug\AriaWebServicesTest.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServicesTest\obj\Debug\AriaWebServicesTest.pdb

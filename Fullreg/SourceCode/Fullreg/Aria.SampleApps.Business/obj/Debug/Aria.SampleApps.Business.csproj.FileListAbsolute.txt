@@ -1,0 +1,48 @@
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Business.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Business.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Common.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\AriaWebServices.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\AutoMapper.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\ExcelPackage.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Newtonsoft.Json.Net35.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\NPOI.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Data.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Aop.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Core.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Common.Logging.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Common.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Data.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Data.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Aop.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Aop.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Core.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\bin\Debug\Spring.Core.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\obj\Debug\Aria.SampleApps.Business.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\obj\Debug\Aria.SampleApps.Business.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Business.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Business.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Common.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\AriaWebServices.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\AutoMapper.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\ExcelPackage.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Newtonsoft.Json.Net35.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\NPOI.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Data.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Microsoft.Practices.CompositeWeb.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Aop.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Core.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Common.Logging.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Aria.SampleApps.Common.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Data.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Data.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Aop.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Aop.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Core.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\bin\Debug\Spring.Core.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\obj\Debug\Aria.SampleApps.Business.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.Business\obj\Debug\Aria.SampleApps.Business.pdb

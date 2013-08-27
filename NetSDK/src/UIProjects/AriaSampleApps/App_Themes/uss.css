@@ -1,0 +1,100 @@
+.info_section_display {
+}
+.info_section_display .info_item {
+}
+.info_section_display .info_label {
+	clear: left;
+	float: left;
+	width: 100px;
+	padding: 5px 0 5px;
+}
+.info_section_display .info_data {
+	float: left;
+	padding: 5px 10px 5px 20px;
+	color: #000;
+}
+.info_label_right {
+	clear: left;
+	float: left;
+	width: 120px;
+	padding: 5px 0 5px;
+}
+.info_data_right {
+	float: left;
+	padding: 5px 10px 5px 20px;
+	color: #000;
+}
+.info_section_editor {
+	display: none;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+#main {
+	padding-top:25px;
+	background:#F6F6F3;
+}
+legend {
+	color: #F2F2F2;
+}
+#banner {
+	background-color: #7B68EE;
+	height: 80px;
+}
+.panel {
+	clear: both;
+	display: none;
+	background-color: #FFF;
+	padding: 1em;
+}
+fieldset {
+	padding: 2em;
+}
+.panel.active-tab-body {
+	display: block;
+	min-height: 225px;
+}
+.bar {
+	padding: 5px;
+	background-color: #3e3e3e;
+}
+#tabs {
+	list-style: none;
+	margin-top: -25px;
+	float: left;
+}
+#mainmenu {
+	margin-left:18px;
+	margin-right:18px;
+	padding-top:25px;
+}
+#tabs li {
+	float: left;
+}
+#tabs a {
+	float: left;
+	padding: 5px 8px;
+	margin-left: 6px;
+	background-color: #DCDCDC;
+	text-decoration: none;
+	color: #999999;
+}
+#tabs a.active-tab {
+	background-color:#FFFFFF;
+	border-left:1px solid #CACACA;
+	border-right:1px solid #CACACA;
+	border-top:2px solid #CACACA;
+	color:#7E3117;
+	padding-top:3px;
+}
+div, span, h1, h2, h3, h4, p, a, ul, ol, li, form, input, fieldset, legend, table, td, th, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	position: static;
+}
+.manage .PgOneColumn_Container {
+	margin: 0;
+	border: 1px solid #cacaca;
+}

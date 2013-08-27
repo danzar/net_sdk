@@ -1,0 +1,70 @@
+10/11/2011 04:07:26 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:11:48 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:17:49 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:19:29 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:23:05 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:36:49 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:39:47 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:40:12 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 04:48:57 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+10/11/2011 05:36:33 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.Common|   en Aria.SampleApps.Common.Web.MvpMasterBasePage`2.MvpMasterBasePageLoad(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MvpMasterBasePage.cs:línea 70
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.Control.OnLoad(EventArgs e)
+   en Aria.SampleApps.Common.Web.MasterBasePage.OnLoad(EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Common\Web\MasterBasePage.cs:línea 35
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Control.LoadRecursive()
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

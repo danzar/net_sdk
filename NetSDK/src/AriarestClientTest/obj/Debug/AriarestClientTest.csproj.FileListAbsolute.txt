@@ -1,0 +1,19 @@
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\bin\Debug\AriarestClientTest.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\bin\Debug\AriarestClientTest.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\bin\Debug\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\bin\Debug\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\obj\Debug\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\obj\Debug\AriarestClientTest.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriarestClientTest\obj\Debug\AriarestClientTest.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\AriarestClientTest.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\AriarestClientTest.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\AriarestClientTest.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\nunit.framework.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\Newtonsoft.Json.Net35.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\Newtonsoft.Json.Net35.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\Newtonsoft.Json.Net35.xml
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\obj\Debug\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\obj\Debug\AriarestClientTest.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\obj\Debug\AriarestClientTest.pdb

@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="FDA54A2A-E130-4B79-A5EB-C24D4D05E36B" ModuleId="AriaWebServicesTest" />
+  <Module PersistentId="1BFE4B40-D447-4D5E-A16C-E01C9D57B1D1" ModuleId="AriaWebServices" />
+  <Module PersistentId="F7027C8D-4922-4B5B-A973-E140B3162027" ModuleId="AriarestClientTest" />
+  <Module PersistentId="1C014A13-7503-4DB0-BED4-5CDA12DB5194" ModuleId="AriaRestClient" />
+  <Module PersistentId="1E7F15A2-371B-4FD8-9EF8-69A2F72F25AB" ModuleId="AriaSampleApps" />
+</Modules>

@@ -1,0 +1,32 @@
+23/11/2011 04:25:53 p.m.|hgomez|El canal de solicitud agotó el tiempo de espera mientras esperaba una respuesta después de 00:04:59.9990001. Aumente el valor de tiempo de espera pasado a la llamada a Request, o bien aumente el valor de SendTimeout en el enlace. El tiempo asignado a esta operación puede haber sido una parte de un tiempo de espera mayor.|mscorlib|
+Server stack trace: 
+   en System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   en System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs)
+   en System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   en System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   en System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   en System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePort.get_client_plans_all(get_client_plans_allRequest request)
+   en Aria.SDK.AriaServices.AriaWebServices.AriaComplete.completePortClient.get_client_plans_all(get_client_plans_allRequest request)
+   en Aria.SampleApps.Business.Services.Implementation.GeneralServices.LoadPlansByCurrencyCd(String currencyCd) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.Business\Services\Implementation\GeneralServices.cs:línea 139
+   en Aria.SampleApps.WebClient.Shell.Presenters.PlanInfoUserControlPresenter.LoadPlansByCurrencyCd() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\PlanInfoUserControlPresenter.cs:línea 27
+   en ARIA.Pages.UserControls.PlanInfoUserControl.LoadPlansData(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\UserControls\PlanInfoUserControl.ascx.cs:línea 324
+   en System.EventHandler.Invoke(Object sender, EventArgs e)
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+23/11/2011 04:29:07 p.m.|hgomez|Referencia a objeto no establecida como instancia de un objeto.|Aria.SampleApps.WebClient.Shell|   en Aria.SampleApps.WebClient.Shell.Presenters.PlanInfoUserControlPresenter.LoadSuppPlans() en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\Presenters\PlanInfoUserControlPresenter.cs:línea 98
+   en ARIA.Pages.UserControls.PlanInfoUserControl.LoadSuppPlansAndServices(Object sender, EventArgs e) en D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\Pages\UserControls\PlanInfoUserControl.ascx.cs:línea 474
+   en System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   en System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   en System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   en System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

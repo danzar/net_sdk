@@ -1,0 +1,21 @@
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\obj\Debug\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\AriaRestClient.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\Microsoft.Http.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\Microsoft.Http.Extensions.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\Microsoft.ServiceModel.Web.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\Microsoft.Http.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\Microsoft.Http.Extensions.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\bin\Debug\Microsoft.ServiceModel.Web.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\obj\Debug\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010 - copia\src\AriaRestClient\obj\Debug\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\AriaRestClient.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\Newtonsoft.Json.Net35.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\Newtonsoft.Json.Net35.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\Newtonsoft.Json.Net35.xml
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\obj\Debug\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\obj\Debug\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\obj\Debug\AriaRestClient.pdb

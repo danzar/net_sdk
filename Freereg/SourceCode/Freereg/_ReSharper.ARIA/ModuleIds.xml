@@ -1,0 +1,4 @@
+<Modules>
+  <Module PersistentId="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7" ModuleId="Aria.SampleApps.Business" />
+  <Module PersistentId="CA958DEA-5C3E-4CD0-837C-1F761E1B3C15" ModuleId="Aria.SampleApps.Common" />
+</Modules>

@@ -1,0 +1,44 @@
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.dll.config
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Business.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Common.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Microsoft.Practices.CompositeWeb.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\AriaWebServices.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Microsoft.Practices.ObjectBuilder.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Business.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Common.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.Properties.Resources.resources
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.dll.config
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Business.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Common.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\AriaWebServices.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Business.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Common.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.Properties.Resources.resources
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.pdb
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.dll.config
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.dll
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.WebClient.Shell.pdb
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Business.dll
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Common.dll
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\AriaWebServices.dll
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Business.pdb
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\bin\Release\Aria.SampleApps.Common.pdb
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.Properties.Resources.resources
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.dll
+C:\Users\hgomez\Desktop\Entrega\Freereg\Freereg\Aria.SampleApps.WebClient.Shell\obj\x86\Release\Aria.SampleApps.WebClient.Shell.pdb

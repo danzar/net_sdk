@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7f1ab51b-b5c9-4879-825c-50b8bd5043a3" name="jguevara@JGUEVARA 2011-03-22 09:07:51" runUser="PSLCOL\jguevara" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="0f8bc56c-8399-4acf-b46f-4a52f122ae72">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="jguevara_JGUEVARA 2011-03-22 09_07_51" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-03-22T09:07:51.0843325-05:00" queuing="2011-03-22T09:07:52.6173325-05:00" start="2011-03-22T09:07:53.2733325-05:00" finish="2011-03-22T09:08:06.9973325-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="d:\jguevara\desarrollo\aria\netsdk\sdk-2010 - copia\src\ariarestclienttest\bin\debug\ariarestclienttest.dll" id="9022f448-24cc-69c1-fedb-d41b0690d960">
+      <Execution timeOut="1800000" id="d6d75524-86f1-4257-b7d4-b2bbe134331d" />
+      <TestMethod codeBase="D:/JGUEVARA/Desarrollo/Aria/NetSDK/SDK-2010 - copia/src/AriarestClientTest/bin/Debug/AriarestClientTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Aria.SDK.AriaServices.AriaRestServices.Test.UnitTest1, AriarestClientTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9022f448-24cc-69c1-fedb-d41b0690d960" executionId="d6d75524-86f1-4257-b7d4-b2bbe134331d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d6d75524-86f1-4257-b7d4-b2bbe134331d" testId="9022f448-24cc-69c1-fedb-d41b0690d960" testName="TestMethod1" computerName="JGUEVARA" duration="00:00:13.3545843" startTime="2011-03-22T09:07:53.4163325-05:00" endTime="2011-03-22T09:08:06.8823325-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6d75524-86f1-4257-b7d4-b2bbe134331d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

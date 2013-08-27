@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.4 U (http://www.xmlspy.com) by Michael Kittel (Dominion Digital) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="ConstantsBuilder">
+    <xs:annotation>
+      <xs:documentation>This schema defines the structure of the XML document used by the ConstantsBuilder appllication.</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="output-language" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="build-site-properties-class" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="site-properties-class-parameters" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="build-dbproperties-class" minOccurs="1" maxOccurs="1" />
+        <xs:element ref="dbproperties-parameters" minOccurs="1" maxOccurs="1" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+      <xs:element name="output-language">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="VB"/>
+            <xs:enumeration value="C#"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    <xs:element name="build-site-properties-class">
+      <xs:annotation>
+        <xs:documentation>Flag used to inform Constants Builder whether the site properties class should be built.  If set true the child elements in the site-properties-class-parameters element are required.  Else, only a blank site-properties-class-parameters element is required.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="true"/>
+          <xs:enumeration value="false"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+     <xs:element name="site-properties-class-parameters">
+       <xs:complexType>
+         <xs:sequence minOccurs="0" maxOccurs="1">
+           <xs:element ref="solution-name" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="site-definition-fully-qualified-file-path" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="site-definition-relative-file-path" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="site-definiiton-file-name" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="site-properties-file-path" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="site-properties-class-name" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="site-properties-class-namespace" minOccurs="1" maxOccurs="1" />
+         </xs:sequence>
+       </xs:complexType>
+    </xs:element>
+
+        <xs:element name="solution-name">
+          <xs:annotation>
+            <xs:documentation>Defines the name of the solution.  NOTE: If this is different than the name of the folder containing the solution file, the value shouild be set to the name of the folder where the solution is located.</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="site-definition-fully-qualified-file-path">
+          <xs:annotation>
+            <xs:documentation>Defines the fully qualified path to the site definition file</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="site-definition-relative-file-path">
+          <xs:annotation>
+            <xs:documentation>Defines the relative path from the solution folder to the site definition file</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="site-definiiton-file-name">
+          <xs:annotation>
+            <xs:documentation>Defines the name of the site definition file</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="site-properties-file-path">
+          <xs:annotation>
+            <xs:documentation>Defines the fully qualified path to the location where the site properties class should be placed when created.</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string"/>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="site-properties-class-name">
+          <xs:annotation>
+            <xs:documentation>Defines the name of the site properties class</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="site-properties-class-namespace">
+          <xs:annotation>
+            <xs:documentation>Defines the namespace for the site properties class</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:minLength value="1"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+
+    <xs:element name="build-dbproperties-class">
+      <xs:annotation>
+        <xs:documentation>Flag used to inform Constants Builder whether the DBProperties class should be built.  If set true the child elements in the dbproperties-parameters element are required.  Else, only a blank dbproperties-parameters element is required.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="true"/>
+          <xs:enumeration value="false"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+     <xs:element name="dbproperties-parameters">
+       <xs:complexType>
+         <xs:sequence minOccurs="0" maxOccurs="1" >
+           <xs:element ref="database-connection-string" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="db-properties-file-path" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="db-properties-class-name" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="db-properties-class-namespace" minOccurs="1" maxOccurs="1" />
+           <xs:element ref="database-tables" minOccurs="1" maxOccurs="unbounded" />
+         </xs:sequence>
+       </xs:complexType>
+    </xs:element>
+
+    <xs:element name="database-connection-string">
+      <xs:annotation>
+        <xs:documentation>Provides the connection string for accessing the data</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+    <xs:element name="db-properties-file-path">
+      <xs:annotation>
+        <xs:documentation>Defines the fully qualified path to the location where the DB properties class should be placed when created.</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+      </xs:simpleType>
+    </xs:element>
+    <xs:element name="db-properties-class-name" >
+      <xs:annotation>
+        <xs:documentation>Defines the name of the DB properties file</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+    <xs:element name="db-properties-class-namespace">
+      <xs:annotation>
+        <xs:documentation>Defines the namespace for the classes created</xs:documentation>
+      </xs:annotation>
+      <xs:simpleType>
+        <xs:restriction base="xs:string">
+          <xs:minLength value="1"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:element>
+    <xs:element name="database-tables">
+      <xs:annotation>
+        <xs:documentation>Defines the tables in the database from which data will be extracted to create the DB properties file.</xs:documentation>
+      </xs:annotation>
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="table-name">
+            <xs:annotation>
+              <xs:documentation>Defines the name of the table from which data is to be extracted.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="id-column-name">
+            <xs:annotation>
+              <xs:documentation>Defines the name of the column used as the primary key for the table.</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:minLength value="1"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="where-clause" type="xs:string" default="Active=1">
+            <xs:annotation>
+              <xs:documentation>Defines the where clause used to qualify the data extracted from the table.  The keyword WHERE should NOT be included.  If multiple terms are required, the appropriate conjunctions must be provided.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="build-enumeration" type="xs:boolean" default="false">
+            <xs:annotation>
+              <xs:documentation>Flag indicating whether an enumeration should be built from data in the table.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="enum-name" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Defines the name of the enumeration to build if build-enumeration is set true.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="constant-column-name" type="xs:string" default="ConstantName">
+            <xs:annotation>
+              <xs:documentation>Defines the name of the column used to extract the name of an enumerated element or constant name.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="output-data-lengths" type="xs:boolean" default="false">
+            <xs:annotation>
+              <xs:documentation>Flag indicating whether constants should be created for each column in the table defining the maximum allowable length of data.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="output-data-values" type="xs:boolean" default="false">
+            <xs:annotation>
+              <xs:documentation>Flag indicating whether constants should be created for each row in the table using the constant-name-column for the constant name and the value-column for the constant value.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          <xs:element name="value-column" type="xs:string">
+            <xs:annotation>
+              <xs:documentation>Defines the name of the column used for the data values when creating data value constants.</xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+
+</xs:schema>

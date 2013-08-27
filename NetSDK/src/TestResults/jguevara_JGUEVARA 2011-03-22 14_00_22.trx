@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9af8a84b-ef92-4ddf-aac1-fce5aa7e4092" name="jguevara@JGUEVARA 2011-03-22 14:00:22" runUser="PSLCOL\jguevara" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="b5a2f824-a2e9-45ec-8466-25f3255d69b1">
+    <Deployment runDeploymentRoot="jguevara_JGUEVARA 2011-03-22 14_00_22">
+      <DeploymentItem filename="D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\AriaRestClient.dll" />
+      <DeploymentItem filename="D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\lib\NUnit\nunit.framework.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-03-22T14:00:22.2287125-05:00" queuing="2011-03-22T14:00:26.1030999-05:00" start="2011-03-22T14:00:26.3321228-05:00" finish="2011-03-22T14:00:28.1453041-05:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="JGUEVARA" outcome="Warning" timestamp="2011-03-22T14:00:23.8938790-05:00">
+        <Text>Warning: conflict during test run deployment: deployment item 'd:\jguevara\desarrollo\aria\netsdk\sdk-2010\src\ariarestclienttest\bin\debug\AriaRestClient.dll' directly or indirectly referenced by the test container 'd:\jguevara\desarrollo\aria\netsdk\sdk-2010\src\ariarestclienttest\bin\debug\ariarestclienttest.dll' cannot be deployed to 'AriaRestClient.dll' because otherwise the file 'd:\jguevara\desarrollo\aria\netsdk\sdk-2010\src\ariarestclienttest\bin\debug\AriaRestClient.dll' would overwrite deployment item 'D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Debug\AriaRestClient.dll' directly or indirectly referenced by D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriarestClientTest\bin\Debug\AriarestClientTest.dll.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="d:\jguevara\desarrollo\aria\netsdk\sdk-2010\src\ariarestclienttest\bin\debug\ariarestclienttest.dll" id="9022f448-24cc-69c1-fedb-d41b0690d960">
+      <Execution id="00197503-7a79-4338-8c6e-864775147b9f" />
+      <TestMethod codeBase="D:/JGUEVARA/Desarrollo/Aria/NetSDK/SDK-2010/src/AriarestClientTest/bin/Debug/AriarestClientTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Aria.SDK.AriaServices.AriaRestServices.Test.UnitTest1, AriarestClientTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9022f448-24cc-69c1-fedb-d41b0690d960" executionId="00197503-7a79-4338-8c6e-864775147b9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="00197503-7a79-4338-8c6e-864775147b9f" testId="9022f448-24cc-69c1-fedb-d41b0690d960" testName="TestMethod1" computerName="JGUEVARA" duration="00:00:00.2365468" startTime="2011-03-22T14:00:26.5551451-05:00" endTime="2011-03-22T14:00:27.9572853-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00197503-7a79-4338-8c6e-864775147b9f">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Aria.SDK.AriaServices.AriaRestServices.Test.UnitTest1.TestMethod1 threw exception: 
+System.MissingMethodException: Método no encontrado: 'Void Aria.SDK.AriaServices.AriaRestServices.AriaBillingComplete..ctor()'.</Message>
+          <StackTrace>    en Aria.SDK.AriaServices.AriaRestServices.Test.UnitTest1.TestMethod1()
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

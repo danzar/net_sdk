@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by Niall Little (Dominion Digital) -->
+<project name="AriaSDK" default="test" xmlns="http://nant.sf.net/schemas/nant.xsd">
+	<property name="build.dir" value="build"/>
+	<property name="solution.dir" value="C:\CVS\Aria\Root\5. Development\5.03 Source\NetSDK"/>
+	<property name="devenv.dir" value="C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE"/>
+	<property name="build.solution" value="AriaSDK"/>
+	<property name="build.config" value="Release"/>
+	<property name="nant.settings.currentframework" value="net-3.5"/>
+	<property name="wsdlURL" value="https://secure.future.stage.ariasystems.net/api/Advanced/wsdl/5.7/complete-doc_literal_wrapped.wsdl"/>
+	<property name="endpointAddress" value="https://secure.future.stage.ariasystems.net/api/ws/api_ws_class_dispatcher.php"/>
+	<!-- User targets -->
+	<target name="clean" description="Delete AutomatedRelease Build artifacts">
+		<delete dir="${build.dir}" if="${directory::exists(build.dir)}"/>
+	</target>
+	<target name="compile" description="Compiles using the Release Configuration">
+		<loadtasks assembly="tools\nant\NAnt.Contrib.Tasks.dll"/>
+		<property name="msbuildLogger" value=""/>
+		<if test="${file::exists('c:\PROGRA~1\CruiseControl.NET\server\Rodemeyer.MsBuildToCCnet.dll')}">
+			<echo message="Using MSBuild Logger"/>
+			<property name="msbuildLogger" value="/logger:Rodemeyer.MsBuildToCCNet.MsBuildToCCNetLogger,c:\PROGRA~1\CruiseControl.NET\server\Rodemeyer.MsBuildToCCnet.dll;${build.dir}\test-reports\msbuild-output.xml"/>
+		</if>
+		
+		<!--Store the app settings so we can remove them for the build and add them back afterward -->
+            <xmlpeek file="SRC\UIProjects\AriaSampleApps\Web.config" 
+                xpath="/configuration/appSettings/add[@key = 'aria-client-number']/@value"
+                property="aria-client-number" />
+            <xmlpeek file="SRC\UIProjects\AriaSampleApps\Web.config" 
+                xpath="/configuration/appSettings/add[@key = 'aria-authorization-key']/@value"
+                property="aria-authorization-key" />            
+
+            <xmlpoke file="SRC\UIProjects\AriaSampleApps\Web.config" 
+                xpath="/configuration/appSettings/add[@key = 'aria-client-number']/@value"
+                value="" />
+            <xmlpoke file="SRC\UIProjects\AriaSampleApps\Web.config" 
+                xpath="/configuration/appSettings/add[@key = 'aria-authorization-key']/@value"
+                value="" />            
+
+            <xmlpoke file="SRC\AriaServices\AriaWebServices\AriaWebServicesTest\app.config" 
+                xpath="/configuration/appSettings/add[@key = 'aria-client-number']/@value"
+                value="" />
+            <xmlpoke file="SRC\AriaServices\AriaWebServices\AriaWebServicesTest\app.config" 
+                xpath="/configuration/appSettings/add[@key = 'aria-authorization-key']/@value"
+                value="" />            
+
+		<xmlpoke file="SRC\UIProjects\AriaSampleApps\Web.config" xpath="/configuration/system.serviceModel/client/endpoint[@name = 'completePort']/@address" value="${endpointAddress}"/>
+		
+		<trycatch>
+			<try>
+				<!--<msbuild project="SRC\AriaSDKSolution.sln">
+					<property name="Configuration" value="${build.config}"/>-->
+					<!--<arg value="/v:quiet" />-->
+				<!--</msbuild>-->
+				<!--<exec failonerror="false" basedir="${devenv.dir}"
+   				      program="devenv.exe" 
+   				      commandline="SRC\AriaSDKSolution.sln /build ${build.config} /out c:\Projects\Aria\sdk\msi.log" />-->
+   				<exec basedir="${devenv.dir}"
+   				      program="devenv.exe"
+          			      commandline="${solution.dir}\src\AriaSDKSolution.sln /Rebuild ${build.config} /Log ${solution.dir}\log\devenv.log /Out ${solution.dir}\log\build.log"/>
+				<delete dir="${build.dir}\${build.config}\dist" if="${directory::exists(build.dir + '\${build.config}\dist')}"/>
+				<mkdir dir="${build.dir}\${build.config}" if="${not(directory::exists(build.dir +  '\${build.config}'))}"/>
+				<mkdir dir="${build.dir}\${build.config}\dist" if="${not(directory::exists(build.dir +  '\${build.config}\dist'))}"/>
+
+				<copy todir="${build.dir}\${build.config}\dist">
+					<fileset basedir="SRC\SDKInstaller\${build.config}">
+						<include name="*.msi"/>
+					</fileset>
+				</copy>
+				<copy todir="${build.dir}\${build.config}">
+					<fileset basedir=".\">
+						<include name="*.log"/>
+					</fileset>
+				</copy>
+				<copy todir="${build.dir}\${build.config}">
+					<fileset basedir="SRC\AriaServices\AriaWebServices\AriaWebServices\bin\${build.config}">
+						<include name="*.dll"/>
+						<include name="*.exe"/>
+						<include name="*.config"/>
+					</fileset>
+				</copy>
+				<!--copy todir="${build.dir}\${build.config}">
+					<fileset basedir="SRC\AriaServices\AriaWebServices\AriaWebServicesTest\bin\${build.config}">
+						<include name="*.dll"/>
+						<include name="*.exe"/>
+						<include name="*.config"/>
+					</fileset>
+				</copy-->
+				<copy todir="${build.dir}\${build.config}">
+					<fileset basedir="SRC\AriaRestClient\bin\${build.config}">
+						<include name="*.dll"/>
+						<include name="*.exe"/>
+						<include name="*.config"/>
+					</fileset>
+				</copy>
+				<!--copy todir="${build.dir}\${build.config}">
+					<fileset basedir="SRC\AriarestClientTest\bin\${build.config}">
+						<include name="*.dll"/>
+						<include name="*.exe"/>
+						<include name="*.config"/>
+					</fileset>
+				</copy-->
+			</try>
+			<finally>
+			<!-- put the app settings back in-->
+				<xmlpoke file="SRC\UIProjects\AriaSampleApps\Web.config" 
+					xpath="/configuration/appSettings/add[@key = 'aria-client-number']/@value"
+					value="${aria-client-number}" />
+				<xmlpoke file="SRC\UIProjects\AriaSampleApps\Web.config" 
+					xpath="/configuration/appSettings/add[@key = 'aria-authorization-key']/@value"
+					value="${aria-authorization-key}" />            
+	
+				<xmlpoke file="SRC\AriaServices\AriaWebServices\AriaWebServicesTest\app.config" 
+					xpath="/configuration/appSettings/add[@key = 'aria-client-number']/@value"
+					value="${aria-client-number}" />
+				<xmlpoke file="SRC\AriaServices\AriaWebServices\AriaWebServicesTest\app.config" 
+					xpath="/configuration/appSettings/add[@key = 'aria-authorization-key']/@value"
+						value="${aria-authorization-key}" />            
+			</finally>
+		</trycatch>
+	</target>
+	<target name="test" depends="clean, regenerate-from-wsdl,compile, run-unit-tests" description="Compile and Run Tests"/>
+	<target name="full" depends="clean, regenerate-from-wsdl,compile, test" description="Compiles, tests, and produces distributions"/>
+	<!-- Internal targets -->
+	<target name="run-unit-tests">
+		<!--Edit connection strings -->
+		<!--xmlpoke file="${build.dir}\${build.config}\AriaWebServicesTest.dll.config" xpath="/configuration/system.serviceModel/client/endpoint[@name = 'completePort']/@address" value="${endpointAddress}"/>
+        <xmlpoke file="${build.dir}\${build.config}\AriaWebServicesTest.dll.config" xpath="/configuration/appSettings/add[@key = 'aria-client-number']/@value" value="${aria-client-number}" />
+        <xmlpoke file="${build.dir}\${build.config}\AriaWebServicesTest.dll.config" xpath="/configuration/appSettings/add[@key = 'aria-authorization-key']/@value" value="${aria-authorization-key}" />            
+                
+		<mkdir dir="${build.dir}\test-reports"/>
+		<copy file="tools\nunit\AriaSDK.nunit" tofile="${build.dir}\${build.config}\AriaSDK.nunit"/>
+		<exec program="tools\nunit\nunit-console.exe" workingdir="${build.dir}\${build.config}\">
+			<arg value="AriaSDK.nunit"/>
+			<arg value="/xml:..\test-reports\UnitTests.xml"/>
+			<arg value="/nologo"/>
+		</exec-->
+	</target>
+	<target name="regenerate-from-wsdl" depends="clean">
+		<exec program="tools\SVCUtil\SVCUtil.exe">
+			<arg value="/d:SRC\AriaServices\AriaWebServices\AriaWebServices\Service References\AriaComplete"/>
+			<arg value="${wsdlURL}" />
+			<arg value="/l:C#"/>
+			<arg value="/out:Reference.cs"/>
+			<arg value="/noconfig"/>
+			<arg value="/mc"/>
+			<arg value="/s"/>
+			<arg value="/ct:System.Collections.Generic.List`1"/>
+			<arg value="/ser:Auto"/>
+			<arg value="/tcv:Version35"/>
+			<arg value="/n:*,Aria.SDK.AriaServices.AriaWebServices.AriaComplete"/>
+			<arg value="/edb" />
+		</exec>
+		<exec program="tools\SVCUtil\SVCUtil.exe">
+			<arg value="/d:SRC\AriaRestClient\Service References\AriaComplete"/>
+			<arg value="${wsdlURL}" />
+			<arg value="/l:C#"/>
+			<arg value="/out:Reference.cs"/>
+			<arg value="/noconfig"/>
+			<arg value="/mc"/>
+			<arg value="/s"/>
+			<arg value="/ct:System.Collections.Generic.List`1"/>
+			<arg value="/ser:Auto"/>
+			<arg value="/tcv:Version35"/>
+			<arg value="/n:*,Aria.SDK.AriaServices.AriaWebServices.AriaComplete"/>
+			<arg value="/edb" />
+		</exec>
+	</target>
+
+</project>

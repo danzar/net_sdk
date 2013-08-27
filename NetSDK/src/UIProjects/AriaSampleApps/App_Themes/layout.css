@@ -1,0 +1,458 @@
+/* Page layout ************************/
+
+body { 
+	background: #f6f6f3;
+}
+
+.signup { 
+}
+
+/* Font, Style, etc.  */
+
+/*** This is the color of your main header at the top of the page.  By changing the color below this will change the color of the text at the top of the page *****/
+.signup h1 {
+	font: bolder 22px/1.3em "Trebuchet MS", "Lucida grande", Verdana, sans-serif;
+	color: #5F6061;
+}
+
+
+/*** This is the color of your headers with in the body.  By changing the color below this will change the color of the text with in the body *****/
+.signup h2 { 
+	font: normal 18px/1.3em "Trebuchet MS", "Lucida grande", Verdana, sans-serif;
+	/* color: #E99E3C;*/
+	color: #7E3117;
+
+}
+
+.signup h3 { 
+	font: normal 16px/1.3em "Trebuchet MS", "Lucida grande", Verdana, sans-serif;
+	color: #999;
+}
+
+.signup h4 { 
+	font: bolder 14px/1.3em Tahoma, Arial, sans-serif;
+	color: #222;
+}
+
+.signup .action { 
+	color: #39AA00;	
+}
+
+
+/* Page Title and Section Title *************************/
+
+.signup .pg_title { 
+	width: 780px;
+	margin: 20px auto;
+}
+
+.signup .sec_title { 
+	margin: 20px 0 10px;
+}
+
+/* Rounded-Corner Box *************************/
+
+.signup .pg_box { 
+	width: 780px;
+	margin: 10px auto;
+	float: left;
+}
+
+.signup .pg_box .box_content { 
+	padding: 10px 30px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	height: auto !important;
+	min-height: 200px;
+	background: #fff;		
+}
+
+.signup .pg_box .box_top {
+	background: transparent url(images/box_top_780.gif) no-repeat scroll 0 0;
+	font-size: 1px;
+	height: 8px;
+	line-height: 1px;
+	width: 780px;
+}
+
+.signup .pg_box .box_bottom {
+	background: transparent url(images/box_bottom_780.gif) no-repeat scroll 0 0;
+	font-size: 1px;
+	height: 8px;
+	line-height: 1px;
+	width: 780px;
+}
+
+
+/* Two-Column Page Layout ***************************/
+
+.signup .PgTwoColumn_Container { 
+	margin: 0px;
+}
+
+.signup .PgTwoColumn_Content {
+/*	margin-right: 270px;*/
+}
+
+.signup .PgTwoColumn_NarrowContent { 
+	float: right;
+	width: 230px;
+	margin: 0;
+}	
+
+
+/* Section Spacing ************************************/
+
+.signup .PgTwoColumn_NarrowContent .Portlet_Container {
+	margin: 0px 10px;
+}
+
+.signup .PgTwoColumn_NarrowContent  .Portlet_Content { 
+	margin: 15px 0px;	
+}
+
+.signup .Section_Container { 
+	margin: 20px 0;
+}
+
+.signup .Section_Header{ 
+	margin: .5em 0;
+}
+
+.signup .Section_Content{ 
+	margin: 15px 0;
+}
+
+.signup .Section_SubContainer {
+	margin: 10px 0;
+	padding: 0 10px;
+}
+
+.signup .Section_SubContainer.colored {
+	background: #f9f9f9;; 
+}
+
+/* Receipt Box ********************************/
+
+.signup .SubscriptionReceipt_Container { 
+	border: 1px solid #ccc;
+	height:auto;
+}
+
+.signup .SubscriptionReceipt_Header {
+	margin: 0;
+	padding: 5px 15px; 
+	background: #f5f5f5;
+	border-bottom: 1px solid #eee;
+}
+
+.signup .SubscriptionReceipt_Content { 
+	margin: 15px;
+}
+
+.signup .SubscriptionReceipt_Container .Column {
+	float: left;
+	margin-right: 50px;
+}
+
+.signup .SubscriptionReceipt_Container .LastColumn {
+	float: left;
+}
+
+.signup .SubscriptionReceipt_Container .RightColumn {
+	float: right;	
+	width: 280px;
+	border-left: 1px dotted #ccc;
+	padding-left: 30px;
+	margin-left: 30px;
+}
+.signup .SubscriptionReceipt_Container .Section_Container{
+	margin: 0 0 20px;
+}
+
+
+/* Info Table ************************/
+
+dt { 
+	clear: left;
+	float: left;
+	padding: 2px 0;
+	text-align: left;
+	color: #000;
+}
+
+dd { 
+	padding: 2px 0 8px 7px;
+	float: left;
+}
+
+
+/* Form formatting ************************/
+
+input.halfwidth{
+	width: 11em;
+}
+		
+input.fullwidth { 
+	width: 23em;
+}
+select.fullwidth {
+	max-width: 23em;
+}
+
+
+fieldset { 
+	margin: 15px 0px;
+	border: 0px;
+}
+
+fieldset dt { 
+	width: 120px;
+	padding: 6px 4px 2px 1px;
+}
+
+fieldset dd { 
+	width: 48em;
+}
+
+.PgTwoColumn_Content fieldset dd {
+	width: 48em;
+}
+
+fieldset dd img { 
+	vertical-align: middle;	
+}
+
+/* Form Action Buttons ********************/
+
+.form_actions {
+	margin: 5px 0 10px;
+}	
+
+#select_company .form_actions {
+	clear: both;
+	margin: 5px 10px 10px 0px;
+}
+
+
+/* Radio Button Group Form ********************/
+
+.mc {
+	margin: 15px 0;
+}
+
+.mc .checked { 
+	font-weight: bolder;
+}
+
+.mc .secondary_content { 
+	margin: 10px 0 20px 20px;
+}
+
+/* Checkout *********************************/
+
+table.review_subscription {
+	font-size: 12px;
+    width: 85%;
+	/*	
+	padding: 15px;
+	background: #f9f9f9;
+	border: 1px solid #eee;
+	*/
+}
+
+table.review_subscription .item_row {
+	padding-bottom: .5em;
+}
+
+table.review_subscription .tax_row{
+	color: #999;
+	text-align: right;
+	vertical-align: top;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	background-color: #F9F9F9;
+}
+table.review_subscription .head_row {
+	color: #000;
+	vertical-align: top;
+	border-bottom: 1px solid #eee;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+table.review_subscription .section_row{
+	vertical-align: top;
+	border-top: 1px solid #eee;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+table.review_subscription .total_row {
+	text-align: right;
+	vertical-align: top;
+	font-weight: bold;
+	padding: .5em 0;
+	/*background: #F1F9FF;*/
+}
+
+table.review_subscription .subtotal {
+	text-align: right;
+	vertical-align: top;
+	width: 80px;
+}
+div#loginBox {
+	font-size: 12px;
+	line-height: 1.3em;
+	width: 240px;
+	padding: 12px;
+	background: #f6f6f3;
+	border: 4px #b6d2f3 double;
+	margin:10px 100px 1px 460px;
+}
+.loginHead {
+	-x-system-font:none;
+	color:#5F6061;
+	font-family:"Trebuchet MS","Lucida grande",Verdana,sans-serif;
+	font-size:22px;
+	font-size-adjust:none;
+	font-stretch:normal;
+	font-style:normal;
+	font-variant:normal;
+	font-weight:bolder;
+	line-height:1.3em;
+	margin:50px 50px 1px 465px;
+}
+.donot{
+	margin: 26px 100px 1px 490px; 
+	padding: 10px; width: 200px; 
+	text-align: center; 
+	font: 16px Trebuchet MS; 
+	font-weight: bolder;
+}
+
+/* FONT, COLOR, STYLE */
+
+#loginBox .title { 
+	font-size: 14px;
+	font-family: Verdana;
+}
+
+#loginBox .errormsg {
+	color: #f00;
+}
+
+#loginBox .fieldLabel {
+	color: #000;
+}
+
+#loginBox .fixed_field {
+	color: #000;
+	font-weight: bolder;
+	margin: 2px 0px;
+}
+
+
+#loginBox input[type='text'],
+#loginBox input[type='password'] {
+	border: 1px #aaa solid;
+	width: 90%;
+	margin: 2px 0px;
+	padding: 3px;
+}
+
+#loginBox input[type='submit'] {
+	margin: 2px 150px;
+	padding: 2px 7px;
+	font-size: 12px;
+	font-weight: bolder;
+}
+
+#loginBox input[type='checkbox'] {
+	margin: 0;
+}
+
+#loginBox select {
+	width: 95%;
+	margin: 5px 0px;
+}
+
+/* LAYOUT & SPACING */
+
+#loginBox div { 
+	padding: 3px 0px;
+}		
+
+#loginBox div#loginTitle {
+	padding-bottom: 10px;
+}
+
+#loginBox div#loginError {
+	padding: 0px 0px 7px;
+	display: none;
+}
+
+#loginBox div#loginHelp {
+	padding: 10px 2px 2px;
+}
+/*****  Step Bar **************************************/
+#stepBar {
+	float: left;
+	padding-left: 2px;
+	padding-right: 10px;
+	padding-top: 10px;
+	
+}
+
+#stepBar .stepTable th{
+	background-color: #FFF;
+	color: #5F6061;
+	padding-right: 1px;
+	padding-left: 4px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #CACACA;
+	
+}
+
+#stepBar .stepTable td {
+	background-color: #FFF;
+	border-bottom: 1px solid #CACACA;
+	color: #7E3117;
+	padding: 5px;
+    font-size:12px;
+
+}
+
+#stepBar .stepTable{
+/*	padding: 12px 5px 10px 10px; */
+}
+/***  Rounded corners ***************************/
+
+.roundedcornr_box_151200 {
+	background: url(images/roundedcornr_151200_tl.png) no-repeat top left;
+	width: 208px;
+	margin-left: 5px;
+}
+.roundedcornr_top_151200 {
+	background: url(images/roundedcornr_151200_tr.png) no-repeat top right;
+}
+.roundedcornr_bottom_151200 {
+	background: url(images/roundedcornr_151200_bl.png) no-repeat bottom left;
+}
+.roundedcornr_bottom_151200 div {
+	background: url(images/roundedcornr_151200_br.png) no-repeat bottom right;
+}
+.roundedcornr_content_151200 {
+	background: url(images/roundedcornr_151200_r.png) top right repeat-y;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.roundedcornr_top_151200 div,.roundedcornr_top_151200,
+.roundedcornr_bottom_151200 div, .roundedcornr_bottom_151200 {
+	width: 100%;
+	height: 5px;
+	font-size: 1px;
+}
+.roundedcornr_content_151200, .roundedcornr_bottom_151200 { }
+.roundedcornr_content_151200 { }

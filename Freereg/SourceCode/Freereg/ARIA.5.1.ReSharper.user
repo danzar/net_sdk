@@ -1,0 +1,34 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/f:IGeneralServices.cs" caret="1429" fromTop="30" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/d:Implementation/f:GeneralServices.cs" caret="0" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/d:Implementation/f:GeneralServices.cs" caret="5798" fromTop="8" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/d:Implementation/f:GeneralServices.cs" caret="9966" fromTop="8" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/d:Implementation/f:GeneralServices.cs" caret="10295" fromTop="8" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/d:Implementation/f:GeneralServices.cs" caret="13376" fromTop="18" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/f:IGeneralServices.cs" caret="1716" fromTop="8" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/f:IGeneralServices.cs" caret="2563" fromTop="22" />
+      <File id="CB60BA6E-DF5E-457A-9A41-13A256DB4CD7/d:Services/f:IGeneralServices.cs" caret="1429" fromTop="10" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

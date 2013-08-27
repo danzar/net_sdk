@@ -1,0 +1,122 @@
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\obj\Debug\Aria.SampleApps.WebClient.csproj.ResolveComReference.cache
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ARIA.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ARIA.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\AjaxControlToolkit.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Common.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Aria.SampleApps.WebClient.Shell.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ProjNET.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\SharpMap.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Aop.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Core.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Services.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Web.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Web.Extensions.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Business.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.Unity.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\BruTile.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Common.Logging.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\AriaWebServices.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Common.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Aria.SampleApps.WebClient.Shell.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\AjaxControlToolkit.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Aop.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Aop.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Core.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Core.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Services.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Services.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Web.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Web.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Web.Extensions.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Spring.Web.Extensions.xml
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Business.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ar\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\cs\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\de\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\es\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\fr\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\he\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\hi\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\it\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ja\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ko\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\nl\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\pt\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\ru\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\obj\Debug\ARIA.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\obj\Debug\ARIA.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ObjectBuilder.dll
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\Proyectos\Aria\ARIANSDK0100\5. Development\5.03 Source\ARIA\ARIA\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ARIA.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ARIA.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\AjaxControlToolkit.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Common.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Aria.SampleApps.WebClient.Shell.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ProjNET.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\SharpMap.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Aop.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Core.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Services.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Web.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Web.Extensions.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Business.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ObjectBuilder.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.Unity.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\BruTile.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Common.Logging.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\AriaWebServices.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Common.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Aria.SampleApps.WebClient.Shell.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\AjaxControlToolkit.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Aop.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Aop.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Core.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Core.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Services.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Services.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Web.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Web.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Web.Extensions.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Spring.Web.Extensions.xml
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\Aria.SampleApps.Business.pdb
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ar\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\cs\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\de\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\es\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\fr\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\he\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\hi\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\it\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ja\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ko\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\nl\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\pt\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\ru\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\obj\Debug\Aria.SampleApps.WebClient.csproj.ResolveComReference.cache
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\obj\Debug\ARIA.dll
+C:\Users\hgomez\Desktop\Entrega\Fullreg\Aria.SampleApps.WebClient\obj\Debug\ARIA.pdb

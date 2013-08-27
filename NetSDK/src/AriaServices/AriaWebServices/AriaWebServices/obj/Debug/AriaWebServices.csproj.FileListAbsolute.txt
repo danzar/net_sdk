@@ -1,0 +1,6 @@
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServices\bin\Debug\AriaWebServices.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServices\bin\Debug\AriaWebServices.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServices\bin\Debug\AriaWebServices.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServices\obj\Debug\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServices\obj\Debug\AriaWebServices.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaServices\AriaWebServices\AriaWebServices\obj\Debug\AriaWebServices.pdb

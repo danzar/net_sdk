@@ -1,0 +1,12 @@
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Release\AriaRestClient.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Release\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\bin\Release\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\obj\Release\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\obj\Release\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\SDK-2010\src\AriaRestClient\obj\Release\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\src\AriaRestClient\obj\Release\ResolveAssemblyReference.cache
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\src\AriaRestClient\obj\Release\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\src\AriaRestClient\bin\Release\AriaRestClient.dll.config
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\src\AriaRestClient\bin\Release\AriaRestClient.dll
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\src\AriaRestClient\bin\Release\AriaRestClient.pdb
+D:\JGUEVARA\Desarrollo\Aria\NetSDK\src\AriaRestClient\obj\Release\AriaRestClient.dll

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRunConfiguration name="Local Test Run" id="7cb6c073-b69c-49d3-87c1-599634b1dde3" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <Description>This is a default test run configuration for a local test run.</Description>
+  <CodeCoverage enabled="true">
+    <Regular>
+      <CodeCoverageItem binaryFile="SystemFramework\ConfigFactory\ConfigFactory\bin\Debug\ConfigFactory.dll" pdbFile="SystemFramework\ConfigFactory\ConfigFactory\bin\Debug\ConfigFactory.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="DataServices\DSLoggingServices\DSLoggingServices\bin\Debug\DSLoggingServices.dll" pdbFile="DataServices\DSLoggingServices\DSLoggingServices\bin\Debug\DSLoggingServices.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="DataServices\DSAccountServices\DSAccountServices\bin\Debug\DSAccountServices.dll" pdbFile="DataServices\DSAccountServices\DSAccountServices\bin\Debug\DSAccountServices.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="BusinessServices\BSAccountServices\BSAccountServices\bin\Debug\BSAccountServices.dll" pdbFile="BusinessServices\BSAccountServices\BSAccountServices\bin\Debug\BSAccountServices.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="BusinessServices\BSCoreServices\BSCoreServices\bin\Debug\BSCoreServices.dll" pdbFile="BusinessServices\BSCoreServices\BSCoreServices\bin\Debug\BSCoreServices.pdb" instrumentInPlace="true" />
+      <CodeCoverageItem binaryFile="DataServices\DSCoreServices\DSCoreServices\bin\Debug\DSCoreServices.dll" pdbFile="DataServices\DSCoreServices\DSCoreServices\bin\Debug\DSCoreServices.pdb" instrumentInPlace="true" />
+    </Regular>
+  </CodeCoverage>
+  <Deployment>
+    <DeploymentItem filename="testEmailTemplates\" />
+    <DeploymentItem filename="SystemFramework\MessageFactory\MessageFactory\bin\Debug\de\" outputDirectory="de" />
+    <DeploymentItem filename="SystemFramework\MessageFactory\MessageFactory\bin\Debug\en\" outputDirectory="en" />
+  </Deployment>
+  <TestTypeSpecific />
+</TestRunConfiguration>
