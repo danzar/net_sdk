@@ -371,8 +371,13 @@ namespace Aria.SampleApps.Business.Services.Implementation
 
                 var suppPlansArray = (from suppPlans in accountCompleteDto.SupplementalPlans
                                       select new supp_plans_row { supp_plans = suppPlans.Id, }).ToArray();
+                // COMMENTED: suppPlans.Units data type has been changed as long from long? (Nullable long)
+                // COMMENTED ON: 25-JUL-2013 BY: Aspire
+                //var suppPlansUnitsArray = (from suppPlans in accountCompleteDto.SupplementalPlans
+                //                         select new supp_plan_units_row { supp_plan_units = suppPlans.Units == null ? 0 : suppPlans.Units.Value }).ToArray();
+
                 var suppPlansUnitsArray = (from suppPlans in accountCompleteDto.SupplementalPlans
-                                           select new supp_plan_units_row { supp_plan_units = suppPlans.Units == null ? 0 : suppPlans.Units.Value }).ToArray();
+                                           select new supp_plan_units_row { supp_plan_units = suppPlans.Units == null ? 0 : suppPlans.Units}).ToArray();
 
                 newAccount.currency_cd = accountCompleteDto.Currency;
                 newAccount.promo_cd = accountCompleteDto.PromoCode;
@@ -665,15 +670,20 @@ namespace Aria.SampleApps.Business.Services.Implementation
                                                   acct_no = accountCompleteDto.AccountNo,
                                                   auto_cancel_supp_plans = "true",
                                                   master_plan_no = accountCompleteDto.MasterPlan.Id,
-                                                  num_plan_units = accountCompleteDto.MasterPlan.Units == null ? 0 : accountCompleteDto.MasterPlan.Units.Value
-
+                                                  // COMMENTED: suppPlans.Units data type has been changed as long from long? (Nullable long)
+                                                  // COMMENTED ON: 25-JUL-2013 BY: Aspire
+                                                  //num_plan_units = accountCompleteDto.MasterPlan.Units == null ? 0 : accountCompleteDto.MasterPlan.Units.Value
+                                                  num_plan_units = accountCompleteDto.MasterPlan.Units == null ? 0 : accountCompleteDto.MasterPlan.Units
                                               };
 
             var suppPlansList = (from suppPlans in accountCompleteDto.SupplementalPlans
                                  select new supp_plans_to_assign_row
                                              {
                                                  supp_plan_no = suppPlans.Id,
-                                                 num_plan_units = suppPlans.Units == null ? 0 : suppPlans.Units.Value
+                                                 // COMMENTED: suppPlans.Units data type has been changed as long from long? (Nullable long)
+                                                 // COMMENTED ON: 25-JUL-2013 BY: Aspire
+                                                 //num_plan_units = suppPlans.Units == null ? 0 : suppPlans.Units.Value
+                                                 num_plan_units = suppPlans.Units == null ? 0 : suppPlans.Units
                                              }).ToArray();
 
             var updateSuppPlansRequest = new assign_supp_plan_multiRequest

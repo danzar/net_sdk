@@ -45,7 +45,7 @@ namespace Aria.SampleApps.Common.Dto
         public string IntervalName { get; set; }
 
         [DataMember]
-        public long? Units { get; set; }
+        public long Units { get; set; }
 
         [DataMember]
         public List<PlanDto> ServiceList { get; set; }
