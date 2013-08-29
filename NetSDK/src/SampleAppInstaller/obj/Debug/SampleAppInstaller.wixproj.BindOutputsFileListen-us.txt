@@ -1,0 +1,3 @@
+C:\Manivannan\Migration\6.0\net_DevCentral\net\NetSDK\Installer\en-us\cab1.cab
+C:\Manivannan\Migration\6.0\net_DevCentral\net\NetSDK\Installer\en-us\SampleAppInstaller.msi
+C:\Manivannan\Migration\6.0\net_DevCentral\net\NetSDK\Installer\en-us\SampleAppInstaller.wixpdb

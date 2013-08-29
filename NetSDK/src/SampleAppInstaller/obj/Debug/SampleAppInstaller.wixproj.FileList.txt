@@ -1,0 +1,10 @@
+C:\Manivannan\Migration\6.0\net_DevCentral\net\NetSDK\Installer\en-us\cab1.cab
+C:\Manivannan\Migration\6.0\net_DevCentral\net\NetSDK\Installer\en-us\SampleAppInstaller.msi
+C:\Manivannan\Migration\6.0\net_DevCentral\net\NetSDK\Installer\en-us\SampleAppInstaller.wixpdb
+obj\Debug\Components.wixobj
+obj\Debug\InstallationAddressDlg.wixobj
+obj\Debug\MyUI.wixobj
+obj\Debug\Product.wixobj
+obj\Debug\SampleAppInstaller.wixproj.BindContentsFileListen-us.txt
+obj\Debug\SampleAppInstaller.wixproj.BindOutputsFileListen-us.txt
+obj\Debug\SampleAppInstaller.wixproj.BindBuiltOutputsFileListen-us.txt

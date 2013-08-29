@@ -1,0 +1,4 @@
+obj\Release\Aria.SampleApps.WebClient.wixobj
+obj\Release\InstallationAddressDlg.wixobj
+obj\Release\MyUI.wixobj
+obj\Release\Product.wixobj

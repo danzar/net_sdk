@@ -1,0 +1,491 @@
+
+/** Company Logo   You will need to put your company logo in both logo2 & logo3.  You will also have to change the width & height based off how big or small your logo is******/
+
+.logo2 {
+	float: left;
+	clear: right;
+	margin: 0px  0 5px 20px;
+	background:url(images/aria_logo.gif);
+	width:93px;
+	height:50px;
+}
+.logo3 {
+	float: left;
+	clear: right;
+	margin: -25px 1px 0px -20px;
+	background:url(images/aria_logo.gif);
+	width:93px;
+	height:50px;
+}
+
+/** Header Style ******/
+#a_header { 
+	text-align: right;
+	font: 11px Tahoma, Arial, sans-serif;
+	color: #6b9bd6;	
+	background: url('images/header_bg.png') repeat;
+	padding-right:10px;
+	padding-top:5px;
+	padding: 0px;
+	width:100%
+}
+
+#a_header a:link, 
+#a_header a:visited {
+	color: #b4d6fe;
+	text-decoration: none;
+} 
+
+#a_header a:hover, 
+#a_header a:active {
+	text-decoration: underline;			
+} 
+
+#a_header.img {
+	border: 0px;
+}
+
+#a_header .logo {
+	float: left;
+	clear: right;
+	margin: 0px  0 5px 20px;
+}
+
+#a_header .right {
+	float: right;
+	position: relative;
+	top: -2px;
+	margin: 0 0 5px 20px;
+	padding-right:10px;
+	padding-top:9px;
+}
+
+#a_header .user_defined_field {
+	float: left; 
+	max-width: 16em; 
+	height: 1.3em; 
+	overflow: hidden; 
+	white-space: nowrap;
+	margin-right: .5em;
+	text-align: right; 
+	font-weight: bolder; 		
+}
+
+#a_header .realm_name { 
+	max-width: 22em; 
+}
+
+#a_header .user_name { 
+	max-width: 14em; 
+}
+
+/** Header Style Ends************************************************************************************************************/
+
+div, span, h1, h2, h3, h4, p, a, ul, ol, li, form, input, fieldset, legend, table, td, th, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px Tahoma, Arial, sans-serif;
+	background: #fff;
+	color: #505050;
+}
+
+
+/* Link Style *************************/
+
+a:link,  
+a:visited {
+	color: #365ebf;
+	text-decoration: none; 
+}
+
+a:hover,  
+a:active {	
+	text-decoration: underline; 
+}
+
+/* Image Style **************************/
+
+img { 
+	border: 0px;
+}
+
+img.border { 
+	border: 1px solid #aaa;
+}
+
+hr {
+	color: #aaa;
+}
+
+/* Text Style *************************/
+
+p{ 
+	font-size: 12px;
+	line-height: 1.5em;
+	margin: 0.5em 0px 1em;
+}
+
+li { 
+	line-height: 1.3em;
+	list-style-type: none;
+	margin: 0.3em 0px;
+}
+
+ul.bullet li { 
+	list-style-type: disc;
+	margin: 0.3em 0 0.3em 1.5em;
+}
+
+ul.bullet li.bulletnone { 
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+.subtext {
+	color: #999;
+	font-weight: normal;
+	padding: 2px 0px;
+}
+
+.strong { 
+	font-weight: bolder;
+}	
+
+.colorpop { 
+	color: #0066CC;
+}
+
+.highlight { 
+	background: #FDFFC9;
+}
+
+/* L&A Style *************************/
+
+.stepEdit{ 
+	font-weight: normal;
+	font-size: 9px;
+	line-height: 1.4em;
+}
+
+.help{ 
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 1.4em;
+}
+.desc{ 
+	font-weight: normal;
+	font-size: 11px;
+	line-height: 1.4em;
+	margin-left:20px;
+}
+
+.help_title {
+	font-weight: bolder;
+	font-size: 11px;
+	line-height: 1.3em;
+	margin: 1em 0 .5em;
+}
+
+ul.faq_sec li { 
+	margin: 0 0 1.5em;
+}
+
+ul.help_list li { 
+	list-style: none outside; 
+	background: url(../web/images/h_arrow.png) no-repeat 2px 3px;
+	padding-left: 16px;	
+	margin: .5em 0;
+}
+
+div.help_footnote { 
+	border-top: 1px dashed #ccc; 
+	padding: 10px 0; 
+	margin: 20px 0 0px;
+}
+
+
+/* Form Styling *************************/
+
+label { 
+	color: #000;
+	font-weight: normal;
+	padding-right: 10px;	
+}
+
+input[type='text'],
+input[type='password'] {
+	border: 1px #aaa solid;
+	margin: 2px 0px;
+	padding: 3px;
+	font: 12px Tahoma, Arial, sans-serif;
+}
+
+select { 
+	padding: 2px 0;	
+	margin: 2px 0px;
+	font-size: 12px;
+}
+
+input[type='text'].ghost{
+	
+}
+
+input[type='submit'], 
+input[type='reset'] {
+	/*margin: 2px 10px 5px 210px;*/
+	padding: 2px 10px;
+	font-size: 1em;
+	width: auto;
+	overflow: visible;
+}
+
+input[type='button'], button {
+	margin: -1px 10px 2px;
+	padding: 2px 10px;
+	font-size: 1em;
+	width: auto;
+	overflow: visible;
+}
+
+input.btn_prefer { 
+	font-weight: bolder;
+}
+
+
+
+.btn_group input[type='button'],
+.btn_group input[type='submit'], 
+.btn_group input[type='reset'] {
+	margin: 8px 0px 5px -2px;
+	padding: 2px 10px;
+	font-size: 1em;
+	width: auto;
+	overflow: visible;
+}
+
+input[type='radio'], 
+input[type='checkbox'] {
+	margin: 0 2px 0 0;
+}
+/* Dyanamic Messages ******************/
+
+.msgError { 
+	border: 1px solid #EEA1A4;
+	background: #fff5f3;
+	padding: 7px 10px;
+	margin: 20px 0;
+	/*CSS3 supported browser gets slightly better treatment...*/
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+}
+		
+.msgFeedback { 
+	font-size: 12px;
+	font-weight: bolder;
+	background: #FFFBDF;
+	border: 1px solid #F8D237;
+	padding: 7px 10px;
+	margin: 20px 0;
+	/*CSS3 supported browser gets slightly better treatment...*/
+	-moz-border-radius: 3px; 
+	-webkit-border-radius: 3px;
+}
+
+
+/* Clear Fix *************************/
+
+.clearfix:after {
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+
+.clearfix {
+	display:block;
+}
+
+* html .clearfix {
+	height:1%;
+}
+
+html[xmlns] .clearfix {
+	display:block;
+}
+
+
+
+
+/* Show & Hide *******************/
+
+.hidden { 
+	display: none;
+}
+
+.shown { 
+	display: block;
+}
+
+
+/* Lightbox ************************************/
+
+.Lightbox_Container { 
+	position: absolute;
+	left: 0;
+	top: 0; 
+	width: 100%; 
+	height: 100%; 	
+	z-index: 1000;
+	/*background: transparent url(img/screen.png) repeat;*/
+}
+
+.Lightbox_Bg { 
+	position: fixed;
+	left: 0;
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
+	z-index: 1001; 
+	
+	background: #000; 
+	opacity: 0.30;
+	filter: alpha(opacity=30);
+}
+
+.Lightbox_Box {
+	position: relative;
+	top: 150px;
+	max-width: 425px;
+	margin: auto;
+	z-index: 1005; 
+
+}
+
+.Lightbox_Box_Top {
+	font-size: 1px;
+	line-height: 1px;
+	height: 8px;
+	width: 425px;	
+	background: transparent url(images/box_grey_425_top.gif) no-repeat;	
+}
+
+.Lightbox_Box_Bottom {
+	font-size: 1px;
+	line-height: 1px;
+	height: 8px;
+	width: 425px;	
+	background: transparent url(images/box_white_425_bottom.gif) no-repeat;	
+}
+
+.Lightbox_Box .Lightbox_Title{
+	padding: 5px 20px 5px;	
+	background: #f5f5f5;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #eee;
+	color: #505050;
+}
+
+.Lightbox_Box .Lightbox_Content {
+	padding: 10px 20px 1px;
+	background: #fff;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.Lightbox_Box .action_btn_group {
+	text-align: right;
+	border-top: 1px solid #eee; 
+	padding-top: 10px;
+	margin: 15px 0 10px;
+}
+
+
+/* Divider ***************************/
+
+div.divider { 
+	height: 0px; 
+	border-bottom: 1px dotted #ccc; 
+	margin: 15px 0;
+}
+
+div.divider_dashed { 
+	height: 0px; 
+	border-bottom: 1px dashed #ccc; 
+	margin: 15px 0;
+}
+
+.signup {
+}
+
+/* Font, Style, etc.  */
+
+
+/* Info Table ************************/
+
+dt { 
+	clear: left;
+	float: left;
+	padding: 2px 0;
+	text-align: left;
+	color: #000;
+}
+
+dd { 
+	padding: 2px 0 2px 1px;
+	float: left;
+}
+
+
+
+
+
+
+
+
+/** Footer Style ****************************************************************************************************************/
+
+#a_footer { 
+	font: 11px Tahoma, Arial, sans-serif;
+	width: 100%;
+	text-align: center;
+	margin: 40px 0px;
+	z-index: 99;
+	float: left;
+}
+
+#a_footer img {
+	border: 0px;
+	margin: 0px 20px;
+}
+
+.foot{
+	font:9px !important;
+	
+}
+/** Footer Style Ends******/
+
+
+/** Error css ****************************************************************************************************************/
+
+.error li { 
+	line-height: 1.3em;
+	list-style-type: disc;
+	margin: 0.3em 18px;
+	color:#F00;
+	border:thin;
+	padding:
+}
+.error ul{
+	border:solid;
+	
+}
+/** Error Ends******/

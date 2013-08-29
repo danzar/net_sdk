@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmpE7FB32C371ED24C4BC32955CC47AD489" Guid="*">
+                <File Id="filC3A34A81D8B4AA4012B6B82A2A2AEB10" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Default.aspx" />
+            </Component>
+            <Component Id="cmp6A4F9D28DF6F992FCE04768A605F3F6B" Guid="*">
+                <File Id="fil290EB696DE8E76F029E58930686F7404" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Global.asax" />
+            </Component>
+            <Component Id="cmpCDB7F4EFDEF1E65C3B12BEBAD7E4D7EA" Guid="*">
+                <File Id="fil8994620207C22CA15AF75ACDD6420C79" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Web.config" />
+            </Component>
+            <Directory Id="dir46410C076EE70770CBC134A808D81589" Name="App_GlobalResources">
+                <Component Id="cmp3E17CB5CF5AA8CE186D6FD97F507DB12" Guid="*">
+                    <File Id="fil885AA906345E59810D63B353BEE1FE93" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_GlobalResources\Resource.resx" />
+                </Component>
+            </Directory>
+            <Directory Id="dir72B2AC1E076649A12C76D9E110CA254C" Name="App_Themes">
+                <Directory Id="dirD57CCD8F27685741F6E9D49A5B743C0B" Name="Default">
+                    <Directory Id="dirE5D45E2699BE801F48C3A25697905F4B" Name="images">
+                        <Component Id="cmp3CC41973938D49D0FDE5586AE6CDEB37" Guid="*">
+                            <File Id="fil363CC15F1C82B98CDCF3493DF15EE906" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\cc_amex.jpg" />
+                        </Component>
+                        <Component Id="cmp1B4E6BAF5FD410F3D3BA9D437CEBB945" Guid="*">
+                            <File Id="fil268EFBC2E4B6FCEC6E86A3093C619A5F" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\cc_discover.jpg" />
+                        </Component>
+                        <Component Id="cmpD0A19C224598D564F4347D48FA63B8F7" Guid="*">
+                            <File Id="filFA313DFE2826C232609947CBA65F48C0" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\cc_visa.jpg" />
+                        </Component>
+                        <Component Id="cmp540410D1C198FEBB64AA9FD77576A472" Guid="*">
+                            <File Id="fil444B2F297D0E0A8C2A26393A04664778" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\creditcard_amex.gif" />
+                        </Component>
+                        <Component Id="cmp301438B4833836C20F9A0B19FAADB7C2" Guid="*">
+                            <File Id="fil1FF2508AC00A3963BC8B294425371FDA" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\creditcard_discover.gif" />
+                        </Component>
+                        <Component Id="cmp04A4FF2FF4B5E086F7ADF51D57C82D5E" Guid="*">
+                            <File Id="fil084CA51CED8BE75E9360C0BE69BEF085" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\creditcard_mc.gif" />
+                        </Component>
+                        <Component Id="cmp7326E31DBDEE89770BB29BACAAE330F5" Guid="*">
+                            <File Id="filC32A292952EE2295FCC9267AF03A5BB0" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\creditcard_visa.gif" />
+                        </Component>
+                        <Component Id="cmp68388EF31680ED39860CB814ECCDCBFB" Guid="*">
+                            <File Id="fil1EBA9FD4BE51A5FCDF30543185996B13" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\loading-rotate.gif" />
+                        </Component>
+                        <Component Id="cmp4B8A92BBB8CE43803B18310D4F0D7EE2" Guid="*">
+                            <File Id="fil9B398AE9C10576E867FE1015CB701F52" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\loading.gif" />
+                        </Component>
+                        <Component Id="cmp2B176FAFA7DA40CFC603AC5D2BB37FC5" Guid="*">
+                            <File Id="fil9AA34B7D7450A4BCD16C16A0A018D6C6" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\scroll_left.png" />
+                        </Component>
+                        <Component Id="cmp707EE8DE4884C15AF76D35D8FB2DDD3A" Guid="*">
+                            <File Id="filCBA95C2360175D258ADD3479FAAB972F" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\App_Themes\Default\images\scroll_right.png" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="dir7307A6085BD4ABD9B8955C093FD541F5" Name="bin">
+                <Component Id="cmp6320BA46BEAEE81BA1EA8A1A8155A547" Guid="*">
+                    <File Id="fil5FC724B3353037888DE35262C62DD154" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\AjaxControlToolkit.dll" />
+                </Component>
+                <Component Id="cmpDC5B7AF5316986F28784451B894C4600" Guid="*">
+                    <File Id="fil014B055FF26FC0C3CE472F94A9C3DFFE" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\ARIA.dll" />
+                </Component>
+                <Component Id="cmpF2B824BCB23F078BEB917A5334FEB209" Guid="*">
+                    <File Id="fil7FD23BB91A4325D180F745FF3F5E6F6E" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Aria.SampleApps.Business.dll" />
+                </Component>
+                <Component Id="cmpB6242EA7EDF18F4AAD1449D627443453" Guid="*">
+                    <File Id="filAB77A3E6802D3FC843E2F817665848C4" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Aria.SampleApps.Common.dll" />
+                </Component>
+                <Component Id="cmp88BFC8B4B115D9B2E4BA33C7248DB0F6" Guid="*">
+                    <File Id="filAD005EF91D2B3E0943203E788C74FA36" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Aria.SampleApps.WebClient.Shell.dll" />
+                </Component>
+                <Component Id="cmp2BC27B0941CF5B74E937B9E10198C2B1" Guid="*">
+                    <File Id="fil8E51D7F5EFAF8C16E205312ECCC2AFBC" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\AriaWebServices.dll" />
+                </Component>
+                <Component Id="cmp89DF31359B58798BC576890F7ACCC4D1" Guid="*">
+                    <File Id="fil785BC28DA0CB133384265BF605776445" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Common.Logging.dll" />
+                </Component>
+                <Component Id="cmp922DB004887080731C38A6ABC5434D65" Guid="*">
+                    <File Id="fil5D309BEA8DABD3AA5581AF484EC0AC72" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.CompositeWeb.dll" />
+                </Component>
+                <Component Id="cmpFF03591E2D2B9B2AA2AA444299A693DB" Guid="*">
+                    <File Id="fil7DC27EB4CA5B9970A7CBD422D919CCFF" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+                </Component>
+                <Component Id="cmp7B7FC148972D8161B3D856F5BE43EDD9" Guid="*">
+                    <File Id="fil4394FF7573ADC91FA298D21D7403834F" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+                </Component>
+                <Component Id="cmpB0505DC0C66B24CF6254424190835E07" Guid="*">
+                    <File Id="fil17088AB54E61A9ED5E1D5361B277E04D" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+                </Component>
+                <Component Id="cmp021DF6B131D81D5AD83DD4DFDC47529A" Guid="*">
+                    <File Id="fil1ECEE304122EC46344FA02C75C454C9E" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll" />
+                </Component>
+                <Component Id="cmp831168DA88E6721F87CA8943B74B049C" Guid="*">
+                    <File Id="fil05DBFC7357B068E6C7A92AB34CC7AC81" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.EnterpriseLibrary.Logging.Database.dll" />
+                </Component>
+                <Component Id="cmp0D87C2BA4F9693880C27A14B00448B52" Guid="*">
+                    <File Id="filEDBD6640E857209782F066D0A6F5C284" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.EnterpriseLibrary.Logging.dll" />
+                </Component>
+                <Component Id="cmp3F99120A1BAB192C606C8AB3CFA0FAB8" Guid="*">
+                    <File Id="fil8F719A7BD6A898890A0DE5BF2F76AA77" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Microsoft.Practices.ServiceLocation.dll" />
+                </Component>
+                <Component Id="cmp0378F4A7B3C4A83707EFA74729FBE330" Guid="*">
+                    <File Id="fil2E6E5B1F841E39931CD2BE66C34C41F8" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\ProjNET.dll" />
+                </Component>
+                <Component Id="cmp3CAF3B12A9D3C16BAA8EE20650878632" Guid="*">
+                    <File Id="filCE0129831DBF565DD8910B689FB013B4" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\SharpMap.dll" />
+                </Component>
+                <Component Id="cmp585799D25DB9C1EA56C46AF85B66377A" Guid="*">
+                    <File Id="fil0F14990528B1322ACF8DCA7BD117810C" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Spring.Aop.dll" />
+                </Component>
+                <Component Id="cmp6AFD71B9D72FA66BD8EE6E64DDED7D08" Guid="*">
+                    <File Id="filAB0D5D6DB0F41AC492FA05EDE52DCC30" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Spring.Core.dll" />
+                </Component>
+                <Component Id="cmp8F4BBB2CD9123C823FD6BD9F70952EA5" Guid="*">
+                    <File Id="filB1329E689B7720FC6031B2E47E84BEE8" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Spring.Services.dll" />
+                </Component>
+                <Component Id="cmpD8323A748097FDCB117A0B6C221C27A3" Guid="*">
+                    <File Id="fil17E94BCF9F92B78F6EBDF8F43F618515" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Spring.Web.dll" />
+                </Component>
+                <Component Id="cmpCAACD469B60832049893D73A765E7F9F" Guid="*">
+                    <File Id="fil7805A962072D921A4330B906ECB39343" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\bin\Spring.Web.Extensions.dll" />
+                </Component>
+            </Directory>
+            <Directory Id="dir0B6DC86EBAB610CFD56B476ECDD18AF2" Name="Config">
+                <Component Id="cmp0BA0B94D9987CA45623BE89116F283A6" Guid="*">
+                    <File Id="fil8625CD46C4DAC4800590E5CCCEE273CF" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Config\ApplicationContext-Db.config" />
+                </Component>
+                <Component Id="cmp19A25509550BB4AFDBB50AB8DA841B7B" Guid="*">
+                    <File Id="fil89D2154084BC9F4706B956502FB0006F" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Config\ApplicationContext-FrontEnd.config" />
+                </Component>
+                <Component Id="cmpB08204760A335CA3DDE5448EE5AC2B2A" Guid="*">
+                    <File Id="filB76EE8420D65D7957F76472AB5C4A5B0" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Config\ApplicationContext-Services.config" />
+                </Component>
+            </Directory>
+            <Directory Id="dir530CC0BB7768701C9C7496ACE976A217" Name="Content">
+                <Directory Id="dir696E1E2DC6D859DFD4B03FABB0F68887" Name="Scripts">
+                    <Component Id="cmp9A6FDA863DF244063562A1A07427E80D" Guid="*">
+                        <File Id="fil686C32F837B87D3D6DF2D6AD2DD4DAF7" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\AsyncCalls.js" />
+                    </Component>
+                    <Component Id="cmp48A0647152F8384B7F94EAA1D3111902" Guid="*">
+                        <File Id="fil908788460EB285DBB2FEC0F7608ECC0A" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\commonScripts.js" />
+                    </Component>
+                    <Component Id="cmpC9856B3FE2724A8EF5E35BB1B57B4BB0" Guid="*">
+                        <File Id="fil853DB8A394E00EAC2DFA8C0556B0960D" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\json2.js" />
+                    </Component>
+                    <Component Id="cmp1527861B430F3EB7F9E438CA6ECCFA71" Guid="*">
+                        <File Id="fil5B175499B80F77811CB4972D1A7236F0" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\Utils.js" />
+                    </Component>
+                    <Directory Id="dir8BF6625051DC24411E0583BC41F84514" Name="jQuery">
+                        <Component Id="cmp133FD85124EE763720A23BAA6382EBC8" Guid="*">
+                            <File Id="fil9D30EEE21826DC06C5E2DB42F58F16A8" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\jquery-1.4.1-vsdoc.js" />
+                        </Component>
+                        <Component Id="cmpA0492DCDCBB7661518C26CAF418C7F07" Guid="*">
+                            <File Id="filD3A6E1C2FDCE931B3E8569AB76489BEC" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\jquery-1.4.1.js" />
+                        </Component>
+                        <Component Id="cmpD2D7F2D2F46023CCB5755E531030B5E7" Guid="*">
+                            <File Id="fil9419FD8DF469BDE04B744E5B2FEC9AE6" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\jquery-1.4.1.min-vsdoc.js" />
+                        </Component>
+                        <Component Id="cmpCCD56B0CF90FB568D768D480EDA47ED1" Guid="*">
+                            <File Id="filBA918CFF9F58DECAAD669B7107FBAB10" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\jquery-1.4.1.min.js" />
+                        </Component>
+                        <Directory Id="dir6DBF0AD03D4213437971488CB402228D" Name="cluetip">
+                            <Component Id="cmpEBBBCA005E4480792758BCF0851A34D5" Guid="*">
+                                <File Id="fil8D0794609E0DF137CEB62B56973D5A88" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\index.html" />
+                            </Component>
+                            <Component Id="cmpA06C5F68739CCD39670940DC5ADEB670" Guid="*">
+                                <File Id="filDF0B7D1E6E97AC16D57C9492B35B46B6" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\jquery.cluetip.css" />
+                            </Component>
+                            <Component Id="cmp184FEF3B0EE01C10C930E1D088387CB1" Guid="*">
+                                <File Id="fil0AB212605BABE43FD010950E05432855" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\jquery.cluetip.js" />
+                            </Component>
+                            <Component Id="cmpE7955DED7146E26D20668F1DD268AF76" Guid="*">
+                                <File Id="filCD5DBFBE7B155F3EAB5FCE6E894D64E5" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\jquery.cluetip2.css" />
+                            </Component>
+                            <Directory Id="dir952AE4B9124C5F46F048B29619819ECB" Name="demo">
+                                <Component Id="cmp2D6020004479015AE9CBE8D1FF6E6FFC" Guid="*">
+                                    <File Id="fil31FC74DD42C8B95BEABFABEBBD18F8FF" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajax.htm" />
+                                </Component>
+                                <Component Id="cmp8A857DEF6DF1BC2F9784AFB633DA7755" Guid="*">
+                                    <File Id="fil781305B4541B7CE2934DCE5599095319" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajax2.htm" />
+                                </Component>
+                                <Component Id="cmpD6FC15B2D7724E47ED1FCDFD68BC926D" Guid="*">
+                                    <File Id="fil79C18E54F664203E415CBEC10BE91E24" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajax3.htm" />
+                                </Component>
+                                <Component Id="cmp88692C13F47942913AD168CD1F8FC1AB" Guid="*">
+                                    <File Id="filA59F6881ACDC64184F4836B64932CDF2" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajax4.htm" />
+                                </Component>
+                                <Component Id="cmp47A3E65315B7E361D656429B868B8602" Guid="*">
+                                    <File Id="filFE16ED7B6968EA2453493B93C1DDF7EB" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajax5.htm" />
+                                </Component>
+                                <Component Id="cmpBF7CA7DA7FEFC40B09EE457BE504F813" Guid="*">
+                                    <File Id="filC1F9394E2630297221A39ACE9CAAA939" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajax6.htm" />
+                                </Component>
+                                <Component Id="cmpB1FAB9A072C4E8AED40E2496A4FBEA35" Guid="*">
+                                    <File Id="fil3EA8070D6546E2CD042DF9E1AE61D02F" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\ajaxclick.htm" />
+                                </Component>
+                                <Component Id="cmpAE31C25E199DE6E51D33844105641233" Guid="*">
+                                    <File Id="fil692E1B657ED557B10BFE47FB3288C0A3" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\boy-wonder.jpg" />
+                                </Component>
+                                <Component Id="cmp97B57856499F888061823B800954CFEF" Guid="*">
+                                    <File Id="fil4B083868D4E9905D99B0E18775361F62" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\cross.png" />
+                                </Component>
+                                <Component Id="cmpE105A9EA445769346BD9750B415426D7" Guid="*">
+                                    <File Id="filB2222C0C9F148112CE09FA6166C8B650" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\demo.css" />
+                                </Component>
+                                <Component Id="cmp97E35A078DDFB6BBB42A4A0F11E4602F" Guid="*">
+                                    <File Id="fil77953330E1B08A0650D0F089647168AC" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\demo.js" />
+                                </Component>
+                                <Component Id="cmpDF7DCAA2EDC8BF4E0F6C2AD8DE09C83D" Guid="*">
+                                    <File Id="fil2482E594F93F48701EE2EB5C378E323B" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\grate.jpg" />
+                                </Component>
+                                <Component Id="cmpD0B9178D5810443C27EBCF49E65DBE2A" Guid="*">
+                                    <File Id="filEE7469E2A0E92DBD8C6AA24458622292" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\grskating.jpg" />
+                                </Component>
+                                <Component Id="cmp2486B32E0405DCCAC83F8572537CA4BB" Guid="*">
+                                    <File Id="filAC111D4CBE538E8E15BF64D9B036516B" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\handovermouth.jpg" />
+                                </Component>
+                                <Component Id="cmp2F4ECB21F32C54B59A60BE754DFC00B0" Guid="*">
+                                    <File Id="fil86B5D40754BFC5F85846097DA0ACE777" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\headbg.jpg" />
+                                </Component>
+                                <Component Id="cmp88F4DB29D25C4D248BC1D28FBF5D5585" Guid="*">
+                                    <File Id="fil3E3E0D4D1E36B9B940451351FE482806" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\index.html" />
+                                </Component>
+                                <Component Id="cmp89A4596874DBCDDD51ECE67ED2084105" Guid="*">
+                                    <File Id="fil0F7EDBEE7780E8CE230675467E4F731F" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\kids-drop-sand.jpg" />
+                                </Component>
+                                <Component Id="cmpA9EF3D5CABB35DEB110D549AD74810D5" Guid="*">
+                                    <File Id="filAC0ED33D89D4B50CB9190B95D327E302" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\outdoor-sculpture.jpg" />
+                                </Component>
+                                <Component Id="cmpA16F8D83F80E87E54E66CFE9B97A63C8" Guid="*">
+                                    <File Id="filA5B4D3BE218B24FCD3D5C52DEE037674" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\pixel.gif" />
+                                </Component>
+                                <Component Id="cmp4D33E583DE2B4850AFF4D17B6151EAB3" Guid="*">
+                                    <File Id="filC4F6501C3C2EC36B752CA1BBACBDC2D9" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\tristan.jpg" />
+                                </Component>
+                                <Component Id="cmp2FC7C244B7B395426D63034E01E364F4" Guid="*">
+                                    <File Id="filA5063BC39219E150C5944E9F13D1CB4A" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\demo\wait.gif" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir1364F8903E6B0B9D45F15F2CB9FC2B08" Name="images">
+                                <Component Id="cmpD2B2CA76E8386E1544844C01B4252B17" Guid="*">
+                                    <File Id="filD1ED34D3F64FEC8FCEE4DD5C9ABC0C78" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\arrowdown.gif" />
+                                </Component>
+                                <Component Id="cmp7BEFA04D14E432D5209F3B6FD857455F" Guid="*">
+                                    <File Id="fil15DE97F09732DF70DEC9FA04C5D81C7B" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\arrowleft.gif" />
+                                </Component>
+                                <Component Id="cmp4A853D322DF790052A278F272F41C89E" Guid="*">
+                                    <File Id="fil8F62A5723FC4B85BE5040BBCCF85300D" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\arrowright.gif" />
+                                </Component>
+                                <Component Id="cmp8656DD9BEDA38BFC4C667CB2AF6F5EF6" Guid="*">
+                                    <File Id="fil727F2F032060E7108FF2FD0C94C618B7" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\arrowup.gif" />
+                                </Component>
+                                <Component Id="cmpA3C9D05D15B99422C360AC1E703AD445" Guid="*">
+                                    <File Id="fil0639222D575CB3A7D246FA978D929505" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\bl.gif" />
+                                </Component>
+                                <Component Id="cmpE3E697530494D02798BC7FA02784D969" Guid="*">
+                                    <File Id="fil3E9610930EE02E87097C64DED59947F5" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\bl.png" />
+                                </Component>
+                                <Component Id="cmp491162979C6AA5D86089A39DC88B5F78" Guid="*">
+                                    <File Id="fil47A5FE3971854ED19729C48E5F521D07" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\br.gif" />
+                                </Component>
+                                <Component Id="cmp95FF5CE00B94A90E3CB04FEE23D859D8" Guid="*">
+                                    <File Id="filD1CF8C737AA6024CF2C0BBC87C9CDE98" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\br.png" />
+                                </Component>
+                                <Component Id="cmp16214B7326D3B0A498F6A5A3BEC00772" Guid="*">
+                                    <File Id="fil4E5F3A954F6D346E5F68862121573E1E" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\darrowdown.gif" />
+                                </Component>
+                                <Component Id="cmp5E8488186713A6E5554FF0286823B190" Guid="*">
+                                    <File Id="fil0E2090C230BD2B0DB2FE9C8BAE1EC9B2" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\darrowleft.gif" />
+                                </Component>
+                                <Component Id="cmp8CEB1B5820053BDEC84766001D537D96" Guid="*">
+                                    <File Id="filD5F500B120376A313799A1C656E55D7B" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\darrowright.gif" />
+                                </Component>
+                                <Component Id="cmp585EAFAC0A023387A446A8E42FD5AF12" Guid="*">
+                                    <File Id="filD0B00CF1BD7BB63FA7FDC5A634D31CED" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\darrowup.gif" />
+                                </Component>
+                                <Component Id="cmp83DD3FA9111CB5857713517670CF8FAC" Guid="*">
+                                    <File Id="fil0F0D71E124AFA8A2D213486AF60B2147" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\itunes.png" />
+                                </Component>
+                                <Component Id="cmp6433F449D01AF932D0EA03EDBBDA4274" Guid="*">
+                                    <File Id="filD9F611BF81B40074070B5791E3FC3AE6" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\rarrowdown.gif" />
+                                </Component>
+                                <Component Id="cmp530C25700BFBC6C954227416E94E78E3" Guid="*">
+                                    <File Id="filAEFD850012AA2833FB853ECB05DB364A" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\rarrowleft.gif" />
+                                </Component>
+                                <Component Id="cmpC4FE706D967994460357005A5A17C915" Guid="*">
+                                    <File Id="fil55DC197F1004A31060B4776F2B4A09B1" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\rarrowright.gif" />
+                                </Component>
+                                <Component Id="cmp238E90369C497FEDC71398EA3BD55CE0" Guid="*">
+                                    <File Id="fil2AB20C5F7EB0735C676FD0277E49321D" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\rarrowup.gif" />
+                                </Component>
+                                <Component Id="cmpBCA9F817D1A25583E14C6EC682103FDD" Guid="*">
+                                    <File Id="fil010DD60F9D9846AF7A51D214D5F12EC7" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\tl.gif" />
+                                </Component>
+                                <Component Id="cmpEDA1BD2D5A96BAAE615266C4AE436109" Guid="*">
+                                    <File Id="fil25AF524F2E4FC663DA893DBF4A940A7E" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\tl.png" />
+                                </Component>
+                                <Component Id="cmpA553CC872F6A20C0F30F6468958E2BCC" Guid="*">
+                                    <File Id="filE9C449A4D01159A36664D73578BFB7E6" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\tr.gif" />
+                                </Component>
+                                <Component Id="cmp8E6C45A7BB6C21BAAB43C3177995EFA6" Guid="*">
+                                    <File Id="fil9EF1987B2FD8558836205377535209A4" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\tr.png" />
+                                </Component>
+                                <Component Id="cmp21DF996E30EDE5DDEB9BAA68DB0B9AFB" Guid="*">
+                                    <File Id="fil8FB698E5530D56F8631D6822182FC221" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\images\wait.gif" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dir2C658BDDE9B30A7E4E69D5E66CDE337A" Name="lib">
+                                <Component Id="cmpE3794AF6113AD20C9A08C3144320E726" Guid="*">
+                                    <File Id="fil91A4C2BE9A9EB35C08D9959FB7024562" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\lib\jquery-1.3.2.js" />
+                                </Component>
+                                <Component Id="cmpE493C3EE4766F229D78E9C838D30D50D" Guid="*">
+                                    <File Id="fil45B0CFEE4CD44AD217E2CF4E574FCB9C" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\lib\jquery.bgiframe.js" />
+                                </Component>
+                                <Component Id="cmpFA33E15328C8F73D86301F7F9AA34113" Guid="*">
+                                    <File Id="filCA19BAEAD072DCD577E483FB7D720B6C" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\lib\jquery.bgiframe.min.js" />
+                                </Component>
+                                <Component Id="cmpB14EDD933EE486F841E6A9873697BA5F" Guid="*">
+                                    <File Id="filE0AADC013C8E7C4EB88609BC401571C2" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\cluetip\lib\jquery.hoverIntent.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dir746F76AC3EADE69D848755AB82EF2AF7" Name="Plugins">
+                            <Component Id="cmpD0A7D716FBA0AAD1ED4FC509F197CEF4" Guid="*">
+                                <File Id="filAA79F6648D760A0EE9AE52BD650EE314" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\effects.core.js" />
+                            </Component>
+                            <Component Id="cmp199A949D202C34B9BA48DD78CC493DE8" Guid="*">
+                                <File Id="fil6972B2F0920B3917B3BECBD0ADC722AF" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\effects.highlight.js" />
+                            </Component>
+                            <Component Id="cmp39671642FA4B4FBBAB9340D233F2DFDD" Guid="*">
+                                <File Id="fil1440CBD5571FCACB0608F0C2B1888249" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\jquery.bgiframe.js" />
+                            </Component>
+                            <Component Id="cmp5B6B7CA54F888FB6C4A3602F2E5FCFAA" Guid="*">
+                                <File Id="fil2F3002A808FB6A0F85BA9F3981DF12CB" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\jquery.blockUI.js" />
+                            </Component>
+                            <Component Id="cmp35F801404620BD5D6B8DA5753B0EBC93" Guid="*">
+                                <File Id="filB8CE07AB7A83C4CFCBF0519C968BB227" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\jquery.dimensions.js" />
+                            </Component>
+                            <Component Id="cmp3ED05935E0C00647931A604470215479" Guid="*">
+                                <File Id="filB2B080F56B812060D27F789F5C71A041" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\jquery.json-2.2.min.js" />
+                            </Component>
+                            <Component Id="cmpAA4C13514BF9132CEB852E2A3C0409F7" Guid="*">
+                                <File Id="fil3893B4158A6E62DAF4C1E92B16EF186C" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\jquery.maxlength.js" />
+                            </Component>
+                            <Component Id="cmp1AFD208EDA2416301CD79DE4284EB119" Guid="*">
+                                <File Id="fil10D2C06AA054A129A01D7696C770FB4E" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Content\Scripts\jQuery\Plugins\jquery.tooltip.pack.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+            <Directory Id="dir127D3AA9AEF1B93D17F7239ABF22CBF0" Name="Pages">
+                <Component Id="cmp97A9DD11B29941AFA1B26DC3CFC4FA23" Guid="*">
+                    <File Id="fil06B06D7D7303B876B66EBEEA09ABF4DC" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Pages\ConfirmAccountInformation.aspx" />
+                </Component>
+                <Component Id="cmpDF445614E15144FA3AE6ACA9B8F472A4" Guid="*">
+                    <File Id="fil957AED052C2F3DE956408A5658984FCD" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Pages\RegisterNewAccount.aspx" />
+                </Component>
+            </Directory>
+            <Directory Id="dir56C9B5E4F9E33CD491865A6AA9D234EF" Name="Shared">
+                <Component Id="cmp7F293AFF091682AE8AF15FB931827712" Guid="*">
+                    <File Id="fil8E9332DAAD74F4139E23C13070F063AE" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Shared\ErrorPage.html" />
+                </Component>
+                <Component Id="cmp300320BBE1E6DD67CB63234A8C0B6961" Guid="*">
+                    <File Id="fil449B22ABA5ED2441E4BB136E750023C6" KeyPath="yes" Source="$(var.Aria.SampleApps.WebClient.ProjectDir)\Shared\Site.Master" />
+                </Component>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="Aria.SampleApps.WebClient_Project">
+            <ComponentRef Id="cmpE7FB32C371ED24C4BC32955CC47AD489" />
+            <ComponentRef Id="cmp6A4F9D28DF6F992FCE04768A605F3F6B" />
+            <ComponentRef Id="cmpCDB7F4EFDEF1E65C3B12BEBAD7E4D7EA" />
+            <ComponentRef Id="cmp3E17CB5CF5AA8CE186D6FD97F507DB12" />
+            <ComponentRef Id="cmp3CC41973938D49D0FDE5586AE6CDEB37" />
+            <ComponentRef Id="cmp1B4E6BAF5FD410F3D3BA9D437CEBB945" />
+            <ComponentRef Id="cmpD0A19C224598D564F4347D48FA63B8F7" />
+            <ComponentRef Id="cmp540410D1C198FEBB64AA9FD77576A472" />
+            <ComponentRef Id="cmp301438B4833836C20F9A0B19FAADB7C2" />
+            <ComponentRef Id="cmp04A4FF2FF4B5E086F7ADF51D57C82D5E" />
+            <ComponentRef Id="cmp7326E31DBDEE89770BB29BACAAE330F5" />
+            <ComponentRef Id="cmp68388EF31680ED39860CB814ECCDCBFB" />
+            <ComponentRef Id="cmp4B8A92BBB8CE43803B18310D4F0D7EE2" />
+            <ComponentRef Id="cmp2B176FAFA7DA40CFC603AC5D2BB37FC5" />
+            <ComponentRef Id="cmp707EE8DE4884C15AF76D35D8FB2DDD3A" />
+            <ComponentRef Id="cmp6320BA46BEAEE81BA1EA8A1A8155A547" />
+            <ComponentRef Id="cmpDC5B7AF5316986F28784451B894C4600" />
+            <ComponentRef Id="cmpF2B824BCB23F078BEB917A5334FEB209" />
+            <ComponentRef Id="cmpB6242EA7EDF18F4AAD1449D627443453" />
+            <ComponentRef Id="cmp88BFC8B4B115D9B2E4BA33C7248DB0F6" />
+            <ComponentRef Id="cmp2BC27B0941CF5B74E937B9E10198C2B1" />
+            <ComponentRef Id="cmp89DF31359B58798BC576890F7ACCC4D1" />
+            <ComponentRef Id="cmp922DB004887080731C38A6ABC5434D65" />
+            <ComponentRef Id="cmpFF03591E2D2B9B2AA2AA444299A693DB" />
+            <ComponentRef Id="cmp7B7FC148972D8161B3D856F5BE43EDD9" />
+            <ComponentRef Id="cmpB0505DC0C66B24CF6254424190835E07" />
+            <ComponentRef Id="cmp021DF6B131D81D5AD83DD4DFDC47529A" />
+            <ComponentRef Id="cmp831168DA88E6721F87CA8943B74B049C" />
+            <ComponentRef Id="cmp0D87C2BA4F9693880C27A14B00448B52" />
+            <ComponentRef Id="cmp3F99120A1BAB192C606C8AB3CFA0FAB8" />
+            <ComponentRef Id="cmp0378F4A7B3C4A83707EFA74729FBE330" />
+            <ComponentRef Id="cmp3CAF3B12A9D3C16BAA8EE20650878632" />
+            <ComponentRef Id="cmp585799D25DB9C1EA56C46AF85B66377A" />
+            <ComponentRef Id="cmp6AFD71B9D72FA66BD8EE6E64DDED7D08" />
+            <ComponentRef Id="cmp8F4BBB2CD9123C823FD6BD9F70952EA5" />
+            <ComponentRef Id="cmpD8323A748097FDCB117A0B6C221C27A3" />
+            <ComponentRef Id="cmpCAACD469B60832049893D73A765E7F9F" />
+            <ComponentRef Id="cmp0BA0B94D9987CA45623BE89116F283A6" />
+            <ComponentRef Id="cmp19A25509550BB4AFDBB50AB8DA841B7B" />
+            <ComponentRef Id="cmpB08204760A335CA3DDE5448EE5AC2B2A" />
+            <ComponentRef Id="cmp9A6FDA863DF244063562A1A07427E80D" />
+            <ComponentRef Id="cmp48A0647152F8384B7F94EAA1D3111902" />
+            <ComponentRef Id="cmpC9856B3FE2724A8EF5E35BB1B57B4BB0" />
+            <ComponentRef Id="cmp1527861B430F3EB7F9E438CA6ECCFA71" />
+            <ComponentRef Id="cmp133FD85124EE763720A23BAA6382EBC8" />
+            <ComponentRef Id="cmpA0492DCDCBB7661518C26CAF418C7F07" />
+            <ComponentRef Id="cmpD2D7F2D2F46023CCB5755E531030B5E7" />
+            <ComponentRef Id="cmpCCD56B0CF90FB568D768D480EDA47ED1" />
+            <ComponentRef Id="cmpEBBBCA005E4480792758BCF0851A34D5" />
+            <ComponentRef Id="cmpA06C5F68739CCD39670940DC5ADEB670" />
+            <ComponentRef Id="cmp184FEF3B0EE01C10C930E1D088387CB1" />
+            <ComponentRef Id="cmpE7955DED7146E26D20668F1DD268AF76" />
+            <ComponentRef Id="cmp2D6020004479015AE9CBE8D1FF6E6FFC" />
+            <ComponentRef Id="cmp8A857DEF6DF1BC2F9784AFB633DA7755" />
+            <ComponentRef Id="cmpD6FC15B2D7724E47ED1FCDFD68BC926D" />
+            <ComponentRef Id="cmp88692C13F47942913AD168CD1F8FC1AB" />
+            <ComponentRef Id="cmp47A3E65315B7E361D656429B868B8602" />
+            <ComponentRef Id="cmpBF7CA7DA7FEFC40B09EE457BE504F813" />
+            <ComponentRef Id="cmpB1FAB9A072C4E8AED40E2496A4FBEA35" />
+            <ComponentRef Id="cmpAE31C25E199DE6E51D33844105641233" />
+            <ComponentRef Id="cmp97B57856499F888061823B800954CFEF" />
+            <ComponentRef Id="cmpE105A9EA445769346BD9750B415426D7" />
+            <ComponentRef Id="cmp97E35A078DDFB6BBB42A4A0F11E4602F" />
+            <ComponentRef Id="cmpDF7DCAA2EDC8BF4E0F6C2AD8DE09C83D" />
+            <ComponentRef Id="cmpD0B9178D5810443C27EBCF49E65DBE2A" />
+            <ComponentRef Id="cmp2486B32E0405DCCAC83F8572537CA4BB" />
+            <ComponentRef Id="cmp2F4ECB21F32C54B59A60BE754DFC00B0" />
+            <ComponentRef Id="cmp88F4DB29D25C4D248BC1D28FBF5D5585" />
+            <ComponentRef Id="cmp89A4596874DBCDDD51ECE67ED2084105" />
+            <ComponentRef Id="cmpA9EF3D5CABB35DEB110D549AD74810D5" />
+            <ComponentRef Id="cmpA16F8D83F80E87E54E66CFE9B97A63C8" />
+            <ComponentRef Id="cmp4D33E583DE2B4850AFF4D17B6151EAB3" />
+            <ComponentRef Id="cmp2FC7C244B7B395426D63034E01E364F4" />
+            <ComponentRef Id="cmpD2B2CA76E8386E1544844C01B4252B17" />
+            <ComponentRef Id="cmp7BEFA04D14E432D5209F3B6FD857455F" />
+            <ComponentRef Id="cmp4A853D322DF790052A278F272F41C89E" />
+            <ComponentRef Id="cmp8656DD9BEDA38BFC4C667CB2AF6F5EF6" />
+            <ComponentRef Id="cmpA3C9D05D15B99422C360AC1E703AD445" />
+            <ComponentRef Id="cmpE3E697530494D02798BC7FA02784D969" />
+            <ComponentRef Id="cmp491162979C6AA5D86089A39DC88B5F78" />
+            <ComponentRef Id="cmp95FF5CE00B94A90E3CB04FEE23D859D8" />
+            <ComponentRef Id="cmp16214B7326D3B0A498F6A5A3BEC00772" />
+            <ComponentRef Id="cmp5E8488186713A6E5554FF0286823B190" />
+            <ComponentRef Id="cmp8CEB1B5820053BDEC84766001D537D96" />
+            <ComponentRef Id="cmp585EAFAC0A023387A446A8E42FD5AF12" />
+            <ComponentRef Id="cmp83DD3FA9111CB5857713517670CF8FAC" />
+            <ComponentRef Id="cmp6433F449D01AF932D0EA03EDBBDA4274" />
+            <ComponentRef Id="cmp530C25700BFBC6C954227416E94E78E3" />
+            <ComponentRef Id="cmpC4FE706D967994460357005A5A17C915" />
+            <ComponentRef Id="cmp238E90369C497FEDC71398EA3BD55CE0" />
+            <ComponentRef Id="cmpBCA9F817D1A25583E14C6EC682103FDD" />
+            <ComponentRef Id="cmpEDA1BD2D5A96BAAE615266C4AE436109" />
+            <ComponentRef Id="cmpA553CC872F6A20C0F30F6468958E2BCC" />
+            <ComponentRef Id="cmp8E6C45A7BB6C21BAAB43C3177995EFA6" />
+            <ComponentRef Id="cmp21DF996E30EDE5DDEB9BAA68DB0B9AFB" />
+            <ComponentRef Id="cmpE3794AF6113AD20C9A08C3144320E726" />
+            <ComponentRef Id="cmpE493C3EE4766F229D78E9C838D30D50D" />
+            <ComponentRef Id="cmpFA33E15328C8F73D86301F7F9AA34113" />
+            <ComponentRef Id="cmpB14EDD933EE486F841E6A9873697BA5F" />
+            <ComponentRef Id="cmpD0A7D716FBA0AAD1ED4FC509F197CEF4" />
+            <ComponentRef Id="cmp199A949D202C34B9BA48DD78CC493DE8" />
+            <ComponentRef Id="cmp39671642FA4B4FBBAB9340D233F2DFDD" />
+            <ComponentRef Id="cmp5B6B7CA54F888FB6C4A3602F2E5FCFAA" />
+            <ComponentRef Id="cmp35F801404620BD5D6B8DA5753B0EBC93" />
+            <ComponentRef Id="cmp3ED05935E0C00647931A604470215479" />
+            <ComponentRef Id="cmpAA4C13514BF9132CEB852E2A3C0409F7" />
+            <ComponentRef Id="cmp1AFD208EDA2416301CD79DE4284EB119" />
+            <ComponentRef Id="cmp97A9DD11B29941AFA1B26DC3CFC4FA23" />
+            <ComponentRef Id="cmpDF445614E15144FA3AE6ACA9B8F472A4" />
+            <ComponentRef Id="cmp7F293AFF091682AE8AF15FB931827712" />
+            <ComponentRef Id="cmp300320BBE1E6DD67CB63234A8C0B6961" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

@@ -1,0 +1,3 @@
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\Installer\en-us\cab1.cab
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\Installer\en-us\FreeRegInstaller.msi
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\Installer\en-us\FreeRegInstaller.wixpdb

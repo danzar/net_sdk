@@ -1,0 +1,10 @@
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Fullreg\SourceCode\Fullreg\FullRegSetup\bin\Debug\en-us\cab1.cab
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Fullreg\SourceCode\Fullreg\FullRegSetup\bin\Debug\en-us\FullRegSetup.msi
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Fullreg\SourceCode\Fullreg\FullRegSetup\bin\Debug\en-us\FullRegSetup.wixpdb
+obj\Debug\Aria.SampleApps.WebClient.wixobj
+obj\Debug\InstallationAddressDlg.wixobj
+obj\Debug\MyUI.wixobj
+obj\Debug\Product.wixobj
+obj\Debug\FullRegSetup.wixproj.BindContentsFileListen-us.txt
+obj\Debug\FullRegSetup.wixproj.BindOutputsFileListen-us.txt
+obj\Debug\FullRegSetup.wixproj.BindBuiltOutputsFileListen-us.txt

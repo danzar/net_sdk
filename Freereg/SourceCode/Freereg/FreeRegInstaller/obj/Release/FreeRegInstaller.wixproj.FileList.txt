@@ -1,0 +1,13 @@
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\SourceCode\Freereg\FreeRegInstaller\bin\Release\en-us\cab1.cab
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\SourceCode\Freereg\FreeRegInstaller\bin\Release\en-us\FreeRegInstaller.msi
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\SourceCode\Freereg\FreeRegInstaller\bin\Release\en-us\FreeRegInstaller.wixpdb
+obj\Release\Aria.SampleApps.WebClient.wixobj
+obj\Release\InstallationAddressDlg.wixobj
+obj\Release\MyUI.wixobj
+obj\Release\Product.wixobj
+obj\Release\FreeRegInstaller.wixproj.BindContentsFileListen-us.txt
+obj\Release\FreeRegInstaller.wixproj.BindOutputsFileListen-us.txt
+obj\Release\FreeRegInstaller.wixproj.BindBuiltOutputsFileListen-us.txt
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\Installer\en-us\cab1.cab
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\Installer\en-us\FreeRegInstaller.msi
+C:\Manivannan\Migration\6.0\net_DevCentral\net\Freereg\Installer\en-us\FreeRegInstaller.wixpdb
