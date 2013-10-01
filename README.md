@@ -1,8 +1,5 @@
-asp_dotnet_sdk
-==============
-
 Aria .net SDK
--------------
+==============
 Setup Instructions:
 -------------------
 1.	Generate the supporting CS files for REST mode of SDK using SDK Generator.
