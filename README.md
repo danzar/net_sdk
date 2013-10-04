@@ -27,9 +27,9 @@ Build Instructions:
 
 8.	The repository also has two web applications that explains how these SDK libraries can be used in web applications. The usage of it is explained below.
 
-Using Regn web apps:
---------------------
-5.	To test FullReg and FreeReg web applications, copy the above generated library files to library/AriaSDK in FreeReg and FullReg solution directory.
-6.	Open the solution file in Visual Studio 2012 and build it (build the installer project also if any component is modified).
-7.	By executing Installer (that resides in all client application folder) host the application in IIS 
-8.	Then open the application URL in browser and observe the account registration wizard.
+Using Registration web apps:
+----------------------------
+1.	To test FullReg and FreeReg web applications, copy the above generated library files to library/AriaSDK in FreeReg and FullReg solution directory.
+2.	Open the solution file in Visual Studio 2012 and build it (build the installer project also if any component is modified).
+3.	By executing Installer (that resides in all client application folder) host the application in IIS. Please refer the 'Installation guide.doc' for the steps to use the Installer.
+4.	Then open the application URL in browser and observe the account registration wizard.
