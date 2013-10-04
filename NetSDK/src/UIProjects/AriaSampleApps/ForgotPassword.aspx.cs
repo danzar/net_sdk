@@ -57,7 +57,9 @@ public partial class ForgotPassword : System.Web.UI.Page
           {
             get_acct_details_allRequest acctRequest = new get_acct_details_allRequest
                                                           {
-                                                              acct_no = valResponse.account_no,
+                                                              //commented by manivannan
+                                                              //acct_no = valResponse.account_no,
+                                                              acct_no = Convert.ToInt64(valResponse.account_no),
                                                               auth_key = ConfigFactory.GetAriaAuthorizationKey(),
                                                               client_no = ConfigFactory.GetAriaClientNumber()
                                                           };
@@ -77,7 +79,9 @@ public partial class ForgotPassword : System.Web.UI.Page
               {
                 update_acct_credentialsRequest credRequest = new update_acct_credentialsRequest
                                                                  {
-                                                                     account_no = valResponse.account_no,
+                                                                     //commented by manivannan
+                                                                     //account_no = valResponse.account_no,
+                                                                     account_no = Convert.ToInt64( valResponse.account_no),
                                                                      auth_key = ConfigFactory.GetAriaAuthorizationKey(),
                                                                      client_no = ConfigFactory.GetAriaClientNumber(),
                                                                      password = txtPassword.Value.Trim()

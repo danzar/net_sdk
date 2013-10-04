@@ -24,7 +24,8 @@ public partial class AddAccountPlanInfo : Page
         get_client_plans_allRequest plansRequest = new get_client_plans_allRequest()
                                               {
                                                 auth_key = ConfigFactory.GetAriaAuthorizationKey(),
-                                                client_no = ConfigFactory.GetAriaClientNumber()
+                                                client_no = ConfigFactory.GetAriaClientNumber(),
+                                                plan_no = null
                                               };
 
         get_client_plans_allResponse plansResponse = systemServices.get_client_plans_all(plansRequest);

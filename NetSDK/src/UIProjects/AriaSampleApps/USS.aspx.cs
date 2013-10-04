@@ -32,12 +32,14 @@ namespace Aria
 
                     if (response.error_code == 0)
                     {
-                        SessionSupport.CurrentAccountNumber = response.account_no;
+                        //commented by manivannan
+                        //SessionSupport.CurrentAccountNumber =  response.account_no;
+                        SessionSupport.CurrentAccountNumber =  Convert.ToInt64( response.account_no);
                         Page.ClientScript.RegisterStartupScript(typeof(Page),
                                                                 Guid.NewGuid().ToString(),
                                                                 "javascript:toggleTabs('tab1');",
                                                                 true);
-                        InitializeForm(response.account_no);
+                        InitializeForm(Convert.ToInt64( response.account_no));
                     }
                     else
                     {
