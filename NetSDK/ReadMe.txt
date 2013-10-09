@@ -1,4 +1,4 @@
-NOTE: This SDK is only compatible with Visual Studio 2010 and 2012.
+NOTE: This SDK is compatible only with Visual Studio 2010 and 2012.
 Setting up the solution environment:
 Set up an iis virtual directory for http://Localhost/AriaSampleApps2010 and have its directory be src/UIProjects/AriaSampleApps
 Convert this directory to an application.
@@ -11,8 +11,8 @@ In addition, you must run Visual Studio in the context of an administrator accou
 
 In the Web.config (located in \src\UIProjects\AriaSampleApps):
 Please make sure valid values for the following keys are present (below values are an example, but may be different):
-<add key="aria-client-number" value="38000" />
-<add key="aria-authorization-key" value="tmENa76cwceNqeRKekBBf9WXBgETEtNT" />
+<add key="aria-client-number" value="100" />
+<add key="aria-authorization-key" value="zzzz" />
 
 WSDL:
 -----
@@ -23,7 +23,6 @@ WSDL:
 <xsd:element name="billable_acct_no" type="xsd:long" minOccurs="0" maxOccurs="1"/>
 will become,
 <xsd:element name="billable_acct_no" type="xsd:long" nillable="true" minOccurs="0" maxOccurs="1"/>
-
 
 Configure the build script:
 ---------------------------
