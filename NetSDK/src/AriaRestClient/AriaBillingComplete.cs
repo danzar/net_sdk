@@ -9157,6 +9157,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&acct_no=" + request.acct_no;
             url += "&dispute_no=" + request.dispute_no;
             url += "&settlement_action=" + request.settlement_action;
+            url += "&comments=" + request.comments;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9348,6 +9349,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             StringReader sr = new StringReader(returnString);
             JsonTextReader reader = new JsonTextReader(sr);
             kill_sessionResponse myDeserializedObj = json.Deserialize(reader, typeof(kill_sessionResponse)) as kill_sessionResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public authenticate_callerResponse authenticate_caller(authenticate_callerRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("authenticate_caller");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            authenticate_callerResponse myDeserializedObj = json.Deserialize(reader, typeof(authenticate_callerResponse)) as authenticate_callerResponse;
             reader.Close();
             return myDeserializedObj;
         }

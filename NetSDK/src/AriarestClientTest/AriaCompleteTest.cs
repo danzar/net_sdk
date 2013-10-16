@@ -4655,7 +4655,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             acct_no = 1,
             dispute_no = 1,
-            settlement_action = 1
+            settlement_action = 1,
+            comments = ""
             };
 
         var response = mService.settle_dispute_hold(request);
@@ -4731,6 +4732,19 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.kill_session(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void authenticate_caller()
+    {
+       authenticate_callerRequest request = new authenticate_callerRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey
+            };
+
+        var response = mService.authenticate_caller(request);
         Assert.IsNotNull(response);
     }
 
