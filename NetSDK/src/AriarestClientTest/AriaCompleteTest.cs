@@ -197,7 +197,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             filter_currency_cd = "",
             return_no_cost_items = "",
-            filter_item_no = 1
+            filter_item_no = 1,
+            include_inactive_items = ""
             };
 
         var response = mService.get_client_items_all(request);
@@ -487,7 +488,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             filter_currency_cd = "",
             return_no_cost_items = "",
-            filter_item_no = 1
+            filter_item_no = 1,
+            include_inactive_items = ""
             };
 
         var response = mService.get_client_items_basic(request);
@@ -1275,7 +1277,32 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             inAuthValue = "",
             alt_client_acct_group_id = "",
             track_data1 = "",
-            track_data2 = ""
+            track_data2 = "",
+            alt_pay_method = 1,
+            cc_number = "4111111111111111",
+            cc_expire_mm = DateTime.Now.Month,
+            cc_expire_yyyy = DateTime.Now.Year,
+            bank_routing_num = "",
+            bank_acct_num = "",
+            bill_company_name = "",
+            bill_first_name = "",
+            bill_middle_initial = "",
+            bill_last_name = "",
+            bill_address1 = "",
+            bill_address2 = "",
+            bill_address3 = "",
+            bill_city = "",
+            bill_locality = "",
+            bill_state_prov = "",
+            bill_zip = "",
+            bill_country = "",
+            bill_email = "",
+            bill_phone = "",
+            bill_phone_extension = "",
+            bill_cell_phone = "",
+            bill_work_phone = "",
+            bill_work_phone_extension = "",
+            record_cc_on_auth_failure = ""
             };
 
         var response = mService.authorize_electronic_payment(request);
@@ -3722,6 +3749,32 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
     }
 
     [Test]
+    public void get_usage_summary_by_type()
+    {
+       get_usage_summary_by_typeRequest request = new get_usage_summary_by_typeRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            acct_no = 1,
+            user_id = "",
+            usage_type_filter = 1,
+            date_filter_start_date = "",
+            date_filter_start_time = "",
+            date_filter_end_date = "",
+            date_filter_end_time = "",
+            billed_filter = 1,
+            billing_period_flag = 1,
+            usage_qualifier_1 = new[]{new usage_qualifier_1_row()},
+            usage_qualifier_2 = new[]{new usage_qualifier_2_row()},
+            usage_qualifier_3 = new[]{new usage_qualifier_3_row()},
+            usage_qualifier_4 = new[]{new usage_qualifier_4_row()}
+            };
+
+        var response = mService.get_usage_summary_by_type(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
     public void get_inv_no_from_bal_xfer()
     {
        get_inv_no_from_bal_xferRequest request = new get_inv_no_from_bal_xferRequest
@@ -4499,6 +4552,24 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.issue_refund_to_acct(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void update_refund_check_no()
+    {
+       update_refund_check_noRequest request = new update_refund_check_noRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            transaction_id = 1,
+            refund_check_number = 1,
+            acct_no = 1,
+            acct_user_id = "",
+            client_acct_id = ""
+            };
+
+        var response = mService.update_refund_check_no(request);
         Assert.IsNotNull(response);
     }
 

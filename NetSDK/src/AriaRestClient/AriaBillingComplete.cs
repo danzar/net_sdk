@@ -259,6 +259,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&filter_currency_cd=" + request.filter_currency_cd;
             url += "&return_no_cost_items=" + request.return_no_cost_items;
             url += "&filter_item_no=" + request.filter_item_no;
+            url += "&include_inactive_items=" + request.include_inactive_items;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -949,6 +950,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&filter_currency_cd=" + request.filter_currency_cd;
             url += "&return_no_cost_items=" + request.return_no_cost_items;
             url += "&filter_item_no=" + request.filter_item_no;
+            url += "&include_inactive_items=" + request.include_inactive_items;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2637,6 +2639,31 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
+            url += "&alt_pay_method=" + request.alt_pay_method;
+            url += "&cc_number=" + request.cc_number;
+            url += "&cc_expire_mm=" + request.cc_expire_mm;
+            url += "&cc_expire_yyyy=" + request.cc_expire_yyyy;
+            url += "&bank_routing_num=" + request.bank_routing_num;
+            url += "&bank_acct_num=" + request.bank_acct_num;
+            url += "&bill_company_name=" + request.bill_company_name;
+            url += "&bill_first_name=" + request.bill_first_name;
+            url += "&bill_middle_initial=" + request.bill_middle_initial;
+            url += "&bill_last_name=" + request.bill_last_name;
+            url += "&bill_address1=" + request.bill_address1;
+            url += "&bill_address2=" + request.bill_address2;
+            url += "&bill_address3=" + request.bill_address3;
+            url += "&bill_city=" + request.bill_city;
+            url += "&bill_locality=" + request.bill_locality;
+            url += "&bill_state_prov=" + request.bill_state_prov;
+            url += "&bill_zip=" + request.bill_zip;
+            url += "&bill_country=" + request.bill_country;
+            url += "&bill_email=" + request.bill_email;
+            url += "&bill_phone=" + request.bill_phone;
+            url += "&bill_phone_extension=" + request.bill_phone_extension;
+            url += "&bill_cell_phone=" + request.bill_cell_phone;
+            url += "&bill_work_phone=" + request.bill_work_phone;
+            url += "&bill_work_phone_extension=" + request.bill_work_phone_extension;
+            url += "&record_cc_on_auth_failure=" + request.record_cc_on_auth_failure;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7299,6 +7326,52 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             return myDeserializedObj;
         }
 
+        public get_usage_summary_by_typeResponse get_usage_summary_by_type(get_usage_summary_by_typeRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("get_usage_summary_by_type");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&acct_no=" + request.acct_no;
+            url += "&user_id=" + request.user_id;
+            url += "&usage_type_filter=" + request.usage_type_filter;
+            url += "&date_filter_start_date=" + request.date_filter_start_date;
+            url += "&date_filter_start_time=" + request.date_filter_start_time;
+            url += "&date_filter_end_date=" + request.date_filter_end_date;
+            url += "&date_filter_end_time=" + request.date_filter_end_time;
+            url += "&billed_filter=" + request.billed_filter;
+            url += "&billing_period_flag=" + request.billing_period_flag;
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_1);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_2);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_3);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_4);
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            get_usage_summary_by_typeResponse myDeserializedObj = json.Deserialize(reader, typeof(get_usage_summary_by_typeResponse)) as get_usage_summary_by_typeResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
         public get_inv_no_from_bal_xferResponse get_inv_no_from_bal_xfer(get_inv_no_from_bal_xferRequest request)
         {
             if (request == null)
@@ -8816,6 +8889,44 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             StringReader sr = new StringReader(returnString);
             JsonTextReader reader = new JsonTextReader(sr);
             issue_refund_to_acctResponse myDeserializedObj = json.Deserialize(reader, typeof(issue_refund_to_acctResponse)) as issue_refund_to_acctResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public update_refund_check_noResponse update_refund_check_no(update_refund_check_noRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("update_refund_check_no");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&transaction_id=" + request.transaction_id;
+            url += "&refund_check_number=" + request.refund_check_number;
+            url += "&acct_no=" + request.acct_no;
+            url += "&acct_user_id=" + request.acct_user_id;
+            url += "&client_acct_id=" + request.client_acct_id;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            update_refund_check_noResponse myDeserializedObj = json.Deserialize(reader, typeof(update_refund_check_noResponse)) as update_refund_check_noResponse;
             reader.Close();
             return myDeserializedObj;
         }
