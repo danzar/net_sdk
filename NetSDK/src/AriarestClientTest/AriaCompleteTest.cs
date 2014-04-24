@@ -1101,7 +1101,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             account_no = AccountNumber,
             resp_level_cd = 1,
-            senior_account_no = AccountNumber
+            senior_account_no = AccountNumber,
+            senior_acct_user_id = "",
+            client_senior_acct_id = ""
             };
 
         var response = mService.set_payment_responsibility(request);
@@ -2056,6 +2058,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_routing_no = "",
             resp_level_cd = 1,
             senior_acct_no = 1,
+            senior_acct_user_id = "",
+            client_senior_acct_id = "",
             functional_acct_groups = new[]{new functional_acct_groups_row()},
             collections_acct_groups = new[]{new collections_acct_groups_row()},
             supp_field_names = new[]{new supp_field_names_row()},
@@ -2089,7 +2093,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             track_data2 = "",
             do_write = "",
             tax_exemption_level = 1,
-            cn_alt_msg_template_no = 1
+            cn_alt_msg_template_no = 1,
+            invoice_approval_required = ""
             };
 
         var response = mService.create_acct_complete(request);
@@ -2192,6 +2197,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_track_data2 = "",
             a1_tax_exemption_level = 1,
             a1_cn_alt_msg_template_no = 1,
+            a1_invoice_approval_required = "",
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2279,6 +2285,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_track_data2 = "",
             a2_tax_exemption_level = 1,
             a2_cn_alt_msg_template_no = 1,
+            a2_invoice_approval_required = "",
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2366,6 +2373,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_track_data2 = "",
             a3_tax_exemption_level = 1,
             a3_cn_alt_msg_template_no = 1,
+            a3_invoice_approval_required = "",
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2453,6 +2461,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_track_data2 = "",
             a4_tax_exemption_level = 1,
             a4_cn_alt_msg_template_no = 1,
+            a4_invoice_approval_required = "",
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2539,7 +2548,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_track_data1 = "",
             a5_track_data2 = "",
             a5_tax_exemption_level = 1,
-            a5_cn_alt_msg_template_no = 1
+            a5_cn_alt_msg_template_no = 1,
+            a5_invoice_approval_required = ""
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -2707,7 +2717,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             usage_qualifier_1 = new[]{new usage_qualifier_1_row()},
             usage_qualifier_2 = new[]{new usage_qualifier_2_row()},
             usage_qualifier_3 = new[]{new usage_qualifier_3_row()},
-            usage_qualifier_4 = new[]{new usage_qualifier_4_row()}
+            usage_qualifier_4 = new[]{new usage_qualifier_4_row()},
+            limit = 1,
+            offset = 1
             };
 
         var response = mService.get_usage_history(request);
@@ -2841,6 +2853,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             test_acct_ind = 1,
             resp_level_cd = 1,
             senior_acct_no = 1,
+            senior_acct_user_id = "",
+            client_senior_acct_id = "",
             client_acct_id = "",
             do_collect = "",
             change_status_after_coll = "",
@@ -2869,7 +2883,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             cn_alt_msg_template_no = 1,
             promo_cd = "",
             invoice_unbilled_usage = "",
-            coupon_code = ""
+            coupon_code = "",
+            userid = UserId,
+            invoice_approval_required = ""
             };
 
         var response = mService.update_acct_complete(request);
@@ -3324,7 +3340,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            acct_no = 1
+            acct_no = 1,
+            usage_details_flag = ""
             };
 
         var response = mService.get_unbilled_usage_summary(request);
@@ -3992,8 +4009,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             account_no = AccountNumber,
-            payment_amount = 1,
             reference_code = Guid.NewGuid().ToString(),
+            payment_amount = 1,
             comments = "",
             client_receipt_id = Guid.NewGuid().ToString(),
             specific_charge_transaction_id = new[]{new specific_charge_transaction_id_row()},
