@@ -2101,6 +2101,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&change_status_after_coll=" + request.change_status_after_coll;
             url += "&reset_dates_after_status=" + request.reset_dates_after_status;
             url += "&address3=" + request.address3;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2209,6 +2210,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&do_collect=" + request.do_collect;
             url += "&change_status_after_coll=" + request.change_status_after_coll;
             url += "&reset_dates_after_status=" + request.reset_dates_after_status;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2249,6 +2251,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&do_collect=" + request.do_collect;
             url += "&change_status_after_coll=" + request.change_status_after_coll;
             url += "&reset_dates_after_status=" + request.reset_dates_after_status;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2734,6 +2737,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&account_number=" + request.account_number;
             RestUtilities.addParameterValuesFromArray(ref url, request.plan_no_to_remove);
             url += "&remove_all_queued_plan_no=" + request.remove_all_queued_plan_no;
+            url += "&remove_terminate_pending=" + request.remove_terminate_pending;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3144,6 +3148,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&change_status_after_coll=" + request.change_status_after_coll;
             url += "&reset_dates_after_status=" + request.reset_dates_after_status;
             url += "&address3=" + request.address3;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5076,8 +5081,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
-            url += "&specified_usage_type_no=" + request.specified_usage_type_no;
             url += "&date_range_start=" + request.date_range_start;
+            url += "&specified_usage_type_no=" + request.specified_usage_type_no;
             url += "&date_range_end=" + request.date_range_end;
             url += "&specified_usage_type_code=" + request.specified_usage_type_code;
             RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_1);
@@ -7492,6 +7497,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&source_account_no=" + request.source_account_no;
             url += "&target_account_no=" + request.target_account_no;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7625,6 +7631,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
             url += "&force_balance_scope=" + request.force_balance_scope;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7845,6 +7852,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&credit_reason_code=" + request.credit_reason_code;
             url += "&comments=" + request.comments;
             RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id);
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8618,6 +8626,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bill_address3=" + request.bill_address3;
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8870,6 +8879,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&do_write=" + request.do_write;
             url += "&auto_calc_refund=" + request.auto_calc_refund;
             RestUtilities.addParameterValuesFromArray(ref url, request.invoices_to_reverse);
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9162,6 +9172,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&reason_code=" + request.reason_code;
             url += "&comments=" + request.comments;
             url += "&do_dispute=" + request.do_dispute;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9269,6 +9280,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&dispute_no=" + request.dispute_no;
             url += "&settlement_action=" + request.settlement_action;
             url += "&comments=" + request.comments;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();

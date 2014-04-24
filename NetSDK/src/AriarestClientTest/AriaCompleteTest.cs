@@ -999,7 +999,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             do_collect = "",
             change_status_after_coll = "",
             reset_dates_after_status = "y",
-            address3 = ""
+            address3 = "",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.update_acct_billing_contact(request);
@@ -1047,7 +1048,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_acct_num = "",
             do_collect = "",
             change_status_after_coll = "",
-            reset_dates_after_status = "y"
+            reset_dates_after_status = "y",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.set_pay_method_bank_draft(request);
@@ -1067,7 +1069,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             cc_number = "4111111111111111",
             do_collect = "",
             change_status_after_coll = "",
-            reset_dates_after_status = "y"
+            reset_dates_after_status = "y",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.set_pay_method_cc(request);
@@ -1332,7 +1335,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             account_number = 1,
             plan_no_to_remove = new[]{new plan_no_to_remove_row()},
-            remove_all_queued_plan_no = ""
+            remove_all_queued_plan_no = "",
+            remove_terminate_pending = ""
             };
 
         var response = mService.cancel_queued_service_plan(request);
@@ -1522,7 +1526,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             do_collect = "",
             change_status_after_coll = "",
             reset_dates_after_status = "y",
-            address3 = ""
+            address3 = "",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.update_existing_billing_info(request);
@@ -2695,8 +2700,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            specified_usage_type_no = 1,
             date_range_start = DateTime.Now.AddMonths(-1).ToShortDateString(),
+            specified_usage_type_no = 1,
             date_range_end = "",
             specified_usage_type_code = "",
             usage_qualifier_1 = new[]{new usage_qualifier_1_row()},
@@ -3830,7 +3835,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             source_account_no = 1,
-            target_account_no = 1
+            target_account_no = 1,
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.transfer_account_balance(request);
@@ -3923,7 +3929,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             alt_client_acct_group_id = "",
             track_data1 = "",
             track_data2 = "",
-            force_balance_scope = ""
+            force_balance_scope = "",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.settle_account_balance(request);
@@ -4043,7 +4050,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             credit_amount = 1,
             credit_reason_code = 1,
             comments = "",
-            specific_charge_transaction_id = new[]{new specific_charge_transaction_id_row()}
+            specific_charge_transaction_id = new[]{new specific_charge_transaction_id_row()},
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.apply_cash_credit(request);
@@ -4416,7 +4424,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             cancel_orders_on_discard = "",
             bill_address3 = "",
             track_data1 = "",
-            track_data2 = ""
+            track_data2 = "",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.manage_pending_invoice(request);
@@ -4548,7 +4557,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             comments = "",
             do_write = "",
             auto_calc_refund = "",
-            invoices_to_reverse = new[]{new invoices_to_reverse_row()}
+            invoices_to_reverse = new[]{new invoices_to_reverse_row()},
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.issue_refund_to_acct(request);
@@ -4680,7 +4690,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             amount = 1,
             reason_code = 1,
             comments = "",
-            do_dispute = 1
+            do_dispute = 1,
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.create_writeoff_or_dispute(request);
@@ -4727,7 +4738,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             acct_no = 1,
             dispute_no = 1,
             settlement_action = 1,
-            comments = ""
+            comments = "",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.settle_dispute_hold(request);
