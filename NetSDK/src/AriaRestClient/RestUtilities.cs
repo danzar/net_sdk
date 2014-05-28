@@ -1089,6 +1089,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, eligible_service_types_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            eligible_service_types_row row = array[i];
+            url += "&eligible_service_types[" + i + "]=" + row.eligible_service_types;
+            
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, usage_qualifier_1_row[] array)
     {
         if (array == null) return;
@@ -1386,6 +1397,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&supp_plan_no[" + i + "]=" + row.supp_plan_no;
             url += "&supp_plan_units[" + i + "]=" + row.supp_plan_units;
             url += "&assignment_directive[" + i + "]=" + row.assignment_directive;
+            
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, multiple_coupons_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            multiple_coupons_row row = array[i];
+            url += "&coupon_codes[" + i + "]=" + row.coupon_codes;
             
         }
     }

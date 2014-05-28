@@ -1778,7 +1778,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             new_acct_custom_rates = new[]{new new_acct_custom_rates_row()},
             effective_date = "",
             offset_interval = 1,
-            contract_end_date = ""
+            contract_end_date = "",
+            sync_mstr_bill_dates_override = 1
             };
 
         var response = mService.assign_supp_plan(request);
@@ -1856,7 +1857,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             new_acct_custom_rates = new[]{new new_acct_custom_rates_row()},
             effective_date = "",
             offset_interval = 1,
-            invoice_unbilled_usage = ""
+            invoice_unbilled_usage = "",
+            sync_mstr_bill_dates_override = 1
             };
 
         var response = mService.replace_supp_plan(request);
@@ -2094,7 +2096,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             do_write = "",
             tax_exemption_level = 1,
             cn_alt_msg_template_no = 1,
-            invoice_approval_required = ""
+            invoice_approval_required = "",
+            create_session = ""
             };
 
         var response = mService.create_acct_complete(request);
@@ -2198,6 +2201,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_tax_exemption_level = 1,
             a1_cn_alt_msg_template_no = 1,
             a1_invoice_approval_required = "",
+            a1_create_session = "",
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2286,6 +2290,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_tax_exemption_level = 1,
             a2_cn_alt_msg_template_no = 1,
             a2_invoice_approval_required = "",
+            a2_create_session = "",
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2374,6 +2379,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_tax_exemption_level = 1,
             a3_cn_alt_msg_template_no = 1,
             a3_invoice_approval_required = "",
+            a3_create_session = "",
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2462,6 +2468,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_tax_exemption_level = 1,
             a4_cn_alt_msg_template_no = 1,
             a4_invoice_approval_required = "",
+            a4_create_session = "",
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2549,7 +2556,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_track_data2 = "",
             a5_tax_exemption_level = 1,
             a5_cn_alt_msg_template_no = 1,
-            a5_invoice_approval_required = ""
+            a5_invoice_approval_required = "",
+            a5_create_session = ""
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -2590,7 +2598,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             initial_credit_date = DateTime.Now.ToShortDateString(),
             percent_amount = 1,
             percent_eval_plan_no = 1,
-            percent_eval_service_no = 1
+            percent_eval_service_no = 1,
+            eligible_service_types = new[]{new eligible_service_types_row()}
             };
 
         var response = mService.create_advanced_service_credit(request);
@@ -3252,7 +3261,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_receipt_id = Guid.NewGuid().ToString(),
             alt_proration_start_date = "",
             coupon_codes = new[]{new coupon_codes_row()},
-            effective_date = ""
+            effective_date = "",
+            sync_mstr_bill_dates_override = 1
             };
 
         var response = mService.assign_supp_plan_multi(request);
@@ -4523,7 +4533,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bill_address3 = "",
             track_data1 = "",
             track_data2 = "",
-            alt_inv_template_no = 1
+            alt_inv_template_no = 1,
+            sync_mstr_bill_dates_override = 1,
+            multiple_coupons = new[]{new multiple_coupons_row()}
             };
 
         var response = mService.create_order_with_plans(request);

@@ -3700,6 +3700,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             url += "&contract_end_date=" + request.contract_end_date;
+            url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3838,6 +3839,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             url += "&invoice_unbilled_usage=" + request.invoice_unbilled_usage;
+            url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4276,6 +4278,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&tax_exemption_level=" + request.tax_exemption_level;
             url += "&cn_alt_msg_template_no=" + request.cn_alt_msg_template_no;
             url += "&invoice_approval_required=" + request.invoice_approval_required;
+            url += "&create_session=" + request.create_session;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4399,6 +4402,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_tax_exemption_level=" + request.a1_tax_exemption_level;
             url += "&a1_cn_alt_msg_template_no=" + request.a1_cn_alt_msg_template_no;
             url += "&a1_invoice_approval_required=" + request.a1_invoice_approval_required;
+            url += "&a1_create_session=" + request.a1_create_session;
             url += "&a2_alt_start_date=" + request.a2_alt_start_date;
             url += "&a2_client_acct_id=" + request.a2_client_acct_id;
             url += "&a2_userid=" + request.a2_userid;
@@ -4487,6 +4491,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_tax_exemption_level=" + request.a2_tax_exemption_level;
             url += "&a2_cn_alt_msg_template_no=" + request.a2_cn_alt_msg_template_no;
             url += "&a2_invoice_approval_required=" + request.a2_invoice_approval_required;
+            url += "&a2_create_session=" + request.a2_create_session;
             url += "&a3_alt_start_date=" + request.a3_alt_start_date;
             url += "&a3_client_acct_id=" + request.a3_client_acct_id;
             url += "&a3_userid=" + request.a3_userid;
@@ -4575,6 +4580,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_tax_exemption_level=" + request.a3_tax_exemption_level;
             url += "&a3_cn_alt_msg_template_no=" + request.a3_cn_alt_msg_template_no;
             url += "&a3_invoice_approval_required=" + request.a3_invoice_approval_required;
+            url += "&a3_create_session=" + request.a3_create_session;
             url += "&a4_alt_start_date=" + request.a4_alt_start_date;
             url += "&a4_client_acct_id=" + request.a4_client_acct_id;
             url += "&a4_userid=" + request.a4_userid;
@@ -4663,6 +4669,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_tax_exemption_level=" + request.a4_tax_exemption_level;
             url += "&a4_cn_alt_msg_template_no=" + request.a4_cn_alt_msg_template_no;
             url += "&a4_invoice_approval_required=" + request.a4_invoice_approval_required;
+            url += "&a4_create_session=" + request.a4_create_session;
             url += "&a5_alt_start_date=" + request.a5_alt_start_date;
             url += "&a5_client_acct_id=" + request.a5_client_acct_id;
             url += "&a5_userid=" + request.a5_userid;
@@ -4751,6 +4758,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_tax_exemption_level=" + request.a5_tax_exemption_level;
             url += "&a5_cn_alt_msg_template_no=" + request.a5_cn_alt_msg_template_no;
             url += "&a5_invoice_approval_required=" + request.a5_invoice_approval_required;
+            url += "&a5_create_session=" + request.a5_create_session;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4832,6 +4840,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&percent_amount=" + request.percent_amount;
             url += "&percent_eval_plan_no=" + request.percent_eval_plan_no;
             url += "&percent_eval_service_no=" + request.percent_eval_service_no;
+            RestUtilities.addParameterValuesFromArray(ref url, request.eligible_service_types);
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6174,6 +6183,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&alt_proration_start_date=" + request.alt_proration_start_date;
             RestUtilities.addParameterValuesFromArray(ref url, request.coupon_codes);
             url += "&effective_date=" + request.effective_date;
+            url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8785,6 +8795,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
             url += "&alt_inv_template_no=" + request.alt_inv_template_no;
+            url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
+            RestUtilities.addParameterValuesFromArray(ref url, request.multiple_coupons);
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
