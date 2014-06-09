@@ -6,65 +6,18 @@ using Aria.SDK.AriaServices.AriaWebServices.AriaComplete;
 
 namespace Aria.SDK.AriaServices.AriaWebServices
 {
-    public class AriaBillingComplete : IDisposable
+    public class AriaBillingComplete : AriaBillingBase
     {
-        #region attributes
-        public string URL;
-        #endregion attributes
-
         #region Constructor
         /*Creates a new AriaBillingComplete with no parms*/
-        public AriaBillingComplete() : this ("https://secure.unstable.dev.ariasystems.net/api/ws/api_ws_class_dispatcher.php")
+        public AriaBillingComplete() : base ("https://secure.unstable.dev.ariasystems.net/api/ws/api_ws_class_dispatcher.php")
         {
         }
         /*Creates a new AriaBillingComplete with URL parm*/
-        public AriaBillingComplete(String URL)
+        public AriaBillingComplete(String URL) : base (URL)
         {
-            if (URL == null)
-            {
-                return;
-            }
-            setURL(URL);
         }
-        #endregion
-
-        #region Disposable
-        public void Dispose()
-        {
-                GC.SuppressFinalize(this);
-        }
-        #endregion Disposable
-
-        #region gets
-        private static string getMethod()
-        {
-            return "POST";
-        }
-
-        private static string getContentType()
-        {
-            return "application/Json";
-        }
-
-        public string getURL()
-        {
-            return URL;
-        }
-        #endregion gets
-
-        #region sets
-        public void setURL(string url)
-        {
-            URL = url;
-        }
-        #endregion sets
-
-        #region General methods
-        protected string buildUrl(string restCallMethod)
-        {
-            return getURL() + "?output_format=json&rest_call=" + restCallMethod;
-        }
-        #endregion General methods
+        #endregion Constructor
 
         #region Api Calls
         public get_client_plans_allResponse get_client_plans_all(get_client_plans_allRequest request)
@@ -81,8 +34,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&acct_no=" + request.acct_no;
             url += "&promo_code=" + request.promo_code;
             url += "&parent_plan_no=" + request.parent_plan_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_names, "&supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_values, "&supp_field_values");
             url += "&include_all_rate_schedules=" + request.include_all_rate_schedules;
             url += "&include_plan_hierarchy=" + request.include_plan_hierarchy;
             
@@ -397,7 +350,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.web_vals_in);
+            RestUtilities.addParameterValuesFromArray(ref url, request.web_vals_in, "&web_vals_in");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -706,7 +659,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.event_list);
+            RestUtilities.addParameterValuesFromArray(ref url, request.event_list, "&event_list");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -740,7 +693,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.event_list);
+            RestUtilities.addParameterValuesFromArray(ref url, request.event_list, "&event_list");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1019,7 +972,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&session_id=" + request.session_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_params);
+            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_params, "&in_reg_uss_params");
             url += "&override_timeout_minutes=" + request.override_timeout_minutes;
             
             WebRequest webRequest = WebRequest.Create(url);
@@ -1055,7 +1008,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&session_id=" + request.session_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.param_names);
+            RestUtilities.addParameterValuesFromArray(ref url, request.param_names, "&param_names");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1090,7 +1043,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&session_id=" + request.session_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_params);
+            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_params, "&in_reg_uss_params");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1193,7 +1146,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&set_name=" + request.set_name;
-            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_config_params);
+            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_config_params, "&in_reg_uss_config_params");
             url += "&set_description=" + request.set_description;
             url += "&set_type_no=" + request.set_type_no;
             
@@ -1230,7 +1183,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&set_name=" + request.set_name;
-            RestUtilities.addParameterValuesFromArray(ref url, request.param_names);
+            RestUtilities.addParameterValuesFromArray(ref url, request.param_names, "&param_names");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1265,7 +1218,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&set_name=" + request.set_name;
-            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_config_params);
+            RestUtilities.addParameterValuesFromArray(ref url, request.in_reg_uss_config_params, "&in_reg_uss_config_params");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1333,7 +1286,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.inventory_item_stock);
+            RestUtilities.addParameterValuesFromArray(ref url, request.inventory_item_stock, "&inventory_item_stock");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2737,7 +2690,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&account_number=" + request.account_number;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no_to_remove);
+            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no_to_remove, "&plan_no_to_remove");
             url += "&remove_all_queued_plan_no=" + request.remove_all_queued_plan_no;
             url += "&remove_terminate_pending=" + request.remove_terminate_pending;
             
@@ -3696,7 +3649,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auto_offset_months_option=" + request.auto_offset_months_option;
             url += "&alt_proration_start_date=" + request.alt_proration_start_date;
             url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates, "&new_acct_custom_rates");
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             url += "&contract_end_date=" + request.contract_end_date;
@@ -3786,7 +3739,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&comments=" + request.comments;
             url += "&do_write=" + request.do_write;
             url += "&client_receipt_id=" + request.client_receipt_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates, "&new_acct_custom_rates");
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             
@@ -3835,7 +3788,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset_months=" + request.offset_months;
             url += "&auto_offset_months_option=" + request.auto_offset_months_option;
             url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates, "&new_acct_custom_rates");
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             url += "&invoice_unbilled_usage=" + request.invoice_unbilled_usage;
@@ -4191,8 +4144,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&userid=" + request.userid;
             url += "&status_cd=" + request.status_cd;
             url += "&master_plan_units=" + request.master_plan_units;
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plans);
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plan_units);
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plans, "&supp_plans");
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plan_units, "&supp_plan_units");
             url += "&notify_method=" + request.notify_method;
             url += "&promo_cd=" + request.promo_cd;
             url += "&password=" + request.password;
@@ -4243,10 +4196,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&senior_acct_no=" + request.senior_acct_no;
             url += "&senior_acct_user_id=" + request.senior_acct_user_id;
             url += "&client_senior_acct_id=" + request.client_senior_acct_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.functional_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.collections_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.functional_acct_groups, "&functional_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.collections_acct_groups, "&collections_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_names, "&supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_values, "&supp_field_values");
             url += "&test_acct_ind=" + request.test_acct_ind;
             url += "&status_until_alt_start=" + request.status_until_alt_start;
             url += "&balance_forward=" + request.balance_forward;
@@ -4254,24 +4207,24 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&do_full_invoicing=" + request.do_full_invoicing;
             url += "&do_prorated_invoicing=" + request.do_prorated_invoicing;
             url += "&master_plan_alt_rate_sched_no=" + request.master_plan_alt_rate_sched_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plan_alt_rate_sched_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plan_alt_rate_sched_no, "&supp_plan_alt_rate_sched_no");
             url += "&client_receipt_id=" + request.client_receipt_id;
             url += "&currency_cd=" + request.currency_cd;
             url += "&cvv=" + request.cvv;
             url += "&taxpayer_id=" + request.taxpayer_id;
             url += "&bill_agreement_id=" + request.bill_agreement_id;
             url += "&retroactive_start_date=" + request.retroactive_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.coupon_codes);
-            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.coupon_codes, "&coupon_codes");
+            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates, "&new_acct_custom_rates");
             url += "&alt_msg_template_no=" + request.alt_msg_template_no;
             url += "&seq_func_group_no=" + request.seq_func_group_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_plan_contracts);
+            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_plan_contracts, "&new_acct_plan_contracts");
             url += "&address3=" + request.address3;
             url += "&bill_address3=" + request.bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_func_acct_group_ids);
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_coll_acct_group_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_accumulation_config, "&usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.enable_usage_pooling_plan_no, "&enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_func_acct_group_ids, "&client_func_acct_group_ids");
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_coll_acct_group_ids, "&client_coll_acct_group_ids");
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
             url += "&do_write=" + request.do_write;
@@ -4320,8 +4273,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_userid=" + request.a1_userid;
             url += "&a1_status_cd=" + request.a1_status_cd;
             url += "&a1_master_plan_units=" + request.a1_master_plan_units;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plans);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plan_units);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plans, "&a1_supp_plans");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plan_units, "&a1_supp_plan_units");
             url += "&a1_notify_method=" + request.a1_notify_method;
             url += "&a1_promo_cd=" + request.a1_promo_cd;
             url += "&a1_password=" + request.a1_password;
@@ -4369,10 +4322,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_bank_acct_no=" + request.a1_bank_acct_no;
             url += "&a1_bank_routing_no=" + request.a1_bank_routing_no;
             url += "&a1_resp_level_cd=" + request.a1_resp_level_cd;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_functional_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_collections_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_functional_acct_groups, "&a1_functional_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_collections_acct_groups, "&a1_collections_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_field_names, "&a1_supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_field_values, "&a1_supp_field_values");
             url += "&a1_test_acct_ind=" + request.a1_test_acct_ind;
             url += "&a1_status_until_alt_start=" + request.a1_status_until_alt_start;
             url += "&a1_balance_forward=" + request.a1_balance_forward;
@@ -4380,23 +4333,23 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_do_full_invoicing=" + request.a1_do_full_invoicing;
             url += "&a1_do_prorated_invoicing=" + request.a1_do_prorated_invoicing;
             url += "&a1_master_plan_alt_rate_sched_no=" + request.a1_master_plan_alt_rate_sched_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plan_alt_rate_sched_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plan_alt_rate_sched_no, "&a1_supp_plan_alt_rate_sched_no");
             url += "&a1_currency_cd=" + request.a1_currency_cd;
             url += "&a1_cvv=" + request.a1_cvv;
             url += "&a1_taxpayer_id=" + request.a1_taxpayer_id;
             url += "&a1_bill_agreement_id=" + request.a1_bill_agreement_id;
             url += "&a1_retroactive_start_date=" + request.a1_retroactive_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_coupon_codes);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_coupon_codes, "&a1_coupon_codes");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_new_acct_custom_rates, "&a1_new_acct_custom_rates");
             url += "&a1_alt_msg_template_no=" + request.a1_alt_msg_template_no;
             url += "&a1_seq_func_group_no=" + request.a1_seq_func_group_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_new_acct_plan_contracts);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_new_acct_plan_contracts, "&a1_new_acct_plan_contracts");
             url += "&a1_address3=" + request.a1_address3;
             url += "&a1_bill_address3=" + request.a1_bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_func_acct_group_ids);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_coll_acct_group_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_usage_accumulation_config, "&a1_usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_enable_usage_pooling_plan_no, "&a1_enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_func_acct_group_ids, "&a1_client_func_acct_group_ids");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_coll_acct_group_ids, "&a1_client_coll_acct_group_ids");
             url += "&a1_track_data1=" + request.a1_track_data1;
             url += "&a1_track_data2=" + request.a1_track_data2;
             url += "&a1_tax_exemption_level=" + request.a1_tax_exemption_level;
@@ -4409,8 +4362,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_status_cd=" + request.a2_status_cd;
             url += "&a2_master_plan_no=" + request.a2_master_plan_no;
             url += "&a2_master_plan_units=" + request.a2_master_plan_units;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_plans);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_plan_units);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_plans, "&a2_supp_plans");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_plan_units, "&a2_supp_plan_units");
             url += "&a2_notify_method=" + request.a2_notify_method;
             url += "&a2_promo_cd=" + request.a2_promo_cd;
             url += "&a2_password=" + request.a2_password;
@@ -4458,10 +4411,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_bank_acct_no=" + request.a2_bank_acct_no;
             url += "&a2_bank_routing_no=" + request.a2_bank_routing_no;
             url += "&a2_resp_level_cd=" + request.a2_resp_level_cd;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_functional_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_collections_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_functional_acct_groups, "&a2_functional_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_collections_acct_groups, "&a2_collections_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_field_names, "&a2_supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_field_values, "&a2_supp_field_values");
             url += "&a2_test_acct_ind=" + request.a2_test_acct_ind;
             url += "&a2_status_until_alt_start=" + request.a2_status_until_alt_start;
             url += "&a2_balance_forward=" + request.a2_balance_forward;
@@ -4469,23 +4422,23 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_do_full_invoicing=" + request.a2_do_full_invoicing;
             url += "&a2_do_prorated_invoicing=" + request.a2_do_prorated_invoicing;
             url += "&a2_master_plan_alt_rate_sched_no=" + request.a2_master_plan_alt_rate_sched_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_plan_alt_rate_sched_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_supp_plan_alt_rate_sched_no, "&a2_supp_plan_alt_rate_sched_no");
             url += "&a2_currency_cd=" + request.a2_currency_cd;
             url += "&a2_cvv=" + request.a2_cvv;
             url += "&a2_taxpayer_id=" + request.a2_taxpayer_id;
             url += "&a2_bill_agreement_id=" + request.a2_bill_agreement_id;
             url += "&a2_retroactive_start_date=" + request.a2_retroactive_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_coupon_codes);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_coupon_codes, "&a2_coupon_codes");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_new_acct_custom_rates, "&a2_new_acct_custom_rates");
             url += "&a2_alt_msg_template_no=" + request.a2_alt_msg_template_no;
             url += "&a2_seq_func_group_no=" + request.a2_seq_func_group_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_new_acct_plan_contracts);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_new_acct_plan_contracts, "&a2_new_acct_plan_contracts");
             url += "&a2_address3=" + request.a2_address3;
             url += "&a2_bill_address3=" + request.a2_bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_func_acct_group_ids);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_coll_acct_group_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_usage_accumulation_config, "&a2_usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_enable_usage_pooling_plan_no, "&a2_enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_func_acct_group_ids, "&a2_client_func_acct_group_ids");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_coll_acct_group_ids, "&a2_client_coll_acct_group_ids");
             url += "&a2_track_data1=" + request.a2_track_data1;
             url += "&a2_track_data2=" + request.a2_track_data2;
             url += "&a2_tax_exemption_level=" + request.a2_tax_exemption_level;
@@ -4498,8 +4451,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_status_cd=" + request.a3_status_cd;
             url += "&a3_master_plan_no=" + request.a3_master_plan_no;
             url += "&a3_master_plan_units=" + request.a3_master_plan_units;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_plans);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_plan_units);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_plans, "&a3_supp_plans");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_plan_units, "&a3_supp_plan_units");
             url += "&a3_notify_method=" + request.a3_notify_method;
             url += "&a3_promo_cd=" + request.a3_promo_cd;
             url += "&a3_password=" + request.a3_password;
@@ -4547,10 +4500,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_bank_acct_no=" + request.a3_bank_acct_no;
             url += "&a3_bank_routing_no=" + request.a3_bank_routing_no;
             url += "&a3_resp_level_cd=" + request.a3_resp_level_cd;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_functional_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_collections_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_functional_acct_groups, "&a3_functional_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_collections_acct_groups, "&a3_collections_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_field_names, "&a3_supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_field_values, "&a3_supp_field_values");
             url += "&a3_test_acct_ind=" + request.a3_test_acct_ind;
             url += "&a3_status_until_alt_start=" + request.a3_status_until_alt_start;
             url += "&a3_balance_forward=" + request.a3_balance_forward;
@@ -4558,23 +4511,23 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_do_full_invoicing=" + request.a3_do_full_invoicing;
             url += "&a3_do_prorated_invoicing=" + request.a3_do_prorated_invoicing;
             url += "&a3_master_plan_alt_rate_sched_no=" + request.a3_master_plan_alt_rate_sched_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_plan_alt_rate_sched_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_supp_plan_alt_rate_sched_no, "&a3_supp_plan_alt_rate_sched_no");
             url += "&a3_currency_cd=" + request.a3_currency_cd;
             url += "&a3_cvv=" + request.a3_cvv;
             url += "&a3_taxpayer_id=" + request.a3_taxpayer_id;
             url += "&a3_bill_agreement_id=" + request.a3_bill_agreement_id;
             url += "&a3_retroactive_start_date=" + request.a3_retroactive_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_coupon_codes);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_coupon_codes, "&a3_coupon_codes");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_new_acct_custom_rates, "&a3_new_acct_custom_rates");
             url += "&a3_alt_msg_template_no=" + request.a3_alt_msg_template_no;
             url += "&a3_seq_func_group_no=" + request.a3_seq_func_group_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_new_acct_plan_contracts);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_new_acct_plan_contracts, "&a3_new_acct_plan_contracts");
             url += "&a3_address3=" + request.a3_address3;
             url += "&a3_bill_address3=" + request.a3_bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_func_acct_group_ids);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_coll_acct_group_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_usage_accumulation_config, "&a3_usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_enable_usage_pooling_plan_no, "&a3_enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_func_acct_group_ids, "&a3_client_func_acct_group_ids");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_coll_acct_group_ids, "&a3_client_coll_acct_group_ids");
             url += "&a3_track_data1=" + request.a3_track_data1;
             url += "&a3_track_data2=" + request.a3_track_data2;
             url += "&a3_tax_exemption_level=" + request.a3_tax_exemption_level;
@@ -4587,8 +4540,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_status_cd=" + request.a4_status_cd;
             url += "&a4_master_plan_no=" + request.a4_master_plan_no;
             url += "&a4_master_plan_units=" + request.a4_master_plan_units;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_plans);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_plan_units);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_plans, "&a4_supp_plans");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_plan_units, "&a4_supp_plan_units");
             url += "&a4_notify_method=" + request.a4_notify_method;
             url += "&a4_promo_cd=" + request.a4_promo_cd;
             url += "&a4_password=" + request.a4_password;
@@ -4636,10 +4589,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_bank_acct_no=" + request.a4_bank_acct_no;
             url += "&a4_bank_routing_no=" + request.a4_bank_routing_no;
             url += "&a4_resp_level_cd=" + request.a4_resp_level_cd;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_functional_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_collections_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_functional_acct_groups, "&a4_functional_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_collections_acct_groups, "&a4_collections_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_field_names, "&a4_supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_field_values, "&a4_supp_field_values");
             url += "&a4_test_acct_ind=" + request.a4_test_acct_ind;
             url += "&a4_status_until_alt_start=" + request.a4_status_until_alt_start;
             url += "&a4_balance_forward=" + request.a4_balance_forward;
@@ -4647,23 +4600,23 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_do_full_invoicing=" + request.a4_do_full_invoicing;
             url += "&a4_do_prorated_invoicing=" + request.a4_do_prorated_invoicing;
             url += "&a4_master_plan_alt_rate_sched_no=" + request.a4_master_plan_alt_rate_sched_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_plan_alt_rate_sched_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_supp_plan_alt_rate_sched_no, "&a4_supp_plan_alt_rate_sched_no");
             url += "&a4_currency_cd=" + request.a4_currency_cd;
             url += "&a4_cvv=" + request.a4_cvv;
             url += "&a4_taxpayer_id=" + request.a4_taxpayer_id;
             url += "&a4_bill_agreement_id=" + request.a4_bill_agreement_id;
             url += "&a4_retroactive_start_date=" + request.a4_retroactive_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_coupon_codes);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_coupon_codes, "&a4_coupon_codes");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_new_acct_custom_rates, "&a4_new_acct_custom_rates");
             url += "&a4_alt_msg_template_no=" + request.a4_alt_msg_template_no;
             url += "&a4_seq_func_group_no=" + request.a4_seq_func_group_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_new_acct_plan_contracts);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_new_acct_plan_contracts, "&a4_new_acct_plan_contracts");
             url += "&a4_address3=" + request.a4_address3;
             url += "&a4_bill_address3=" + request.a4_bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_func_acct_group_ids);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_coll_acct_group_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_usage_accumulation_config, "&a4_usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_enable_usage_pooling_plan_no, "&a4_enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_func_acct_group_ids, "&a4_client_func_acct_group_ids");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_coll_acct_group_ids, "&a4_client_coll_acct_group_ids");
             url += "&a4_track_data1=" + request.a4_track_data1;
             url += "&a4_track_data2=" + request.a4_track_data2;
             url += "&a4_tax_exemption_level=" + request.a4_tax_exemption_level;
@@ -4676,8 +4629,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_status_cd=" + request.a5_status_cd;
             url += "&a5_master_plan_no=" + request.a5_master_plan_no;
             url += "&a5_master_plan_units=" + request.a5_master_plan_units;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_plans);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_plan_units);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_plans, "&a5_supp_plans");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_plan_units, "&a5_supp_plan_units");
             url += "&a5_notify_method=" + request.a5_notify_method;
             url += "&a5_promo_cd=" + request.a5_promo_cd;
             url += "&a5_password=" + request.a5_password;
@@ -4725,10 +4678,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_bank_acct_no=" + request.a5_bank_acct_no;
             url += "&a5_bank_routing_no=" + request.a5_bank_routing_no;
             url += "&a5_resp_level_cd=" + request.a5_resp_level_cd;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_functional_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_collections_acct_groups);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_field_names);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_field_values);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_functional_acct_groups, "&a5_functional_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_collections_acct_groups, "&a5_collections_acct_groups");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_field_names, "&a5_supp_field_names");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_field_values, "&a5_supp_field_values");
             url += "&a5_test_acct_ind=" + request.a5_test_acct_ind;
             url += "&a5_status_until_alt_start=" + request.a5_status_until_alt_start;
             url += "&a5_balance_forward=" + request.a5_balance_forward;
@@ -4736,23 +4689,23 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_do_full_invoicing=" + request.a5_do_full_invoicing;
             url += "&a5_do_prorated_invoicing=" + request.a5_do_prorated_invoicing;
             url += "&a5_master_plan_alt_rate_sched_no=" + request.a5_master_plan_alt_rate_sched_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_plan_alt_rate_sched_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_supp_plan_alt_rate_sched_no, "&a5_supp_plan_alt_rate_sched_no");
             url += "&a5_currency_cd=" + request.a5_currency_cd;
             url += "&a5_cvv=" + request.a5_cvv;
             url += "&a5_taxpayer_id=" + request.a5_taxpayer_id;
             url += "&a5_bill_agreement_id=" + request.a5_bill_agreement_id;
             url += "&a5_retroactive_start_date=" + request.a5_retroactive_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_coupon_codes);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_coupon_codes, "&a5_coupon_codes");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_new_acct_custom_rates, "&a5_new_acct_custom_rates");
             url += "&a5_alt_msg_template_no=" + request.a5_alt_msg_template_no;
             url += "&a5_seq_func_group_no=" + request.a5_seq_func_group_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_new_acct_plan_contracts);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_new_acct_plan_contracts, "&a5_new_acct_plan_contracts");
             url += "&a5_address3=" + request.a5_address3;
             url += "&a5_bill_address3=" + request.a5_bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_func_acct_group_ids);
-            RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_coll_acct_group_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_usage_accumulation_config, "&a5_usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_enable_usage_pooling_plan_no, "&a5_enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_func_acct_group_ids, "&a5_client_func_acct_group_ids");
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_coll_acct_group_ids, "&a5_client_coll_acct_group_ids");
             url += "&a5_track_data1=" + request.a5_track_data1;
             url += "&a5_track_data2=" + request.a5_track_data2;
             url += "&a5_tax_exemption_level=" + request.a5_tax_exemption_level;
@@ -4840,7 +4793,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&percent_amount=" + request.percent_amount;
             url += "&percent_eval_plan_no=" + request.percent_eval_plan_no;
             url += "&percent_eval_service_no=" + request.percent_eval_service_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.eligible_service_types);
+            RestUtilities.addParameterValuesFromArray(ref url, request.eligible_service_types, "&eligible_service_types");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5104,10 +5057,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&specified_usage_type_no=" + request.specified_usage_type_no;
             url += "&date_range_end=" + request.date_range_end;
             url += "&specified_usage_type_code=" + request.specified_usage_type_code;
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_1);
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_2);
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_3);
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_4);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_1, "&usage_qualifier_1");
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_2, "&usage_qualifier_2");
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_3, "&usage_qualifier_3");
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_4, "&usage_qualifier_4");
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
@@ -5227,7 +5180,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset_months=" + request.offset_months;
             url += "&alt_proration_start_date=" + request.alt_proration_start_date;
             url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates, "&new_acct_custom_rates");
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             url += "&invoice_unbilled_usage=" + request.invoice_unbilled_usage;
@@ -5311,9 +5264,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&master_plan_alt_rate_sched_no=" + request.master_plan_alt_rate_sched_no;
             url += "&master_plan_units=" + request.master_plan_units;
             url += "&master_plan_assign_directive=" + request.master_plan_assign_directive;
-            RestUtilities.addParameterValuesFromArray(ref url, request.update_acct_supp_field);
-            RestUtilities.addParameterValuesFromArray(ref url, request.update_acct_func_group);
-            RestUtilities.addParameterValuesFromArray(ref url, request.update_acct_coll_group);
+            RestUtilities.addParameterValuesFromArray(ref url, request.update_acct_supp_field, "&update_acct_supp_field");
+            RestUtilities.addParameterValuesFromArray(ref url, request.update_acct_func_group, "&update_acct_func_group");
+            RestUtilities.addParameterValuesFromArray(ref url, request.update_acct_coll_group, "&update_acct_coll_group");
             url += "&status_cd=" + request.status_cd;
             url += "&notify_method=" + request.notify_method;
             url += "&password=" + request.password;
@@ -5342,9 +5295,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&seq_func_group_no=" + request.seq_func_group_no;
             url += "&address3=" + request.address3;
             url += "&bill_address3=" + request.bill_address3;
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_accumulation_config);
-            RestUtilities.addParameterValuesFromArray(ref url, request.enable_usage_pooling_plan_no);
-            RestUtilities.addParameterValuesFromArray(ref url, request.disable_usage_pooling_plan_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_accumulation_config, "&usage_accumulation_config");
+            RestUtilities.addParameterValuesFromArray(ref url, request.enable_usage_pooling_plan_no, "&enable_usage_pooling_plan_no");
+            RestUtilities.addParameterValuesFromArray(ref url, request.disable_usage_pooling_plan_no, "&disable_usage_pooling_plan_no");
             url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
@@ -5708,7 +5661,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&acct_no=" + request.acct_no;
             url += "&plan_no=" + request.plan_no;
             url += "&service_no=" + request.service_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.custom_acct_rates);
+            RestUtilities.addParameterValuesFromArray(ref url, request.custom_acct_rates, "&custom_acct_rates");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5888,7 +5841,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.acct_supp_fields);
+            RestUtilities.addParameterValuesFromArray(ref url, request.acct_supp_fields, "&acct_supp_fields");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6175,13 +6128,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plans_to_assign);
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plans_to_assign, "&supp_plans_to_assign");
             url += "&assignment_directive=" + request.assignment_directive;
             url += "&do_write=" + request.do_write;
             url += "&comments=" + request.comments;
             url += "&client_receipt_id=" + request.client_receipt_id;
             url += "&alt_proration_start_date=" + request.alt_proration_start_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.coupon_codes);
+            RestUtilities.addParameterValuesFromArray(ref url, request.coupon_codes, "&coupon_codes");
             url += "&effective_date=" + request.effective_date;
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             
@@ -6323,7 +6276,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.credit_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.credit_ids, "&credit_ids");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6670,7 +6623,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no);
+            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no, "&plan_no");
             url += "&type_no=" + request.type_no;
             url += "&length_months=" + request.length_months;
             url += "&create_comments=" + request.create_comments;
@@ -6717,7 +6670,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&start_date=" + request.start_date;
             url += "&update_comments=" + request.update_comments;
             url += "&modify_directive=" + request.modify_directive;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plans_input);
+            RestUtilities.addParameterValuesFromArray(ref url, request.plans_input, "&plans_input");
             url += "&end_date=" + request.end_date;
             
             WebRequest webRequest = WebRequest.Create(url);
@@ -7333,7 +7286,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&outage_end_date=" + request.outage_end_date;
             url += "&outage_start_time=" + request.outage_start_time;
             url += "&outage_end_time=" + request.outage_end_time;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plans_to_get_outage);
+            RestUtilities.addParameterValuesFromArray(ref url, request.plans_to_get_outage, "&plans_to_get_outage");
             url += "&adjust_percent=" + request.adjust_percent;
             
             WebRequest webRequest = WebRequest.Create(url);
@@ -7377,10 +7330,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&date_filter_end_time=" + request.date_filter_end_time;
             url += "&billed_filter=" + request.billed_filter;
             url += "&billing_period_flag=" + request.billing_period_flag;
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_1);
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_2);
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_3);
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_4);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_1, "&usage_qualifier_1");
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_2, "&usage_qualifier_2");
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_3, "&usage_qualifier_3");
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_4, "&usage_qualifier_4");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7560,7 +7513,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&account_no=" + request.account_no;
             url += "&bill_immediately=" + request.bill_immediately;
-            RestUtilities.addParameterValuesFromArray(ref url, request.order_line_items);
+            RestUtilities.addParameterValuesFromArray(ref url, request.order_line_items, "&order_line_items");
             url += "&bill_seq=" + request.bill_seq;
             url += "&client_order_id=" + request.client_order_id;
             url += "&client_receipt_id=" + request.client_receipt_id;
@@ -7696,7 +7649,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&amount_to_collect=" + request.amount_to_collect;
             url += "&bill_seq=" + request.bill_seq;
             url += "&client_receipt_id=" + request.client_receipt_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id);
+            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
             url += "&alt_pay_method=" + request.alt_pay_method;
             url += "&cc_number=" + request.cc_number;
             url += "&cc_expire_mm=" + request.cc_expire_mm;
@@ -7764,7 +7717,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&payment_amount=" + request.payment_amount;
             url += "&comments=" + request.comments;
             url += "&client_receipt_id=" + request.client_receipt_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id);
+            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
             url += "&external_destination_id=" + request.external_destination_id;
             url += "&external_id=" + request.external_id;
             
@@ -7878,7 +7831,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&credit_amount=" + request.credit_amount;
             url += "&credit_reason_code=" + request.credit_reason_code;
             url += "&comments=" + request.comments;
-            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id);
+            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
             url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
@@ -7918,7 +7871,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&times_to_bill=" + request.times_to_bill;
             url += "&billing_interval_type=" + request.billing_interval_type;
             url += "&first_bill_date=" + request.first_bill_date;
-            RestUtilities.addParameterValuesFromArray(ref url, request.standing_order);
+            RestUtilities.addParameterValuesFromArray(ref url, request.standing_order, "&standing_order");
             url += "&client_order_id=" + request.client_order_id;
             url += "&client_receipt_id=" + request.client_receipt_id;
             
@@ -7990,7 +7943,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&account_no=" + request.account_no;
             url += "&payment_id=" + request.payment_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id);
+            RestUtilities.addParameterValuesFromArray(ref url, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8024,7 +7977,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_records);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_records, "&usage_records");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8265,8 +8218,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&zip_code=" + request.zip_code;
             url += "&country_code=" + request.country_code;
             url += "&currency_code=" + request.currency_code;
-            RestUtilities.addParameterValuesFromArray(ref url, request.pre_calc_plan);
-            RestUtilities.addParameterValuesFromArray(ref url, request.pre_calc_sku);
+            RestUtilities.addParameterValuesFromArray(ref url, request.pre_calc_plan, "&pre_calc_plan");
+            RestUtilities.addParameterValuesFromArray(ref url, request.pre_calc_sku, "&pre_calc_sku");
             url += "&tax_exempt_cd=" + request.tax_exempt_cd;
             url += "&address3=" + request.address3;
             
@@ -8759,8 +8712,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.order_line_items);
-            RestUtilities.addParameterValuesFromArray(ref url, request.cart_supp_plans);
+            RestUtilities.addParameterValuesFromArray(ref url, request.order_line_items, "&order_line_items");
+            RestUtilities.addParameterValuesFromArray(ref url, request.cart_supp_plans, "&cart_supp_plans");
             url += "&client_order_id=" + request.client_order_id;
             url += "&coupon_code=" + request.coupon_code;
             url += "&comments=" + request.comments;
@@ -8796,7 +8749,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data2=" + request.track_data2;
             url += "&alt_inv_template_no=" + request.alt_inv_template_no;
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
-            RestUtilities.addParameterValuesFromArray(ref url, request.multiple_coupons);
+            RestUtilities.addParameterValuesFromArray(ref url, request.multiple_coupons, "&multiple_coupons");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8907,7 +8860,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&comments=" + request.comments;
             url += "&do_write=" + request.do_write;
             url += "&auto_calc_refund=" + request.auto_calc_refund;
-            RestUtilities.addParameterValuesFromArray(ref url, request.invoices_to_reverse);
+            RestUtilities.addParameterValuesFromArray(ref url, request.invoices_to_reverse, "&invoices_to_reverse");
             url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
@@ -9158,8 +9111,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.usage_record_nos);
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_record_ids);
+            RestUtilities.addParameterValuesFromArray(ref url, request.usage_record_nos, "&usage_record_nos");
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_record_ids, "&client_record_ids");
             url += "&exclusion_reason_cd=" + request.exclusion_reason_cd;
             url += "&exclusion_comment=" + request.exclusion_comment;
             

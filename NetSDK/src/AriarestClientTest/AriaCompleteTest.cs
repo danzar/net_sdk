@@ -7,11 +7,12 @@ using Aria.SDK.AriaServices.AriaWebServices.AriaComplete;
 
 namespace Aria.SDK.AriaServices.AriaRestServices.Test
 {
+  [TestFixture]
   public class AriaCompleteTest
   {
     private const string ARIA_CLIENT_NUMBER = "aria-client-number";
     private const string ARIA_AUTHORIZATION_KEY = "aria-authorization-key";
-    private const string ARIA_DISPATCHER_URL = "aria-dispatcher-url";
+    private const string ARIA_DISPATCHER_URL = "aria-complete-dispatcher-url";
     private const string VALID_ACCOUNT_NUMBER = "valid-account-number";
     private const string VALID_ACCOUNT_USERID = "valid-account-userid";
     private const string VALID_ACCOUNT_PASSWORD = "valid-account-password";
@@ -44,19 +45,19 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
       }
     }
 
-    public long ServiceNumber
+    public int ServiceNumber
     {
       get
       {
-        return long.Parse(ConfigurationManager.AppSettings[VALID_PLAN_SERVICE_NUMBER]);
+        return int.Parse(ConfigurationManager.AppSettings[VALID_PLAN_SERVICE_NUMBER]);
       }
     }
 
-    public long PlanNumber
+    public int PlanNumber
     {
       get
       {
-        return long.Parse(ConfigurationManager.AppSettings[VALID_PLAN_NUMBER]);
+        return int.Parse(ConfigurationManager.AppSettings[VALID_PLAN_NUMBER]);
       }
     }
 
@@ -1085,7 +1086,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             account_no = AccountNumber,
-            pay_method = "5"
+            pay_method = 5
             };
 
         var response = mService.set_pay_method_net_terms(request);
@@ -1276,7 +1277,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             account_number = 1,
             amount = 1,
             payment_source = 1,
-            CVV = 111,
+            CVV = "111",
             bill_seq = 1,
             inTrackingNumber = "",
             inAuthValue = "",
@@ -2052,7 +2053,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bill_work_phone = "",
             bill_work_phone_ext = "",
             bill_email = "",
-            pay_method = "5",
+            pay_method = 5,
             cc_number = "4111111111111111",
             cc_expire_mm = DateTime.Now.Month,
             cc_expire_yyyy = DateTime.Now.Year,
@@ -2840,7 +2841,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bill_work_phone = "",
             bill_work_phone_ext = "",
             bill_email = "",
-            pay_method = "5",
+            pay_method = 5,
             cc_number = "4111111111111111",
             cc_expire_mm = DateTime.Now.Month,
             cc_expire_yyyy = DateTime.Now.Year,
@@ -3061,7 +3062,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            pay_method = "5",
+            pay_method = 5,
             form_payment_acct_id = "",
             bank_routing_num = ""
             };
@@ -4860,6 +4861,6 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
         Assert.IsNotNull(response);
     }
 
-    #endregion Api Calls TEST
+        #endregion Api Calls TEST
     }
 }

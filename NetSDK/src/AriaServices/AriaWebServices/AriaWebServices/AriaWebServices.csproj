@@ -115,8 +115,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AriaBillingComplete.cs" />
+    <Compile Include="AriaBillingObjectQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\AriaComplete\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AriaObjectQuery\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -126,16 +132,16 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\AriaComplete\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.activate_supp_planResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.adjust_billing_datesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.advance_virtual_datetimeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.apply_cash_creditResponse.datasource">
@@ -159,6 +165,9 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.assign_supp_planResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.assign_supp_plan_multiResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.authenticate_callerResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -168,7 +177,16 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.ban_acctResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.bulk_record_usageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_acct_multiplan_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_acct_plan_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_acct_universal_contractResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_orderResponse.datasource">
@@ -181,6 +199,18 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_supp_planResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_unapplied_svce_creditsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.cancel_unconsumed_creditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.clear_reg_uss_config_paramsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.clear_reg_uss_paramsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_has_event_classResponse.datasource">
@@ -198,13 +228,37 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_acct_completeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_acct_hierarchyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_acct_multiplan_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_acct_plan_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_acct_universal_contractResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_advanced_service_creditResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_orderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_order_with_plansResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.create_writeoff_or_disputeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.delete_acct_couponResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.delete_reg_uss_config_paramsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.delete_reg_uss_paramsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.disable_all_standing_usageResponse.datasource">
@@ -216,16 +270,31 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.disable_standing_usage_by_planResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.discard_usageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.gen_invoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.gen_random_stringResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.gen_statementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_accts_with_existing_pay_methodResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_balanceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_commentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_creditsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_credit_detailsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_details_allResponse.datasource">
@@ -237,16 +306,37 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_groups_by_clientResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_has_ordered_skuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_hierarchy_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_invoice_historyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_messageResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_message_sizeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_multiplan_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_notification_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_notify_methodResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_no_from_user_idResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_payment_historyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_payment_methodsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_plansResponse.datasource">
@@ -259,6 +349,15 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_plan_historyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_preview_statementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_service_outage_creditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_statement_historyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_status_historyResponse.datasource">
@@ -276,6 +375,18 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_trans_historyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_universal_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_acct_writeoff_or_disputesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_all_acct_active_contractsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_all_acct_contractsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_all_acct_receipt_idsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
@@ -283,6 +394,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_all_client_receipt_idsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_aria_xml_statementResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_auf_statusResponse.datasource">
@@ -309,10 +423,34 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_child_acctsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_child_for_item_classResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_countriesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_currenciesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_itemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_items_allResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_items_basicResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_item_classesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_item_imagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_item_pricesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_item_supp_fieldsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_plansResponse.datasource">
@@ -330,10 +468,31 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_client_plan_service_ratesResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_copy_config_export_listResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_copy_config_export_xmlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_country_from_ipResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_coupon_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_credit_reason_codesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_current_system_versionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_daily_batch_statusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_email_templatesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_extended_transaction_infoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_family_trans_historyResponse.datasource">
@@ -345,16 +504,34 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_inv_no_from_bal_xferResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_items_by_classResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_items_by_supp_fieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_item_ratings_reviewsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_master_plans_by_supp_fieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_orderResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_order_itemsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_parent_for_item_classResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_payments_on_invoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_payment_applicationsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_payment_application_dtlsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_payment_methodsResponse.datasource">
@@ -375,10 +552,22 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_rate_schedules_for_planResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_recurring_credit_infoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_refundable_paymentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_refund_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_reg_uss_config_paramsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_reg_uss_paramsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_reversible_invs_by_paymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_standing_orderResponse.datasource">
@@ -391,6 +580,12 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_standing_usageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_statement_contentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_statement_content_sizeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_statement_for_invoiceResponse.datasource">
@@ -408,19 +603,43 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_supp_plans_by_promo_code_allResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_supp_plans_by_supp_fieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_top_level_item_classResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_unapplied_service_creditsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_unbilled_usage_summaryResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_usage_historyResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_usage_summary_by_typeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_userid_has_ordered_skuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_user_id_from_acct_noResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_virtual_datetimeResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_web_replacement_valsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.get_writeoff_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.init_paypal_bill_agreementResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.issue_refund_to_acctResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.keep_aliveResponse.datasource">
@@ -432,21 +651,31 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.manage_pending_invoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.modify_acct_multiplan_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.modify_acct_plan_contractResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.modify_acct_supp_fieldsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.modify_acct_universal_contractResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.modify_supp_planResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.move_paymentResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.pre_calc_invoiceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.record_external_paymentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.record_item_ratings_reviewsResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.record_out_going_paymentResponse.datasource">
@@ -473,7 +702,19 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.remove_pay_methodResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.replace_reg_uss_config_paramsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.replace_reg_uss_paramsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.replace_supp_planResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.reset_usg_mtd_balResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.reset_usg_ptd_balResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.save_paypal_bill_agreementResponse.datasource">
@@ -488,7 +729,31 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.settle_account_balanceResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.settle_dispute_holdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_acct_notify_overrideResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_acct_notify_tmplt_grpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_acct_tax_exempt_statusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_acct_usg_mtd_thresholdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_acct_usg_ptd_thresholdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_client_usg_mtd_thresholdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_client_usg_ptd_thresholdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_external_object_idResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.set_payment_responsibilityResponse.datasource">
@@ -575,10 +840,16 @@
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_existing_billing_infoResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_inventory_item_stockResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_master_planResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_payment_methodResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_refund_check_noResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\Aria.SDK.AriaServices.AriaWebServices.AriaComplete.userid_existsResponse.datasource">
@@ -600,16 +871,46 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\AriaComplete\complete-doc_literal_wrapped.wsdl" />
-    <None Include="Service References\AriaComplete\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\AriaComplete\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_account_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\AriaComplete\configuration91.svcinfo" />
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_account_plan_historyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_account_status_historyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_all_invoice_informationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_coupon_historyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_invoice_informationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_order_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_payment_detailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_refund_informationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.get_transaction_informationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.list_payment_methodsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.list_payment_processorsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\Aria.SDK.AriaServices.AriaWebServices.AriaObjectQuery.list_transaction_typesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AriaObjectQuery\integration_services-doc_literal_wrapped.wsdl" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -627,6 +928,34 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AriaComplete\" />
+    <WCFMetadataStorage Include="Service References\AriaObjectQuery\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AriaComplete\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AriaComplete\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AriaComplete\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AriaObjectQuery\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AriaObjectQuery\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AriaObjectQuery\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

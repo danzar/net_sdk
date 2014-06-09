@@ -1,11 +1,12 @@
-﻿using System;
-using System.Configuration;
-using Aria.SDK.AriaServices.AriaWebServices;
+﻿using Aria.SDK.AriaServices.AriaWebServices;
 using Aria.SDK.AriaServices.AriaWebServices.AriaComplete;
 using NUnit.Framework;
+using System;
+using System.Configuration;
 
 namespace AriaWebServicesTest
 {
+    [TestFixture]
     public class AriaCompleteTest
     {
         private const string ARIA_CLIENT_NUMBER = "aria-client-number";
@@ -2566,7 +2567,8 @@ namespace AriaWebServicesTest
             {
                 client_no = ClientNumber,
                 auth_key = AuthorizationKey,
-                in_currency_cd = "",
+                //TODO: Check this change
+                //in_currency_cd = "",
                 return_no_cost_items = ""
             };
 

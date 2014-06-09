@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6175c5a8-47ac-4a61-8ad7-9182d99e951f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a0b95d49-4e31-49c9-aeb4-595595f9adbc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,10 +18,10 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://secure.future.stage.ariasystems.net/api/Advanced/wsdl/6.20/complete-doc_literal_wrapped.wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://secure.unstable.qa.ariasystems.net/api/AriaQuery/wsdl/6.19/integration_services-doc_literal_wrapped.wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="complete-doc_literal_wrapped.wsdl" MetadataType="Wsdl" ID="84416f4b-1daf-4293-b6f7-46ef6fbf71cb" SourceId="1" SourceUrl="https://secure.future.stage.ariasystems.net/api/Advanced/wsdl/6.20/complete-doc_literal_wrapped.wsdl" />
+    <MetadataFile FileName="integration_services-doc_literal_wrapped.wsdl" MetadataType="Wsdl" ID="f54182a7-98ee-48dc-90cb-fc7e39d7ad3c" SourceId="1" SourceUrl="https://secure.unstable.qa.ariasystems.net/api/AriaQuery/wsdl/6.19/integration_services-doc_literal_wrapped.wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

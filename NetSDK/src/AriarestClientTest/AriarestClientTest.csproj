@@ -53,17 +53,21 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AriaObjectQueryTest.cs" />
+    <Compile Include="AriaAdminToolsTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AriaCompleteTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AriaRestClient\AriaRestClient.csproj">
-      <Project>{1C014A13-7503-4DB0-BED4-5CDA12DB5194}</Project>
-      <Name>AriaRestClient</Name>
-    </ProjectReference>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="..\AriaRestClient\AriaRestClient.csproj">
+      <Project>{1c014a13-7503-4db0-bed4-5cda12db5194}</Project>
+      <Name>AriaRestClient</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
