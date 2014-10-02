@@ -124,7 +124,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             supp_field_names = new[]{new supp_field_names_row()},
             supp_field_values = new[]{new supp_field_values_row()},
             include_all_rate_schedules = "",
-            include_plan_hierarchy = ""
+            include_plan_hierarchy = "",
+            client_plan_id = "",
+            client_parent_plan_id = ""
             };
 
         var response = mService.get_client_plans_all(request);
@@ -182,7 +184,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             filter_currency_cd = "",
             return_no_cost_items = "",
-            filter_item_no = 1
+            filter_item_no = 1,
+            client_filter_item_id = ""
             };
 
         var response = mService.get_client_items(request);
@@ -199,7 +202,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             filter_currency_cd = "",
             return_no_cost_items = "",
             filter_item_no = 1,
-            include_inactive_items = ""
+            include_inactive_items = "",
+            filter_client_item_id = ""
             };
 
         var response = mService.get_client_items_all(request);
@@ -213,9 +217,10 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            filter_item_no = 1,
             filter_currency_cd = "",
-            return_no_cost_items = ""
+            return_no_cost_items = "",
+            filter_item_no = 1,
+            filter_client_item_id = ""
             };
 
         var response = mService.get_client_item_prices(request);
@@ -229,7 +234,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            filter_item_no = 1
+            filter_item_no = 1,
+            filter_client_item_id = ""
             };
 
         var response = mService.get_client_item_supp_fields(request);
@@ -243,7 +249,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            filter_item_no = 1
+            filter_item_no = 1,
+            filter_client_item_id = ""
             };
 
         var response = mService.get_client_item_classes(request);
@@ -271,7 +278,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            plan_no = PlanNumber
+            plan_no = PlanNumber,
+            client_plan_id = ""
             };
 
         var response = mService.get_client_plans_basic(request);
@@ -285,7 +293,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            plan_no = PlanNumber
+            plan_no = PlanNumber,
+            client_plan_id = ""
             };
 
         var response = mService.get_client_plan_services(request);
@@ -301,7 +310,10 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             plan_no = PlanNumber,
             service_no = ServiceNumber,
-            alt_rate_schedule_no = 1
+            alt_rate_schedule_no = 1,
+            client_plan_id = "",
+            client_service_id = "",
+            client_alt_rate_schedule_id = ""
             };
 
         var response = mService.get_client_plan_service_rates(request);
@@ -445,7 +457,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             plan_no = PlanNumber,
-            currency_cd = ""
+            currency_cd = "",
+            client_plan_id = ""
             };
 
         var response = mService.get_rate_schedules_for_plan(request);
@@ -490,7 +503,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             filter_currency_cd = "",
             return_no_cost_items = "",
             filter_item_no = 1,
-            include_inactive_items = ""
+            include_inactive_items = "",
+            filter_client_item_id = ""
             };
 
         var response = mService.get_client_items_basic(request);
@@ -680,7 +694,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            item_no = 1
+            item_no = 1,
+            client_item_id = ""
             };
 
         var response = mService.get_client_item_images(request);
@@ -859,6 +874,21 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.set_external_object_id(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void get_acct_surcharges()
+    {
+       get_acct_surchargesRequest request = new get_acct_surchargesRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            acct_no = 1,
+            include_detail_ind = ""
+            };
+
+        var response = mService.get_acct_surcharges(request);
         Assert.IsNotNull(response);
     }
 
@@ -1120,7 +1150,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             account_no = AccountNumber,
             plan_no = PlanNumber,
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            client_plan_id = ""
             };
 
         var response = mService.set_service_plan_immediately(request);
@@ -1180,7 +1211,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bill_address3 = "",
             alt_client_acct_group_id = "",
             track_data1 = "",
-            track_data2 = ""
+            track_data2 = "",
+            client_acct_group_id = ""
             };
 
         var response = mService.validate_payment_information(request);
@@ -1382,7 +1414,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            plan_no = PlanNumber
+            plan_no = PlanNumber,
+            client_plan_id = ""
             };
 
         var response = mService.get_acct_supp_plan_history(request);
@@ -1547,7 +1580,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             user_id = "",
             template_class = "",
             template_no = 1,
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            client_template_id = ""
             };
 
         var response = mService.send_acct_email(request);
@@ -1611,7 +1645,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             plan_no = PlanNumber,
             first_usage_date = DateTime.Now.ToShortDateString(),
             recurring_ind = "",
-            usage_type_code = ""
+            usage_type_code = "",
+            client_plan_id = ""
             };
 
         var response = mService.record_standing_usage(request);
@@ -1643,7 +1678,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             acct_no = 1,
             plan_no = PlanNumber,
-            comments = ""
+            comments = "",
+            client_plan_id = ""
             };
 
         var response = mService.disable_standing_usage_by_plan(request);
@@ -1780,7 +1816,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             effective_date = "",
             offset_interval = 1,
             contract_end_date = "",
-            sync_mstr_bill_dates_override = 1
+            sync_mstr_bill_dates_override = 1,
+            client_supp_plan_id = "",
+            client_alt_rate_schedule_id = ""
             };
 
         var response = mService.assign_supp_plan(request);
@@ -1803,7 +1841,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             alt_proration_start_date = "",
             effective_date = "",
             offset_interval = 1,
-            invoice_unbilled_usage = ""
+            invoice_unbilled_usage = "",
+            client_supp_plan_id = ""
             };
 
         var response = mService.cancel_supp_plan(request);
@@ -1828,7 +1867,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_receipt_id = Guid.NewGuid().ToString(),
             new_acct_custom_rates = new[]{new new_acct_custom_rates_row()},
             effective_date = "",
-            offset_interval = 1
+            offset_interval = 1,
+            client_plan_id = "",
+            client_alt_rate_schedule_id = ""
             };
 
         var response = mService.modify_supp_plan(request);
@@ -1859,7 +1900,10 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             effective_date = "",
             offset_interval = 1,
             invoice_unbilled_usage = "",
-            sync_mstr_bill_dates_override = 1
+            sync_mstr_bill_dates_override = 1,
+            client_existing_supp_plan_id = "",
+            client_new_supp_plan_id = "",
+            client_alt_rate_schedule_id = ""
             };
 
         var response = mService.replace_supp_plan(request);
@@ -1873,7 +1917,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            in_plan_no = 1
+            in_plan_no = 1,
+            in_client_plan_id = ""
             };
 
         var response = mService.get_avail_child_plans_for_plan(request);
@@ -1887,7 +1932,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            in_plan_no = 1
+            in_plan_no = 1,
+            in_client_plan_id = ""
             };
 
         var response = mService.get_avail_child_plans_for_plan_all(request);
@@ -2005,11 +2051,11 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            master_plan_no = 1,
             alt_start_date = "",
             client_acct_id = "",
             userid = UserId,
             status_cd = 1,
+            master_plan_no = 1,
             master_plan_units = 1,
             supp_plans = new[]{new supp_plans_row()},
             supp_plan_units = new[]{new supp_plan_units_row()},
@@ -2098,7 +2144,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             tax_exemption_level = 1,
             cn_alt_msg_template_no = 1,
             invoice_approval_required = "",
-            create_session = ""
+            create_session = "",
+            client_master_plan_id = "",
+            client_supp_plan_ids = new[]{new client_supp_plan_ids_row()},
+            client_mp_alt_rate_sched_id = "",
+            client_sp_alt_rate_sched_ids = new[]{new client_sp_alt_rate_sched_ids_row()},
+            client_alt_msg_template_id = "",
+            client_cn_alt_msg_template_no = "",
+            surcharge_no = new[]{new surcharge_no_row()}
             };
 
         var response = mService.create_acct_complete(request);
@@ -2112,13 +2165,13 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            a1_master_plan_no = 1,
             do_write = "",
             client_receipt_id = Guid.NewGuid().ToString(),
             a1_alt_start_date = "",
             a1_client_acct_id = "",
             a1_userid = "",
             a1_status_cd = 1,
+            a1_master_plan_no = 1,
             a1_master_plan_units = 1,
             a1_supp_plans = new[]{new a1_supp_plans_row()},
             a1_supp_plan_units = new[]{new a1_supp_plan_units_row()},
@@ -2203,6 +2256,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_cn_alt_msg_template_no = 1,
             a1_invoice_approval_required = "",
             a1_create_session = "",
+            a1_client_master_plan_id = "",
+            a1_client_supp_plan_ids = new[]{new a1_client_supp_plan_ids_row()},
+            a1_client_mp_alt_rate_sched_id = "",
+            a1_client_sp_alt_rate_sched_ids = new[]{new a1_client_sp_alt_rate_sched_ids_row()},
+            a1_client_alt_msg_template_id = "",
+            a1_client_cn_alt_msg_template_no = "",
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2292,6 +2351,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_cn_alt_msg_template_no = 1,
             a2_invoice_approval_required = "",
             a2_create_session = "",
+            a2_client_master_plan_id = "",
+            a2_client_supp_plan_ids = new[]{new a2_client_supp_plan_ids_row()},
+            a2_client_mp_alt_rate_sched_id = "",
+            a2_client_sp_alt_rate_sched_ids = new[]{new a2_client_sp_alt_rate_sched_ids_row()},
+            a2_client_alt_msg_template_id = "",
+            a2_client_cn_alt_msg_template_no = "",
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2381,6 +2446,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_cn_alt_msg_template_no = 1,
             a3_invoice_approval_required = "",
             a3_create_session = "",
+            a3_client_master_plan_id = "",
+            a3_client_supp_plan_ids = new[]{new a3_client_supp_plan_ids_row()},
+            a3_client_mp_alt_rate_sched_id = "",
+            a3_client_sp_alt_rate_sched_ids = new[]{new a3_client_sp_alt_rate_sched_ids_row()},
+            a3_client_alt_msg_template_id = "",
+            a3_client_cn_alt_msg_template_no = "",
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2470,6 +2541,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_cn_alt_msg_template_no = 1,
             a4_invoice_approval_required = "",
             a4_create_session = "",
+            a4_client_master_plan_id = "",
+            a4_client_supp_plan_ids = new[]{new a4_client_supp_plan_ids_row()},
+            a4_client_mp_alt_rate_sched_id = "",
+            a4_client_sp_alt_rate_sched_ids = new[]{new a4_client_sp_alt_rate_sched_ids_row()},
+            a4_client_alt_msg_template_id = "",
+            a4_client_cn_alt_msg_template_no = "",
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2558,7 +2635,13 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_tax_exemption_level = 1,
             a5_cn_alt_msg_template_no = 1,
             a5_invoice_approval_required = "",
-            a5_create_session = ""
+            a5_create_session = "",
+            a5_client_master_plan_id = "",
+            a5_client_supp_plan_ids = new[]{new a5_client_supp_plan_ids_row()},
+            a5_client_mp_alt_rate_sched_id = "",
+            a5_client_sp_alt_rate_sched_ids = new[]{new a5_client_sp_alt_rate_sched_ids_row()},
+            a5_client_alt_msg_template_id = "",
+            a5_client_cn_alt_msg_template_no = ""
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -2600,7 +2683,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             percent_amount = 1,
             percent_eval_plan_no = 1,
             percent_eval_service_no = 1,
-            eligible_service_types = new[]{new eligible_service_types_row()}
+            eligible_service_types = new[]{new eligible_service_types_row()},
+            client_eligible_plan_id = "",
+            client_eligible_service_id = "",
+            client_alt_service_id_to_apply = "",
+            client_percent_eval_plan_id = "",
+            client_percent_eval_service_id = ""
             };
 
         var response = mService.create_advanced_service_credit(request);
@@ -2643,7 +2731,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            plan_no = PlanNumber
+            plan_no = PlanNumber,
+            client_plan_id = ""
             };
 
         var response = mService.get_acct_plan_contract(request);
@@ -2666,7 +2755,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             create_comments = "",
             start_date = DateTime.Now.AddYears(15).ToShortDateString(),
             do_auto_discard = "",
-            end_date = ""
+            end_date = "",
+            client_plan_id = ""
             };
 
         var response = mService.create_acct_plan_contract(request);
@@ -2791,7 +2881,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             effective_date = "",
             offset_interval = 1,
             invoice_unbilled_usage = "",
-            coupon_code = ""
+            coupon_code = "",
+            client_master_plan_id = "",
+            client_alt_rate_schedule_id = ""
             };
 
         var response = mService.update_master_plan(request);
@@ -2895,7 +2987,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             invoice_unbilled_usage = "",
             coupon_code = "",
             userid = UserId,
-            invoice_approval_required = ""
+            invoice_approval_required = "",
+            client_master_plan_id = "",
+            client_mp_alt_rate_sched_id = "",
+            client_alt_msg_template_id = "",
+            client_cn_alt_msg_template_id = "",
+            update_surcharge = new[]{new update_surcharge_row()}
             };
 
         var response = mService.update_acct_complete(request);
@@ -3046,9 +3143,11 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
+            custom_acct_rates = new[]{new custom_acct_rates_row()},
             plan_no = PlanNumber,
             service_no = ServiceNumber,
-            custom_acct_rates = new[]{new custom_acct_rates_row()}
+            client_plan_id = "",
+            client_service_id = ""
             };
 
         var response = mService.assign_custom_acct_rates(request);
@@ -3143,7 +3242,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            plan_no = PlanNumber
+            plan_no = PlanNumber,
+            client_plan_id = ""
             };
 
         var response = mService.remove_custom_acct_rates(request);
@@ -3476,7 +3576,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             create_comments = "",
             start_date = DateTime.Now.AddYears(15).ToShortDateString(),
             do_auto_discard = "",
-            end_date = ""
+            end_date = "",
+            client_plan_id = new[]{new client_plan_id_row()}
             };
 
         var response = mService.create_acct_multiplan_contract(request);
@@ -3498,7 +3599,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             update_comments = "",
             modify_directive = 1,
             plans_input = new[]{new plans_input_row()},
-            end_date = ""
+            end_date = "",
+            client_plan_id = new[]{new client_plan_id_row()}
             };
 
         var response = mService.modify_acct_multiplan_contract(request);
@@ -3774,7 +3876,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             outage_start_time = "",
             outage_end_time = "",
             plans_to_get_outage = new[]{new plans_to_get_outage_row()},
-            adjust_percent = 1
+            adjust_percent = 1,
+            client_plan_ids_to_get_outage = new[]{new client_plan_ids_to_get_outage_row()}
             };
 
         var response = mService.get_acct_service_outage_credit(request);
@@ -3800,7 +3903,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             usage_qualifier_1 = new[]{new usage_qualifier_1_row()},
             usage_qualifier_2 = new[]{new usage_qualifier_2_row()},
             usage_qualifier_3 = new[]{new usage_qualifier_3_row()},
-            usage_qualifier_4 = new[]{new usage_qualifier_4_row()}
+            usage_qualifier_4 = new[]{new usage_qualifier_4_row()},
+            usage_type_cd_filter = ""
             };
 
         var response = mService.get_usage_summary_by_type(request);
@@ -3914,7 +4018,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             alt_client_acct_group_id = "",
             track_data1 = "",
             track_data2 = "",
-            alt_inv_template_no = 1
+            alt_inv_template_no = 1,
+            client_alt_inv_template_id = ""
             };
 
         var response = mService.create_order(request);
@@ -4313,7 +4418,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            acct_no = 1
+            acct_no = 1,
+            alt_stmt_template_no = 1
             };
 
         var response = mService.get_acct_preview_statement(request);
@@ -4536,7 +4642,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             track_data2 = "",
             alt_inv_template_no = 1,
             sync_mstr_bill_dates_override = 1,
-            multiple_coupons = new[]{new multiple_coupons_row()}
+            multiple_coupons = new[]{new multiple_coupons_row()},
+            client_alt_inv_template_id = ""
             };
 
         var response = mService.create_order_with_plans(request);

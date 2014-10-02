@@ -173,6 +173,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&client_sku[" + i + "]=" + row.client_sku;
                                     url += "&update_directive[" + i + "]=" + row.update_directive;
                                     url += "&update_amount[" + i + "]=" + row.update_amount;
+                                    url += "&client_item_id[" + i + "]=" + row.client_item_id;
                         
         }
     }
@@ -187,6 +188,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[client_sku]=" + row.client_sku;
                                     url += paramPrefix + "[" + i + "]" + "[update_directive]=" + row.update_directive;
                                     url += paramPrefix + "[" + i + "]" + "[update_amount]=" + row.update_amount;
+                                    url += paramPrefix + "[" + i + "]" + "[client_item_id]=" + row.client_item_id;
                         
         }
     }
@@ -198,6 +200,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.plan_no_to_remove_row row = array[i];
                         url += "&queued_plan_no[" + i + "]=" + row.queued_plan_no;
+                                    url += "&queued_client_plan_id[" + i + "]=" + row.queued_client_plan_id;
                         
         }
     }
@@ -209,6 +212,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.plan_no_to_remove_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[queued_plan_no]=" + row.queued_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[queued_client_plan_id]=" + row.queued_client_plan_id;
                         
         }
     }
@@ -225,6 +229,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&custom_rate_from_unit[" + i + "]=" + row.custom_rate_from_unit;
                                     url += "&custom_rate_to_unit[" + i + "]=" + row.custom_rate_to_unit;
                                     url += "&custom_rate_per_unit[" + i + "]=" + row.custom_rate_per_unit;
+                                    url += "&client_custom_rate_plan_id[" + i + "]=" + row.client_custom_rate_plan_id;
+                                    url += "&client_custom_rate_service_id[" + i + "]=" + row.client_custom_rate_service_id;
                         
         }
     }
@@ -241,6 +247,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[custom_rate_from_unit]=" + row.custom_rate_from_unit;
                                     url += paramPrefix + "[" + i + "]" + "[custom_rate_to_unit]=" + row.custom_rate_to_unit;
                                     url += paramPrefix + "[" + i + "]" + "[custom_rate_per_unit]=" + row.custom_rate_per_unit;
+                                    url += paramPrefix + "[" + i + "]" + "[client_custom_rate_plan_id]=" + row.client_custom_rate_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[client_custom_rate_service_id]=" + row.client_custom_rate_service_id;
                         
         }
     }
@@ -421,6 +429,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.usage_accumulation_config_row row = array[i];
                         url += "&usage_accumulation_plan_no[" + i + "]=" + row.usage_accumulation_plan_no;
                                     url += "&usage_accumulation_reset_months[" + i + "]=" + row.usage_accumulation_reset_months;
+                                    url += "&client_usage_accumulation_plan_id[" + i + "]=" + row.client_usage_accumulation_plan_id;
                         
         }
     }
@@ -433,6 +442,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.usage_accumulation_config_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[usage_accumulation_plan_no]=" + row.usage_accumulation_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[usage_accumulation_reset_months]=" + row.usage_accumulation_reset_months;
+                                    url += paramPrefix + "[" + i + "]" + "[client_usage_accumulation_plan_id]=" + row.client_usage_accumulation_plan_id;
                         
         }
     }
@@ -444,6 +454,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.enable_usage_pooling_plan_no_row row = array[i];
                         url += "&enable_usage_pooling_plan_no[" + i + "]=" + row.enable_usage_pooling_plan_no;
+                                    url += "&client_enable_usage_pool_plan_id[" + i + "]=" + row.client_enable_usage_pool_plan_id;
                         
         }
     }
@@ -455,6 +466,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.enable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[enable_usage_pooling_plan_no]=" + row.enable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[client_enable_usage_pool_plan_id]=" + row.client_enable_usage_pool_plan_id;
                         
         }
     }
@@ -499,6 +511,72 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_coll_acct_group_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[client_coll_acct_group_ids]=" + row.client_coll_acct_group_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_supp_plan_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_supp_plan_ids_row row = array[i];
+                        url += "&client_supp_plan_ids[" + i + "]=" + row.client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_supp_plan_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_supp_plan_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[client_supp_plan_ids]=" + row.client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_sp_alt_rate_sched_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += "&client_sp_alt_rate_sched_ids[" + i + "]=" + row.client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_sp_alt_rate_sched_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[client_sp_alt_rate_sched_ids]=" + row.client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row row = array[i];
+                        url += "&surcharge_no[" + i + "]=" + row.surcharge_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[surcharge_no]=" + row.surcharge_no;
                         
         }
     }
@@ -691,6 +769,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&a1_custom_rate_from_unit[" + i + "]=" + row.a1_custom_rate_from_unit;
                                     url += "&a1_custom_rate_to_unit[" + i + "]=" + row.a1_custom_rate_to_unit;
                                     url += "&a1_custom_rate_per_unit[" + i + "]=" + row.a1_custom_rate_per_unit;
+                                    url += "&a1_client_custom_rate_plan_id[" + i + "]=" + row.a1_client_custom_rate_plan_id;
+                                    url += "&a1_client_custom_rate_service_id[" + i + "]=" + row.a1_client_custom_rate_service_id;
                         
         }
     }
@@ -707,6 +787,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[a1_custom_rate_from_unit]=" + row.a1_custom_rate_from_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a1_custom_rate_to_unit]=" + row.a1_custom_rate_to_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a1_custom_rate_per_unit]=" + row.a1_custom_rate_per_unit;
+                                    url += paramPrefix + "[" + i + "]" + "[a1_client_custom_rate_plan_id]=" + row.a1_client_custom_rate_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[a1_client_custom_rate_service_id]=" + row.a1_client_custom_rate_service_id;
                         
         }
     }
@@ -755,6 +837,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_usage_accumulation_config_row row = array[i];
                         url += "&a1_usage_accumulation_plan_no[" + i + "]=" + row.a1_usage_accumulation_plan_no;
                                     url += "&a1_usage_accumulation_reset_months[" + i + "]=" + row.a1_usage_accumulation_reset_months;
+                                    url += "&a1_client_usg_accum_plan_id[" + i + "]=" + row.a1_client_usg_accum_plan_id;
                         
         }
     }
@@ -767,6 +850,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_usage_accumulation_config_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a1_usage_accumulation_plan_no]=" + row.a1_usage_accumulation_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[a1_usage_accumulation_reset_months]=" + row.a1_usage_accumulation_reset_months;
+                                    url += paramPrefix + "[" + i + "]" + "[a1_client_usg_accum_plan_id]=" + row.a1_client_usg_accum_plan_id;
                         
         }
     }
@@ -778,6 +862,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_enable_usage_pooling_plan_no_row row = array[i];
                         url += "&a1_enable_usage_pooling_plan_no[" + i + "]=" + row.a1_enable_usage_pooling_plan_no;
+                                    url += "&a1_client_enable_usg_pool_plan_id[" + i + "]=" + row.a1_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -789,6 +874,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_enable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a1_enable_usage_pooling_plan_no]=" + row.a1_enable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a1_client_enable_usg_pool_plan_id]=" + row.a1_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -833,6 +919,50 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_coll_acct_group_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a1_client_coll_acct_group_ids]=" + row.a1_client_coll_acct_group_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_supp_plan_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_supp_plan_ids_row row = array[i];
+                        url += "&a1_client_supp_plan_ids[" + i + "]=" + row.a1_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_supp_plan_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_supp_plan_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a1_client_supp_plan_ids]=" + row.a1_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_sp_alt_rate_sched_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += "&a1_client_sp_alt_rate_sched_ids[" + i + "]=" + row.a1_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_sp_alt_rate_sched_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a1_client_sp_alt_rate_sched_ids]=" + row.a1_client_sp_alt_rate_sched_ids;
                         
         }
     }
@@ -1025,6 +1155,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&a2_custom_rate_from_unit[" + i + "]=" + row.a2_custom_rate_from_unit;
                                     url += "&a2_custom_rate_to_unit[" + i + "]=" + row.a2_custom_rate_to_unit;
                                     url += "&a2_custom_rate_per_unit[" + i + "]=" + row.a2_custom_rate_per_unit;
+                                    url += "&a2_client_custom_rate_plan_id[" + i + "]=" + row.a2_client_custom_rate_plan_id;
+                                    url += "&a2_client_custom_rate_service_id[" + i + "]=" + row.a2_client_custom_rate_service_id;
                         
         }
     }
@@ -1041,6 +1173,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[a2_custom_rate_from_unit]=" + row.a2_custom_rate_from_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a2_custom_rate_to_unit]=" + row.a2_custom_rate_to_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a2_custom_rate_per_unit]=" + row.a2_custom_rate_per_unit;
+                                    url += paramPrefix + "[" + i + "]" + "[a2_client_custom_rate_plan_id]=" + row.a2_client_custom_rate_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[a2_client_custom_rate_service_id]=" + row.a2_client_custom_rate_service_id;
                         
         }
     }
@@ -1089,6 +1223,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_usage_accumulation_config_row row = array[i];
                         url += "&a2_usage_accumulation_plan_no[" + i + "]=" + row.a2_usage_accumulation_plan_no;
                                     url += "&a2_usage_accumulation_reset_months[" + i + "]=" + row.a2_usage_accumulation_reset_months;
+                                    url += "&a2_client_usg_accum_plan_id[" + i + "]=" + row.a2_client_usg_accum_plan_id;
                         
         }
     }
@@ -1101,6 +1236,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_usage_accumulation_config_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a2_usage_accumulation_plan_no]=" + row.a2_usage_accumulation_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[a2_usage_accumulation_reset_months]=" + row.a2_usage_accumulation_reset_months;
+                                    url += paramPrefix + "[" + i + "]" + "[a2_client_usg_accum_plan_id]=" + row.a2_client_usg_accum_plan_id;
                         
         }
     }
@@ -1112,6 +1248,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_enable_usage_pooling_plan_no_row row = array[i];
                         url += "&a2_enable_usage_pooling_plan_no[" + i + "]=" + row.a2_enable_usage_pooling_plan_no;
+                                    url += "&a2_client_enable_usg_pool_plan_id[" + i + "]=" + row.a2_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -1123,6 +1260,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_enable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a2_enable_usage_pooling_plan_no]=" + row.a2_enable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a2_client_enable_usg_pool_plan_id]=" + row.a2_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -1167,6 +1305,50 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_coll_acct_group_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a2_client_coll_acct_group_ids]=" + row.a2_client_coll_acct_group_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_supp_plan_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_supp_plan_ids_row row = array[i];
+                        url += "&a2_client_supp_plan_ids[" + i + "]=" + row.a2_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_supp_plan_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_supp_plan_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a2_client_supp_plan_ids]=" + row.a2_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_sp_alt_rate_sched_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += "&a2_client_sp_alt_rate_sched_ids[" + i + "]=" + row.a2_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_sp_alt_rate_sched_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a2_client_sp_alt_rate_sched_ids]=" + row.a2_client_sp_alt_rate_sched_ids;
                         
         }
     }
@@ -1359,6 +1541,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&a3_custom_rate_from_unit[" + i + "]=" + row.a3_custom_rate_from_unit;
                                     url += "&a3_custom_rate_to_unit[" + i + "]=" + row.a3_custom_rate_to_unit;
                                     url += "&a3_custom_rate_per_unit[" + i + "]=" + row.a3_custom_rate_per_unit;
+                                    url += "&a3_client_custom_rate_plan_id[" + i + "]=" + row.a3_client_custom_rate_plan_id;
+                                    url += "&a3_client_custom_rate_service_id[" + i + "]=" + row.a3_client_custom_rate_service_id;
                         
         }
     }
@@ -1375,6 +1559,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[a3_custom_rate_from_unit]=" + row.a3_custom_rate_from_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a3_custom_rate_to_unit]=" + row.a3_custom_rate_to_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a3_custom_rate_per_unit]=" + row.a3_custom_rate_per_unit;
+                                    url += paramPrefix + "[" + i + "]" + "[a3_client_custom_rate_plan_id]=" + row.a3_client_custom_rate_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[a3_client_custom_rate_service_id]=" + row.a3_client_custom_rate_service_id;
                         
         }
     }
@@ -1423,6 +1609,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_usage_accumulation_config_row row = array[i];
                         url += "&a3_usage_accumulation_plan_no[" + i + "]=" + row.a3_usage_accumulation_plan_no;
                                     url += "&a3_usage_accumulation_reset_months[" + i + "]=" + row.a3_usage_accumulation_reset_months;
+                                    url += "&a3_client_usg_accum_plan_id[" + i + "]=" + row.a3_client_usg_accum_plan_id;
                         
         }
     }
@@ -1435,6 +1622,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_usage_accumulation_config_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a3_usage_accumulation_plan_no]=" + row.a3_usage_accumulation_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[a3_usage_accumulation_reset_months]=" + row.a3_usage_accumulation_reset_months;
+                                    url += paramPrefix + "[" + i + "]" + "[a3_client_usg_accum_plan_id]=" + row.a3_client_usg_accum_plan_id;
                         
         }
     }
@@ -1446,6 +1634,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_enable_usage_pooling_plan_no_row row = array[i];
                         url += "&a3_enable_usage_pooling_plan_no[" + i + "]=" + row.a3_enable_usage_pooling_plan_no;
+                                    url += "&a3_client_enable_usg_pool_plan_id[" + i + "]=" + row.a3_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -1457,6 +1646,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_enable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a3_enable_usage_pooling_plan_no]=" + row.a3_enable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a3_client_enable_usg_pool_plan_id]=" + row.a3_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -1501,6 +1691,50 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_coll_acct_group_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a3_client_coll_acct_group_ids]=" + row.a3_client_coll_acct_group_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_supp_plan_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_supp_plan_ids_row row = array[i];
+                        url += "&a3_client_supp_plan_ids[" + i + "]=" + row.a3_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_supp_plan_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_supp_plan_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a3_client_supp_plan_ids]=" + row.a3_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_sp_alt_rate_sched_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += "&a3_client_sp_alt_rate_sched_ids[" + i + "]=" + row.a3_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_sp_alt_rate_sched_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a3_client_sp_alt_rate_sched_ids]=" + row.a3_client_sp_alt_rate_sched_ids;
                         
         }
     }
@@ -1693,6 +1927,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&a4_custom_rate_from_unit[" + i + "]=" + row.a4_custom_rate_from_unit;
                                     url += "&a4_custom_rate_to_unit[" + i + "]=" + row.a4_custom_rate_to_unit;
                                     url += "&a4_custom_rate_per_unit[" + i + "]=" + row.a4_custom_rate_per_unit;
+                                    url += "&a4_client_custom_rate_plan_id[" + i + "]=" + row.a4_client_custom_rate_plan_id;
+                                    url += "&a4_client_custom_rate_service_id[" + i + "]=" + row.a4_client_custom_rate_service_id;
                         
         }
     }
@@ -1709,6 +1945,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[a4_custom_rate_from_unit]=" + row.a4_custom_rate_from_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a4_custom_rate_to_unit]=" + row.a4_custom_rate_to_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a4_custom_rate_per_unit]=" + row.a4_custom_rate_per_unit;
+                                    url += paramPrefix + "[" + i + "]" + "[a4_client_custom_rate_plan_id]=" + row.a4_client_custom_rate_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[a4_client_custom_rate_service_id]=" + row.a4_client_custom_rate_service_id;
                         
         }
     }
@@ -1757,6 +1995,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_usage_accumulation_config_row row = array[i];
                         url += "&a4_usage_accumulation_plan_no[" + i + "]=" + row.a4_usage_accumulation_plan_no;
                                     url += "&a4_usage_accumulation_reset_months[" + i + "]=" + row.a4_usage_accumulation_reset_months;
+                                    url += "&a4_client_usg_accum_plan_id[" + i + "]=" + row.a4_client_usg_accum_plan_id;
                         
         }
     }
@@ -1769,6 +2008,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_usage_accumulation_config_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a4_usage_accumulation_plan_no]=" + row.a4_usage_accumulation_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[a4_usage_accumulation_reset_months]=" + row.a4_usage_accumulation_reset_months;
+                                    url += paramPrefix + "[" + i + "]" + "[a4_client_usg_accum_plan_id]=" + row.a4_client_usg_accum_plan_id;
                         
         }
     }
@@ -1780,6 +2020,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_enable_usage_pooling_plan_no_row row = array[i];
                         url += "&a4_enable_usage_pooling_plan_no[" + i + "]=" + row.a4_enable_usage_pooling_plan_no;
+                                    url += "&a4_client_enable_usg_pool_plan_id[" + i + "]=" + row.a4_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -1791,6 +2032,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_enable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a4_enable_usage_pooling_plan_no]=" + row.a4_enable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a4_client_enable_usg_pool_plan_id]=" + row.a4_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -1835,6 +2077,50 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_coll_acct_group_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a4_client_coll_acct_group_ids]=" + row.a4_client_coll_acct_group_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_supp_plan_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_supp_plan_ids_row row = array[i];
+                        url += "&a4_client_supp_plan_ids[" + i + "]=" + row.a4_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_supp_plan_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_supp_plan_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a4_client_supp_plan_ids]=" + row.a4_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_sp_alt_rate_sched_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += "&a4_client_sp_alt_rate_sched_ids[" + i + "]=" + row.a4_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_sp_alt_rate_sched_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a4_client_sp_alt_rate_sched_ids]=" + row.a4_client_sp_alt_rate_sched_ids;
                         
         }
     }
@@ -2027,6 +2313,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&a5_custom_rate_from_unit[" + i + "]=" + row.a5_custom_rate_from_unit;
                                     url += "&a5_custom_rate_to_unit[" + i + "]=" + row.a5_custom_rate_to_unit;
                                     url += "&a5_custom_rate_per_unit[" + i + "]=" + row.a5_custom_rate_per_unit;
+                                    url += "&a5_client_custom_rate_plan_id[" + i + "]=" + row.a5_client_custom_rate_plan_id;
+                                    url += "&a5_client_custom_rate_service_id[" + i + "]=" + row.a5_client_custom_rate_service_id;
                         
         }
     }
@@ -2043,6 +2331,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[a5_custom_rate_from_unit]=" + row.a5_custom_rate_from_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a5_custom_rate_to_unit]=" + row.a5_custom_rate_to_unit;
                                     url += paramPrefix + "[" + i + "]" + "[a5_custom_rate_per_unit]=" + row.a5_custom_rate_per_unit;
+                                    url += paramPrefix + "[" + i + "]" + "[a5_client_custom_rate_plan_id]=" + row.a5_client_custom_rate_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[a5_client_custom_rate_service_id]=" + row.a5_client_custom_rate_service_id;
                         
         }
     }
@@ -2091,6 +2381,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_usage_accumulation_config_row row = array[i];
                         url += "&a5_usage_accumulation_plan_no[" + i + "]=" + row.a5_usage_accumulation_plan_no;
                                     url += "&a5_usage_accumulation_reset_months[" + i + "]=" + row.a5_usage_accumulation_reset_months;
+                                    url += "&a5_client_usg_accum_plan_id[" + i + "]=" + row.a5_client_usg_accum_plan_id;
                         
         }
     }
@@ -2103,6 +2394,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_usage_accumulation_config_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a5_usage_accumulation_plan_no]=" + row.a5_usage_accumulation_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[a5_usage_accumulation_reset_months]=" + row.a5_usage_accumulation_reset_months;
+                                    url += paramPrefix + "[" + i + "]" + "[a5_client_usg_accum_plan_id]=" + row.a5_client_usg_accum_plan_id;
                         
         }
     }
@@ -2114,6 +2406,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_enable_usage_pooling_plan_no_row row = array[i];
                         url += "&a5_enable_usage_pooling_plan_no[" + i + "]=" + row.a5_enable_usage_pooling_plan_no;
+                                    url += "&a5_client_enable_usg_pool_plan_id[" + i + "]=" + row.a5_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -2125,6 +2418,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_enable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a5_enable_usage_pooling_plan_no]=" + row.a5_enable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a5_client_enable_usg_pool_plan_id]=" + row.a5_client_enable_usg_pool_plan_id;
                         
         }
     }
@@ -2169,6 +2463,50 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_coll_acct_group_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a5_client_coll_acct_group_ids]=" + row.a5_client_coll_acct_group_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_supp_plan_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_supp_plan_ids_row row = array[i];
+                        url += "&a5_client_supp_plan_ids[" + i + "]=" + row.a5_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_supp_plan_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_supp_plan_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a5_client_supp_plan_ids]=" + row.a5_client_supp_plan_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_sp_alt_rate_sched_ids_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += "&a5_client_sp_alt_rate_sched_ids[" + i + "]=" + row.a5_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_sp_alt_rate_sched_ids_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_sp_alt_rate_sched_ids_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a5_client_sp_alt_rate_sched_ids]=" + row.a5_client_sp_alt_rate_sched_ids;
                         
         }
     }
@@ -2368,6 +2706,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.disable_usage_pooling_plan_no_row row = array[i];
                         url += "&disable_usage_pooling_plan_no[" + i + "]=" + row.disable_usage_pooling_plan_no;
+                                    url += "&client_disable_usage_pool_plan_id[" + i + "]=" + row.client_disable_usage_pool_plan_id;
                         
         }
     }
@@ -2379,6 +2718,31 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.disable_usage_pooling_plan_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[disable_usage_pooling_plan_no]=" + row.disable_usage_pooling_plan_no;
+                                    url += paramPrefix + "[" + i + "]" + "[client_disable_usage_pool_plan_id]=" + row.client_disable_usage_pool_plan_id;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_surcharge_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_surcharge_row row = array[i];
+                        url += "&surcharge_no[" + i + "]=" + row.surcharge_no;
+                                    url += "&surcharge_directive[" + i + "]=" + row.surcharge_directive;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_surcharge_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_surcharge_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[surcharge_no]=" + row.surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[surcharge_directive]=" + row.surcharge_directive;
                         
         }
     }
@@ -2456,6 +2820,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&auto_offset_months_option[" + i + "]=" + row.auto_offset_months_option;
                                     url += "&offset_interval[" + i + "]=" + row.offset_interval;
                                     url += "&contract_end_date[" + i + "]=" + row.contract_end_date;
+                                    url += "&client_supp_plan_id[" + i + "]=" + row.client_supp_plan_id;
+                                    url += "&client_alt_rate_schedule_id[" + i + "]=" + row.client_alt_rate_schedule_id;
                         
         }
     }
@@ -2479,6 +2845,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[auto_offset_months_option]=" + row.auto_offset_months_option;
                                     url += paramPrefix + "[" + i + "]" + "[offset_interval]=" + row.offset_interval;
                                     url += paramPrefix + "[" + i + "]" + "[contract_end_date]=" + row.contract_end_date;
+                                    url += paramPrefix + "[" + i + "]" + "[client_supp_plan_id]=" + row.client_supp_plan_id;
+                                    url += paramPrefix + "[" + i + "]" + "[client_alt_rate_schedule_id]=" + row.client_alt_rate_schedule_id;
                         
         }
     }
@@ -2527,6 +2895,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_id_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_id_row row = array[i];
+                        url += "&client_plan_id[" + i + "]=" + row.client_plan_id;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_id_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_id_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[client_plan_id]=" + row.client_plan_id;
+                        
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.plans_input_row[] array)
     {
         if (array == null) return;
@@ -2567,6 +2957,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.plans_to_get_outage_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[plan_no]=" + row.plan_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_ids_to_get_outage_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_ids_to_get_outage_row row = array[i];
+                        url += "&client_plan_ids_to_get_outage[" + i + "]=" + row.client_plan_ids_to_get_outage;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_ids_to_get_outage_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_plan_ids_to_get_outage_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[client_plan_ids_to_get_outage]=" + row.client_plan_ids_to_get_outage;
                         
         }
     }
@@ -2725,6 +3137,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&plan_item_plan_no[" + i + "]=" + row.plan_item_plan_no;
                                     url += "&plan_item_units[" + i + "]=" + row.plan_item_units;
                                     url += "&plan_item_unit_amount[" + i + "]=" + row.plan_item_unit_amount;
+                                    url += "&client_plan_item_service_id[" + i + "]=" + row.client_plan_item_service_id;
+                                    url += "&client_plan_item_plan_id[" + i + "]=" + row.client_plan_item_plan_id;
                         
         }
     }
@@ -2739,6 +3153,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[plan_item_plan_no]=" + row.plan_item_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[plan_item_units]=" + row.plan_item_units;
                                     url += paramPrefix + "[" + i + "]" + "[plan_item_unit_amount]=" + row.plan_item_unit_amount;
+                                    url += paramPrefix + "[" + i + "]" + "[client_plan_item_service_id]=" + row.client_plan_item_service_id;
+                                    url += paramPrefix + "[" + i + "]" + "[client_plan_item_plan_id]=" + row.client_plan_item_plan_id;
                         
         }
     }
@@ -2753,6 +3169,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&sku_plan_no[" + i + "]=" + row.sku_plan_no;
                                     url += "&sku_units[" + i + "]=" + row.sku_units;
                                     url += "&sku_unit_amount[" + i + "]=" + row.sku_unit_amount;
+                                    url += "&client_sku_plan_id[" + i + "]=" + row.client_sku_plan_id;
                         
         }
     }
@@ -2767,6 +3184,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[sku_plan_no]=" + row.sku_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[sku_units]=" + row.sku_units;
                                     url += paramPrefix + "[" + i + "]" + "[sku_unit_amount]=" + row.sku_unit_amount;
+                                    url += paramPrefix + "[" + i + "]" + "[client_sku_plan_id]=" + row.client_sku_plan_id;
                         
         }
     }
@@ -2780,6 +3198,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                         url += "&supp_plan_no[" + i + "]=" + row.supp_plan_no;
                                     url += "&supp_plan_units[" + i + "]=" + row.supp_plan_units;
                                     url += "&assignment_directive[" + i + "]=" + row.assignment_directive;
+                                    url += "&client_supp_plan_ids[" + i + "]=" + row.client_supp_plan_ids;
                         
         }
     }
@@ -2793,6 +3212,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                         url += paramPrefix + "[" + i + "]" + "[supp_plan_no]=" + row.supp_plan_no;
                                     url += paramPrefix + "[" + i + "]" + "[supp_plan_units]=" + row.supp_plan_units;
                                     url += paramPrefix + "[" + i + "]" + "[assignment_directive]=" + row.assignment_directive;
+                                    url += paramPrefix + "[" + i + "]" + "[client_supp_plan_ids]=" + row.client_supp_plan_ids;
                         
         }
     }
@@ -2891,55 +3311,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
-            public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
-                        url += "&amount[" + i + "]=" + row.amount;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array, string paramPrefix)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[amount]=" + row.amount;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
-                        url += "&from[" + i + "]=" + row.from;
-                                    url += "&to[" + i + "]=" + row.to;
-                                    addParameterValuesFromArray(ref url, row.price,  "&price[" + i + "]");
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array, string paramPrefix)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
-                                    url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
-                                    addParameterValuesFromArray(ref url, row.price,  paramPrefix + "[" + i + "]" + "[price]");
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] array)
+            public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] array)
     {
         if (array == null) return;
         for (int i = 0; i < array.Length; i++)
@@ -2950,16 +3322,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&high_water[" + i + "]=" + row.high_water;
                                     url += "&billing_option[" + i + "]=" + row.billing_option;
                                     url += "&threshold[" + i + "]=" + row.threshold;
-                                    url += "&client_service_id[" + i + "]=" + row.client_service_id;
-                                    url += "&name[" + i + "]=" + row.name;
-                                    url += "&gl_cd[" + i + "]=" + row.gl_cd;
-                                    url += "&taxable[" + i + "]=" + row.taxable;
-                                    url += "&taxable_ind[" + i + "]=" + row.taxable_ind;
-                                    url += "&tax_group[" + i + "]=" + row.tax_group;
-                                    url += "&service_type[" + i + "]=" + row.service_type;
-                                    url += "&usage_type[" + i + "]=" + row.usage_type;
-                                    url += "&rate_type[" + i + "]=" + row.rate_type;
-                                    url += "&tax_inclusive_ind[" + i + "]=" + row.tax_inclusive_ind;
                                     addParameterValuesFromArray(ref url, row.tier,  "&tier[" + i + "]");
                         
         }
@@ -2976,16 +3338,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[high_water]=" + row.high_water;
                                     url += paramPrefix + "[" + i + "]" + "[billing_option]=" + row.billing_option;
                                     url += paramPrefix + "[" + i + "]" + "[threshold]=" + row.threshold;
-                                    url += paramPrefix + "[" + i + "]" + "[client_service_id]=" + row.client_service_id;
-                                    url += paramPrefix + "[" + i + "]" + "[name]=" + row.name;
-                                    url += paramPrefix + "[" + i + "]" + "[gl_cd]=" + row.gl_cd;
-                                    url += paramPrefix + "[" + i + "]" + "[taxable]=" + row.taxable;
-                                    url += paramPrefix + "[" + i + "]" + "[taxable_ind]=" + row.taxable_ind;
-                                    url += paramPrefix + "[" + i + "]" + "[tax_group]=" + row.tax_group;
-                                    url += paramPrefix + "[" + i + "]" + "[service_type]=" + row.service_type;
-                                    url += paramPrefix + "[" + i + "]" + "[usage_type]=" + row.usage_type;
-                                    url += paramPrefix + "[" + i + "]" + "[rate_type]=" + row.rate_type;
-                                    url += paramPrefix + "[" + i + "]" + "[tax_inclusive_ind]=" + row.tax_inclusive_ind;
                                     addParameterValuesFromArray(ref url, row.tier,  paramPrefix + "[" + i + "]" + "[tier]");
                         
         }
@@ -3094,7 +3446,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_row row = array[i];
                         url += "&rule_id[" + i + "]=" + row.rule_id;
-                                    url += "&rule[" + i + "]=" + row.rule;
                         
         }
     }
@@ -3106,7 +3457,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[rule_id]=" + row.rule_id;
-                                    url += paramPrefix + "[" + i + "]" + "[rule]=" + row.rule;
                         
         }
     }
@@ -3693,6 +4043,54 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
+                        url += "&amount[" + i + "]=" + row.amount;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[amount]=" + row.amount;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
+                        url += "&from[" + i + "]=" + row.from;
+                                    url += "&to[" + i + "]=" + row.to;
+                                    url += "&rate[" + i + "]=" + row.rate;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
+                                    url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
+                                    url += paramPrefix + "[" + i + "]" + "[rate]=" + row.rate;
+                        
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] array)
     {
         if (array == null) return;
@@ -3953,32 +4351,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_nos_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[plan_nos]=" + row.plan_nos;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] array)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row row = array[i];
-                        url += "&from[" + i + "]=" + row.from;
-                                    url += "&to[" + i + "]=" + row.to;
-                                    url += "&rate[" + i + "]=" + row.rate;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] array, string paramPrefix)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
-                                    url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
-                                    url += paramPrefix + "[" + i + "]" + "[rate]=" + row.rate;
                         
         }
     }

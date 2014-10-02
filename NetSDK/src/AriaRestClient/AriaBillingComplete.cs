@@ -38,6 +38,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.supp_field_values, "&supp_field_values");
             url += "&include_all_rate_schedules=" + request.include_all_rate_schedules;
             url += "&include_plan_hierarchy=" + request.include_plan_hierarchy;
+            url += "&client_plan_id=" + request.client_plan_id;
+            url += "&client_parent_plan_id=" + request.client_parent_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -176,6 +178,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&filter_currency_cd=" + request.filter_currency_cd;
             url += "&return_no_cost_items=" + request.return_no_cost_items;
             url += "&filter_item_no=" + request.filter_item_no;
+            url += "&client_filter_item_id=" + request.client_filter_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -213,6 +216,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&return_no_cost_items=" + request.return_no_cost_items;
             url += "&filter_item_no=" + request.filter_item_no;
             url += "&include_inactive_items=" + request.include_inactive_items;
+            url += "&filter_client_item_id=" + request.filter_client_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -246,9 +250,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            url += "&filter_item_no=" + request.filter_item_no;
             url += "&filter_currency_cd=" + request.filter_currency_cd;
             url += "&return_no_cost_items=" + request.return_no_cost_items;
+            url += "&filter_item_no=" + request.filter_item_no;
+            url += "&filter_client_item_id=" + request.filter_client_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -283,6 +288,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&filter_item_no=" + request.filter_item_no;
+            url += "&filter_client_item_id=" + request.filter_client_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -317,6 +323,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&filter_item_no=" + request.filter_item_no;
+            url += "&filter_client_item_id=" + request.filter_client_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -385,6 +392,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&plan_no=" + request.plan_no;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -419,6 +427,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&plan_no=" + request.plan_no;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -455,6 +464,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&plan_no=" + request.plan_no;
             url += "&service_no=" + request.service_no;
             url += "&alt_rate_schedule_no=" + request.alt_rate_schedule_no;
+            url += "&client_plan_id=" + request.client_plan_id;
+            url += "&client_service_id=" + request.client_service_id;
+            url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -799,6 +811,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&plan_no=" + request.plan_no;
             url += "&currency_cd=" + request.currency_cd;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -904,6 +917,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&return_no_cost_items=" + request.return_no_cost_items;
             url += "&filter_item_no=" + request.filter_item_no;
             url += "&include_inactive_items=" + request.include_inactive_items;
+            url += "&filter_client_item_id=" + request.filter_client_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1354,6 +1368,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&item_no=" + request.item_no;
+            url += "&client_item_id=" + request.client_item_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1788,6 +1803,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             StringReader sr = new StringReader(returnString);
             JsonTextReader reader = new JsonTextReader(sr);
             set_external_object_idResponse myDeserializedObj = json.Deserialize(reader, typeof(set_external_object_idResponse)) as set_external_object_idResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public get_acct_surchargesResponse get_acct_surcharges(get_acct_surchargesRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("get_acct_surcharges");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&acct_no=" + request.acct_no;
+            url += "&include_detail_ind=" + request.include_detail_ind;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            get_acct_surchargesResponse myDeserializedObj = json.Deserialize(reader, typeof(get_acct_surchargesResponse)) as get_acct_surchargesResponse;
             reader.Close();
             return myDeserializedObj;
         }
@@ -2314,6 +2364,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&account_no=" + request.account_no;
             url += "&plan_no=" + request.plan_no;
             url += "&client_receipt_id=" + request.client_receipt_id;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2414,6 +2465,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
+            url += "&client_acct_group_id=" + request.client_acct_group_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2796,6 +2848,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
             url += "&plan_no=" + request.plan_no;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3141,6 +3194,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&template_class=" + request.template_class;
             url += "&template_no=" + request.template_no;
             url += "&client_receipt_id=" + request.client_receipt_id;
+            url += "&client_template_id=" + request.client_template_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3285,6 +3339,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&first_usage_date=" + request.first_usage_date;
             url += "&recurring_ind=" + request.recurring_ind;
             url += "&usage_type_code=" + request.usage_type_code;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3357,6 +3412,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&acct_no=" + request.acct_no;
             url += "&plan_no=" + request.plan_no;
             url += "&comments=" + request.comments;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3654,6 +3710,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset_interval=" + request.offset_interval;
             url += "&contract_end_date=" + request.contract_end_date;
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
+            url += "&client_supp_plan_id=" + request.client_supp_plan_id;
+            url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3697,6 +3755,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
             url += "&invoice_unbilled_usage=" + request.invoice_unbilled_usage;
+            url += "&client_supp_plan_id=" + request.client_supp_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3742,6 +3801,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.new_acct_custom_rates, "&new_acct_custom_rates");
             url += "&effective_date=" + request.effective_date;
             url += "&offset_interval=" + request.offset_interval;
+            url += "&client_plan_id=" + request.client_plan_id;
+            url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3793,6 +3854,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset_interval=" + request.offset_interval;
             url += "&invoice_unbilled_usage=" + request.invoice_unbilled_usage;
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
+            url += "&client_existing_supp_plan_id=" + request.client_existing_supp_plan_id;
+            url += "&client_new_supp_plan_id=" + request.client_new_supp_plan_id;
+            url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3827,6 +3891,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&in_plan_no=" + request.in_plan_no;
+            url += "&in_client_plan_id=" + request.in_client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3861,6 +3926,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&in_plan_no=" + request.in_plan_no;
+            url += "&in_client_plan_id=" + request.in_client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4138,11 +4204,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            url += "&master_plan_no=" + request.master_plan_no;
             url += "&alt_start_date=" + request.alt_start_date;
             url += "&client_acct_id=" + request.client_acct_id;
             url += "&userid=" + request.userid;
             url += "&status_cd=" + request.status_cd;
+            url += "&master_plan_no=" + request.master_plan_no;
             url += "&master_plan_units=" + request.master_plan_units;
             RestUtilities.addParameterValuesFromArray(ref url, request.supp_plans, "&supp_plans");
             RestUtilities.addParameterValuesFromArray(ref url, request.supp_plan_units, "&supp_plan_units");
@@ -4232,6 +4298,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&cn_alt_msg_template_no=" + request.cn_alt_msg_template_no;
             url += "&invoice_approval_required=" + request.invoice_approval_required;
             url += "&create_session=" + request.create_session;
+            url += "&client_master_plan_id=" + request.client_master_plan_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_supp_plan_ids, "&client_supp_plan_ids");
+            url += "&client_mp_alt_rate_sched_id=" + request.client_mp_alt_rate_sched_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_sp_alt_rate_sched_ids, "&client_sp_alt_rate_sched_ids");
+            url += "&client_alt_msg_template_id=" + request.client_alt_msg_template_id;
+            url += "&client_cn_alt_msg_template_no=" + request.client_cn_alt_msg_template_no;
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4265,13 +4338,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
-            url += "&a1_master_plan_no=" + request.a1_master_plan_no;
             url += "&do_write=" + request.do_write;
             url += "&client_receipt_id=" + request.client_receipt_id;
             url += "&a1_alt_start_date=" + request.a1_alt_start_date;
             url += "&a1_client_acct_id=" + request.a1_client_acct_id;
             url += "&a1_userid=" + request.a1_userid;
             url += "&a1_status_cd=" + request.a1_status_cd;
+            url += "&a1_master_plan_no=" + request.a1_master_plan_no;
             url += "&a1_master_plan_units=" + request.a1_master_plan_units;
             RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plans, "&a1_supp_plans");
             RestUtilities.addParameterValuesFromArray(ref url, request.a1_supp_plan_units, "&a1_supp_plan_units");
@@ -4356,6 +4429,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_cn_alt_msg_template_no=" + request.a1_cn_alt_msg_template_no;
             url += "&a1_invoice_approval_required=" + request.a1_invoice_approval_required;
             url += "&a1_create_session=" + request.a1_create_session;
+            url += "&a1_client_master_plan_id=" + request.a1_client_master_plan_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_supp_plan_ids, "&a1_client_supp_plan_ids");
+            url += "&a1_client_mp_alt_rate_sched_id=" + request.a1_client_mp_alt_rate_sched_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_sp_alt_rate_sched_ids, "&a1_client_sp_alt_rate_sched_ids");
+            url += "&a1_client_alt_msg_template_id=" + request.a1_client_alt_msg_template_id;
+            url += "&a1_client_cn_alt_msg_template_no=" + request.a1_client_cn_alt_msg_template_no;
             url += "&a2_alt_start_date=" + request.a2_alt_start_date;
             url += "&a2_client_acct_id=" + request.a2_client_acct_id;
             url += "&a2_userid=" + request.a2_userid;
@@ -4445,6 +4524,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_cn_alt_msg_template_no=" + request.a2_cn_alt_msg_template_no;
             url += "&a2_invoice_approval_required=" + request.a2_invoice_approval_required;
             url += "&a2_create_session=" + request.a2_create_session;
+            url += "&a2_client_master_plan_id=" + request.a2_client_master_plan_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_supp_plan_ids, "&a2_client_supp_plan_ids");
+            url += "&a2_client_mp_alt_rate_sched_id=" + request.a2_client_mp_alt_rate_sched_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_sp_alt_rate_sched_ids, "&a2_client_sp_alt_rate_sched_ids");
+            url += "&a2_client_alt_msg_template_id=" + request.a2_client_alt_msg_template_id;
+            url += "&a2_client_cn_alt_msg_template_no=" + request.a2_client_cn_alt_msg_template_no;
             url += "&a3_alt_start_date=" + request.a3_alt_start_date;
             url += "&a3_client_acct_id=" + request.a3_client_acct_id;
             url += "&a3_userid=" + request.a3_userid;
@@ -4534,6 +4619,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_cn_alt_msg_template_no=" + request.a3_cn_alt_msg_template_no;
             url += "&a3_invoice_approval_required=" + request.a3_invoice_approval_required;
             url += "&a3_create_session=" + request.a3_create_session;
+            url += "&a3_client_master_plan_id=" + request.a3_client_master_plan_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_supp_plan_ids, "&a3_client_supp_plan_ids");
+            url += "&a3_client_mp_alt_rate_sched_id=" + request.a3_client_mp_alt_rate_sched_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_sp_alt_rate_sched_ids, "&a3_client_sp_alt_rate_sched_ids");
+            url += "&a3_client_alt_msg_template_id=" + request.a3_client_alt_msg_template_id;
+            url += "&a3_client_cn_alt_msg_template_no=" + request.a3_client_cn_alt_msg_template_no;
             url += "&a4_alt_start_date=" + request.a4_alt_start_date;
             url += "&a4_client_acct_id=" + request.a4_client_acct_id;
             url += "&a4_userid=" + request.a4_userid;
@@ -4623,6 +4714,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_cn_alt_msg_template_no=" + request.a4_cn_alt_msg_template_no;
             url += "&a4_invoice_approval_required=" + request.a4_invoice_approval_required;
             url += "&a4_create_session=" + request.a4_create_session;
+            url += "&a4_client_master_plan_id=" + request.a4_client_master_plan_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_supp_plan_ids, "&a4_client_supp_plan_ids");
+            url += "&a4_client_mp_alt_rate_sched_id=" + request.a4_client_mp_alt_rate_sched_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_sp_alt_rate_sched_ids, "&a4_client_sp_alt_rate_sched_ids");
+            url += "&a4_client_alt_msg_template_id=" + request.a4_client_alt_msg_template_id;
+            url += "&a4_client_cn_alt_msg_template_no=" + request.a4_client_cn_alt_msg_template_no;
             url += "&a5_alt_start_date=" + request.a5_alt_start_date;
             url += "&a5_client_acct_id=" + request.a5_client_acct_id;
             url += "&a5_userid=" + request.a5_userid;
@@ -4712,6 +4809,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_cn_alt_msg_template_no=" + request.a5_cn_alt_msg_template_no;
             url += "&a5_invoice_approval_required=" + request.a5_invoice_approval_required;
             url += "&a5_create_session=" + request.a5_create_session;
+            url += "&a5_client_master_plan_id=" + request.a5_client_master_plan_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_supp_plan_ids, "&a5_client_supp_plan_ids");
+            url += "&a5_client_mp_alt_rate_sched_id=" + request.a5_client_mp_alt_rate_sched_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_sp_alt_rate_sched_ids, "&a5_client_sp_alt_rate_sched_ids");
+            url += "&a5_client_alt_msg_template_id=" + request.a5_client_alt_msg_template_id;
+            url += "&a5_client_cn_alt_msg_template_no=" + request.a5_client_cn_alt_msg_template_no;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4794,6 +4897,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&percent_eval_plan_no=" + request.percent_eval_plan_no;
             url += "&percent_eval_service_no=" + request.percent_eval_service_no;
             RestUtilities.addParameterValuesFromArray(ref url, request.eligible_service_types, "&eligible_service_types");
+            url += "&client_eligible_plan_id=" + request.client_eligible_plan_id;
+            url += "&client_eligible_service_id=" + request.client_eligible_service_id;
+            url += "&client_alt_service_id_to_apply=" + request.client_alt_service_id_to_apply;
+            url += "&client_percent_eval_plan_id=" + request.client_percent_eval_plan_id;
+            url += "&client_percent_eval_service_id=" + request.client_percent_eval_service_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4897,6 +5005,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
             url += "&plan_no=" + request.plan_no;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4940,6 +5049,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&start_date=" + request.start_date;
             url += "&do_auto_discard=" + request.do_auto_discard;
             url += "&end_date=" + request.end_date;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5185,6 +5295,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset_interval=" + request.offset_interval;
             url += "&invoice_unbilled_usage=" + request.invoice_unbilled_usage;
             url += "&coupon_code=" + request.coupon_code;
+            url += "&client_master_plan_id=" + request.client_master_plan_id;
+            url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5309,6 +5421,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&coupon_code=" + request.coupon_code;
             url += "&userid=" + request.userid;
             url += "&invoice_approval_required=" + request.invoice_approval_required;
+            url += "&client_master_plan_id=" + request.client_master_plan_id;
+            url += "&client_mp_alt_rate_sched_id=" + request.client_mp_alt_rate_sched_id;
+            url += "&client_alt_msg_template_id=" + request.client_alt_msg_template_id;
+            url += "&client_cn_alt_msg_template_id=" + request.client_cn_alt_msg_template_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.update_surcharge, "&update_surcharge");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5659,9 +5776,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
+            RestUtilities.addParameterValuesFromArray(ref url, request.custom_acct_rates, "&custom_acct_rates");
             url += "&plan_no=" + request.plan_no;
             url += "&service_no=" + request.service_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.custom_acct_rates, "&custom_acct_rates");
+            url += "&client_plan_id=" + request.client_plan_id;
+            url += "&client_service_id=" + request.client_service_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5877,6 +5996,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
             url += "&plan_no=" + request.plan_no;
+            url += "&client_plan_id=" + request.client_plan_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6630,6 +6750,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&start_date=" + request.start_date;
             url += "&do_auto_discard=" + request.do_auto_discard;
             url += "&end_date=" + request.end_date;
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_id, "&client_plan_id");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6672,6 +6793,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&modify_directive=" + request.modify_directive;
             RestUtilities.addParameterValuesFromArray(ref url, request.plans_input, "&plans_input");
             url += "&end_date=" + request.end_date;
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_id, "&client_plan_id");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7288,6 +7410,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&outage_end_time=" + request.outage_end_time;
             RestUtilities.addParameterValuesFromArray(ref url, request.plans_to_get_outage, "&plans_to_get_outage");
             url += "&adjust_percent=" + request.adjust_percent;
+            RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_ids_to_get_outage, "&client_plan_ids_to_get_outage");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7334,6 +7457,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_2, "&usage_qualifier_2");
             RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_3, "&usage_qualifier_3");
             RestUtilities.addParameterValuesFromArray(ref url, request.usage_qualifier_4, "&usage_qualifier_4");
+            url += "&usage_type_cd_filter=" + request.usage_type_cd_filter;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7548,6 +7672,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
             url += "&alt_inv_template_no=" + request.alt_inv_template_no;
+            url += "&client_alt_inv_template_id=" + request.client_alt_inv_template_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8327,6 +8452,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
+            url += "&alt_stmt_template_no=" + request.alt_stmt_template_no;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8750,6 +8876,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&alt_inv_template_no=" + request.alt_inv_template_no;
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             RestUtilities.addParameterValuesFromArray(ref url, request.multiple_coupons, "&multiple_coupons");
+            url += "&client_alt_inv_template_id=" + request.client_alt_inv_template_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
