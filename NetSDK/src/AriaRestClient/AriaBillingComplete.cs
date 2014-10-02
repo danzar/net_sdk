@@ -7953,6 +7953,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&mandate_id=" + request.mandate_id;
             url += "&bank_id_cd=" + request.bank_id_cd;
             url += "&bank_branch_cd=" + request.bank_branch_cd;
+            url += "&statement_message=" + request.statement_message;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8294,6 +8295,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.standing_order, "&standing_order");
             url += "&client_order_id=" + request.client_order_id;
             url += "&client_receipt_id=" + request.client_receipt_id;
+            url += "&statement_message=" + request.statement_message;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8398,6 +8400,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             RestUtilities.addParameterValuesFromArray(ref url, request.usage_records, "&usage_records");
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8452,6 +8455,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&usage_type_code=" + request.usage_type_code;
             url += "&client_record_id=" + request.client_record_id;
             url += "&caller_id=" + request.caller_id;
+            url += "&client_receipt_id=" + request.client_receipt_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9186,6 +9190,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&mandate_id=" + request.mandate_id;
             url += "&bank_id_cd=" + request.bank_id_cd;
             url += "&bank_branch_cd=" + request.bank_branch_cd;
+            url += "&statement_message=" + request.statement_message;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();

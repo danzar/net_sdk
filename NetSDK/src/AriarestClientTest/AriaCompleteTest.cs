@@ -4299,7 +4299,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            statement_message = ""
             };
 
         var response = mService.create_order(request);
@@ -4500,7 +4501,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             first_bill_date = DateTime.Now.AddYears(15).ToShortDateString(),
             standing_order = new[]{new standing_order_row()},
             client_order_id = Guid.NewGuid().ToString(),
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            statement_message = ""
             };
 
         var response = mService.record_standing_order(request);
@@ -4544,7 +4546,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            usage_records = new[]{new usage_records_row()}
+            usage_records = new[]{new usage_records_row()},
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.bulk_record_usage(request);
@@ -4578,7 +4581,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             parent_usage_rec_no = 1,
             usage_type_code = "",
             client_record_id = "",
-            caller_id = ""
+            caller_id = "",
+            client_receipt_id = Guid.NewGuid().ToString()
             };
 
         var response = mService.record_usage(request);
@@ -4952,7 +4956,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            statement_message = ""
             };
 
         var response = mService.create_order_with_plans(request);

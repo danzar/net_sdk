@@ -1245,7 +1245,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             auth_key = AuthorizationKey,
             field_name = SupplementalFieldName,
             description = "",
-            min_no_sel = "",
+            min_no_sel = 1,
             max_no_sel = 1,
             datatype = "",
             form_input_type = "",
