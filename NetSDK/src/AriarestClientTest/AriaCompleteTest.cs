@@ -1300,7 +1300,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            primary_or_bkup_pay_method_ind = 1,
+            ref_bkup_seq_no = 1
             };
 
         var response = mService.update_payment_method(request);
@@ -2173,7 +2175,34 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            bkup_bill_first_name = "",
+            bkup_bill_mi = "",
+            bkup_bill_last_name = "",
+            bkup_bill_company_name = "",
+            bkup_bill_address1 = "",
+            bkup_bill_address2 = "",
+            bkup_bill_address3 = "",
+            bkup_bill_city = "",
+            bkup_bill_locality = "",
+            bkup_bill_state_prov = "",
+            bkup_bill_country = "",
+            bkup_bill_postal_cd = "",
+            bkup_bill_phone = "",
+            bkup_bill_phone_ext = "",
+            bkup_bill_cell_phone = "",
+            bkup_bill_work_phone = "",
+            bkup_bill_work_phone_ext = "",
+            bkup_bill_email = "",
+            bkup_pay_method = 1,
+            bkup_cc_number = "",
+            bkup_cc_expire_mm = 1,
+            bkup_cc_expire_yyyy = 1,
+            bkup_bank_acct_no = "",
+            bkup_bank_routing_no = "",
+            bkup_bill_agreement_id = "",
+            bkup_cvv = "",
+            seq_func_group_id = ""
             };
 
         var response = mService.create_acct_complete(request);
@@ -2292,6 +2321,33 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_bank_id_cd = "",
             a1_bank_branch_cd = "",
             a1_surcharge_no = new[]{new a1_surcharge_no_row()},
+            a1_bkup_bill_first_name = "",
+            a1_bkup_bill_mi = "",
+            a1_bkup_bill_last_name = "",
+            a1_bkup_bill_company_name = "",
+            a1_bkup_bill_address1 = "",
+            a1_bkup_bill_address2 = "",
+            a1_bkup_bill_address3 = "",
+            a1_bkup_bill_city = "",
+            a1_bkup_bill_locality = "",
+            a1_bkup_bill_state_prov = "",
+            a1_bkup_bill_country = "",
+            a1_bkup_bill_postal_cd = "",
+            a1_bkup_bill_phone = "",
+            a1_bkup_bill_phone_ext = "",
+            a1_bkup_bill_cell_phone = "",
+            a1_bkup_bill_work_phone = "",
+            a1_bkup_bill_work_phone_ext = "",
+            a1_bkup_bill_email = "",
+            a1_bkup_pay_method = 1,
+            a1_bkup_cc_number = "",
+            a1_bkup_cc_expire_mm = 1,
+            a1_bkup_cc_expire_yyyy = 1,
+            a1_bkup_bank_acct_no = "",
+            a1_bkup_bank_routing_no = "",
+            a1_bkup_bill_agreement_id = "",
+            a1_bkup_cvv = "",
+            a1_seq_func_group_id = "",
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2395,6 +2451,33 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_bank_id_cd = "",
             a2_bank_branch_cd = "",
             a2_surcharge_no = new[]{new a2_surcharge_no_row()},
+            a2_bkup_bill_first_name = "",
+            a2_bkup_bill_mi = "",
+            a2_bkup_bill_last_name = "",
+            a2_bkup_bill_company_name = "",
+            a2_bkup_bill_address1 = "",
+            a2_bkup_bill_address2 = "",
+            a2_bkup_bill_address3 = "",
+            a2_bkup_bill_city = "",
+            a2_bkup_bill_locality = "",
+            a2_bkup_bill_state_prov = "",
+            a2_bkup_bill_country = "",
+            a2_bkup_bill_postal_cd = "",
+            a2_bkup_bill_phone = "",
+            a2_bkup_bill_phone_ext = "",
+            a2_bkup_bill_cell_phone = "",
+            a2_bkup_bill_work_phone = "",
+            a2_bkup_bill_work_phone_ext = "",
+            a2_bkup_bill_email = "",
+            a2_bkup_pay_method = 1,
+            a2_bkup_cc_number = "",
+            a2_bkup_cc_expire_mm = 1,
+            a2_bkup_cc_expire_yyyy = 1,
+            a2_bkup_bank_acct_no = "",
+            a2_bkup_bank_routing_no = "",
+            a2_bkup_bill_agreement_id = "",
+            a2_bkup_cvv = "",
+            a2_seq_func_group_id = "",
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2498,6 +2581,33 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_bank_id_cd = "",
             a3_bank_branch_cd = "",
             a3_surcharge_no = new[]{new a3_surcharge_no_row()},
+            a3_bkup_bill_first_name = "",
+            a3_bkup_bill_mi = "",
+            a3_bkup_bill_last_name = "",
+            a3_bkup_bill_company_name = "",
+            a3_bkup_bill_address1 = "",
+            a3_bkup_bill_address2 = "",
+            a3_bkup_bill_address3 = "",
+            a3_bkup_bill_city = "",
+            a3_bkup_bill_locality = "",
+            a3_bkup_bill_state_prov = "",
+            a3_bkup_bill_country = "",
+            a3_bkup_bill_postal_cd = "",
+            a3_bkup_bill_phone = "",
+            a3_bkup_bill_phone_ext = "",
+            a3_bkup_bill_cell_phone = "",
+            a3_bkup_bill_work_phone = "",
+            a3_bkup_bill_work_phone_ext = "",
+            a3_bkup_bill_email = "",
+            a3_bkup_pay_method = 1,
+            a3_bkup_cc_number = "",
+            a3_bkup_cc_expire_mm = 1,
+            a3_bkup_cc_expire_yyyy = 1,
+            a3_bkup_bank_acct_no = "",
+            a3_bkup_bank_routing_no = "",
+            a3_bkup_bill_agreement_id = "",
+            a3_bkup_cvv = "",
+            a3_seq_func_group_id = "",
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2601,6 +2711,33 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_bank_id_cd = "",
             a4_bank_branch_cd = "",
             a4_surcharge_no = new[]{new a4_surcharge_no_row()},
+            a4_bkup_bill_first_name = "",
+            a4_bkup_bill_mi = "",
+            a4_bkup_bill_last_name = "",
+            a4_bkup_bill_company_name = "",
+            a4_bkup_bill_address1 = "",
+            a4_bkup_bill_address2 = "",
+            a4_bkup_bill_address3 = "",
+            a4_bkup_bill_city = "",
+            a4_bkup_bill_locality = "",
+            a4_bkup_bill_state_prov = "",
+            a4_bkup_bill_country = "",
+            a4_bkup_bill_postal_cd = "",
+            a4_bkup_bill_phone = "",
+            a4_bkup_bill_phone_ext = "",
+            a4_bkup_bill_cell_phone = "",
+            a4_bkup_bill_work_phone = "",
+            a4_bkup_bill_work_phone_ext = "",
+            a4_bkup_bill_email = "",
+            a4_bkup_pay_method = 1,
+            a4_bkup_cc_number = "",
+            a4_bkup_cc_expire_mm = 1,
+            a4_bkup_cc_expire_yyyy = 1,
+            a4_bkup_bank_acct_no = "",
+            a4_bkup_bank_routing_no = "",
+            a4_bkup_bill_agreement_id = "",
+            a4_bkup_cvv = "",
+            a4_seq_func_group_id = "",
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2703,7 +2840,34 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_mandate_id = "",
             a5_bank_id_cd = "",
             a5_bank_branch_cd = "",
-            a5_surcharge_no = new[]{new a5_surcharge_no_row()}
+            a5_surcharge_no = new[]{new a5_surcharge_no_row()},
+            a5_bkup_bill_first_name = "",
+            a5_bkup_bill_mi = "",
+            a5_bkup_bill_last_name = "",
+            a5_bkup_bill_company_name = "",
+            a5_bkup_bill_address1 = "",
+            a5_bkup_bill_address2 = "",
+            a5_bkup_bill_address3 = "",
+            a5_bkup_bill_city = "",
+            a5_bkup_bill_locality = "",
+            a5_bkup_bill_state_prov = "",
+            a5_bkup_bill_country = "",
+            a5_bkup_bill_postal_cd = "",
+            a5_bkup_bill_phone = "",
+            a5_bkup_bill_phone_ext = "",
+            a5_bkup_bill_cell_phone = "",
+            a5_bkup_bill_work_phone = "",
+            a5_bkup_bill_work_phone_ext = "",
+            a5_bkup_bill_email = "",
+            a5_bkup_pay_method = 1,
+            a5_bkup_cc_number = "",
+            a5_bkup_cc_expire_mm = 1,
+            a5_bkup_cc_expire_yyyy = 1,
+            a5_bkup_bank_acct_no = "",
+            a5_bkup_bank_routing_no = "",
+            a5_bkup_bill_agreement_id = "",
+            a5_bkup_cvv = "",
+            a5_seq_func_group_id = ""
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -2872,8 +3036,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            date_range_start = DateTime.Now.AddMonths(-1).ToShortDateString(),
             specified_usage_type_no = 1,
+            date_range_start = DateTime.Now.AddMonths(-1).ToShortDateString(),
             date_range_end = "",
             specified_usage_type_code = "",
             usage_qualifier_1 = new[]{new usage_qualifier_1_row()},
@@ -2881,7 +3045,10 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             usage_qualifier_3 = new[]{new usage_qualifier_3_row()},
             usage_qualifier_4 = new[]{new usage_qualifier_4_row()},
             limit = 1,
-            offset = 1
+            offset = 1,
+            transaction_id = 1,
+            invoice_no = 1,
+            invoice_line_item = 1
             };
 
         var response = mService.get_usage_history(request);
@@ -3061,7 +3228,34 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            bkup_bill_first_name = "",
+            bkup_bill_mi = "",
+            bkup_bill_last_name = "",
+            bkup_bill_company_name = "",
+            bkup_bill_address1 = "",
+            bkup_bill_address2 = "",
+            bkup_bill_address3 = "",
+            bkup_bill_city = "",
+            bkup_bill_locality = "",
+            bkup_bill_state_prov = "",
+            bkup_bill_country = "",
+            bkup_bill_postal_cd = "",
+            bkup_bill_phone = "",
+            bkup_bill_phone_ext = "",
+            bkup_bill_cell_phone = "",
+            bkup_bill_work_phone = "",
+            bkup_bill_work_phone_ext = "",
+            bkup_bill_email = "",
+            bkup_pay_method = 1,
+            bkup_cc_number = "",
+            bkup_cc_expire_mm = 1,
+            bkup_cc_expire_yyyy = 1,
+            bkup_bank_acct_no = "",
+            bkup_bank_routing_no = "",
+            bkup_bill_agreement_id = "",
+            bkup_cvv = "",
+            seq_func_group_id = ""
             };
 
         var response = mService.update_acct_complete(request);
@@ -3197,7 +3391,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             {
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
-            acct_no = 1
+            acct_no = 1,
+            primary_or_bkup_pay_mthd_ind = 1
             };
 
         var response = mService.remove_pay_method(request);
@@ -3522,7 +3717,11 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            usage_details_flag = ""
+            usage_details_flag = "",
+            include_all_usage_unit_thresholds = "",
+            plan_no = PlanNumber,
+            usage_type_no = 1,
+            usage_type_code = ""
             };
 
         var response = mService.get_unbilled_usage_summary(request);
@@ -3537,7 +3736,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            amount = 1
+            amount = 1,
+            usage_unit_thresholds = new[]{new usage_unit_thresholds_row()}
             };
 
         var response = mService.set_acct_usg_mtd_threshold(request);
@@ -3552,7 +3752,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            amount = 1
+            amount = 1,
+            usage_unit_thresholds = new[]{new usage_unit_thresholds_row()}
             };
 
         var response = mService.set_acct_usg_ptd_threshold(request);
@@ -3567,7 +3768,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            amount = 1
+            amount = 1,
+            usage_unit_thresholds = new[]{new usage_unit_thresholds_row()}
             };
 
         var response = mService.set_client_usg_mtd_threshold(request);
@@ -3582,7 +3784,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            amount = 1
+            amount = 1,
+            usage_unit_thresholds = new[]{new usage_unit_thresholds_row()}
             };
 
         var response = mService.set_client_usg_ptd_threshold(request);
@@ -4222,7 +4425,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_receipt_id = Guid.NewGuid().ToString(),
             specific_charge_transaction_id = new[]{new specific_charge_transaction_id_row()},
             external_destination_id = 1,
-            external_id = ""
+            external_id = "",
+            invoice_no = new[]{new invoice_no_row()}
             };
 
         var response = mService.record_external_payment(request);
