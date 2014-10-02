@@ -967,6 +967,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_surcharge_no_row row = array[i];
+                        url += "&a1_surcharge_no[" + i + "]=" + row.a1_surcharge_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a1_surcharge_no]=" + row.a1_surcharge_no;
+                        
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_supp_plans_row[] array)
     {
         if (array == null) return;
@@ -1349,6 +1371,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_client_sp_alt_rate_sched_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a2_client_sp_alt_rate_sched_ids]=" + row.a2_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_surcharge_no_row row = array[i];
+                        url += "&a2_surcharge_no[" + i + "]=" + row.a2_surcharge_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a2_surcharge_no]=" + row.a2_surcharge_no;
                         
         }
     }
@@ -1739,6 +1783,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_surcharge_no_row row = array[i];
+                        url += "&a3_surcharge_no[" + i + "]=" + row.a3_surcharge_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a3_surcharge_no]=" + row.a3_surcharge_no;
+                        
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_supp_plans_row[] array)
     {
         if (array == null) return;
@@ -2125,6 +2191,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_surcharge_no_row row = array[i];
+                        url += "&a4_surcharge_no[" + i + "]=" + row.a4_surcharge_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a4_surcharge_no]=" + row.a4_surcharge_no;
+                        
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_supp_plans_row[] array)
     {
         if (array == null) return;
@@ -2507,6 +2595,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_client_sp_alt_rate_sched_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a5_client_sp_alt_rate_sched_ids]=" + row.a5_client_sp_alt_rate_sched_ids;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_surcharge_no_row row = array[i];
+                        url += "&a5_surcharge_no[" + i + "]=" + row.a5_surcharge_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[a5_surcharge_no]=" + row.a5_surcharge_no;
                         
         }
     }
@@ -3311,7 +3421,77 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
-            public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] array)
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.recurring_credit_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.recurring_credit_no_row row = array[i];
+                        url += "&recurring_credit_no[" + i + "]=" + row.recurring_credit_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.recurring_credit_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.recurring_credit_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[recurring_credit_no]=" + row.recurring_credit_no;
+                        
+        }
+    }
+
+            public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
+                        url += "&amount[" + i + "]=" + row.amount;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[amount]=" + row.amount;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
+                        url += "&from[" + i + "]=" + row.from;
+                                    url += "&to[" + i + "]=" + row.to;
+                                    addParameterValuesFromArray(ref url, row.price,  "&price[" + i + "]");
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
+                                    url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
+                                    addParameterValuesFromArray(ref url, row.price,  paramPrefix + "[" + i + "]" + "[price]");
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] array)
     {
         if (array == null) return;
         for (int i = 0; i < array.Length; i++)
@@ -3322,6 +3502,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += "&high_water[" + i + "]=" + row.high_water;
                                     url += "&billing_option[" + i + "]=" + row.billing_option;
                                     url += "&threshold[" + i + "]=" + row.threshold;
+                                    url += "&client_service_id[" + i + "]=" + row.client_service_id;
+                                    url += "&name[" + i + "]=" + row.name;
+                                    url += "&gl_cd[" + i + "]=" + row.gl_cd;
+                                    url += "&taxable[" + i + "]=" + row.taxable;
+                                    url += "&taxable_ind[" + i + "]=" + row.taxable_ind;
+                                    url += "&tax_group[" + i + "]=" + row.tax_group;
+                                    url += "&service_type[" + i + "]=" + row.service_type;
+                                    url += "&usage_type[" + i + "]=" + row.usage_type;
+                                    url += "&rate_type[" + i + "]=" + row.rate_type;
+                                    url += "&tax_inclusive_ind[" + i + "]=" + row.tax_inclusive_ind;
                                     addParameterValuesFromArray(ref url, row.tier,  "&tier[" + i + "]");
                         
         }
@@ -3338,6 +3528,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[high_water]=" + row.high_water;
                                     url += paramPrefix + "[" + i + "]" + "[billing_option]=" + row.billing_option;
                                     url += paramPrefix + "[" + i + "]" + "[threshold]=" + row.threshold;
+                                    url += paramPrefix + "[" + i + "]" + "[client_service_id]=" + row.client_service_id;
+                                    url += paramPrefix + "[" + i + "]" + "[name]=" + row.name;
+                                    url += paramPrefix + "[" + i + "]" + "[gl_cd]=" + row.gl_cd;
+                                    url += paramPrefix + "[" + i + "]" + "[taxable]=" + row.taxable;
+                                    url += paramPrefix + "[" + i + "]" + "[taxable_ind]=" + row.taxable_ind;
+                                    url += paramPrefix + "[" + i + "]" + "[tax_group]=" + row.tax_group;
+                                    url += paramPrefix + "[" + i + "]" + "[service_type]=" + row.service_type;
+                                    url += paramPrefix + "[" + i + "]" + "[usage_type]=" + row.usage_type;
+                                    url += paramPrefix + "[" + i + "]" + "[rate_type]=" + row.rate_type;
+                                    url += paramPrefix + "[" + i + "]" + "[tax_inclusive_ind]=" + row.tax_inclusive_ind;
                                     addParameterValuesFromArray(ref url, row.tier,  paramPrefix + "[" + i + "]" + "[tier]");
                         
         }
@@ -3446,6 +3646,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_row row = array[i];
                         url += "&rule_id[" + i + "]=" + row.rule_id;
+                                    url += "&rule[" + i + "]=" + row.rule;
                         
         }
     }
@@ -3457,6 +3658,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[rule_id]=" + row.rule_id;
+                                    url += paramPrefix + "[" + i + "]" + "[rule]=" + row.rule;
                         
         }
     }
@@ -4043,54 +4245,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
-                        url += "&amount[" + i + "]=" + row.amount;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row[] array, string paramPrefix)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.price_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[amount]=" + row.amount;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
-                        url += "&from[" + i + "]=" + row.from;
-                                    url += "&to[" + i + "]=" + row.to;
-                                    url += "&rate[" + i + "]=" + row.rate;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row[] array, string paramPrefix)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.tier_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
-                                    url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
-                                    url += paramPrefix + "[" + i + "]" + "[rate]=" + row.rate;
-                        
-        }
-    }
-
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] array)
     {
         if (array == null) return;
@@ -4351,6 +4505,32 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_nos_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[plan_nos]=" + row.plan_nos;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row row = array[i];
+                        url += "&from[" + i + "]=" + row.from;
+                                    url += "&to[" + i + "]=" + row.to;
+                                    url += "&rate[" + i + "]=" + row.rate;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
+                                    url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
+                                    url += paramPrefix + "[" + i + "]" + "[rate]=" + row.rate;
                         
         }
     }

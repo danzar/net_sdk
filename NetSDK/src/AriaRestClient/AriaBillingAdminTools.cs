@@ -2830,7 +2830,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&inline_offset_ind=" + request.inline_offset_ind;
             url += "&apply_b4_or_after_discount_cd=" + request.apply_b4_or_after_discount_cd;
             url += "&scope_no=" + request.scope_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.tier, "&tier");
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_tier, "&surcharge_tier");
             url += "&client_surcharge_id=" + request.client_surcharge_id;
             url += "&apply_to_zero_invoice_ind=" + request.apply_to_zero_invoice_ind;
             url += "&tax_group=" + request.tax_group;
@@ -2882,7 +2882,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&ext_description=" + request.ext_description;
             url += "&currency_cd=" + request.currency_cd;
             url += "&scope_no=" + request.scope_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.tier, "&tier");
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_tier, "&surcharge_tier");
             url += "&apply_to_zero_invoice_ind=" + request.apply_to_zero_invoice_ind;
             RestUtilities.addParameterValuesFromArray(ref url, request.plan_no, "&plan_no");
             RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_id, "&client_plan_id");

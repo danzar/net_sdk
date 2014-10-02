@@ -786,7 +786,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             max_applicable_months = 1,
             max_applications_per_acct = 1,
             alt_service_no_2_apply = 1,
-            alt_service_id_2_apply = 1,
+            alt_service_id_2_apply = "",
             applicable_trans_scope = "",
             plan_no = new[]{new plan_no_row()},
             client_plan_id = new[]{new client_plan_id_row()},
@@ -1316,7 +1316,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             group_no = 1,
-            client_plan_change_group_id = 1
+            client_plan_change_group_id = ""
             };
 
         var response = mService.get_plan_group_details(request);
@@ -1477,7 +1477,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             inline_offset_ind = "",
             apply_b4_or_after_discount_cd = "",
             scope_no = 1,
-            tier = new[]{new tier_row()},
+            surcharge_tier = new[]{new surcharge_tier_row()},
             client_surcharge_id = "",
             apply_to_zero_invoice_ind = 1,
             tax_group = 1,
@@ -1509,7 +1509,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             ext_description = "",
             currency_cd = "",
             scope_no = 1,
-            tier = new[]{new tier_row()},
+            surcharge_tier = new[]{new surcharge_tier_row()},
             apply_to_zero_invoice_ind = 1,
             plan_no = new[]{new plan_no_row()},
             client_plan_id = new[]{new client_plan_id_row()},

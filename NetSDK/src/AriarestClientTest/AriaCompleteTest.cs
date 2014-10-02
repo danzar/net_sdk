@@ -983,7 +983,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             force_bill_date_reset = 1,
             comments = "",
             client_receipt_id = Guid.NewGuid().ToString(),
-            alt_do_dunning = ""
+            alt_do_dunning = "",
+            status_degrade_date = ""
             };
 
         var response = mService.update_acct_status(request);
@@ -1292,7 +1293,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             do_collect = "",
             change_status_after_coll = "",
             reset_dates_after_status = "y",
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.update_payment_method(request);
@@ -1340,7 +1348,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bill_cell_phone = "",
             bill_work_phone = "",
             bill_work_phone_extension = "",
-            record_cc_on_auth_failure = ""
+            record_cc_on_auth_failure = "",
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.authorize_electronic_payment(request);
@@ -2151,7 +2166,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_sp_alt_rate_sched_ids = new[]{new client_sp_alt_rate_sched_ids_row()},
             client_alt_msg_template_id = "",
             client_cn_alt_msg_template_no = "",
-            surcharge_no = new[]{new surcharge_no_row()}
+            surcharge_no = new[]{new surcharge_no_row()},
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.create_acct_complete(request);
@@ -2262,6 +2284,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_client_sp_alt_rate_sched_ids = new[]{new a1_client_sp_alt_rate_sched_ids_row()},
             a1_client_alt_msg_template_id = "",
             a1_client_cn_alt_msg_template_no = "",
+            a1_iban = "",
+            a1_bank_check_digit = 1,
+            a1_bank_swift_cd = "",
+            a1_bank_country_cd = "",
+            a1_mandate_id = "",
+            a1_bank_id_cd = "",
+            a1_bank_branch_cd = "",
+            a1_surcharge_no = new[]{new a1_surcharge_no_row()},
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2357,6 +2387,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_client_sp_alt_rate_sched_ids = new[]{new a2_client_sp_alt_rate_sched_ids_row()},
             a2_client_alt_msg_template_id = "",
             a2_client_cn_alt_msg_template_no = "",
+            a2_iban = "",
+            a2_bank_check_digit = 1,
+            a2_bank_swift_cd = "",
+            a2_bank_country_cd = "",
+            a2_mandate_id = "",
+            a2_bank_id_cd = "",
+            a2_bank_branch_cd = "",
+            a2_surcharge_no = new[]{new a2_surcharge_no_row()},
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2452,6 +2490,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_client_sp_alt_rate_sched_ids = new[]{new a3_client_sp_alt_rate_sched_ids_row()},
             a3_client_alt_msg_template_id = "",
             a3_client_cn_alt_msg_template_no = "",
+            a3_iban = "",
+            a3_bank_check_digit = 1,
+            a3_bank_swift_cd = "",
+            a3_bank_country_cd = "",
+            a3_mandate_id = "",
+            a3_bank_id_cd = "",
+            a3_bank_branch_cd = "",
+            a3_surcharge_no = new[]{new a3_surcharge_no_row()},
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2547,6 +2593,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_client_sp_alt_rate_sched_ids = new[]{new a4_client_sp_alt_rate_sched_ids_row()},
             a4_client_alt_msg_template_id = "",
             a4_client_cn_alt_msg_template_no = "",
+            a4_iban = "",
+            a4_bank_check_digit = 1,
+            a4_bank_swift_cd = "",
+            a4_bank_country_cd = "",
+            a4_mandate_id = "",
+            a4_bank_id_cd = "",
+            a4_bank_branch_cd = "",
+            a4_surcharge_no = new[]{new a4_surcharge_no_row()},
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2641,7 +2695,15 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_client_mp_alt_rate_sched_id = "",
             a5_client_sp_alt_rate_sched_ids = new[]{new a5_client_sp_alt_rate_sched_ids_row()},
             a5_client_alt_msg_template_id = "",
-            a5_client_cn_alt_msg_template_no = ""
+            a5_client_cn_alt_msg_template_no = "",
+            a5_iban = "",
+            a5_bank_check_digit = 1,
+            a5_bank_swift_cd = "",
+            a5_bank_country_cd = "",
+            a5_mandate_id = "",
+            a5_bank_id_cd = "",
+            a5_bank_branch_cd = "",
+            a5_surcharge_no = new[]{new a5_surcharge_no_row()}
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -2992,7 +3054,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_mp_alt_rate_sched_id = "",
             client_alt_msg_template_id = "",
             client_cn_alt_msg_template_id = "",
-            update_surcharge = new[]{new update_surcharge_row()}
+            update_surcharge = new[]{new update_surcharge_row()},
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.update_acct_complete(request);
@@ -3260,7 +3329,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             acct_no = 1,
             user_id = "",
             start_date = DateTime.Now.AddYears(15).ToShortDateString(),
-            end_date = ""
+            end_date = "",
+            include_invoice_activity_eligibility = ""
             };
 
         var response = mService.get_acct_statement_history(request);
@@ -3983,8 +4053,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             account_no = AccountNumber,
-            bill_immediately = 1,
             order_line_items = new[]{new order_line_items_row()},
+            bill_immediately = 1,
             bill_seq = 1,
             client_order_id = Guid.NewGuid().ToString(),
             client_receipt_id = Guid.NewGuid().ToString(),
@@ -4019,7 +4089,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             track_data1 = "",
             track_data2 = "",
             alt_inv_template_no = 1,
-            client_alt_inv_template_id = ""
+            client_alt_inv_template_id = "",
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.create_order(request);
@@ -4063,7 +4140,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             track_data1 = "",
             track_data2 = "",
             force_balance_scope = "",
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.settle_account_balance(request);
@@ -4110,7 +4194,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             alt_client_acct_group_id = "",
             track_data1 = "",
             track_data2 = "",
-            payment_application_method = 1
+            payment_application_method = 1,
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.collect_from_account(request);
@@ -4559,7 +4650,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bill_address3 = "",
             track_data1 = "",
             track_data2 = "",
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.manage_pending_invoice(request);
@@ -4643,7 +4741,14 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             alt_inv_template_no = 1,
             sync_mstr_bill_dates_override = 1,
             multiple_coupons = new[]{new multiple_coupons_row()},
-            client_alt_inv_template_id = ""
+            client_alt_inv_template_id = "",
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
             };
 
         var response = mService.create_order_with_plans(request);
@@ -4880,6 +4985,75 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.settle_dispute_hold(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void cancel_recurring_credits()
+    {
+       cancel_recurring_creditsRequest request = new cancel_recurring_creditsRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            acct_no = 1,
+            userid = UserId,
+            client_acct_id = "",
+            recurring_credit_no = new[]{new recurring_credit_no_row()},
+            cancel_comments = ""
+            };
+
+        var response = mService.cancel_recurring_credits(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void update_order()
+    {
+       update_orderRequest request = new update_orderRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            account_no = AccountNumber,
+            order_no = 1,
+            bill_immediately = 1,
+            alt_pay_method = 1,
+            cc_number = "4111111111111111",
+            cc_expire_mm = DateTime.Now.Month,
+            cc_expire_yyyy = DateTime.Now.Year,
+            bank_routing_num = "",
+            bank_acct_num = "",
+            bill_company_name = "",
+            bill_first_name = "",
+            bill_middle_initial = "",
+            bill_last_name = "",
+            bill_address1 = "",
+            bill_address2 = "",
+            bill_city = "",
+            bill_locality = "",
+            bill_state_prov = "",
+            bill_zip = "",
+            bill_country = "",
+            bill_email = "",
+            bill_phone = "",
+            bill_work_phone = "",
+            bill_work_phone_extension = "",
+            cvv = "",
+            bill_address3 = "",
+            do_write = "",
+            alt_client_acct_group_id = "",
+            track_data1 = "",
+            track_data2 = "",
+            alt_inv_template_no = 1,
+            iban = "",
+            bank_check_digit = 1,
+            bank_swift_cd = "",
+            bank_country_cd = "",
+            mandate_id = "",
+            bank_id_cd = "",
+            bank_branch_cd = ""
+            };
+
+        var response = mService.update_order(request);
         Assert.IsNotNull(response);
     }
 

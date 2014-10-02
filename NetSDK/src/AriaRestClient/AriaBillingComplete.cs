@@ -2017,6 +2017,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&comments=" + request.comments;
             url += "&client_receipt_id=" + request.client_receipt_id;
             url += "&alt_do_dunning=" + request.alt_do_dunning;
+            url += "&status_degrade_date=" + request.status_degrade_date;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2606,6 +2607,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&change_status_after_coll=" + request.change_status_after_coll;
             url += "&reset_dates_after_status=" + request.reset_dates_after_status;
             url += "&client_receipt_id=" + request.client_receipt_id;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2674,6 +2682,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bill_work_phone=" + request.bill_work_phone;
             url += "&bill_work_phone_extension=" + request.bill_work_phone_extension;
             url += "&record_cc_on_auth_failure=" + request.record_cc_on_auth_failure;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4305,6 +4320,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_alt_msg_template_id=" + request.client_alt_msg_template_id;
             url += "&client_cn_alt_msg_template_no=" + request.client_cn_alt_msg_template_no;
             RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4435,6 +4457,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.a1_client_sp_alt_rate_sched_ids, "&a1_client_sp_alt_rate_sched_ids");
             url += "&a1_client_alt_msg_template_id=" + request.a1_client_alt_msg_template_id;
             url += "&a1_client_cn_alt_msg_template_no=" + request.a1_client_cn_alt_msg_template_no;
+            url += "&a1_iban=" + request.a1_iban;
+            url += "&a1_bank_check_digit=" + request.a1_bank_check_digit;
+            url += "&a1_bank_swift_cd=" + request.a1_bank_swift_cd;
+            url += "&a1_bank_country_cd=" + request.a1_bank_country_cd;
+            url += "&a1_mandate_id=" + request.a1_mandate_id;
+            url += "&a1_bank_id_cd=" + request.a1_bank_id_cd;
+            url += "&a1_bank_branch_cd=" + request.a1_bank_branch_cd;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a1_surcharge_no, "&a1_surcharge_no");
             url += "&a2_alt_start_date=" + request.a2_alt_start_date;
             url += "&a2_client_acct_id=" + request.a2_client_acct_id;
             url += "&a2_userid=" + request.a2_userid;
@@ -4530,6 +4560,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.a2_client_sp_alt_rate_sched_ids, "&a2_client_sp_alt_rate_sched_ids");
             url += "&a2_client_alt_msg_template_id=" + request.a2_client_alt_msg_template_id;
             url += "&a2_client_cn_alt_msg_template_no=" + request.a2_client_cn_alt_msg_template_no;
+            url += "&a2_iban=" + request.a2_iban;
+            url += "&a2_bank_check_digit=" + request.a2_bank_check_digit;
+            url += "&a2_bank_swift_cd=" + request.a2_bank_swift_cd;
+            url += "&a2_bank_country_cd=" + request.a2_bank_country_cd;
+            url += "&a2_mandate_id=" + request.a2_mandate_id;
+            url += "&a2_bank_id_cd=" + request.a2_bank_id_cd;
+            url += "&a2_bank_branch_cd=" + request.a2_bank_branch_cd;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a2_surcharge_no, "&a2_surcharge_no");
             url += "&a3_alt_start_date=" + request.a3_alt_start_date;
             url += "&a3_client_acct_id=" + request.a3_client_acct_id;
             url += "&a3_userid=" + request.a3_userid;
@@ -4625,6 +4663,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.a3_client_sp_alt_rate_sched_ids, "&a3_client_sp_alt_rate_sched_ids");
             url += "&a3_client_alt_msg_template_id=" + request.a3_client_alt_msg_template_id;
             url += "&a3_client_cn_alt_msg_template_no=" + request.a3_client_cn_alt_msg_template_no;
+            url += "&a3_iban=" + request.a3_iban;
+            url += "&a3_bank_check_digit=" + request.a3_bank_check_digit;
+            url += "&a3_bank_swift_cd=" + request.a3_bank_swift_cd;
+            url += "&a3_bank_country_cd=" + request.a3_bank_country_cd;
+            url += "&a3_mandate_id=" + request.a3_mandate_id;
+            url += "&a3_bank_id_cd=" + request.a3_bank_id_cd;
+            url += "&a3_bank_branch_cd=" + request.a3_bank_branch_cd;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a3_surcharge_no, "&a3_surcharge_no");
             url += "&a4_alt_start_date=" + request.a4_alt_start_date;
             url += "&a4_client_acct_id=" + request.a4_client_acct_id;
             url += "&a4_userid=" + request.a4_userid;
@@ -4720,6 +4766,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.a4_client_sp_alt_rate_sched_ids, "&a4_client_sp_alt_rate_sched_ids");
             url += "&a4_client_alt_msg_template_id=" + request.a4_client_alt_msg_template_id;
             url += "&a4_client_cn_alt_msg_template_no=" + request.a4_client_cn_alt_msg_template_no;
+            url += "&a4_iban=" + request.a4_iban;
+            url += "&a4_bank_check_digit=" + request.a4_bank_check_digit;
+            url += "&a4_bank_swift_cd=" + request.a4_bank_swift_cd;
+            url += "&a4_bank_country_cd=" + request.a4_bank_country_cd;
+            url += "&a4_mandate_id=" + request.a4_mandate_id;
+            url += "&a4_bank_id_cd=" + request.a4_bank_id_cd;
+            url += "&a4_bank_branch_cd=" + request.a4_bank_branch_cd;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a4_surcharge_no, "&a4_surcharge_no");
             url += "&a5_alt_start_date=" + request.a5_alt_start_date;
             url += "&a5_client_acct_id=" + request.a5_client_acct_id;
             url += "&a5_userid=" + request.a5_userid;
@@ -4815,6 +4869,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.a5_client_sp_alt_rate_sched_ids, "&a5_client_sp_alt_rate_sched_ids");
             url += "&a5_client_alt_msg_template_id=" + request.a5_client_alt_msg_template_id;
             url += "&a5_client_cn_alt_msg_template_no=" + request.a5_client_cn_alt_msg_template_no;
+            url += "&a5_iban=" + request.a5_iban;
+            url += "&a5_bank_check_digit=" + request.a5_bank_check_digit;
+            url += "&a5_bank_swift_cd=" + request.a5_bank_swift_cd;
+            url += "&a5_bank_country_cd=" + request.a5_bank_country_cd;
+            url += "&a5_mandate_id=" + request.a5_mandate_id;
+            url += "&a5_bank_id_cd=" + request.a5_bank_id_cd;
+            url += "&a5_bank_branch_cd=" + request.a5_bank_branch_cd;
+            RestUtilities.addParameterValuesFromArray(ref url, request.a5_surcharge_no, "&a5_surcharge_no");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5426,6 +5488,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_alt_msg_template_id=" + request.client_alt_msg_template_id;
             url += "&client_cn_alt_msg_template_id=" + request.client_cn_alt_msg_template_id;
             RestUtilities.addParameterValuesFromArray(ref url, request.update_surcharge, "&update_surcharge");
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6034,6 +6103,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&user_id=" + request.user_id;
             url += "&start_date=" + request.start_date;
             url += "&end_date=" + request.end_date;
+            url += "&include_invoice_activity_eligibility=" + request.include_invoice_activity_eligibility;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7636,8 +7706,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_no=" + request.client_no;
             url += "&auth_key=" + request.auth_key;
             url += "&account_no=" + request.account_no;
-            url += "&bill_immediately=" + request.bill_immediately;
             RestUtilities.addParameterValuesFromArray(ref url, request.order_line_items, "&order_line_items");
+            url += "&bill_immediately=" + request.bill_immediately;
             url += "&bill_seq=" + request.bill_seq;
             url += "&client_order_id=" + request.client_order_id;
             url += "&client_receipt_id=" + request.client_receipt_id;
@@ -7673,6 +7743,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data2=" + request.track_data2;
             url += "&alt_inv_template_no=" + request.alt_inv_template_no;
             url += "&client_alt_inv_template_id=" + request.client_alt_inv_template_id;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7737,6 +7814,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data2=" + request.track_data2;
             url += "&force_balance_scope=" + request.force_balance_scope;
             url += "&client_receipt_id=" + request.client_receipt_id;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7804,6 +7888,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
             url += "&payment_application_method=" + request.payment_application_method;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8733,6 +8824,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&track_data1=" + request.track_data1;
             url += "&track_data2=" + request.track_data2;
             url += "&client_receipt_id=" + request.client_receipt_id;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8877,6 +8975,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             RestUtilities.addParameterValuesFromArray(ref url, request.multiple_coupons, "&multiple_coupons");
             url += "&client_alt_inv_template_id=" + request.client_alt_inv_template_id;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9409,6 +9514,115 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             StringReader sr = new StringReader(returnString);
             JsonTextReader reader = new JsonTextReader(sr);
             settle_dispute_holdResponse myDeserializedObj = json.Deserialize(reader, typeof(settle_dispute_holdResponse)) as settle_dispute_holdResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public cancel_recurring_creditsResponse cancel_recurring_credits(cancel_recurring_creditsRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("cancel_recurring_credits");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&acct_no=" + request.acct_no;
+            url += "&userid=" + request.userid;
+            url += "&client_acct_id=" + request.client_acct_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.recurring_credit_no, "&recurring_credit_no");
+            url += "&cancel_comments=" + request.cancel_comments;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            cancel_recurring_creditsResponse myDeserializedObj = json.Deserialize(reader, typeof(cancel_recurring_creditsResponse)) as cancel_recurring_creditsResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public update_orderResponse update_order(update_orderRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("update_order");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&account_no=" + request.account_no;
+            url += "&order_no=" + request.order_no;
+            url += "&bill_immediately=" + request.bill_immediately;
+            url += "&alt_pay_method=" + request.alt_pay_method;
+            url += "&cc_number=" + request.cc_number;
+            url += "&cc_expire_mm=" + request.cc_expire_mm;
+            url += "&cc_expire_yyyy=" + request.cc_expire_yyyy;
+            url += "&bank_routing_num=" + request.bank_routing_num;
+            url += "&bank_acct_num=" + request.bank_acct_num;
+            url += "&bill_company_name=" + request.bill_company_name;
+            url += "&bill_first_name=" + request.bill_first_name;
+            url += "&bill_middle_initial=" + request.bill_middle_initial;
+            url += "&bill_last_name=" + request.bill_last_name;
+            url += "&bill_address1=" + request.bill_address1;
+            url += "&bill_address2=" + request.bill_address2;
+            url += "&bill_city=" + request.bill_city;
+            url += "&bill_locality=" + request.bill_locality;
+            url += "&bill_state_prov=" + request.bill_state_prov;
+            url += "&bill_zip=" + request.bill_zip;
+            url += "&bill_country=" + request.bill_country;
+            url += "&bill_email=" + request.bill_email;
+            url += "&bill_phone=" + request.bill_phone;
+            url += "&bill_work_phone=" + request.bill_work_phone;
+            url += "&bill_work_phone_extension=" + request.bill_work_phone_extension;
+            url += "&cvv=" + request.cvv;
+            url += "&bill_address3=" + request.bill_address3;
+            url += "&do_write=" + request.do_write;
+            url += "&alt_client_acct_group_id=" + request.alt_client_acct_group_id;
+            url += "&track_data1=" + request.track_data1;
+            url += "&track_data2=" + request.track_data2;
+            url += "&alt_inv_template_no=" + request.alt_inv_template_no;
+            url += "&iban=" + request.iban;
+            url += "&bank_check_digit=" + request.bank_check_digit;
+            url += "&bank_swift_cd=" + request.bank_swift_cd;
+            url += "&bank_country_cd=" + request.bank_country_cd;
+            url += "&mandate_id=" + request.mandate_id;
+            url += "&bank_id_cd=" + request.bank_id_cd;
+            url += "&bank_branch_cd=" + request.bank_branch_cd;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            update_orderResponse myDeserializedObj = json.Deserialize(reader, typeof(update_orderResponse)) as update_orderResponse;
             reader.Close();
             return myDeserializedObj;
         }
