@@ -396,6 +396,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.image, "&image");
             RestUtilities.addParameterValuesFromArray(ref url, request.parent_class, "&parent_class");
             RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
+            url += "&commodity_cd=" + request.commodity_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -708,6 +709,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&usage_type=" + request.usage_type;
             url += "&client_service_id=" + request.client_service_id;
             RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
+            url += "&commodity_cd=" + request.commodity_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -749,6 +751,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&taxable_ind=" + request.taxable_ind;
             url += "&tax_group=" + request.tax_group;
             url += "&usage_type=" + request.usage_type;
+            url += "&commodity_cd=" + request.commodity_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1751,6 +1754,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&credit_note_template_no=" + request.credit_note_template_no;
             RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             RestUtilities.addParameterValuesFromArray(ref url, request.client_surcharge_id, "&client_surcharge_id");
+            url += "&proration_invoice_timing_cd=" + request.proration_invoice_timing_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1824,6 +1828,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&credit_note_template_no=" + request.credit_note_template_no;
             RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             RestUtilities.addParameterValuesFromArray(ref url, request.client_surcharge_id, "&client_surcharge_id");
+            url += "&proration_invoice_timing_cd=" + request.proration_invoice_timing_cd;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -1914,72 +1919,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             StringReader sr = new StringReader(returnString);
             JsonTextReader reader = new JsonTextReader(sr);
             copy_planResponse myDeserializedObj = json.Deserialize(reader, typeof(copy_planResponse)) as copy_planResponse;
-            reader.Close();
-            return myDeserializedObj;
-        }
-
-        public update_master_planResponse update_master_plan(update_master_planRequest request)
-        {
-            if (request == null)
-            {
-                return null;
-            }
-            var url = buildUrl("update_master_plan");
-
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
-            string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
-            JsonSerializer json = new JsonSerializer
-                          {
-                              NullValueHandling = NullValueHandling.Ignore,
-                              ObjectCreationHandling = ObjectCreationHandling.Replace,
-                              MissingMemberHandling = MissingMemberHandling.Ignore,
-                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                          };
-            StringReader sr = new StringReader(returnString);
-            JsonTextReader reader = new JsonTextReader(sr);
-            update_master_planResponse myDeserializedObj = json.Deserialize(reader, typeof(update_master_planResponse)) as update_master_planResponse;
-            reader.Close();
-            return myDeserializedObj;
-        }
-
-        public update_supplemental_planResponse update_supplemental_plan(update_supplemental_planRequest request)
-        {
-            if (request == null)
-            {
-                return null;
-            }
-            var url = buildUrl("update_supplemental_plan");
-
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
-            string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
-            JsonSerializer json = new JsonSerializer
-                          {
-                              NullValueHandling = NullValueHandling.Ignore,
-                              ObjectCreationHandling = ObjectCreationHandling.Replace,
-                              MissingMemberHandling = MissingMemberHandling.Ignore,
-                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
-                          };
-            StringReader sr = new StringReader(returnString);
-            JsonTextReader reader = new JsonTextReader(sr);
-            update_supplemental_planResponse myDeserializedObj = json.Deserialize(reader, typeof(update_supplemental_planResponse)) as update_supplemental_planResponse;
             reader.Close();
             return myDeserializedObj;
         }
@@ -2842,6 +2781,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.client_service_id, "&client_service_id");
             RestUtilities.addParameterValuesFromArray(ref url, request.item_no, "&item_no");
             RestUtilities.addParameterValuesFromArray(ref url, request.client_item_id, "&client_item_id");
+            RestUtilities.addParameterValuesFromArray(ref url, request.schedule, "&schedule");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2890,6 +2830,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.client_service_id, "&client_service_id");
             RestUtilities.addParameterValuesFromArray(ref url, request.item_no, "&item_no");
             RestUtilities.addParameterValuesFromArray(ref url, request.client_item_id, "&client_item_id");
+            RestUtilities.addParameterValuesFromArray(ref url, request.schedule, "&schedule");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -2944,6 +2885,188 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             StringReader sr = new StringReader(returnString);
             JsonTextReader reader = new JsonTextReader(sr);
             delete_surchargeResponse myDeserializedObj = json.Deserialize(reader, typeof(delete_surchargeResponse)) as delete_surchargeResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public get_revrec_profilesResponse get_revrec_profiles(get_revrec_profilesRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("get_revrec_profiles");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            get_revrec_profilesResponse myDeserializedObj = json.Deserialize(reader, typeof(get_revrec_profilesResponse)) as get_revrec_profilesResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public get_revrec_profile_detailsResponse get_revrec_profile_details(get_revrec_profile_detailsRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("get_revrec_profile_details");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&profile_id=" + request.profile_id;
+            url += "&client_profile_id=" + request.client_profile_id;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            get_revrec_profile_detailsResponse myDeserializedObj = json.Deserialize(reader, typeof(get_revrec_profile_detailsResponse)) as get_revrec_profile_detailsResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public create_revrec_profileResponse create_revrec_profile(create_revrec_profileRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("create_revrec_profile");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&profile_name=" + request.profile_name;
+            url += "&client_profile_id=" + request.client_profile_id;
+            url += "&profile_desc=" + request.profile_desc;
+            url += "&on_plan_payment_date=" + request.on_plan_payment_date;
+            url += "&on_order_payment_date=" + request.on_order_payment_date;
+            url += "&on_order_fulfill_date=" + request.on_order_fulfill_date;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            create_revrec_profileResponse myDeserializedObj = json.Deserialize(reader, typeof(create_revrec_profileResponse)) as create_revrec_profileResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public update_revrec_profileResponse update_revrec_profile(update_revrec_profileRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("update_revrec_profile");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&profile_id=" + request.profile_id;
+            url += "&profile_name=" + request.profile_name;
+            url += "&client_profile_id=" + request.client_profile_id;
+            url += "&profile_desc=" + request.profile_desc;
+            url += "&on_plan_payment_date=" + request.on_plan_payment_date;
+            url += "&on_order_payment_date=" + request.on_order_payment_date;
+            url += "&on_order_fulfill_date=" + request.on_order_fulfill_date;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            update_revrec_profileResponse myDeserializedObj = json.Deserialize(reader, typeof(update_revrec_profileResponse)) as update_revrec_profileResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
+        public delete_revrec_profileResponse delete_revrec_profile(delete_revrec_profileRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("delete_revrec_profile");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&profile_id=" + request.profile_id;
+            url += "&client_profile_id=" + request.client_profile_id;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            delete_revrec_profileResponse myDeserializedObj = json.Deserialize(reader, typeof(delete_revrec_profileResponse)) as delete_revrec_profileResponse;
             reader.Close();
             return myDeserializedObj;
         }

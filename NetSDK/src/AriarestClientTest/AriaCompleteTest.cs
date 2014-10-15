@@ -1835,7 +1835,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             contract_end_date = "",
             sync_mstr_bill_dates_override = 1,
             client_supp_plan_id = "",
-            client_alt_rate_schedule_id = ""
+            client_alt_rate_schedule_id = "",
+            surcharge_no = new[]{new surcharge_no_row()}
             };
 
         var response = mService.assign_supp_plan(request);
@@ -1886,7 +1887,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             effective_date = "",
             offset_interval = 1,
             client_plan_id = "",
-            client_alt_rate_schedule_id = ""
+            client_alt_rate_schedule_id = "",
+            surcharge_no = new[]{new surcharge_no_row()}
             };
 
         var response = mService.modify_supp_plan(request);
@@ -1920,7 +1922,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             sync_mstr_bill_dates_override = 1,
             client_existing_supp_plan_id = "",
             client_new_supp_plan_id = "",
-            client_alt_rate_schedule_id = ""
+            client_alt_rate_schedule_id = "",
+            surcharge_no = new[]{new surcharge_no_row()}
             };
 
         var response = mService.replace_supp_plan(request);
@@ -2202,7 +2205,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bkup_bank_routing_no = "",
             bkup_bill_agreement_id = "",
             bkup_cvv = "",
-            seq_func_group_id = ""
+            seq_func_group_id = "",
+            revrec_profile_id = 1,
+            revrec_client_defined_id = ""
             };
 
         var response = mService.create_acct_complete(request);
@@ -2348,6 +2353,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_bkup_bill_agreement_id = "",
             a1_bkup_cvv = "",
             a1_seq_func_group_id = "",
+            a1_revrec_profile_id = 1,
+            a1_revrec_client_defined_id = "",
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2478,6 +2485,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_bkup_bill_agreement_id = "",
             a2_bkup_cvv = "",
             a2_seq_func_group_id = "",
+            a2_revrec_profile_id = 1,
+            a2_revrec_client_defined_id = "",
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2608,6 +2617,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_bkup_bill_agreement_id = "",
             a3_bkup_cvv = "",
             a3_seq_func_group_id = "",
+            a3_revrec_profile_id = 1,
+            a3_revrec_client_defined_id = "",
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2738,6 +2749,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_bkup_bill_agreement_id = "",
             a4_bkup_cvv = "",
             a4_seq_func_group_id = "",
+            a4_revrec_profile_id = 1,
+            a4_revrec_client_defined_id = "",
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2867,7 +2880,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_bkup_bank_routing_no = "",
             a5_bkup_bill_agreement_id = "",
             a5_bkup_cvv = "",
-            a5_seq_func_group_id = ""
+            a5_seq_func_group_id = "",
+            a5_revrec_profile_id = 1,
+            a5_revrec_client_defined_id = ""
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -3112,7 +3127,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             invoice_unbilled_usage = "",
             coupon_code = "",
             client_master_plan_id = "",
-            client_alt_rate_schedule_id = ""
+            client_alt_rate_schedule_id = "",
+            surcharge_no = new[]{new surcharge_no_row()}
             };
 
         var response = mService.update_master_plan(request);
@@ -3255,7 +3271,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bkup_bank_routing_no = "",
             bkup_bill_agreement_id = "",
             bkup_cvv = "",
-            seq_func_group_id = ""
+            seq_func_group_id = "",
+            revrec_profile_id = 1,
+            revrec_client_defined_id = ""
             };
 
         var response = mService.update_acct_complete(request);
@@ -3628,7 +3646,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             alt_proration_start_date = "",
             coupon_codes = new[]{new coupon_codes_row()},
             effective_date = "",
-            sync_mstr_bill_dates_override = 1
+            sync_mstr_bill_dates_override = 1,
+            supp_plan_surcharges = new[]{new supp_plan_surcharges_row()}
             };
 
         var response = mService.assign_supp_plan_multi(request);
@@ -4185,6 +4204,20 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
     }
 
     [Test]
+    public void get_acct_open_charges()
+    {
+       get_acct_open_chargesRequest request = new get_acct_open_chargesRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            acct_no = 1
+            };
+
+        var response = mService.get_acct_open_charges(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
     public void get_inv_no_from_bal_xfer()
     {
        get_inv_no_from_bal_xferRequest request = new get_inv_no_from_bal_xferRequest
@@ -4300,7 +4333,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             mandate_id = "",
             bank_id_cd = "",
             bank_branch_cd = "",
-            statement_message = ""
+            statement_message = "",
+            fulfilled_date = ""
             };
 
         var response = mService.create_order(request);
@@ -4718,7 +4752,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_no = ClientNumber,
             auth_key = AuthorizationKey,
             acct_no = 1,
-            alt_stmt_template_no = 1
+            alt_stmt_template_no = 1,
+            auto_skip_to_next_bill_date = 1
             };
 
         var response = mService.get_acct_preview_statement(request);
@@ -5259,7 +5294,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            fulfilled_date = ""
             };
 
         var response = mService.update_order(request);

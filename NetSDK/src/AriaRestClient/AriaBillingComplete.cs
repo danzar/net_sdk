@@ -3729,6 +3729,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
             url += "&client_supp_plan_id=" + request.client_supp_plan_id;
             url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3820,6 +3821,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset_interval=" + request.offset_interval;
             url += "&client_plan_id=" + request.client_plan_id;
             url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -3874,6 +3876,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_existing_supp_plan_id=" + request.client_existing_supp_plan_id;
             url += "&client_new_supp_plan_id=" + request.client_new_supp_plan_id;
             url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4356,6 +4359,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bkup_bill_agreement_id=" + request.bkup_bill_agreement_id;
             url += "&bkup_cvv=" + request.bkup_cvv;
             url += "&seq_func_group_id=" + request.seq_func_group_id;
+            url += "&revrec_profile_id=" + request.revrec_profile_id;
+            url += "&revrec_client_defined_id=" + request.revrec_client_defined_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4521,6 +4526,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_bkup_bill_agreement_id=" + request.a1_bkup_bill_agreement_id;
             url += "&a1_bkup_cvv=" + request.a1_bkup_cvv;
             url += "&a1_seq_func_group_id=" + request.a1_seq_func_group_id;
+            url += "&a1_revrec_profile_id=" + request.a1_revrec_profile_id;
+            url += "&a1_revrec_client_defined_id=" + request.a1_revrec_client_defined_id;
             url += "&a2_alt_start_date=" + request.a2_alt_start_date;
             url += "&a2_client_acct_id=" + request.a2_client_acct_id;
             url += "&a2_userid=" + request.a2_userid;
@@ -4651,6 +4658,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_bkup_bill_agreement_id=" + request.a2_bkup_bill_agreement_id;
             url += "&a2_bkup_cvv=" + request.a2_bkup_cvv;
             url += "&a2_seq_func_group_id=" + request.a2_seq_func_group_id;
+            url += "&a2_revrec_profile_id=" + request.a2_revrec_profile_id;
+            url += "&a2_revrec_client_defined_id=" + request.a2_revrec_client_defined_id;
             url += "&a3_alt_start_date=" + request.a3_alt_start_date;
             url += "&a3_client_acct_id=" + request.a3_client_acct_id;
             url += "&a3_userid=" + request.a3_userid;
@@ -4781,6 +4790,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_bkup_bill_agreement_id=" + request.a3_bkup_bill_agreement_id;
             url += "&a3_bkup_cvv=" + request.a3_bkup_cvv;
             url += "&a3_seq_func_group_id=" + request.a3_seq_func_group_id;
+            url += "&a3_revrec_profile_id=" + request.a3_revrec_profile_id;
+            url += "&a3_revrec_client_defined_id=" + request.a3_revrec_client_defined_id;
             url += "&a4_alt_start_date=" + request.a4_alt_start_date;
             url += "&a4_client_acct_id=" + request.a4_client_acct_id;
             url += "&a4_userid=" + request.a4_userid;
@@ -4911,6 +4922,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_bkup_bill_agreement_id=" + request.a4_bkup_bill_agreement_id;
             url += "&a4_bkup_cvv=" + request.a4_bkup_cvv;
             url += "&a4_seq_func_group_id=" + request.a4_seq_func_group_id;
+            url += "&a4_revrec_profile_id=" + request.a4_revrec_profile_id;
+            url += "&a4_revrec_client_defined_id=" + request.a4_revrec_client_defined_id;
             url += "&a5_alt_start_date=" + request.a5_alt_start_date;
             url += "&a5_client_acct_id=" + request.a5_client_acct_id;
             url += "&a5_userid=" + request.a5_userid;
@@ -5041,6 +5054,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_bkup_bill_agreement_id=" + request.a5_bkup_bill_agreement_id;
             url += "&a5_bkup_cvv=" + request.a5_bkup_cvv;
             url += "&a5_seq_func_group_id=" + request.a5_seq_func_group_id;
+            url += "&a5_revrec_profile_id=" + request.a5_revrec_profile_id;
+            url += "&a5_revrec_client_defined_id=" + request.a5_revrec_client_defined_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5526,6 +5541,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&coupon_code=" + request.coupon_code;
             url += "&client_master_plan_id=" + request.client_master_plan_id;
             url += "&client_alt_rate_schedule_id=" + request.client_alt_rate_schedule_id;
+            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5689,6 +5705,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bkup_bill_agreement_id=" + request.bkup_bill_agreement_id;
             url += "&bkup_cvv=" + request.bkup_cvv;
             url += "&seq_func_group_id=" + request.seq_func_group_id;
+            url += "&revrec_profile_id=" + request.revrec_profile_id;
+            url += "&revrec_client_defined_id=" + request.revrec_client_defined_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -6522,6 +6540,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             RestUtilities.addParameterValuesFromArray(ref url, request.coupon_codes, "&coupon_codes");
             url += "&effective_date=" + request.effective_date;
             url += "&sync_mstr_bill_dates_override=" + request.sync_mstr_bill_dates_override;
+            RestUtilities.addParameterValuesFromArray(ref url, request.supp_plan_surcharges, "&supp_plan_surcharges");
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -7754,6 +7773,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             return myDeserializedObj;
         }
 
+        public get_acct_open_chargesResponse get_acct_open_charges(get_acct_open_chargesRequest request)
+        {
+            if (request == null)
+            {
+                return null;
+            }
+            var url = buildUrl("get_acct_open_charges");
+
+            url += "&client_no=" + request.client_no;
+            url += "&auth_key=" + request.auth_key;
+            url += "&acct_no=" + request.acct_no;
+            
+            WebRequest webRequest = WebRequest.Create(url);
+            webRequest.Method = getMethod();
+            webRequest.ContentType = getContentType();
+            string returnString;
+            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
+            {
+                returnString = responseReader.ReadToEnd();
+            }
+            JsonSerializer json = new JsonSerializer
+                          {
+                              NullValueHandling = NullValueHandling.Ignore,
+                              ObjectCreationHandling = ObjectCreationHandling.Replace,
+                              MissingMemberHandling = MissingMemberHandling.Ignore,
+                              ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+                          };
+            StringReader sr = new StringReader(returnString);
+            JsonTextReader reader = new JsonTextReader(sr);
+            get_acct_open_chargesResponse myDeserializedObj = json.Deserialize(reader, typeof(get_acct_open_chargesResponse)) as get_acct_open_chargesResponse;
+            reader.Close();
+            return myDeserializedObj;
+        }
+
         public get_inv_no_from_bal_xferResponse get_inv_no_from_bal_xfer(get_inv_no_from_bal_xferRequest request)
         {
             if (request == null)
@@ -7954,6 +8007,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bank_id_cd=" + request.bank_id_cd;
             url += "&bank_branch_cd=" + request.bank_branch_cd;
             url += "&statement_message=" + request.statement_message;
+            url += "&fulfilled_date=" + request.fulfilled_date;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8752,6 +8806,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&auth_key=" + request.auth_key;
             url += "&acct_no=" + request.acct_no;
             url += "&alt_stmt_template_no=" + request.alt_stmt_template_no;
+            url += "&auto_skip_to_next_bill_date=" + request.auto_skip_to_next_bill_date;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9813,6 +9868,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&mandate_id=" + request.mandate_id;
             url += "&bank_id_cd=" + request.bank_id_cd;
             url += "&bank_branch_cd=" + request.bank_branch_cd;
+            url += "&fulfilled_date=" + request.fulfilled_date;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();

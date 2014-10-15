@@ -302,7 +302,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             stock_level_adjust = 1,
             image = new[]{new image_row()},
             parent_class = new[]{new parent_class_row()},
-            supplemental_obj_field = new[]{new supplemental_obj_field_row()}
+            supplemental_obj_field = new[]{new supplemental_obj_field_row()},
+            commodity_cd = ""
             };
 
         var response = mService.create_inventory_item(request);
@@ -454,7 +455,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             tax_group = "",
             usage_type = "",
             client_service_id = "",
-            supplemental_obj_field = new[]{new supplemental_obj_field_row()}
+            supplemental_obj_field = new[]{new supplemental_obj_field_row()},
+            commodity_cd = ""
             };
 
         var response = mService.create_service(request);
@@ -475,7 +477,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             gl_cd = "",
             taxable_ind = "",
             tax_group = "",
-            usage_type = ""
+            usage_type = "",
+            commodity_cd = ""
             };
 
         var response = mService.update_service(request);
@@ -977,7 +980,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             notification_template_group_no = "",
             credit_note_template_no = "",
             surcharge_no = new[]{new surcharge_no_row()},
-            client_surcharge_id = new[]{new client_surcharge_id_row()}
+            client_surcharge_id = new[]{new client_surcharge_id_row()},
+            proration_invoice_timing_cd = ""
             };
 
         var response = mService.create_new_plan(request);
@@ -1030,7 +1034,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             notification_template_group_no = "",
             credit_note_template_no = "",
             surcharge_no = new[]{new surcharge_no_row()},
-            client_surcharge_id = new[]{new client_surcharge_id_row()}
+            client_surcharge_id = new[]{new client_surcharge_id_row()},
+            proration_invoice_timing_cd = ""
             };
 
         var response = mService.edit_plan(request);
@@ -1065,32 +1070,6 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.copy_plan(request);
-        Assert.IsNotNull(response);
-    }
-
-    [Test]
-    public void update_master_plan()
-    {
-       update_master_planRequest request = new update_master_planRequest
-            {
-            client_no = ClientNumber,
-            auth_key = AuthorizationKey
-            };
-
-        var response = mService.update_master_plan(request);
-        Assert.IsNotNull(response);
-    }
-
-    [Test]
-    public void update_supplemental_plan()
-    {
-       update_supplemental_planRequest request = new update_supplemental_planRequest
-            {
-            client_no = ClientNumber,
-            auth_key = AuthorizationKey
-            };
-
-        var response = mService.update_supplemental_plan(request);
         Assert.IsNotNull(response);
     }
 
@@ -1488,7 +1467,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             service_no = new[]{new service_no_row()},
             client_service_id = new[]{new client_service_id_row()},
             item_no = new[]{new item_no_row()},
-            client_item_id = new[]{new client_item_id_row()}
+            client_item_id = new[]{new client_item_id_row()},
+            schedule = new[]{new schedule_row()}
             };
 
         var response = mService.create_surcharge(request);
@@ -1516,7 +1496,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             service_no = new[]{new service_no_row()},
             client_service_id = new[]{new client_service_id_row()},
             item_no = new[]{new item_no_row()},
-            client_item_id = new[]{new client_item_id_row()}
+            client_item_id = new[]{new client_item_id_row()},
+            schedule = new[]{new schedule_row()}
             };
 
         var response = mService.edit_surcharge(request);
@@ -1535,6 +1516,88 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.delete_surcharge(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void get_revrec_profiles()
+    {
+       get_revrec_profilesRequest request = new get_revrec_profilesRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey
+            };
+
+        var response = mService.get_revrec_profiles(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void get_revrec_profile_details()
+    {
+       get_revrec_profile_detailsRequest request = new get_revrec_profile_detailsRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            profile_id = 1,
+            client_profile_id = ""
+            };
+
+        var response = mService.get_revrec_profile_details(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void create_revrec_profile()
+    {
+       create_revrec_profileRequest request = new create_revrec_profileRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            profile_name = "",
+            client_profile_id = "",
+            profile_desc = "",
+            on_plan_payment_date = 1,
+            on_order_payment_date = 1,
+            on_order_fulfill_date = 1
+            };
+
+        var response = mService.create_revrec_profile(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void update_revrec_profile()
+    {
+       update_revrec_profileRequest request = new update_revrec_profileRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            profile_id = 1,
+            profile_name = "",
+            client_profile_id = "",
+            profile_desc = "",
+            on_plan_payment_date = 1,
+            on_order_payment_date = 1,
+            on_order_fulfill_date = 1
+            };
+
+        var response = mService.update_revrec_profile(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void delete_revrec_profile()
+    {
+       delete_revrec_profileRequest request = new delete_revrec_profileRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            profile_id = 1,
+            client_profile_id = ""
+            };
+
+        var response = mService.delete_revrec_profile(request);
         Assert.IsNotNull(response);
     }
 

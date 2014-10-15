@@ -253,6 +253,30 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         }
     }
 
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row row = array[i];
+                        url += "&surcharge_no[" + i + "]=" + row.surcharge_no;
+                                    url += "&rate_schedule_no[" + i + "]=" + row.rate_schedule_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[surcharge_no]=" + row.surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[rate_schedule_no]=" + row.rate_schedule_no;
+                        
+        }
+    }
+
     public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.supp_plans_row[] array)
     {
         if (array == null) return;
@@ -559,28 +583,6 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.client_sp_alt_rate_sched_ids_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[client_sp_alt_rate_sched_ids]=" + row.client_sp_alt_rate_sched_ids;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row[] array)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row row = array[i];
-                        url += "&surcharge_no[" + i + "]=" + row.surcharge_no;
-                        
-        }
-    }
-
-    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row[] array, string paramPrefix)
-    {
-        if (array == null) return;
-        for (int i = 0; i < array.Length; i++)
-        {
-            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.surcharge_no_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[surcharge_no]=" + row.surcharge_no;
                         
         }
     }
@@ -982,6 +984,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_surcharge_no_row row = array[i];
                         url += "&a1_surcharge_no[" + i + "]=" + row.a1_surcharge_no;
+                                    url += "&a1_rate_schedule_no[" + i + "]=" + row.a1_rate_schedule_no;
                         
         }
     }
@@ -993,6 +996,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a1_surcharge_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a1_surcharge_no]=" + row.a1_surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a1_rate_schedule_no]=" + row.a1_rate_schedule_no;
                         
         }
     }
@@ -1394,6 +1398,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_surcharge_no_row row = array[i];
                         url += "&a2_surcharge_no[" + i + "]=" + row.a2_surcharge_no;
+                                    url += "&a2_rate_schedule_no[" + i + "]=" + row.a2_rate_schedule_no;
                         
         }
     }
@@ -1405,6 +1410,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a2_surcharge_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a2_surcharge_no]=" + row.a2_surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a2_rate_schedule_no]=" + row.a2_rate_schedule_no;
                         
         }
     }
@@ -1806,6 +1812,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_surcharge_no_row row = array[i];
                         url += "&a3_surcharge_no[" + i + "]=" + row.a3_surcharge_no;
+                                    url += "&a3_rate_schedule_no[" + i + "]=" + row.a3_rate_schedule_no;
                         
         }
     }
@@ -1817,6 +1824,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a3_surcharge_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a3_surcharge_no]=" + row.a3_surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a3_rate_schedule_no]=" + row.a3_rate_schedule_no;
                         
         }
     }
@@ -2218,6 +2226,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_surcharge_no_row row = array[i];
                         url += "&a4_surcharge_no[" + i + "]=" + row.a4_surcharge_no;
+                                    url += "&a4_rate_schedule_no[" + i + "]=" + row.a4_rate_schedule_no;
                         
         }
     }
@@ -2229,6 +2238,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a4_surcharge_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a4_surcharge_no]=" + row.a4_surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a4_rate_schedule_no]=" + row.a4_rate_schedule_no;
                         
         }
     }
@@ -2630,6 +2640,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_surcharge_no_row row = array[i];
                         url += "&a5_surcharge_no[" + i + "]=" + row.a5_surcharge_no;
+                                    url += "&a5_rate_schedule_no[" + i + "]=" + row.a5_rate_schedule_no;
                         
         }
     }
@@ -2641,6 +2652,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.a5_surcharge_no_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[a5_surcharge_no]=" + row.a5_surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[a5_rate_schedule_no]=" + row.a5_rate_schedule_no;
                         
         }
     }
@@ -2865,6 +2877,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_surcharge_row row = array[i];
                         url += "&surcharge_no[" + i + "]=" + row.surcharge_no;
                                     url += "&surcharge_directive[" + i + "]=" + row.surcharge_directive;
+                                    url += "&rate_schedule_no[" + i + "]=" + row.rate_schedule_no;
                         
         }
     }
@@ -2877,6 +2890,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             Aria.SDK.AriaServices.AriaWebServices.AriaComplete.update_surcharge_row row = array[i];
                         url += paramPrefix + "[" + i + "]" + "[surcharge_no]=" + row.surcharge_no;
                                     url += paramPrefix + "[" + i + "]" + "[surcharge_directive]=" + row.surcharge_directive;
+                                    url += paramPrefix + "[" + i + "]" + "[rate_schedule_no]=" + row.rate_schedule_no;
                         
         }
     }
@@ -2981,6 +2995,32 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                                     url += paramPrefix + "[" + i + "]" + "[contract_end_date]=" + row.contract_end_date;
                                     url += paramPrefix + "[" + i + "]" + "[client_supp_plan_id]=" + row.client_supp_plan_id;
                                     url += paramPrefix + "[" + i + "]" + "[client_alt_rate_schedule_id]=" + row.client_alt_rate_schedule_id;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.supp_plan_surcharges_row[] array)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.supp_plan_surcharges_row row = array[i];
+                        url += "&surcharge_no[" + i + "]=" + row.surcharge_no;
+                                    url += "&rate_schedule_no[" + i + "]=" + row.rate_schedule_no;
+                                    url += "&surcharge_supp_plan_no[" + i + "]=" + row.surcharge_supp_plan_no;
+                        
+        }
+    }
+
+    public static void addParameterValuesFromArray(ref string url, Aria.SDK.AriaServices.AriaWebServices.AriaComplete.supp_plan_surcharges_row[] array, string paramPrefix)
+    {
+        if (array == null) return;
+        for (int i = 0; i < array.Length; i++)
+        {
+            Aria.SDK.AriaServices.AriaWebServices.AriaComplete.supp_plan_surcharges_row row = array[i];
+                        url += paramPrefix + "[" + i + "]" + "[surcharge_no]=" + row.surcharge_no;
+                                    url += paramPrefix + "[" + i + "]" + "[rate_schedule_no]=" + row.rate_schedule_no;
+                                    url += paramPrefix + "[" + i + "]" + "[surcharge_supp_plan_no]=" + row.surcharge_supp_plan_no;
                         
         }
     }
@@ -4423,11 +4463,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         for (int i = 0; i < array.Length; i++)
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row row = array[i];
-                        url += "&schedule_no[" + i + "]=" + row.schedule_no;
-                                    url += "&schedule_name[" + i + "]=" + row.schedule_name;
-                                    url += "&client_rate_schedule_id[" + i + "]=" + row.client_rate_schedule_id;
+                        url += "&schedule_name[" + i + "]=" + row.schedule_name;
                                     url += "&currency_cd[" + i + "]=" + row.currency_cd;
                                     url += "&is_default[" + i + "]=" + row.is_default;
+                                    url += "&min_surcharge_to_apply[" + i + "]=" + row.min_surcharge_to_apply;
                         
         }
     }
@@ -4438,11 +4477,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
         for (int i = 0; i < array.Length; i++)
         {
             Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row row = array[i];
-                        url += paramPrefix + "[" + i + "]" + "[schedule_no]=" + row.schedule_no;
-                                    url += paramPrefix + "[" + i + "]" + "[schedule_name]=" + row.schedule_name;
-                                    url += paramPrefix + "[" + i + "]" + "[client_rate_schedule_id]=" + row.client_rate_schedule_id;
+                        url += paramPrefix + "[" + i + "]" + "[schedule_name]=" + row.schedule_name;
                                     url += paramPrefix + "[" + i + "]" + "[currency_cd]=" + row.currency_cd;
                                     url += paramPrefix + "[" + i + "]" + "[is_default]=" + row.is_default;
+                                    url += paramPrefix + "[" + i + "]" + "[min_surcharge_to_apply]=" + row.min_surcharge_to_apply;
                         
         }
     }
@@ -4646,6 +4684,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                         url += "&from[" + i + "]=" + row.from;
                                     url += "&to[" + i + "]=" + row.to;
                                     url += "&rate[" + i + "]=" + row.rate;
+                                    url += "&include_zero[" + i + "]=" + row.include_zero;
                         
         }
     }
@@ -4659,6 +4698,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
                         url += paramPrefix + "[" + i + "]" + "[from]=" + row.from;
                                     url += paramPrefix + "[" + i + "]" + "[to]=" + row.to;
                                     url += paramPrefix + "[" + i + "]" + "[rate]=" + row.rate;
+                                    url += paramPrefix + "[" + i + "]" + "[include_zero]=" + row.include_zero;
                         
         }
     }
