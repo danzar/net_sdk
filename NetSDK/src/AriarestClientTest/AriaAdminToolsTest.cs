@@ -456,7 +456,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             usage_type = "",
             client_service_id = "",
             supplemental_obj_field = new[]{new supplemental_obj_field_row()},
-            commodity_cd = ""
+            commodity_cd = "",
+            client_tax_group_id = ""
             };
 
         var response = mService.create_service(request);
@@ -478,7 +479,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             taxable_ind = "",
             tax_group = "",
             usage_type = "",
-            commodity_cd = ""
+            commodity_cd = "",
+            client_tax_group_id = ""
             };
 
         var response = mService.update_service(request);

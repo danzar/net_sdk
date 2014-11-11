@@ -2207,7 +2207,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bkup_cvv = "",
             seq_func_group_id = "",
             revrec_profile_id = 1,
-            revrec_client_defined_id = ""
+            revrec_client_defined_id = "",
+            stmnt_email_list = ""
             };
 
         var response = mService.create_acct_complete(request);
@@ -2355,6 +2356,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a1_seq_func_group_id = "",
             a1_revrec_profile_id = 1,
             a1_revrec_client_defined_id = "",
+            a1_stmnt_email_list = "",
             a2_alt_start_date = "",
             a2_client_acct_id = "",
             a2_userid = "",
@@ -2487,6 +2489,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a2_seq_func_group_id = "",
             a2_revrec_profile_id = 1,
             a2_revrec_client_defined_id = "",
+            a2_stmnt_email_list = "",
             a3_alt_start_date = "",
             a3_client_acct_id = "",
             a3_userid = "",
@@ -2619,6 +2622,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a3_seq_func_group_id = "",
             a3_revrec_profile_id = 1,
             a3_revrec_client_defined_id = "",
+            a3_stmnt_email_list = "",
             a4_alt_start_date = "",
             a4_client_acct_id = "",
             a4_userid = "",
@@ -2751,6 +2755,7 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a4_seq_func_group_id = "",
             a4_revrec_profile_id = 1,
             a4_revrec_client_defined_id = "",
+            a4_stmnt_email_list = "",
             a5_alt_start_date = "",
             a5_client_acct_id = "",
             a5_userid = "",
@@ -2882,7 +2887,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             a5_bkup_cvv = "",
             a5_seq_func_group_id = "",
             a5_revrec_profile_id = 1,
-            a5_revrec_client_defined_id = ""
+            a5_revrec_client_defined_id = "",
+            a5_stmnt_email_list = ""
             };
 
         var response = mService.create_acct_hierarchy(request);
@@ -3273,7 +3279,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bkup_cvv = "",
             seq_func_group_id = "",
             revrec_profile_id = 1,
-            revrec_client_defined_id = ""
+            revrec_client_defined_id = "",
+            stmnt_email_list = ""
             };
 
         var response = mService.update_acct_complete(request);
@@ -4334,7 +4341,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_id_cd = "",
             bank_branch_cd = "",
             statement_message = "",
-            fulfilled_date = ""
+            fulfilled_date = "",
+            order_comments = ""
             };
 
         var response = mService.create_order(request);
@@ -4536,7 +4544,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             standing_order = new[]{new standing_order_row()},
             client_order_id = Guid.NewGuid().ToString(),
             client_receipt_id = Guid.NewGuid().ToString(),
-            statement_message = ""
+            statement_message = "",
+            order_comments = ""
             };
 
         var response = mService.record_standing_order(request);
@@ -4992,7 +5001,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             mandate_id = "",
             bank_id_cd = "",
             bank_branch_cd = "",
-            statement_message = ""
+            statement_message = "",
+            order_comments = ""
             };
 
         var response = mService.create_order_with_plans(request);

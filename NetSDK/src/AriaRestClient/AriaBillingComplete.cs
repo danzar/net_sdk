@@ -4361,6 +4361,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&seq_func_group_id=" + request.seq_func_group_id;
             url += "&revrec_profile_id=" + request.revrec_profile_id;
             url += "&revrec_client_defined_id=" + request.revrec_client_defined_id;
+            url += "&stmnt_email_list=" + request.stmnt_email_list;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -4528,6 +4529,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a1_seq_func_group_id=" + request.a1_seq_func_group_id;
             url += "&a1_revrec_profile_id=" + request.a1_revrec_profile_id;
             url += "&a1_revrec_client_defined_id=" + request.a1_revrec_client_defined_id;
+            url += "&a1_stmnt_email_list=" + request.a1_stmnt_email_list;
             url += "&a2_alt_start_date=" + request.a2_alt_start_date;
             url += "&a2_client_acct_id=" + request.a2_client_acct_id;
             url += "&a2_userid=" + request.a2_userid;
@@ -4660,6 +4662,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a2_seq_func_group_id=" + request.a2_seq_func_group_id;
             url += "&a2_revrec_profile_id=" + request.a2_revrec_profile_id;
             url += "&a2_revrec_client_defined_id=" + request.a2_revrec_client_defined_id;
+            url += "&a2_stmnt_email_list=" + request.a2_stmnt_email_list;
             url += "&a3_alt_start_date=" + request.a3_alt_start_date;
             url += "&a3_client_acct_id=" + request.a3_client_acct_id;
             url += "&a3_userid=" + request.a3_userid;
@@ -4792,6 +4795,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a3_seq_func_group_id=" + request.a3_seq_func_group_id;
             url += "&a3_revrec_profile_id=" + request.a3_revrec_profile_id;
             url += "&a3_revrec_client_defined_id=" + request.a3_revrec_client_defined_id;
+            url += "&a3_stmnt_email_list=" + request.a3_stmnt_email_list;
             url += "&a4_alt_start_date=" + request.a4_alt_start_date;
             url += "&a4_client_acct_id=" + request.a4_client_acct_id;
             url += "&a4_userid=" + request.a4_userid;
@@ -4924,6 +4928,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a4_seq_func_group_id=" + request.a4_seq_func_group_id;
             url += "&a4_revrec_profile_id=" + request.a4_revrec_profile_id;
             url += "&a4_revrec_client_defined_id=" + request.a4_revrec_client_defined_id;
+            url += "&a4_stmnt_email_list=" + request.a4_stmnt_email_list;
             url += "&a5_alt_start_date=" + request.a5_alt_start_date;
             url += "&a5_client_acct_id=" + request.a5_client_acct_id;
             url += "&a5_userid=" + request.a5_userid;
@@ -5056,6 +5061,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&a5_seq_func_group_id=" + request.a5_seq_func_group_id;
             url += "&a5_revrec_profile_id=" + request.a5_revrec_profile_id;
             url += "&a5_revrec_client_defined_id=" + request.a5_revrec_client_defined_id;
+            url += "&a5_stmnt_email_list=" + request.a5_stmnt_email_list;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -5707,6 +5713,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&seq_func_group_id=" + request.seq_func_group_id;
             url += "&revrec_profile_id=" + request.revrec_profile_id;
             url += "&revrec_client_defined_id=" + request.revrec_client_defined_id;
+            url += "&stmnt_email_list=" + request.stmnt_email_list;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8008,6 +8015,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bank_branch_cd=" + request.bank_branch_cd;
             url += "&statement_message=" + request.statement_message;
             url += "&fulfilled_date=" + request.fulfilled_date;
+            url += "&order_comments=" + request.order_comments;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -8350,6 +8358,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_order_id=" + request.client_order_id;
             url += "&client_receipt_id=" + request.client_receipt_id;
             url += "&statement_message=" + request.statement_message;
+            url += "&order_comments=" + request.order_comments;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -9246,6 +9255,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&bank_id_cd=" + request.bank_id_cd;
             url += "&bank_branch_cd=" + request.bank_branch_cd;
             url += "&statement_message=" + request.statement_message;
+            url += "&order_comments=" + request.order_comments;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();

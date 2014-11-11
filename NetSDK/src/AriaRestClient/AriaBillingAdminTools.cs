@@ -710,6 +710,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&client_service_id=" + request.client_service_id;
             RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
             url += "&commodity_cd=" + request.commodity_cd;
+            url += "&client_tax_group_id=" + request.client_tax_group_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
@@ -752,6 +753,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&tax_group=" + request.tax_group;
             url += "&usage_type=" + request.usage_type;
             url += "&commodity_cd=" + request.commodity_cd;
+            url += "&client_tax_group_id=" + request.client_tax_group_id;
             
             WebRequest webRequest = WebRequest.Create(url);
             webRequest.Method = getMethod();
