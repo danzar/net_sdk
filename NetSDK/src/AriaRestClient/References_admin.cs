@@ -7,7 +7,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class promo_plan_set_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private long promo_plan_set_noField;
         private string promo_plan_set_nameField;
@@ -71,7 +71,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private long plan_noField;
         private string plan_nameField;
@@ -135,7 +135,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_groups_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int group_noField;
         private string group_nameField;
@@ -295,7 +295,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class inventory_items_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int item_noField;
         private string item_nameField;
@@ -303,7 +303,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
         private string client_skuField;
         private int active_indField;
         private string client_item_idField;
-        private System.Nullable<int> stock_levelField;
+        private System.Nullable<float> stock_levelField;
                 private bool stock_levelFieldSpecified;
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
@@ -373,7 +373,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
         }
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=6)]
-        public System.Nullable<int> stock_level {
+        public System.Nullable<float> stock_level {
             get {
                 return this.stock_levelField;
             }
@@ -407,7 +407,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class pricing_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string currency_cdField;
         private System.Nullable<float> item_priceField;
@@ -483,7 +483,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class resources_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int resourcesField;
         private int resource_type_noField;
@@ -547,7 +547,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class image_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string thumbnail_image_urlField;
         private string main_image_urlField;
@@ -671,7 +671,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class supplemental_obj_fields_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string supplemental_obj_fieldField;
         /// <remarks/>
@@ -699,7 +699,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class service_types_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string service_type_nameField;
         private string service_descField;
@@ -739,7 +739,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class services_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int service_noField;
         private string client_service_idField;
@@ -803,7 +803,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rate_info_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int schedule_noField;
         private string schedule_nameField;
@@ -891,7 +891,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rate_schedules_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string currencyField;
         private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rate_info_ReturnElement[] rate_infoField;
@@ -979,7 +979,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class parent_plans_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int parent_planField;
         /// <remarks/>
@@ -1007,7 +1007,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class parent_plan_ids_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string parent_plan_idField;
         /// <remarks/>
@@ -1035,7 +1035,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class exclusion_plans_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int exclusion_planField;
         /// <remarks/>
@@ -1063,7 +1063,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class supp_fields_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string field_nameField;
         private string field_descField;
@@ -1115,7 +1115,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class field_options_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string display_textField;
         private string option_valueField;
@@ -1167,7 +1167,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class coupons_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string coupon_cdField;
         private string coupon_descField;
@@ -1315,7 +1315,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rules_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<int> ruleField;
                 private bool ruleFieldSpecified;
@@ -1355,7 +1355,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rule_ids_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string ruleField;
         /// <remarks/>
@@ -1383,7 +1383,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_no_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<int> plan_nosField;
                 private bool plan_nosFieldSpecified;
@@ -1423,7 +1423,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_plan_id_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string client_plan_idsField;
         /// <remarks/>
@@ -1451,7 +1451,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class service_no_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<int> service_nosField;
                 private bool service_nosFieldSpecified;
@@ -1491,7 +1491,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_service_id_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string client_service_idsField;
         /// <remarks/>
@@ -1519,7 +1519,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class item_no_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<int> item_nosField;
                 private bool item_nosFieldSpecified;
@@ -1559,7 +1559,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_item_id_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string client_item_idsField;
         private string item_idsField;
@@ -1599,7 +1599,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class eligible_service_types_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string eligible_service_typeField;
         /// <remarks/>
@@ -1627,7 +1627,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class credit_template_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int credit_template_noField;
         private string credit_template_nameField;
@@ -1967,7 +1967,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class discount_rule_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int rule_noField;
         private string rule_idField;
@@ -2283,7 +2283,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class discount_bundle_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int bundle_noField;
         private string bundle_nameField;
@@ -2383,7 +2383,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class credit_templates_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int recurring_credit_template_noField;
         private string credit_template_nameField;
@@ -2435,7 +2435,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plans_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string plan_nameField;
         private string plan_descField;
@@ -2535,7 +2535,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class surcharge_no_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<int> surcharge_nosField;
                 private bool surcharge_nosFieldSpecified;
@@ -2575,7 +2575,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_surcharge_id_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string client_surcharge_idsField;
         /// <remarks/>
@@ -2603,7 +2603,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_group_ids_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string plan_group_idField;
         /// <remarks/>
@@ -2631,7 +2631,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class surcharges_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int surcharge_noField;
         private string client_surcharge_idField;
@@ -2731,7 +2731,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class promotions_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string promo_cdField;
         private string promo_descField;
@@ -2783,7 +2783,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class usage_types_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int usage_type_noField;
         private string usage_type_nameField;
@@ -2871,7 +2871,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class usage_unit_types_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int usage_unit_type_noField;
         private string usage_unit_type_descField;
@@ -2923,7 +2923,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class allowed_values_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string valueField;
         /// <remarks/>
@@ -2951,7 +2951,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class associated_objects_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private string associated_objectField;
         /// <remarks/>
@@ -2979,7 +2979,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class coa_list_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<long> coa_idField;
                 private bool coa_idFieldSpecified;
@@ -3043,7 +3043,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class coa_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private System.Nullable<long> coa_idField;
                 private bool coa_idFieldSpecified;
@@ -3107,7 +3107,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_service_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_ReturnElement[] plan_noField;
         private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_ReturnElement[] client_plan_idField;
@@ -3171,7 +3171,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class surcharge_tier_ReturnElement : object, System.ComponentModel.INotifyPropertyChanged {
         private int fromField;
         private System.Nullable<int> toField;
@@ -3248,7 +3248,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class price_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<float> amountField;        private bool amountFieldSpecified;
@@ -3288,7 +3288,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class tier_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> fromField;        private bool fromFieldSpecified;
@@ -3362,7 +3362,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class service_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private int service_noField;private string pricing_ruleField;private string high_waterField;private System.Nullable<int> billing_optionField;        private bool billing_optionFieldSpecified;
@@ -3603,7 +3603,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class image_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string main_image_urlField;private string thumbnail_image_urlField;private string image_textField;private int default_indField;private int activeField;/// <remarks/>
@@ -3675,7 +3675,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class parent_class_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> class_noField;        private bool class_noFieldSpecified;
@@ -3715,7 +3715,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class supplemental_obj_field_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string supplemental_obj_fieldField;/// <remarks/>
@@ -3743,7 +3743,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rules_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> ruleField;        private bool ruleFieldSpecified;
@@ -3783,7 +3783,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rule_ids_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string rule_idField;private string ruleField;/// <remarks/>
@@ -3822,7 +3822,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_no_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> plan_nosField;        private bool plan_nosFieldSpecified;
@@ -3862,7 +3862,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_plan_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string client_plan_idsField;/// <remarks/>
@@ -3890,7 +3890,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class service_no_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> service_nosField;        private bool service_nosFieldSpecified;
@@ -3930,7 +3930,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_service_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string client_service_idsField;/// <remarks/>
@@ -3958,7 +3958,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class item_no_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> item_nosField;        private bool item_nosFieldSpecified;
@@ -3998,7 +3998,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_item_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string client_item_idsField;/// <remarks/>
@@ -4026,7 +4026,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class eligible_service_types_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string eligible_service_typeField;/// <remarks/>
@@ -4054,7 +4054,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class template_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string credit_template_nameField;private string client_credit_template_idField;private int eligible_plan_noField;private string eligible_client_plan_idField;private int eligible_service_noField;private string eligible_client_service_idField;private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.eligible_service_types_row[] eligible_service_typesField;private int discount_typeField;private float discount_amtField;private int no_of_creditsField;private int credit_interval_monthsField;private int percentage_plan_noField;private string percentage_client_plan_idField;private int percentage_service_noField;private string percentage_client_service_idField;private int alt_service_noField;private string alt_client_service_idField;/// <remarks/>
@@ -4258,7 +4258,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_template_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> existing_templatesField;        private bool existing_templatesFieldSpecified;
@@ -4298,7 +4298,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_template_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string existing_template_idsField;/// <remarks/>
@@ -4326,7 +4326,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class discount_rule_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string labelField;private string rule_idField;private string descriptionField;private string ext_descriptionField;private int flat_percent_indField;private float amountField;private string currencyField;private string duration_type_indField;private System.Nullable<int> max_applicable_monthsField;        private bool max_applicable_monthsFieldSpecified;
@@ -4644,7 +4644,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_discount_rule_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> existing_rulesField;        private bool existing_rulesFieldSpecified;
@@ -4684,7 +4684,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_discount_rule_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string existing_discount_rule_idsField;/// <remarks/>
@@ -4712,7 +4712,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class discount_bundle_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string bundle_nameField;private string bundle_idField;private string bundle_descriptionField;private string allow_overlap_indField;private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rules_row[] rulesField;private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_row[] rule_idsField;/// <remarks/>
@@ -4795,7 +4795,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_discount_bundle_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> existing_bundlesField;        private bool existing_bundlesFieldSpecified;
@@ -4835,7 +4835,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_discount_bundle_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string existing_bundle_idsField;/// <remarks/>
@@ -4863,7 +4863,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class coupon_nos_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> coupon_nosField;        private bool coupon_nosFieldSpecified;
@@ -4903,7 +4903,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class coupon_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string coupon_cdField;private string coupon_descField;private string coupon_msgField;private int status_indField;private System.Nullable<int> no_of_usesField;        private bool no_of_usesFieldSpecified;
@@ -5009,7 +5009,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class existing_coupon_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> existing_couponsField;        private bool existing_couponsFieldSpecified;
@@ -5049,7 +5049,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class template_nos_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> template_nosField;        private bool template_nosFieldSpecified;
@@ -5089,7 +5089,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class rule_nos_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> rule_nosField;        private bool rule_nosFieldSpecified;
@@ -5129,7 +5129,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class bundle_nos_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> bundle_nosField;        private bool bundle_nosFieldSpecified;
@@ -5169,96 +5169,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
-    public partial class notifications_row : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int unitsField;private  valuesField;/// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public int units {
-            get {
-                return this.unitsField;
-            }
-            set {
-                this.unitsField = value;
-                this.RaisePropertyChanged("units");
-            }
-        }
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public  values {
-            get {
-                return this.valuesField;
-            }
-            set {
-                this.valuesField = value;
-                this.RaisePropertyChanged("values");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.18408")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
-    public partial class usage_threshold_row : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string notice_dest_typeField;private string notice_balance_typeField;private Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.notifications_row[] notificationsField;/// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
-        public string notice_dest_type {
-            get {
-                return this.notice_dest_typeField;
-            }
-            set {
-                this.notice_dest_typeField = value;
-                this.RaisePropertyChanged("notice_dest_type");
-            }
-        }
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
-        public string notice_balance_type {
-            get {
-                return this.notice_balance_typeField;
-            }
-            set {
-                this.notice_balance_typeField = value;
-                this.RaisePropertyChanged("notice_balance_type");
-            }
-        }
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("notifications", Order=2)]
-        public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.notifications_row[] notifications {
-            get {
-                return this.notificationsField;
-            }
-            set {
-                this.notificationsField = value;
-                this.RaisePropertyChanged("notifications");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.18408")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_group_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> plan_groupField;        private bool plan_groupFieldSpecified;
@@ -5298,7 +5209,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_group_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string plan_group_idField;/// <remarks/>
@@ -5326,13 +5237,22 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class schedule_row : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string schedule_nameField;private string currency_cdField;private bool is_defaultField;        private bool is_defaultFieldSpecified;
-        private System.Nullable<float> min_surcharge_to_applyField;        private bool min_surcharge_to_applyFieldSpecified;
-        /// <remarks/>
+        private int schedule_noField;private string schedule_nameField;private string client_rate_schedule_idField;private string currency_cdField;private int is_defaultField;/// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
+        public int schedule_no {
+            get {
+                return this.schedule_noField;
+            }
+            set {
+                this.schedule_noField = value;
+                this.RaisePropertyChanged("schedule_no");
+            }
+        }
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
         public string schedule_name {
             get {
                 return this.schedule_nameField;
@@ -5343,7 +5263,18 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
             }
         }
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public string client_rate_schedule_id {
+            get {
+                return this.client_rate_schedule_idField;
+            }
+            set {
+                this.client_rate_schedule_idField = value;
+                this.RaisePropertyChanged("client_rate_schedule_id");
+            }
+        }
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=3)]
         public string currency_cd {
             get {
                 return this.currency_cdField;
@@ -5354,47 +5285,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
             }
         }
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=2)]
-        public bool is_default {
+        [System.Xml.Serialization.XmlElementAttribute(Order=4)]
+        public int is_default {
             get {
                 return this.is_defaultField;
             }
             set {
                 this.is_defaultField = value;
                 this.RaisePropertyChanged("is_default");
-            }
-        }
-                /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool is_defaultSpecified {
-            get {
-                return this.is_defaultFieldSpecified;
-            }
-            set {
-                this.is_defaultFieldSpecified = value;
-                this.RaisePropertyChanged("is_defaultSpecified");
-            }
-        }
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=3)]
-        public System.Nullable<float> min_surcharge_to_apply {
-            get {
-                return this.min_surcharge_to_applyField;
-            }
-            set {
-                this.min_surcharge_to_applyField = value;
-                this.RaisePropertyChanged("min_surcharge_to_apply");
-            }
-        }
-                /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool min_surcharge_to_applySpecified {
-            get {
-                return this.min_surcharge_to_applyFieldSpecified;
-            }
-            set {
-                this.min_surcharge_to_applyFieldSpecified = value;
-                this.RaisePropertyChanged("min_surcharge_to_applySpecified");
             }
         }
         
@@ -5411,7 +5309,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class resource_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> resource_noField;        private bool resource_noFieldSpecified;
@@ -5564,7 +5462,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class parent_plans_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> parent_planField;        private bool parent_planFieldSpecified;
@@ -5604,7 +5502,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class parent_client_plan_ids_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string parent_client_plan_idField;/// <remarks/>
@@ -5632,7 +5530,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class exclusion_plans_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> exclusion_plansField;        private bool exclusion_plansFieldSpecified;
@@ -5672,7 +5570,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class child_plans_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string child_planField;/// <remarks/>
@@ -5700,7 +5598,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class surcharge_no_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private int surcharge_nosField;/// <remarks/>
@@ -5728,7 +5626,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class client_surcharge_id_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string client_surcharge_idsField;/// <remarks/>
@@ -5756,7 +5654,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class plan_nos_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private System.Nullable<int> plan_nosField;        private bool plan_nosFieldSpecified;
@@ -5796,12 +5694,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api")]
     public partial class surcharge_tier_row : object, System.ComponentModel.INotifyPropertyChanged {
         
         private int fromField;private System.Nullable<int> toField;        private bool toFieldSpecified;
-        private  rateField;private  include_zeroField;        private bool include_zeroFieldSpecified;
-        /// <remarks/>
+        private float rateField;/// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=0)]
         public int from {
             get {
@@ -5836,35 +5733,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
         }
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Order=2)]
-        public  rate {
+        public float rate {
             get {
                 return this.rateField;
             }
             set {
                 this.rateField = value;
                 this.RaisePropertyChanged("rate");
-            }
-        }
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true, Order=3)]
-        public  include_zero {
-            get {
-                return this.include_zeroField;
-            }
-            set {
-                this.include_zeroField = value;
-                this.RaisePropertyChanged("include_zero");
-            }
-        }
-                /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool include_zeroSpecified {
-            get {
-                return this.include_zeroFieldSpecified;
-            }
-            set {
-                this.include_zeroFieldSpecified = value;
-                this.RaisePropertyChanged("include_zeroSpecified");
             }
         }
         
@@ -5881,13 +5756,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_sets", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_sets", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promo_plan_setsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -5904,14 +5779,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_setsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_setsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promo_plan_setsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.promo_plan_set_ReturnElement[] promo_plan_set;
                 
         public get_promo_plan_setsResponse() {
@@ -5927,19 +5802,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_set_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_set_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promo_plan_set_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public long promo_plan_set_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_plan_type_id;
                 
         public get_promo_plan_set_detailsRequest() {
@@ -5956,22 +5831,22 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_set_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promo_plan_set_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promo_plan_set_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public long promo_plan_set_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string promo_plan_set_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string promo_plan_set_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string client_plan_type_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute("plan", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_ReturnElement[] plan;
                 
@@ -5992,27 +5867,27 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promo_plan_set", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promo_plan_set", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_promo_plan_setRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string promo_plan_set_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string promo_plan_set_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_type_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_id;
                 
@@ -6033,14 +5908,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promo_plan_setResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promo_plan_setResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_promo_plan_setResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int promo_plan_set_no;
                 
         public create_promo_plan_setResponse() {
@@ -6056,28 +5931,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promo_plan_set", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promo_plan_set", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_promo_plan_setRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int promo_plan_set_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string promo_plan_set_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string promo_plan_set_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string client_plan_type_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_id;
                 
@@ -6099,14 +5974,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promo_plan_setResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promo_plan_setResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_promo_plan_setResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int promo_plan_set_no;
                 
         public update_promo_plan_setResponse() {
@@ -6122,13 +5997,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="list_promo_sets", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="list_promo_sets", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class list_promo_setsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -6145,14 +6020,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="list_promo_setsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="list_promo_setsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class list_promo_setsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_groups_ReturnElement[] plan_groups;
                 
         public list_promo_setsResponse() {
@@ -6168,13 +6043,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_company_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_company_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_company_profileRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -6191,100 +6066,100 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_company_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_company_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_company_profileResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string client_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string domain;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string address1;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string address2;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string city;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string locality;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string state_prov;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string country;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string postal_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string phone;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_address1;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_address2;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_city;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_state;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_zip;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_phone;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_email;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_contact;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_address1;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_address2;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_city;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_state;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_zip;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=26)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_phone;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=27)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=27)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_email;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=28)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=28)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_country;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=29)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=29)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_locality;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=30)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=30)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_country;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=31)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=31)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_locality;
                 
@@ -6330,101 +6205,101 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="set_company_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="set_company_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class set_company_profileRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string domain;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string address1;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string address2;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string city;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string locality;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string state_prov;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string country;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string postal_code;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string phone;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_address1;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_address2;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_city;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_state;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_zip;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_phone;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_email;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_contact;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_address1;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_address2;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_city;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_state;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_zip;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_phone;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=26)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_email;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=27)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=27)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_country;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=28)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=28)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_locality;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=29)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=29)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_country;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=30)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=30)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_locality;
                 
@@ -6469,100 +6344,100 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="set_company_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="set_company_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class set_company_profileResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string client_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string domain;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string address1;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string address2;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string city;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string locality;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string state_prov;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string country;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string postal_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string phone;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_address1;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_address2;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_city;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_state;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_zip;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_phone;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_email;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_contact;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_address1;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_address2;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_city;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_state;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_zip;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=26)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_phone;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=27)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=27)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_email;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=28)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=28)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_country;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=29)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=29)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string contact_locality;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=30)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=30)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_country;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=31)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=31)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string billing_locality;
                 
@@ -6608,13 +6483,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                                                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_items", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_items", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_inventory_itemsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -6631,14 +6506,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_itemsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_itemsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_inventory_itemsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("inventory_items", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.inventory_items_ReturnElement[] inventory_items;
                 
@@ -6655,21 +6530,21 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_item_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_item_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_inventory_item_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int item_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_item_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string currency_cd;
                 
         public get_inventory_item_detailsRequest() {
@@ -6687,63 +6562,63 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_item_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_inventory_item_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_inventory_item_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int item_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_item_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public int item_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string item_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public string item_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public int active_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 public int service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 public string client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> invoice_advancement_months;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 public string client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 public string client_sku;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.pricing_ReturnElement[] pricing;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 public string modify_price_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<float> subunit_qty;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string subunit_label;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> days_to_expiry;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute("resources", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resources_ReturnElement[] resources;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> stock_level;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                public System.Nullable<float> stock_level;
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlElementAttribute("image", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_ReturnElement[] image;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlElementAttribute("supplemental_obj_fields", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields;
                 
@@ -6751,7 +6626,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
         }
 
                  
-        public get_inventory_item_detailsResponse(long error_code, string error_msg, int item_no, string client_item_id, int item_type, string item_name, string item_desc, int active_ind, int service_no, string client_service_id, System.Nullable<int> invoice_advancement_months, System.Nullable<int> plan_no, string client_plan_id, string client_sku, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.pricing_ReturnElement[] pricing, string modify_price_ind, System.Nullable<float> subunit_qty, string subunit_label, System.Nullable<int> days_to_expiry, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resources_ReturnElement[] resources, System.Nullable<int> stock_level, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_ReturnElement[] image, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields) {
+        public get_inventory_item_detailsResponse(long error_code, string error_msg, int item_no, string client_item_id, int item_type, string item_name, string item_desc, int active_ind, int service_no, string client_service_id, System.Nullable<int> invoice_advancement_months, System.Nullable<int> plan_no, string client_plan_id, string client_sku, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.pricing_ReturnElement[] pricing, string modify_price_ind, System.Nullable<float> subunit_qty, string subunit_label, System.Nullable<int> days_to_expiry, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resources_ReturnElement[] resources, System.Nullable<float> stock_level, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_ReturnElement[] image, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields) {
                         this.error_code = error_code;
                         this.error_msg = error_msg;
                         this.item_no = item_no;
@@ -6780,90 +6655,87 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_inventory_item", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_inventory_item", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_inventory_itemRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int item_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string item_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string item_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public string client_sku;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public string currency_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         public string item_price;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_item_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> active_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> invoice_advancement_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public bool tax_inclusive_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string modify_price_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> subunit_qty;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string subunit_label;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> days_to_expiry;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string resource_type_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string resource_units;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> stock_level_track;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<float> stock_level_adjust;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_row[] image;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_class_row[] parent_class;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string commodity_cd;
                 
         public create_inventory_itemRequest() {
         }
         
-        public create_inventory_itemRequest(long client_no, string auth_key, int item_type, string item_name, string item_desc, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service, string client_sku, string currency_cd, string item_price, string client_item_id, System.Nullable<int> active_ind, System.Nullable<int> invoice_advancement_months, System.Nullable<int> plan_no, string client_plan_id, bool tax_inclusive_ind, string modify_price_ind, System.Nullable<int> subunit_qty, string subunit_label, System.Nullable<int> days_to_expiry, string resource_type_no, string resource_units, System.Nullable<int> stock_level_track, System.Nullable<float> stock_level_adjust, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_row[] image, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_class_row[] parent_class, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field, string commodity_cd) {
+        public create_inventory_itemRequest(long client_no, string auth_key, int item_type, string item_name, string item_desc, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service, string client_sku, string currency_cd, string item_price, string client_item_id, System.Nullable<int> active_ind, System.Nullable<int> invoice_advancement_months, System.Nullable<int> plan_no, string client_plan_id, bool tax_inclusive_ind, string modify_price_ind, System.Nullable<int> subunit_qty, string subunit_label, System.Nullable<int> days_to_expiry, string resource_type_no, string resource_units, System.Nullable<int> stock_level_track, System.Nullable<float> stock_level_adjust, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_row[] image, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_class_row[] parent_class, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.item_type = item_type;
@@ -6890,23 +6762,22 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.image = image;
                         this.parent_class = parent_class;
                         this.supplemental_obj_field = supplemental_obj_field;
-                        this.commodity_cd = commodity_cd;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_inventory_itemResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_inventory_itemResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_inventory_itemResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string item_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string currency_cd;
                 
         public create_inventory_itemResponse() {
@@ -6923,75 +6794,75 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_inventory_item", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_inventory_item", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_inventory_itemRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string item_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string item_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string item_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string client_item_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public int service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public string client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         public string currency_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         public string item_price;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> active_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> invoice_advancement_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string modify_price_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> subunit_qty;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string subunit_label;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> days_to_expiry;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string resource_type_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string resource_units;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> stock_level_track;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<float> stock_level_adjust;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.image_row[] image;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_class_row[] parent_class;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field;
                 
@@ -7030,16 +6901,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_inventory_itemResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_inventory_itemResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_inventory_itemResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string item_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string currency_cd;
                 
         public update_inventory_itemResponse() {
@@ -7056,28 +6927,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_item_class", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_item_class", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_item_classRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string class_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string class_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> active_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_inventory_class_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_class_row[] parent_class;
                 
@@ -7098,14 +6969,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_item_classResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_item_classResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_item_classResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string class_no;
                 
         public create_item_classResponse() {
@@ -7121,29 +6992,29 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_item_class", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_item_class", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_item_classRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string class_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string class_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string client_inventory_class_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string class_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> active_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_class_row[] parent_class;
                 
@@ -7165,14 +7036,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_item_classResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_item_classResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_item_classResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string class_no;
                 
         public edit_item_classResponse() {
@@ -7188,13 +7059,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_types", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_types", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_service_typesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -7211,14 +7082,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_typesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_typesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_service_typesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("service_types", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_types_ReturnElement[] service_types;
                 
@@ -7235,13 +7106,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_services", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_services", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_servicesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -7258,14 +7129,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_servicesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_servicesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_servicesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("services", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.services_ReturnElement[] services;
                 
@@ -7282,19 +7153,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_service_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_service_id;
                 
         public get_service_detailsRequest() {
@@ -7311,46 +7182,42 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_service_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_service_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string service_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string service_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string gl_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string taxable_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string tax_group;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 public string client_tax_group_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> usage_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string commodity_cd;
                 
         public get_service_detailsResponse() {
         }
 
                  
-        public get_service_detailsResponse(long error_code, string error_msg, int service_no, string client_service_id, string service_name, string service_type, string gl_cd, string taxable_ind, string tax_group, string client_tax_group_id, System.Nullable<int> usage_type, string commodity_cd) {
+        public get_service_detailsResponse(long error_code, string error_msg, int service_no, string client_service_id, string service_name, string service_type, string gl_cd, string taxable_ind, string tax_group, string client_tax_group_id, System.Nullable<int> usage_type) {
                         this.error_code = error_code;
                         this.error_msg = error_msg;
                         this.service_no = service_no;
@@ -7362,29 +7229,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.tax_group = tax_group;
                         this.client_tax_group_id = client_tax_group_id;
                         this.usage_type = usage_type;
-                        this.commodity_cd = commodity_cd;
                     }
             }
                                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_service_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_service_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_service_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public int plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string client_plan_id;
                 
         public get_plan_service_detailsRequest() {
@@ -7403,71 +7269,68 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_service_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_service_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_service_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string currency_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public int service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public string service_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public string service_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> taxable_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string tax_group;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 public string client_tax_group_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string gl_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> usage_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string rate_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlElementAttribute("rate_schedules", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rate_schedules_ReturnElement[] rate_schedules;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlElementAttribute("parent_plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_ReturnElement[] parent_plans;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute("parent_plan_ids", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plan_ids_ReturnElement[] parent_plan_ids;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlElementAttribute("exclusion_plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_ReturnElement[] exclusion_plans;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute("supplemental_obj_fields", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string commodity_cd;
                 
         public get_plan_service_detailsResponse() {
         }
 
                  
-        public get_plan_service_detailsResponse(long error_code, string error_msg, System.Nullable<int> plan_no, string client_plan_id, string currency_cd, int service_no, string service_name, string service_type, string client_service_id, System.Nullable<int> taxable_ind, string tax_group, string client_tax_group_id, string gl_cd, System.Nullable<int> usage_type, string rate_type, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rate_schedules_ReturnElement[] rate_schedules, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_ReturnElement[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plan_ids_ReturnElement[] parent_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_ReturnElement[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields, string commodity_cd) {
+        public get_plan_service_detailsResponse(long error_code, string error_msg, System.Nullable<int> plan_no, string client_plan_id, string currency_cd, int service_no, string service_name, string service_type, string client_service_id, System.Nullable<int> taxable_ind, string tax_group, string client_tax_group_id, string gl_cd, System.Nullable<int> usage_type, string rate_type, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rate_schedules_ReturnElement[] rate_schedules, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_ReturnElement[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plan_ids_ReturnElement[] parent_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_ReturnElement[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields) {
                         this.error_code = error_code;
                         this.error_msg = error_msg;
                         this.plan_no = plan_no;
@@ -7488,54 +7351,48 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.parent_plan_ids = parent_plan_ids;
                         this.exclusion_plans = exclusion_plans;
                         this.supplemental_obj_fields = supplemental_obj_fields;
-                        this.commodity_cd = commodity_cd;
                     }
             }
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_service", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_service", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_serviceRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string service_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string service_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
-                        public string gl_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
+                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+                public string gl_cd;
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string taxable_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string tax_group;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string commodity_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string client_tax_group_id;
                 
         public create_serviceRequest() {
         }
         
-        public create_serviceRequest(long client_no, string auth_key, string service_name, string service_type, string gl_cd, string taxable_ind, string tax_group, string usage_type, string client_service_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field, string commodity_cd, string client_tax_group_id) {
+        public create_serviceRequest(long client_no, string auth_key, string service_name, string service_type, string gl_cd, string taxable_ind, string tax_group, string usage_type, string client_service_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.service_name = service_name;
@@ -7546,22 +7403,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.usage_type = usage_type;
                         this.client_service_id = client_service_id;
                         this.supplemental_obj_field = supplemental_obj_field;
-                        this.commodity_cd = commodity_cd;
-                        this.client_tax_group_id = client_tax_group_id;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_serviceResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_serviceResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_serviceResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int service_no;
                 
         public create_serviceResponse() {
@@ -7577,47 +7432,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_service", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_service", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_serviceRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public long service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string service_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string service_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string gl_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string taxable_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string tax_group;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string commodity_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string client_tax_group_id;
                 
         public update_serviceRequest() {
         }
         
-        public update_serviceRequest(long client_no, string auth_key, long service_no, string service_name, string service_type, string client_service_id, string gl_cd, string taxable_ind, string tax_group, string usage_type, string commodity_cd, string client_tax_group_id) {
+        public update_serviceRequest(long client_no, string auth_key, long service_no, string service_name, string service_type, string client_service_id, string gl_cd, string taxable_ind, string tax_group, string usage_type) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.service_no = service_no;
@@ -7628,22 +7477,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.taxable_ind = taxable_ind;
                         this.tax_group = tax_group;
                         this.usage_type = usage_type;
-                        this.commodity_cd = commodity_cd;
-                        this.client_tax_group_id = client_tax_group_id;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_serviceResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_serviceResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_serviceResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int service_no;
                 
         public update_serviceResponse() {
@@ -7659,13 +7506,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_fields", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_fields", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_supp_fieldsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -7682,14 +7529,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_fieldsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_fieldsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_supp_fieldsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("supp_fields", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supp_fields_ReturnElement[] supp_fields;
                 
@@ -7706,17 +7553,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_field_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_field_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_supp_field_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string field_name;
                 
         public get_supp_field_detailsRequest() {
@@ -7732,39 +7579,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_field_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_field_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_supp_field_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string field_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string field_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public int field_order;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public int required_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public int hidden_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public string presentation_mode;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> min_no_sel;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_no_sel;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string additional_html;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string extra_validation_methods;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlElementAttribute("field_options", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.field_options_ReturnElement[] field_options;
                 
@@ -7791,47 +7638,47 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_supp_fieldRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string field_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public int field_order;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string presentation_mode;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string field_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> required_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> hidden_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> sel_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> min_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string display_text;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string option_value;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> option_value_order;
                 
@@ -7859,14 +7706,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_supp_fieldResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string field_name;
                 
         public create_supp_fieldResponse() {
@@ -7882,49 +7729,49 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_supp_fieldRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string field_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string field_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> field_order;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> required_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> hidden_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> sel_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string presentation_mode;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> min_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string display_text;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string option_value;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> option_value_order;
                 
@@ -7952,14 +7799,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_supp_fieldResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string field_name;
                 
         public update_supp_fieldResponse() {
@@ -7975,13 +7822,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coupons", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coupons", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_couponsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -7998,14 +7845,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_couponsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_couponsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_couponsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("coupons", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coupons_ReturnElement[] coupons;
                 
@@ -8022,17 +7869,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coupon_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coupon_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_coupon_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string coupon_cd;
                 
         public get_coupon_detailsRequest() {
@@ -8048,39 +7895,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coupon_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coupon_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_coupon_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string coupon_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coupon_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coupon_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public int status_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> no_of_uses;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string start_date;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string end_date;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute("credit_template", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.credit_template_ReturnElement[] credit_template;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute("discount_rule", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.discount_rule_ReturnElement[] discount_rule;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute("discount_bundle", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.discount_bundle_ReturnElement[] discount_bundle;
                 
@@ -8106,58 +7953,58 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_coupon", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_coupon", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_couponRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string coupon_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public int status_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string start_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string end_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coupon_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coupon_msg;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> no_of_uses;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.template_row[] template;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_template_row[] existing_template;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_template_id_row[] existing_template_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.discount_rule_row[] discount_rule;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_rule_row[] existing_discount_rule;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_rule_id_row[] existing_discount_rule_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.discount_bundle_row[] discount_bundle;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_bundle_row[] existing_discount_bundle;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_bundle_id_row[] existing_discount_bundle_id;
                 
@@ -8189,14 +8036,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_couponResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_couponResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_couponResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string coupon_cd;
                 
         public create_couponResponse() {
@@ -8212,58 +8059,58 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_coupon", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_coupon", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_couponRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string coupon_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public int status_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string start_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string end_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coupon_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coupon_msg;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<long> no_of_uses;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.template_row[] template;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_template_row[] existing_template;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_template_id_row[] existing_template_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.discount_rule_row[] discount_rule;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_rule_row[] existing_discount_rule;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_rule_id_row[] existing_discount_rule_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.discount_bundle_row[] discount_bundle;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_bundle_row[] existing_discount_bundle;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_discount_bundle_id_row[] existing_discount_bundle_id;
                 
@@ -8295,14 +8142,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_couponResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_couponResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_couponResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string coupon_cd;
                 
         public update_couponResponse() {
@@ -8318,17 +8165,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_coupons", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_coupons", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_couponsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coupon_nos_row[] coupon_nos;
                 
@@ -8345,14 +8192,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_couponsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_couponsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_couponsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("coupons", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coupons_ReturnElement[] coupons;
                 
@@ -8369,13 +8216,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_templates", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_templates", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_recurring_credit_templatesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -8392,14 +8239,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_templatesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_templatesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_recurring_credit_templatesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("credit_templates", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.credit_templates_ReturnElement[] credit_templates;
                 
@@ -8416,19 +8263,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_template_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_template_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_recurring_credit_template_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int credit_template_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_credit_template_id;
                 
         public get_recurring_credit_template_detailsRequest() {
@@ -8445,57 +8292,57 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_template_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_recurring_credit_template_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_recurring_credit_template_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int recurring_credit_template_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string credit_template_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_credit_template_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public int eligible_plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string eligible_client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public int eligible_service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string eligible_client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute("eligible_service_types", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.eligible_service_types_ReturnElement[] eligible_service_types;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 public int no_of_credits;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 public int time_between_credits;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 public string discount_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 public float discount_amt;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 public int percentage_plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string percentage_client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 public int percentage_service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string percentage_client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 public int alt_service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string alt_client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute("coupons", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coupons_ReturnElement[] coupons;
                 
@@ -8530,66 +8377,66 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_credit_template", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_credit_template", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_credit_templateRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string credit_template_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public int discount_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public float discount_amt;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public int no_of_credits;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public int credit_interval_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> eligible_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string eligible_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> eligible_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string eligible_client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.eligible_service_types_row[] eligible_service_types;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> percentage_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string percentage_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> percentage_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string percentage_client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> alt_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string alt_client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_credit_template_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coupon_row[] coupon;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_coupon_row[] existing_coupon;
                 
@@ -8624,14 +8471,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_credit_templateResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_credit_templateResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_credit_templateResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string credit_template_no;
                 
         public create_credit_templateResponse() {
@@ -8647,67 +8494,67 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_credit_template", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_credit_template", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_credit_templateRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string credit_template_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string credit_template_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public int discount_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public float discount_amt;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public int no_of_credits;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public int credit_interval_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         public string client_credit_template_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> eligible_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string eligible_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> eligible_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string eligible_client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.eligible_service_types_row[] eligible_service_types;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> percentage_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string percentage_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> percentage_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string percentage_client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> alt_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string alt_client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coupon_row[] coupon;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.existing_coupon_row[] existing_coupon;
                 
@@ -8743,14 +8590,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_credit_templateResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_credit_templateResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_credit_templateResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string credit_template_no;
                 
         public update_credit_templateResponse() {
@@ -8766,17 +8613,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_templates", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_templates", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_templatesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.template_nos_row[] template_nos;
                 
@@ -8793,12 +8640,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_templatesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_templatesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_templatesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
                 
         public delete_templatesResponse() {
@@ -8813,72 +8660,72 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_rule", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_rule", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_discount_ruleRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string label;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string rule_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string ext_description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public int flat_percent_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public float amount;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         public string currency;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         public string duration_type_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         public string inline_offset_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         public int service_code_to_use;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         public int scope_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_applicable_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_applications_per_acct;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> alt_service_no_2_apply;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string alt_service_id_2_apply;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string applicable_trans_scope;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string use_all_or_nth_subs_rule;
                 
@@ -8917,14 +8764,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_ruleResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_ruleResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_discount_ruleResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string rule_no;
                 
         public create_discount_ruleResponse() {
@@ -8940,28 +8787,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_bundle", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_bundle", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_discount_bundleRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string bundle_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string bundle_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string bundle_description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string allow_overlap_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rules_row[] rules;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_row[] rule_ids;
                 
@@ -8983,14 +8830,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_bundleResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_discount_bundleResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_discount_bundleResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string rule_no;
                 
         public create_discount_bundleResponse() {
@@ -9006,13 +8853,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundles", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundles", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_bundlesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -9029,20 +8876,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundlesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundlesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_bundlesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int bundle_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string bundle_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string bundle_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string description;
                 
         public get_discount_bundlesResponse() {
@@ -9061,19 +8908,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundle_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundle_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_bundle_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int bundle_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string bundle_id;
                 
         public get_discount_bundle_detailsRequest() {
@@ -9090,27 +8937,27 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundle_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_bundle_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_bundle_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int bundle_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string bundle_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string bundle_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public string allow_overlap_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute("rules", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rules_ReturnElement[] rules;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute("rule_ids", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_ids_ReturnElement[] rule_ids;
                 
@@ -9133,13 +8980,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rules", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rules", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_rulesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -9156,26 +9003,26 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rulesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rulesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_rulesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int rule_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string rule_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string ext_description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public int flat_percent_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public float amount;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 public string currency;
                 
         public get_discount_rulesResponse() {
@@ -9197,19 +9044,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rule_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rule_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_rule_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int rule_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_rule_id;
                 
         public get_discount_rule_detailsRequest() {
@@ -9226,64 +9073,64 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rule_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_discount_rule_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_discount_rule_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int rule_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string rule_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string ext_description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public int flat_percent_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public float amount;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 public string currency;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 public string duration_type_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_applicable_months;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_applications_per_acct;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 public string inline_offset_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> service_code_to_use;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> alt_service_no_2_apply;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string alt_service_id_2_apply;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 public int scope_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute("plan_no", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_ReturnElement[] plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlElementAttribute("client_plan_id", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_ReturnElement[] client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute("service_no", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_ReturnElement[] service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute("client_service_id", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_ReturnElement[] client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlElementAttribute("item_no", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_ReturnElement[] item_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlElementAttribute("client_item_id", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_ReturnElement[] client_item_id;
                 
@@ -9320,17 +9167,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_rules", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_rules", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_rulesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.rule_nos_row[] rule_nos;
                 
@@ -9347,12 +9194,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_rulesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_rulesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_rulesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
                 
         public delete_rulesResponse() {
@@ -9367,17 +9214,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_bundles", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_bundles", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_bundlesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.bundle_nos_row[] bundle_nos;
                 
@@ -9394,12 +9241,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_bundlesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_bundlesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_bundlesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
                 
         public delete_bundlesResponse() {
@@ -9414,13 +9261,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plans", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plans", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plansRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -9437,14 +9284,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plansResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plansResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plansResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plans_ReturnElement[] plans;
                 
@@ -9461,19 +9308,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_plan_id;
                 
         public get_plan_detailsRequest() {
@@ -9490,112 +9337,109 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string plan_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public int plan_level;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public string plan_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public string plan_description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute("plan_groups", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_groups_ReturnElement[] plan_groups;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute("plan_group_ids", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_ids_ReturnElement[] plan_group_ids;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 public string currency_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 public string billing_interval;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 public string usage_billing_interval;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 public int active_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 public string rollover_months;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 public int rollover_plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 public string rollover_client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 public string allow_child_accounts;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 public int dunning_plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 public string dunning_client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> free_trial_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> free_trial_duration;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> initial_free_months;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> acct_status_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_status_days;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_status_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=26)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> template_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=27)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=27)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string template_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=28)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=28)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_cancel_min_month;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=29)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=29)]
                 public string how_to_apply_min_fee;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=30)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=30)]
                 public string is_deletable;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=31)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=31)]
                 [System.Xml.Serialization.XmlElementAttribute("services", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.services_ReturnElement[] services;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=32)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=32)]
                 [System.Xml.Serialization.XmlElementAttribute("resources", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resources_ReturnElement[] resources;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=33)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=33)]
                 [System.Xml.Serialization.XmlElementAttribute("parent_plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_ReturnElement[] parent_plans;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=34)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=34)]
                 [System.Xml.Serialization.XmlElementAttribute("parent_plan_ids", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plan_ids_ReturnElement[] parent_plan_ids;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=35)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=35)]
                 [System.Xml.Serialization.XmlElementAttribute("exclusion_plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_ReturnElement[] exclusion_plans;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=36)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=36)]
                 [System.Xml.Serialization.XmlElementAttribute("supplemental_obj_fields", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=37)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=37)]
                 [System.Xml.Serialization.XmlElementAttribute("surcharges", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharges_ReturnElement[] surcharges;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=38)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string proration_invoice_timing_cd;
                 
         public get_plan_detailsResponse() {
         }
 
                  
-        public get_plan_detailsResponse(long error_code, string error_msg, int plan_no, string client_plan_id, string plan_name, int plan_level, string plan_type, string plan_description, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_groups_ReturnElement[] plan_groups, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_ids_ReturnElement[] plan_group_ids, string currency_cd, string billing_interval, string usage_billing_interval, int active_ind, string rollover_months, int rollover_plan_no, string rollover_client_plan_id, string allow_child_accounts, int dunning_plan_no, string dunning_client_plan_id, System.Nullable<int> free_trial_type, System.Nullable<int> free_trial_duration, System.Nullable<int> initial_free_months, System.Nullable<int> acct_status_cd, System.Nullable<int> rollover_status_days, System.Nullable<int> rollover_status_cd, System.Nullable<int> template_no, string template_id, System.Nullable<int> plan_cancel_min_month, string how_to_apply_min_fee, string is_deletable, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.services_ReturnElement[] services, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resources_ReturnElement[] resources, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_ReturnElement[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plan_ids_ReturnElement[] parent_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_ReturnElement[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharges_ReturnElement[] surcharges, string proration_invoice_timing_cd) {
+        public get_plan_detailsResponse(long error_code, string error_msg, int plan_no, string client_plan_id, string plan_name, int plan_level, string plan_type, string plan_description, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_groups_ReturnElement[] plan_groups, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_ids_ReturnElement[] plan_group_ids, string currency_cd, string billing_interval, string usage_billing_interval, int active_ind, string rollover_months, int rollover_plan_no, string rollover_client_plan_id, string allow_child_accounts, int dunning_plan_no, string dunning_client_plan_id, System.Nullable<int> free_trial_type, System.Nullable<int> free_trial_duration, System.Nullable<int> initial_free_months, System.Nullable<int> acct_status_cd, System.Nullable<int> rollover_status_days, System.Nullable<int> rollover_status_cd, System.Nullable<int> template_no, string template_id, System.Nullable<int> plan_cancel_min_month, string how_to_apply_min_fee, string is_deletable, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.services_ReturnElement[] services, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resources_ReturnElement[] resources, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_ReturnElement[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plan_ids_ReturnElement[] parent_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_ReturnElement[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_fields_ReturnElement[] supplemental_obj_fields, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharges_ReturnElement[] surcharges) {
                         this.error_code = error_code;
                         this.error_msg = error_msg;
                         this.plan_no = plan_no;
@@ -9634,142 +9478,138 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.exclusion_plans = exclusion_plans;
                         this.supplemental_obj_fields = supplemental_obj_fields;
                         this.surcharges = surcharges;
-                        this.proration_invoice_timing_cd = proration_invoice_timing_cd;
                     }
             }
                                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_new_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_new_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_new_planRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string plan_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string plan_description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string plan_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string currency;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public string billing_interval;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] plan_group;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_id_row[] plan_group_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_billing_interval;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> active;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string rollover_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string rollover_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> initial_free_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> acct_status_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_status_days;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_status_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> dunning_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string dunning_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> template_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_email_template_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string apply_cancellation;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_cancel_min_month;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string apply_minimum_fee;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=26)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string how_to_apply_minimum_fee;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=27)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=27)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=28)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=28)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=29)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=29)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resource_row[] resource;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=30)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=30)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> arc_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=31)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=31)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_row[] parent_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=32)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=32)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_client_plan_ids_row[] parent_client_plan_ids;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=33)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=33)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_row[] exclusion_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=34)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=34)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=35)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=35)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public bool template_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=36)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=36)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.child_plans_row[] child_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=37)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=37)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string notification_template_group_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=38)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=38)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string credit_note_template_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=39)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=39)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=40)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=40)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=41)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string proration_invoice_timing_cd;
                 
         public create_new_planRequest() {
         }
         
-        public create_new_planRequest(long client_no, string auth_key, string plan_name, string plan_description, string plan_type, string currency, string billing_interval, string client_plan_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] plan_group, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_id_row[] plan_group_id, string usage_billing_interval, System.Nullable<int> active, string rollover_months, System.Nullable<int> rollover_plan_no, string rollover_client_plan_id, System.Nullable<int> initial_free_months, System.Nullable<int> acct_status_cd, System.Nullable<int> rollover_status_days, System.Nullable<int> rollover_status_cd, System.Nullable<int> dunning_plan_no, string dunning_client_plan_id, System.Nullable<int> template_no, string client_email_template_id, string apply_cancellation, System.Nullable<int> plan_cancel_min_month, string apply_minimum_fee, string how_to_apply_minimum_fee, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resource_row[] resource, System.Nullable<int> arc_service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_row[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_client_plan_ids_row[] parent_client_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_row[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field, bool template_ind, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.child_plans_row[] child_plans, string notification_template_group_no, string credit_note_template_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id, string proration_invoice_timing_cd) {
+        public create_new_planRequest(long client_no, string auth_key, string plan_name, string plan_description, string plan_type, string currency, string billing_interval, string client_plan_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] plan_group, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_id_row[] plan_group_id, string usage_billing_interval, System.Nullable<int> active, string rollover_months, System.Nullable<int> rollover_plan_no, string rollover_client_plan_id, System.Nullable<int> initial_free_months, System.Nullable<int> acct_status_cd, System.Nullable<int> rollover_status_days, System.Nullable<int> rollover_status_cd, System.Nullable<int> dunning_plan_no, string dunning_client_plan_id, System.Nullable<int> template_no, string client_email_template_id, string apply_cancellation, System.Nullable<int> plan_cancel_min_month, string apply_minimum_fee, string how_to_apply_minimum_fee, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resource_row[] resource, System.Nullable<int> arc_service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_row[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_client_plan_ids_row[] parent_client_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_row[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field, bool template_ind, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.child_plans_row[] child_plans, string notification_template_group_no, string credit_note_template_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.plan_name = plan_name;
@@ -9811,21 +9651,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.credit_note_template_no = credit_note_template_no;
                         this.surcharge_no = surcharge_no;
                         this.client_surcharge_id = client_surcharge_id;
-                        this.proration_invoice_timing_cd = proration_invoice_timing_cd;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_new_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_new_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_new_planResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string plan_no;
                 
         public create_new_planResponse() {
@@ -9841,138 +9680,135 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_planRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string plan_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public int plan_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public string billing_interval;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public string currency;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string plan_description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] plan_group;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_id_row[] plan_group_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> active;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_billing_interval;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> template_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_email_template_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string rollover_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string rollover_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> dunning_plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string dunning_client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> initial_free_months;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> acct_status_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_status_days;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> rollover_status_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=24)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=24)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> allow_child_accts;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=25)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=25)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string apply_cancellation;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=26)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=26)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_cancel_min_month;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=27)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=27)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string apply_minimum_fee;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=28)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=28)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> how_to_apply_minimum_fee;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=29)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=29)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=30)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=30)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=31)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=31)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resource_row[] resource;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=32)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=32)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> arc_service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=33)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=33)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_row[] parent_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=34)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=34)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_client_plan_ids_row[] parent_client_plan_ids;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=35)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=35)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_row[] exclusion_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=36)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=36)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=37)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=37)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.child_plans_row[] child_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=38)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=38)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string notification_template_group_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=39)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=39)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string credit_note_template_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=40)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=40)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=41)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=41)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=42)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string proration_invoice_timing_cd;
                 
         public edit_planRequest() {
         }
         
-        public edit_planRequest(long client_no, string auth_key, string plan_no, string plan_name, string client_plan_id, int plan_type, string billing_interval, string currency, string plan_description, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] plan_group, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_id_row[] plan_group_id, System.Nullable<int> active, string usage_billing_interval, System.Nullable<int> template_no, string client_email_template_id, string rollover_months, System.Nullable<int> rollover_plan_no, string rollover_client_plan_id, System.Nullable<int> dunning_plan_no, string dunning_client_plan_id, System.Nullable<int> initial_free_months, System.Nullable<int> acct_status_cd, System.Nullable<int> rollover_status_days, System.Nullable<int> rollover_status_cd, System.Nullable<int> allow_child_accts, string apply_cancellation, System.Nullable<int> plan_cancel_min_month, string apply_minimum_fee, System.Nullable<int> how_to_apply_minimum_fee, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resource_row[] resource, System.Nullable<int> arc_service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_row[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_client_plan_ids_row[] parent_client_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_row[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.child_plans_row[] child_plans, string notification_template_group_no, string credit_note_template_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id, string proration_invoice_timing_cd) {
+        public edit_planRequest(long client_no, string auth_key, string plan_no, string plan_name, string client_plan_id, int plan_type, string billing_interval, string currency, string plan_description, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_row[] plan_group, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_group_id_row[] plan_group_id, System.Nullable<int> active, string usage_billing_interval, System.Nullable<int> template_no, string client_email_template_id, string rollover_months, System.Nullable<int> rollover_plan_no, string rollover_client_plan_id, System.Nullable<int> dunning_plan_no, string dunning_client_plan_id, System.Nullable<int> initial_free_months, System.Nullable<int> acct_status_cd, System.Nullable<int> rollover_status_days, System.Nullable<int> rollover_status_cd, System.Nullable<int> allow_child_accts, string apply_cancellation, System.Nullable<int> plan_cancel_min_month, string apply_minimum_fee, System.Nullable<int> how_to_apply_minimum_fee, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_row[] service, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.resource_row[] resource, System.Nullable<int> arc_service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_plans_row[] parent_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.parent_client_plan_ids_row[] parent_client_plan_ids, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.exclusion_plans_row[] exclusion_plans, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.supplemental_obj_field_row[] supplemental_obj_field, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.child_plans_row[] child_plans, string notification_template_group_no, string credit_note_template_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.plan_no = plan_no;
@@ -10015,21 +9851,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.credit_note_template_no = credit_note_template_no;
                         this.surcharge_no = surcharge_no;
                         this.client_surcharge_id = client_surcharge_id;
-                        this.proration_invoice_timing_cd = proration_invoice_timing_cd;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_planResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string plan_no;
                 
         public edit_planResponse() {
@@ -10045,17 +9880,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plans", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plans", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_plansRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_nos_row[] plan_nos;
                 
@@ -10072,14 +9907,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plansResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plansResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_plansResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plans_ReturnElement[] plans;
                 
@@ -10096,24 +9931,24 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="copy_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="copy_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class copy_planRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string plan_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string new_client_plan_id;
                 
@@ -10133,14 +9968,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="copy_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="copy_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class copy_planResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> plan_no;
                 
@@ -10154,16 +9989,84 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.plan_no = plan_no;
                     }
             }
-                                                            [System.Diagnostics.DebuggerStepThroughAttribute()]
+                            [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotions", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class get_promotionsRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_master_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
+    public partial class update_master_planRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string auth_key;
+        
+        
+        public update_master_planRequest() {
+        }
+        
+        public update_master_planRequest(long client_no, string auth_key) {
+            this.client_no = client_no;
+            this.auth_key = auth_key;
+                    }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_master_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
+    public partial class update_master_planResponse {
+        
+                
+        public update_master_planResponse() {
+        }
+
+            }
+                            [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supplemental_plan", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
+    public partial class update_supplemental_planRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
+        public long client_no;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string auth_key;
+        
+        
+        public update_supplemental_planRequest() {
+        }
+        
+        public update_supplemental_planRequest(long client_no, string auth_key) {
+            this.client_no = client_no;
+            this.auth_key = auth_key;
+                    }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supplemental_planResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
+    public partial class update_supplemental_planResponse {
+        
+                
+        public update_supplemental_planResponse() {
+        }
+
+            }
+                            [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotions", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
+    public partial class get_promotionsRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
+        public long client_no;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -10180,14 +10083,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotionsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotionsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promotionsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("promotions", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.promotions_ReturnElement[] promotions;
                 
@@ -10204,17 +10107,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotion_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotion_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promotion_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string promo_cd;
                 
         public get_promotion_detailsRequest() {
@@ -10230,31 +10133,31 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotion_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_promotion_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_promotion_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int client_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string promo_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string promo_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string start_date;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string exp_date;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string max_uses;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 public string plan_type_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 public string plan_type_desc;
                 
         public get_promotion_detailsResponse() {
@@ -10277,29 +10180,29 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promotion", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promotion", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_promotionRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string promo_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string promo_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public int promo_plan_set_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string no_of_uses;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string start_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string exp_date;
                 
@@ -10321,14 +10224,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promotionResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_promotionResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_promotionResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string promo_cd;
                 
         public create_promotionResponse() {
@@ -10344,29 +10247,29 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promotion", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promotion", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_promotionRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string promo_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string promo_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public int promo_plan_set_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string no_of_uses;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string start_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string exp_date;
                 
@@ -10388,14 +10291,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promotionResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_promotionResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_promotionResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public string promo_cd;
                 
         public update_promotionResponse() {
@@ -10411,13 +10314,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_types", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_types", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_usage_typesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -10434,14 +10337,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_typesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_typesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_usage_typesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("usage_types", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.usage_types_ReturnElement[] usage_types;
                 
@@ -10458,17 +10361,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_type_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_type_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_usage_type_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int usage_type_no;
                 
         public get_usage_type_detailsRequest() {
@@ -10484,27 +10387,27 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_type_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_type_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_usage_type_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int usage_type_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string usage_type_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string usage_type_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public string usage_unit_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public string client_usage_unit_type_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 public bool is_editable;
                 
         public get_usage_type_detailsResponse() {
@@ -10526,13 +10429,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_unit_types", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_unit_types", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_usage_unit_typesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -10549,14 +10452,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_unit_typesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_usage_unit_typesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_usage_unit_typesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("usage_unit_types", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.usage_unit_types_ReturnElement[] usage_unit_types;
                 
@@ -10573,26 +10476,26 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_usage_type", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_usage_type", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_usage_typeRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string usage_type_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string usage_type_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public int usage_unit_type_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type_code;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type_display_string;
                 
@@ -10613,14 +10516,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_usage_typeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_usage_typeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_usage_typeResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int usage_type_no;
                 
         public create_usage_typeResponse() {
@@ -10636,28 +10539,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_usage_type", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_usage_type", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_usage_typeRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int usage_type_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string usage_type_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string usage_type_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public int usage_unit_type_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type_code;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string usage_type_display_string;
                 
@@ -10679,14 +10582,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_usage_typeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_usage_typeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_usage_typeResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int usage_type_no;
                 
         public update_usage_typeResponse() {
@@ -10702,47 +10605,47 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_obj_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_obj_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_supp_obj_fieldRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string field_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> min_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                public string min_no_sel;
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string datatype;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string form_input_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string use_allowed_vals_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string option_value;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string option_value_order;
                 
         public create_supp_obj_fieldRequest() {
         }
         
-        public create_supp_obj_fieldRequest(long client_no, string auth_key, string field_name, string description, System.Nullable<int> min_no_sel, System.Nullable<int> max_no_sel, string datatype, string form_input_type, string use_allowed_vals_ind, string option_value, string option_value_order) {
+        public create_supp_obj_fieldRequest(long client_no, string auth_key, string field_name, string description, string min_no_sel, System.Nullable<int> max_no_sel, string datatype, string form_input_type, string use_allowed_vals_ind, string option_value, string option_value_order) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.field_name = field_name;
@@ -10760,14 +10663,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_obj_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_supp_obj_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_supp_obj_fieldResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int field_no;
                 
         public create_supp_obj_fieldResponse() {
@@ -10783,42 +10686,42 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_obj_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_obj_field", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_supp_obj_fieldRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int field_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string field_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string min_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_no_sel;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string datatype;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string form_input_type;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string use_allowed_vals_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string option_value;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string option_value_order;
                 
@@ -10844,14 +10747,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_obj_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_supp_obj_fieldResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_supp_obj_fieldResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int field_no;
                 
         public update_supp_obj_fieldResponse() {
@@ -10867,17 +10770,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_obj_fields", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_obj_fields", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_supp_obj_fieldsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int field_no;
                 
         public get_supp_obj_fieldsRequest() {
@@ -10893,36 +10796,36 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_obj_fieldsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_supp_obj_fieldsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_supp_obj_fieldsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int field_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string field_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string datatype;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string min_no_sel;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> max_no_sel;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string form_input_type;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlElementAttribute("allowed_values", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.allowed_values_ReturnElement[] allowed_values;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlElementAttribute("associated_objects", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.associated_objects_ReturnElement[] associated_objects;
                 
@@ -10947,13 +10850,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_groups", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_groups", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_groupsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -10970,14 +10873,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_groupsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_groupsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_groupsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("plan_groups", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_groups_ReturnElement[] plan_groups;
                 
@@ -10994,19 +10897,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_group_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_group_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_group_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int group_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_plan_change_group_id;
                 
         public get_plan_group_detailsRequest() {
@@ -11023,25 +10926,25 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_group_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_plan_group_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_plan_group_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int group_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string group_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string group_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_change_group_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 public string group_usage;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 [System.Xml.Serialization.XmlElementAttribute("plans", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plans_ReturnElement[] plans;
                 
@@ -11063,29 +10966,29 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_plan_group", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_plan_group", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_plan_groupRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string group_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string group_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string group_usage;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_plan_change_group_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string group_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string group_plan_ids;
                 
@@ -11107,14 +11010,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_plan_groupResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_plan_groupResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_plan_groupResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int group_no;
                 
         public create_plan_groupResponse() {
@@ -11130,30 +11033,30 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_plan_group", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_plan_group", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_plan_groupRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int group_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string group_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string group_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string group_usage;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public string client_plan_change_group_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string group_plans;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string group_plan_ids;
                 
@@ -11176,14 +11079,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_plan_groupResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="update_plan_groupResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class update_plan_groupResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int group_no;
                 
         public update_plan_groupResponse() {
@@ -11199,17 +11102,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plan_group", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plan_group", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_plan_groupRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string group_list;
                 
         public delete_plan_groupRequest() {
@@ -11225,14 +11128,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plan_groupResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_plan_groupResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_plan_groupResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_groups_ReturnElement[] plan_groups;
                 
         public delete_plan_groupResponse() {
@@ -11248,13 +11151,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="list_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="list_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class list_coaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -11271,14 +11174,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="list_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="list_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class list_coaResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("coa_list", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coa_list_ReturnElement[] coa_list;
                 
@@ -11295,19 +11198,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="add_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="add_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class add_coaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string coa_code;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coa_description;
                 
@@ -11325,14 +11228,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="add_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="add_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class add_coaResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("coa", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coa_ReturnElement[] coa;
                 
@@ -11349,17 +11252,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_coaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public long coa_id;
                 
         public get_coaRequest() {
@@ -11375,14 +11278,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_coaResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("coa", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coa_ReturnElement[] coa;
                 
@@ -11399,22 +11302,22 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_coa", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_coaRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public long coa_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coa_code;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string coa_description;
                 
@@ -11433,14 +11336,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_coaResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_coaResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("coa", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.coa_ReturnElement[] coa;
                 
@@ -11457,13 +11360,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surcharges", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surcharges", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_surchargesRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
@@ -11480,14 +11383,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surchargesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surchargesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_surchargesResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute("surcharges", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharges_ReturnElement[] surcharges;
                 
@@ -11504,19 +11407,19 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surcharge_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surcharge_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_surcharge_detailsRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public int surcharge_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string client_surcharge_id;
                 
         public get_surcharge_detailsRequest() {
@@ -11533,68 +11436,68 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surcharge_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="get_surcharge_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class get_surcharge_detailsResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 public int surcharge_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 public string surcharge_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                 public string client_surcharge_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                 public string description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string ext_description;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                 public string currency_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                 public string surcharge_type_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 public string inline_offset_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 public string apply_b4_or_after_discount_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> apply_to_zero_invoice_ind;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> tax_group;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string gl_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string ar_gl_cd;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 public int scope_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlElementAttribute("plan_no", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_ReturnElement[] plan_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlElementAttribute("client_plan_id", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_ReturnElement[] client_plan_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlElementAttribute("service_no", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_ReturnElement[] service_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlElementAttribute("client_service_id", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_ReturnElement[] client_service_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlElementAttribute("item_no", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_ReturnElement[] item_no;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlElementAttribute("client_item_id", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_ReturnElement[] client_item_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=22)]
                 [System.Xml.Serialization.XmlElementAttribute("plan_service", IsNullable=true)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_service_ReturnElement[] plan_service;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=23)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=23)]
                 public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_ReturnElement[] surcharge_tier;
                 
         public get_surcharge_detailsResponse() {
@@ -11631,76 +11534,73 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_surcharge", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_surcharge", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_surchargeRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string surcharge_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string ext_description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string currency_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public string surcharge_type_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public string inline_offset_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         public string apply_b4_or_after_discount_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                         public int scope_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] surcharge_tier;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string client_surcharge_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> apply_to_zero_invoice_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> tax_group;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string gl_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string ar_gl_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=17)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=18)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=18)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=19)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=19)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=20)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=20)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=21)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=21)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=22)]
-                [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule;
                 
         public create_surchargeRequest() {
         }
         
-        public create_surchargeRequest(long client_no, string auth_key, string surcharge_name, string description, string ext_description, string currency_cd, string surcharge_type_cd, string inline_offset_ind, string apply_b4_or_after_discount_cd, int scope_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] surcharge_tier, string client_surcharge_id, System.Nullable<int> apply_to_zero_invoice_ind, System.Nullable<int> tax_group, string gl_cd, string ar_gl_cd, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule) {
+        public create_surchargeRequest(long client_no, string auth_key, string surcharge_name, string description, string ext_description, string currency_cd, string surcharge_type_cd, string inline_offset_ind, string apply_b4_or_after_discount_cd, int scope_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] surcharge_tier, string client_surcharge_id, System.Nullable<int> apply_to_zero_invoice_ind, System.Nullable<int> tax_group, string gl_cd, string ar_gl_cd, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.surcharge_name = surcharge_name;
@@ -11723,21 +11623,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.client_service_id = client_service_id;
                         this.item_no = item_no;
                         this.client_item_id = client_item_id;
-                        this.schedule = schedule;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_surchargeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="create_surchargeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class create_surchargeResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string surcharge_no;
                 
@@ -11754,62 +11653,59 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_surcharge", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_surcharge", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_surchargeRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string surcharge_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                         public string surcharge_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=4)]
                         public string client_surcharge_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=5)]
                         public string description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=6)]
                         public string ext_description;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=7)]
                         public string currency_cd;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=8)]
                         public int scope_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=9)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=9)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] surcharge_tier;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=10)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=10)]
                         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public System.Nullable<int> apply_to_zero_invoice_ind;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=11)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=11)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=12)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=12)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=13)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=13)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=14)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=14)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=15)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=15)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=16)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=16)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=17)]
-                [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule;
                 
         public edit_surchargeRequest() {
         }
         
-        public edit_surchargeRequest(long client_no, string auth_key, string surcharge_no, string surcharge_name, string client_surcharge_id, string description, string ext_description, string currency_cd, int scope_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] surcharge_tier, System.Nullable<int> apply_to_zero_invoice_ind, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.schedule_row[] schedule) {
+        public edit_surchargeRequest(long client_no, string auth_key, string surcharge_no, string surcharge_name, string client_surcharge_id, string description, string ext_description, string currency_cd, int scope_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_tier_row[] surcharge_tier, System.Nullable<int> apply_to_zero_invoice_ind, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.plan_no_row[] plan_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_plan_id_row[] client_plan_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.service_no_row[] service_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_service_id_row[] client_service_id, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.item_no_row[] item_no, Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_item_id_row[] client_item_id) {
             this.client_no = client_no;
             this.auth_key = auth_key;
                         this.surcharge_no = surcharge_no;
@@ -11827,21 +11723,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                         this.client_service_id = client_service_id;
                         this.item_no = item_no;
                         this.client_item_id = client_item_id;
-                        this.schedule = schedule;
                     }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_surchargeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="edit_surchargeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class edit_surchargeResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
                 public string surcharge_no;
                 
@@ -11858,20 +11753,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_surcharge", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_surcharge", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_surchargeRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.surcharge_no_row[] surcharge_no;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
+                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=3)]
                 [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools.client_surcharge_id_row[] client_surcharge_id;
                 
@@ -11889,12 +11784,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_surchargeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_surchargeResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class delete_surchargeResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
                 
         public delete_surchargeResponse() {
@@ -11909,326 +11804,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
                             [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_revrec_profiles", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class get_revrec_profilesRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-        public long client_no;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string auth_key;
-        
-        
-        public get_revrec_profilesRequest() {
-        }
-        
-        public get_revrec_profilesRequest(long client_no, string auth_key) {
-            this.client_no = client_no;
-            this.auth_key = auth_key;
-                    }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_revrec_profilesResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class get_revrec_profilesResponse {
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<long> profile_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-                public string profile_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string client_profile_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string profile_desc;
-                
-        public get_revrec_profilesResponse() {
-        }
-
-                 
-        public get_revrec_profilesResponse(System.Nullable<long> profile_id, string profile_name, string client_profile_id, string profile_desc) {
-                        this.profile_id = profile_id;
-                        this.profile_name = profile_name;
-                        this.client_profile_id = client_profile_id;
-                        this.profile_desc = profile_desc;
-                    }
-            }
-                            [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_revrec_profile_details", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class get_revrec_profile_detailsRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-        public long client_no;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string auth_key;
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                        public long profile_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
-                        public string client_profile_id;
-                
-        public get_revrec_profile_detailsRequest() {
-        }
-        
-        public get_revrec_profile_detailsRequest(long client_no, string auth_key, long profile_id, string client_profile_id) {
-            this.client_no = client_no;
-            this.auth_key = auth_key;
-                        this.profile_id = profile_id;
-                        this.client_profile_id = client_profile_id;
-                    }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="get_revrec_profile_detailsResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class get_revrec_profile_detailsResponse {
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-                public string profile_name;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string client_profile_id;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string profile_desc;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_plan_payment_date;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_order_payment_date;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_order_fulfill_date;
-                
-        public get_revrec_profile_detailsResponse() {
-        }
-
-                 
-        public get_revrec_profile_detailsResponse(string profile_name, string client_profile_id, string profile_desc, System.Nullable<int> on_plan_payment_date, System.Nullable<int> on_order_payment_date, System.Nullable<int> on_order_fulfill_date) {
-                        this.profile_name = profile_name;
-                        this.client_profile_id = client_profile_id;
-                        this.profile_desc = profile_desc;
-                        this.on_plan_payment_date = on_plan_payment_date;
-                        this.on_order_payment_date = on_order_payment_date;
-                        this.on_order_fulfill_date = on_order_fulfill_date;
-                    }
-            }
-                            [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_revrec_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class create_revrec_profileRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-        public long client_no;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string auth_key;
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                        public string profile_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string client_profile_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string profile_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_plan_payment_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_order_payment_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_order_fulfill_date;
-                
-        public create_revrec_profileRequest() {
-        }
-        
-        public create_revrec_profileRequest(long client_no, string auth_key, string profile_name, string client_profile_id, string profile_desc, System.Nullable<int> on_plan_payment_date, System.Nullable<int> on_order_payment_date, System.Nullable<int> on_order_fulfill_date) {
-            this.client_no = client_no;
-            this.auth_key = auth_key;
-                        this.profile_name = profile_name;
-                        this.client_profile_id = client_profile_id;
-                        this.profile_desc = profile_desc;
-                        this.on_plan_payment_date = on_plan_payment_date;
-                        this.on_order_payment_date = on_order_payment_date;
-                        this.on_order_fulfill_date = on_order_fulfill_date;
-                    }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="create_revrec_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class create_revrec_profileResponse {
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-                public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-                public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<long> profile_id;
-                
-        public create_revrec_profileResponse() {
-        }
-
-                 
-        public create_revrec_profileResponse(long error_code, string error_msg, System.Nullable<long> profile_id) {
-                        this.error_code = error_code;
-                        this.error_msg = error_msg;
-                        this.profile_id = profile_id;
-                    }
-            }
-                            [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_revrec_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class update_revrec_profileRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-        public long client_no;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string auth_key;
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                        public long profile_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
-                        public string profile_name;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=4)]
-                        public string client_profile_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=5)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public string profile_desc;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=6)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_plan_payment_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=7)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_order_payment_date;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=8)]
-                        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<int> on_order_fulfill_date;
-                
-        public update_revrec_profileRequest() {
-        }
-        
-        public update_revrec_profileRequest(long client_no, string auth_key, long profile_id, string profile_name, string client_profile_id, string profile_desc, System.Nullable<int> on_plan_payment_date, System.Nullable<int> on_order_payment_date, System.Nullable<int> on_order_fulfill_date) {
-            this.client_no = client_no;
-            this.auth_key = auth_key;
-                        this.profile_id = profile_id;
-                        this.profile_name = profile_name;
-                        this.client_profile_id = client_profile_id;
-                        this.profile_desc = profile_desc;
-                        this.on_plan_payment_date = on_plan_payment_date;
-                        this.on_order_payment_date = on_order_payment_date;
-                        this.on_order_fulfill_date = on_order_fulfill_date;
-                    }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="update_revrec_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class update_revrec_profileResponse {
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-                public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-                public string error_msg;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-                public System.Nullable<long> profile_id;
-                
-        public update_revrec_profileResponse() {
-        }
-
-                 
-        public update_revrec_profileResponse(long error_code, string error_msg, System.Nullable<long> profile_id) {
-                        this.error_code = error_code;
-                        this.error_msg = error_msg;
-                        this.profile_id = profile_id;
-                    }
-            }
-                            [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_revrec_profile", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class delete_revrec_profileRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-        public long client_no;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string auth_key;
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
-                        public long profile_id;
-                        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=3)]
-                        public string client_profile_id;
-                
-        public delete_revrec_profileRequest() {
-        }
-        
-        public delete_revrec_profileRequest(long client_no, string auth_key, long profile_id, string client_profile_id) {
-            this.client_no = client_no;
-            this.auth_key = auth_key;
-                        this.profile_id = profile_id;
-                        this.client_profile_id = client_profile_id;
-                    }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="delete_revrec_profileResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
-    public partial class delete_revrec_profileResponse {
-        
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
-                public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
-                public string error_msg;
-                
-        public delete_revrec_profileResponse() {
-        }
-
-                 
-        public delete_revrec_profileResponse(long error_code, string error_msg) {
-                        this.error_code = error_code;
-                        this.error_msg = error_msg;
-                    }
-            }
-                            [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="validate_admin_session", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validate_admin_session", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class validate_admin_sessionRequest {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
         public long client_no;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string auth_key;
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=2)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=2)]
                         public string session_id;
                 
         public validate_admin_sessionRequest() {
@@ -12244,12 +11830,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices.AriaAdminTools {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="validate_admin_sessionResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="validate_admin_sessionResponseElement", WrapperNamespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", IsWrapped=true)]
     public partial class validate_admin_sessionResponse {
         
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=0)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=0)]
                 public long error_code;
-                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.27:aria_complete_" + "api", Order=1)]
+                [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:client:api:wsdl:document/literal_wrapped:vers:6.28:aria_complete_" + "api", Order=1)]
                 public string error_msg;
                 
         public validate_admin_sessionResponse() {

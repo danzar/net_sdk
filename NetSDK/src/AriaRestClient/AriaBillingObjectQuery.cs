@@ -34,14 +34,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -70,14 +70,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -106,14 +106,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -142,14 +142,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -178,14 +178,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -214,14 +214,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -250,14 +250,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -286,14 +286,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -322,14 +322,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -358,14 +358,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset=" + request.offset;
             url += "&query_string=" + request.query_string;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -394,14 +394,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset=" + request.offset;
             url += "&query_string=" + request.query_string;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -430,14 +430,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&offset=" + request.offset;
             url += "&query_string=" + request.query_string;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -466,14 +466,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             url += "&limit=" + request.limit;
             url += "&offset=" + request.offset;
             
-            WebRequest webRequest = WebRequest.Create(url);
-            webRequest.Method = getMethod();
-            webRequest.ContentType = getContentType();
             string returnString;
-            using (var responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream()))
-            {
-                returnString = responseReader.ReadToEnd();
-            }
+            WebClient client = new WebClient();
+            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
+            Stream data = client.OpenRead(url);
+            StreamReader StreamRead = new StreamReader(data);
+            returnString = StreamRead.ReadToEnd();
+            StreamRead.Close();
+            data.Close();
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,

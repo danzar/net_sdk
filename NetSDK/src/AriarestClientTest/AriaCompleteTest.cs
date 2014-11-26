@@ -2935,7 +2935,12 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             client_eligible_service_id = "",
             client_alt_service_id_to_apply = "",
             client_percent_eval_plan_id = "",
-            client_percent_eval_service_id = ""
+            client_percent_eval_service_id = "",
+            credit_expiry_type_ind = "",
+            credit_expiry_months = 1,
+            credit_expiry_date = "",
+            eligible_service_plans = new[]{new eligible_service_plans_row()},
+            client_eligible_service_plan_ids = new[]{new client_eligible_service_plan_ids_row()}
             };
 
         var response = mService.create_advanced_service_credit(request);
@@ -4909,7 +4914,9 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             bank_country_cd = "",
             mandate_id = "",
             bank_id_cd = "",
-            bank_branch_cd = ""
+            bank_branch_cd = "",
+            custom_status_label = "",
+            client_notes = ""
             };
 
         var response = mService.manage_pending_invoice(request);
@@ -5054,7 +5061,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             do_write = "",
             auto_calc_refund = "",
             invoices_to_reverse = new[]{new invoices_to_reverse_row()},
-            client_receipt_id = Guid.NewGuid().ToString()
+            client_receipt_id = Guid.NewGuid().ToString(),
+            is_unlinked_refund = ""
             };
 
         var response = mService.issue_refund_to_acct(request);
@@ -5309,6 +5317,23 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
             };
 
         var response = mService.update_order(request);
+        Assert.IsNotNull(response);
+    }
+
+    [Test]
+    public void update_acct_invoice()
+    {
+       update_acct_invoiceRequest request = new update_acct_invoiceRequest
+            {
+            client_no = ClientNumber,
+            auth_key = AuthorizationKey,
+            account_no = AccountNumber,
+            src_transaction_id = 1,
+            custom_status_label = "",
+            client_notes = ""
+            };
+
+        var response = mService.update_acct_invoice(request);
         Assert.IsNotNull(response);
     }
 
