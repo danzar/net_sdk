@@ -28,17 +28,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_promo_plan_sets");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -61,19 +83,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_promo_plan_set_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&promo_plan_set_no=" + request.promo_plan_set_no;
-            url += "&client_plan_type_id=" + request.client_plan_type_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&promo_plan_set_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_no)));
+            sPost += "&client_plan_type_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_type_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -96,22 +140,44 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_promo_plan_set");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&promo_plan_set_name=" + request.promo_plan_set_name;
-            url += "&promo_plan_set_desc=" + request.promo_plan_set_desc;
-            url += "&client_plan_type_id=" + request.client_plan_type_id;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&promo_plan_set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_name)));
+            sPost += "&promo_plan_set_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_desc)));
+            sPost += "&client_plan_type_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_type_id)));
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -134,23 +200,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_promo_plan_set");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&promo_plan_set_no=" + request.promo_plan_set_no;
-            url += "&promo_plan_set_name=" + request.promo_plan_set_name;
-            url += "&promo_plan_set_desc=" + request.promo_plan_set_desc;
-            url += "&client_plan_type_id=" + request.client_plan_type_id;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&promo_plan_set_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_no)));
+            sPost += "&promo_plan_set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_name)));
+            sPost += "&promo_plan_set_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_desc)));
+            sPost += "&client_plan_type_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_type_id)));
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -173,17 +261,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("list_promo_sets");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -206,17 +316,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_company_profile");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -239,46 +371,68 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("set_company_profile");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&domain=" + request.domain;
-            url += "&address1=" + request.address1;
-            url += "&address2=" + request.address2;
-            url += "&city=" + request.city;
-            url += "&locality=" + request.locality;
-            url += "&state_prov=" + request.state_prov;
-            url += "&country=" + request.country;
-            url += "&postal_code=" + request.postal_code;
-            url += "&phone=" + request.phone;
-            url += "&contact=" + request.contact;
-            url += "&contact_address1=" + request.contact_address1;
-            url += "&contact_address2=" + request.contact_address2;
-            url += "&contact_city=" + request.contact_city;
-            url += "&contact_state=" + request.contact_state;
-            url += "&contact_zip=" + request.contact_zip;
-            url += "&contact_phone=" + request.contact_phone;
-            url += "&contact_email=" + request.contact_email;
-            url += "&billing_contact=" + request.billing_contact;
-            url += "&billing_address1=" + request.billing_address1;
-            url += "&billing_address2=" + request.billing_address2;
-            url += "&billing_city=" + request.billing_city;
-            url += "&billing_state=" + request.billing_state;
-            url += "&billing_zip=" + request.billing_zip;
-            url += "&billing_phone=" + request.billing_phone;
-            url += "&billing_email=" + request.billing_email;
-            url += "&contact_country=" + request.contact_country;
-            url += "&contact_locality=" + request.contact_locality;
-            url += "&billing_country=" + request.billing_country;
-            url += "&billing_locality=" + request.billing_locality;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&domain=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.domain)));
+            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
+            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
+            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
+            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
+            sPost += "&state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov)));
+            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
+            sPost += "&postal_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_code)));
+            sPost += "&phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone)));
+            sPost += "&contact=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact)));
+            sPost += "&contact_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_address1)));
+            sPost += "&contact_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_address2)));
+            sPost += "&contact_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_city)));
+            sPost += "&contact_state=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_state)));
+            sPost += "&contact_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_zip)));
+            sPost += "&contact_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_phone)));
+            sPost += "&contact_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_email)));
+            sPost += "&billing_contact=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_contact)));
+            sPost += "&billing_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_address1)));
+            sPost += "&billing_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_address2)));
+            sPost += "&billing_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_city)));
+            sPost += "&billing_state=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_state)));
+            sPost += "&billing_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_zip)));
+            sPost += "&billing_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_phone)));
+            sPost += "&billing_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_email)));
+            sPost += "&contact_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_country)));
+            sPost += "&contact_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contact_locality)));
+            sPost += "&billing_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_country)));
+            sPost += "&billing_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_locality)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -301,17 +455,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_inventory_items");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -334,20 +510,42 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_inventory_item_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&item_no=" + request.item_no;
-            url += "&client_item_id=" + request.client_item_id;
-            url += "&currency_cd=" + request.currency_cd;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_no)));
+            sPost += "&client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_item_id)));
+            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -370,41 +568,63 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_inventory_item");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&item_type=" + request.item_type;
-            url += "&item_name=" + request.item_name;
-            url += "&item_desc=" + request.item_desc;
-            RestUtilities.addParameterValuesFromArray(ref url, request.service, "&service");
-            url += "&client_sku=" + request.client_sku;
-            url += "&currency_cd=" + request.currency_cd;
-            url += "&item_price=" + request.item_price;
-            url += "&client_item_id=" + request.client_item_id;
-            url += "&active_ind=" + request.active_ind;
-            url += "&invoice_advancement_months=" + request.invoice_advancement_months;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
-            url += "&tax_inclusive_ind=" + request.tax_inclusive_ind;
-            url += "&modify_price_ind=" + request.modify_price_ind;
-            url += "&subunit_qty=" + request.subunit_qty;
-            url += "&subunit_label=" + request.subunit_label;
-            url += "&days_to_expiry=" + request.days_to_expiry;
-            url += "&resource_type_no=" + request.resource_type_no;
-            url += "&resource_units=" + request.resource_units;
-            url += "&stock_level_track=" + request.stock_level_track;
-            url += "&stock_level_adjust=" + request.stock_level_adjust;
-            RestUtilities.addParameterValuesFromArray(ref url, request.image, "&image");
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_class, "&parent_class");
-            RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&item_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_type)));
+            sPost += "&item_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_name)));
+            sPost += "&item_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_desc)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.service, "&service");
+            sPost += "&client_sku=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_sku)));
+            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
+            sPost += "&item_price=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_price)));
+            sPost += "&client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_item_id)));
+            sPost += "&active_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.active_ind)));
+            sPost += "&invoice_advancement_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_advancement_months)));
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&tax_inclusive_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_inclusive_ind)));
+            sPost += "&modify_price_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.modify_price_ind)));
+            sPost += "&subunit_qty=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.subunit_qty)));
+            sPost += "&subunit_label=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.subunit_label)));
+            sPost += "&days_to_expiry=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.days_to_expiry)));
+            sPost += "&resource_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_type_no)));
+            sPost += "&resource_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_units)));
+            sPost += "&stock_level_track=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stock_level_track)));
+            sPost += "&stock_level_adjust=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stock_level_adjust)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.image, "&image");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_class, "&parent_class");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.supplemental_obj_field, "&supplemental_obj_field");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -427,40 +647,62 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_inventory_item");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&item_no=" + request.item_no;
-            url += "&item_name=" + request.item_name;
-            url += "&item_desc=" + request.item_desc;
-            url += "&client_item_id=" + request.client_item_id;
-            url += "&service_no=" + request.service_no;
-            url += "&client_service_id=" + request.client_service_id;
-            url += "&currency_cd=" + request.currency_cd;
-            url += "&item_price=" + request.item_price;
-            url += "&active_ind=" + request.active_ind;
-            url += "&invoice_advancement_months=" + request.invoice_advancement_months;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
-            url += "&modify_price_ind=" + request.modify_price_ind;
-            url += "&subunit_qty=" + request.subunit_qty;
-            url += "&subunit_label=" + request.subunit_label;
-            url += "&days_to_expiry=" + request.days_to_expiry;
-            url += "&resource_type_no=" + request.resource_type_no;
-            url += "&resource_units=" + request.resource_units;
-            url += "&stock_level_track=" + request.stock_level_track;
-            url += "&stock_level_adjust=" + request.stock_level_adjust;
-            RestUtilities.addParameterValuesFromArray(ref url, request.image, "&image");
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_class, "&parent_class");
-            RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_no)));
+            sPost += "&item_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_name)));
+            sPost += "&item_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_desc)));
+            sPost += "&client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_item_id)));
+            sPost += "&service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no)));
+            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
+            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
+            sPost += "&item_price=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_price)));
+            sPost += "&active_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.active_ind)));
+            sPost += "&invoice_advancement_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_advancement_months)));
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&modify_price_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.modify_price_ind)));
+            sPost += "&subunit_qty=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.subunit_qty)));
+            sPost += "&subunit_label=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.subunit_label)));
+            sPost += "&days_to_expiry=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.days_to_expiry)));
+            sPost += "&resource_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_type_no)));
+            sPost += "&resource_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_units)));
+            sPost += "&stock_level_track=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stock_level_track)));
+            sPost += "&stock_level_adjust=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stock_level_adjust)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.image, "&image");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_class, "&parent_class");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.supplemental_obj_field, "&supplemental_obj_field");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -483,22 +725,44 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_item_class");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&class_name=" + request.class_name;
-            url += "&class_desc=" + request.class_desc;
-            url += "&active_ind=" + request.active_ind;
-            url += "&client_inventory_class_id=" + request.client_inventory_class_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_class, "&parent_class");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&class_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_name)));
+            sPost += "&class_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_desc)));
+            sPost += "&active_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.active_ind)));
+            sPost += "&client_inventory_class_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_inventory_class_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_class, "&parent_class");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -521,23 +785,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("edit_item_class");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&class_no=" + request.class_no;
-            url += "&class_name=" + request.class_name;
-            url += "&client_inventory_class_id=" + request.client_inventory_class_id;
-            url += "&class_desc=" + request.class_desc;
-            url += "&active_ind=" + request.active_ind;
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_class, "&parent_class");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no)));
+            sPost += "&class_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_name)));
+            sPost += "&client_inventory_class_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_inventory_class_id)));
+            sPost += "&class_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_desc)));
+            sPost += "&active_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.active_ind)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_class, "&parent_class");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -560,17 +846,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_service_types");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -593,17 +901,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_services");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -626,19 +956,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_service_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&service_no=" + request.service_no;
-            url += "&client_service_id=" + request.client_service_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no)));
+            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -661,21 +1013,43 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_plan_service_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&service_no=" + request.service_no;
-            url += "&client_service_id=" + request.client_service_id;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no)));
+            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -698,25 +1072,47 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_service");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&service_name=" + request.service_name;
-            url += "&service_type=" + request.service_type;
-            url += "&gl_cd=" + request.gl_cd;
-            url += "&taxable_ind=" + request.taxable_ind;
-            url += "&tax_group=" + request.tax_group;
-            url += "&usage_type=" + request.usage_type;
-            url += "&client_service_id=" + request.client_service_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&service_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_name)));
+            sPost += "&service_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_type)));
+            sPost += "&gl_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.gl_cd)));
+            sPost += "&taxable_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.taxable_ind)));
+            sPost += "&tax_group=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_group)));
+            sPost += "&usage_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type)));
+            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.supplemental_obj_field, "&supplemental_obj_field");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -739,25 +1135,47 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_service");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&service_no=" + request.service_no;
-            url += "&service_name=" + request.service_name;
-            url += "&service_type=" + request.service_type;
-            url += "&client_service_id=" + request.client_service_id;
-            url += "&gl_cd=" + request.gl_cd;
-            url += "&taxable_ind=" + request.taxable_ind;
-            url += "&tax_group=" + request.tax_group;
-            url += "&usage_type=" + request.usage_type;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no)));
+            sPost += "&service_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_name)));
+            sPost += "&service_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_type)));
+            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
+            sPost += "&gl_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.gl_cd)));
+            sPost += "&taxable_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.taxable_ind)));
+            sPost += "&tax_group=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_group)));
+            sPost += "&usage_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -780,17 +1198,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_supp_fields");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -813,18 +1253,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_supp_field_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&field_name=" + request.field_name;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -847,29 +1309,51 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_supp_field");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&field_name=" + request.field_name;
-            url += "&field_order=" + request.field_order;
-            url += "&presentation_mode=" + request.presentation_mode;
-            url += "&field_desc=" + request.field_desc;
-            url += "&required_ind=" + request.required_ind;
-            url += "&hidden_ind=" + request.hidden_ind;
-            url += "&sel_ind=" + request.sel_ind;
-            url += "&min_no_sel=" + request.min_no_sel;
-            url += "&max_no_sel=" + request.max_no_sel;
-            url += "&display_text=" + request.display_text;
-            url += "&option_value=" + request.option_value;
-            url += "&option_value_order=" + request.option_value_order;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&field_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_order)));
+            sPost += "&presentation_mode=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.presentation_mode)));
+            sPost += "&field_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_desc)));
+            sPost += "&required_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.required_ind)));
+            sPost += "&hidden_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.hidden_ind)));
+            sPost += "&sel_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sel_ind)));
+            sPost += "&min_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.min_no_sel)));
+            sPost += "&max_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.max_no_sel)));
+            sPost += "&display_text=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.display_text)));
+            sPost += "&option_value=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value)));
+            sPost += "&option_value_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value_order)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -892,29 +1376,51 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_supp_field");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&field_name=" + request.field_name;
-            url += "&field_desc=" + request.field_desc;
-            url += "&field_order=" + request.field_order;
-            url += "&required_ind=" + request.required_ind;
-            url += "&hidden_ind=" + request.hidden_ind;
-            url += "&sel_ind=" + request.sel_ind;
-            url += "&presentation_mode=" + request.presentation_mode;
-            url += "&min_no_sel=" + request.min_no_sel;
-            url += "&max_no_sel=" + request.max_no_sel;
-            url += "&display_text=" + request.display_text;
-            url += "&option_value=" + request.option_value;
-            url += "&option_value_order=" + request.option_value_order;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&field_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_desc)));
+            sPost += "&field_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_order)));
+            sPost += "&required_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.required_ind)));
+            sPost += "&hidden_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.hidden_ind)));
+            sPost += "&sel_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sel_ind)));
+            sPost += "&presentation_mode=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.presentation_mode)));
+            sPost += "&min_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.min_no_sel)));
+            sPost += "&max_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.max_no_sel)));
+            sPost += "&display_text=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.display_text)));
+            sPost += "&option_value=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value)));
+            sPost += "&option_value_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value_order)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -937,17 +1443,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_coupons");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -970,18 +1498,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_coupon_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&coupon_cd=" + request.coupon_cd;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1004,33 +1554,55 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_coupon");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&coupon_cd=" + request.coupon_cd;
-            url += "&status_ind=" + request.status_ind;
-            url += "&start_date=" + request.start_date;
-            url += "&end_date=" + request.end_date;
-            url += "&coupon_desc=" + request.coupon_desc;
-            url += "&coupon_msg=" + request.coupon_msg;
-            url += "&no_of_uses=" + request.no_of_uses;
-            RestUtilities.addParameterValuesFromArray(ref url, request.template, "&template");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_template, "&existing_template");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_template_id, "&existing_template_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.discount_rule, "&discount_rule");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_rule, "&existing_discount_rule");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_rule_id, "&existing_discount_rule_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.discount_bundle, "&discount_bundle");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_bundle, "&existing_discount_bundle");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_bundle_id, "&existing_discount_bundle_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
+            sPost += "&status_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_ind)));
+            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
+            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&coupon_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_desc)));
+            sPost += "&coupon_msg=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_msg)));
+            sPost += "&no_of_uses=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.no_of_uses)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.template, "&template");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_template, "&existing_template");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_template_id, "&existing_template_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.discount_rule, "&discount_rule");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_rule, "&existing_discount_rule");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_rule_id, "&existing_discount_rule_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.discount_bundle, "&discount_bundle");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_bundle, "&existing_discount_bundle");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_bundle_id, "&existing_discount_bundle_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1053,33 +1625,55 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_coupon");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&coupon_cd=" + request.coupon_cd;
-            url += "&status_ind=" + request.status_ind;
-            url += "&start_date=" + request.start_date;
-            url += "&end_date=" + request.end_date;
-            url += "&coupon_desc=" + request.coupon_desc;
-            url += "&coupon_msg=" + request.coupon_msg;
-            url += "&no_of_uses=" + request.no_of_uses;
-            RestUtilities.addParameterValuesFromArray(ref url, request.template, "&template");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_template, "&existing_template");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_template_id, "&existing_template_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.discount_rule, "&discount_rule");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_rule, "&existing_discount_rule");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_rule_id, "&existing_discount_rule_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.discount_bundle, "&discount_bundle");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_bundle, "&existing_discount_bundle");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_discount_bundle_id, "&existing_discount_bundle_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
+            sPost += "&status_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_ind)));
+            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
+            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&coupon_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_desc)));
+            sPost += "&coupon_msg=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_msg)));
+            sPost += "&no_of_uses=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.no_of_uses)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.template, "&template");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_template, "&existing_template");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_template_id, "&existing_template_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.discount_rule, "&discount_rule");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_rule, "&existing_discount_rule");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_rule_id, "&existing_discount_rule_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.discount_bundle, "&discount_bundle");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_bundle, "&existing_discount_bundle");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_discount_bundle_id, "&existing_discount_bundle_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1102,18 +1696,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_coupons");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.coupon_nos, "&coupon_nos");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.coupon_nos, "&coupon_nos");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1136,17 +1752,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_recurring_credit_templates");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1169,19 +1807,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_recurring_credit_template_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&credit_template_no=" + request.credit_template_no;
-            url += "&client_credit_template_id=" + request.client_credit_template_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&credit_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_template_no)));
+            sPost += "&client_credit_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_credit_template_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1204,36 +1864,58 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_credit_template");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&credit_template_name=" + request.credit_template_name;
-            url += "&discount_type=" + request.discount_type;
-            url += "&discount_amt=" + request.discount_amt;
-            url += "&no_of_credits=" + request.no_of_credits;
-            url += "&credit_interval_months=" + request.credit_interval_months;
-            url += "&eligible_plan_no=" + request.eligible_plan_no;
-            url += "&eligible_client_plan_id=" + request.eligible_client_plan_id;
-            url += "&eligible_service_no=" + request.eligible_service_no;
-            url += "&eligible_client_service_id=" + request.eligible_client_service_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.eligible_service_types, "&eligible_service_types");
-            url += "&percentage_plan_no=" + request.percentage_plan_no;
-            url += "&percentage_client_plan_id=" + request.percentage_client_plan_id;
-            url += "&percentage_service_no=" + request.percentage_service_no;
-            url += "&percentage_client_service_id=" + request.percentage_client_service_id;
-            url += "&alt_service_no=" + request.alt_service_no;
-            url += "&alt_client_service_id=" + request.alt_client_service_id;
-            url += "&client_credit_template_id=" + request.client_credit_template_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.coupon, "&coupon");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_coupon, "&existing_coupon");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&credit_template_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_template_name)));
+            sPost += "&discount_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.discount_type)));
+            sPost += "&discount_amt=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.discount_amt)));
+            sPost += "&no_of_credits=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.no_of_credits)));
+            sPost += "&credit_interval_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_interval_months)));
+            sPost += "&eligible_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_plan_no)));
+            sPost += "&eligible_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_client_plan_id)));
+            sPost += "&eligible_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_service_no)));
+            sPost += "&eligible_client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_client_service_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.eligible_service_types, "&eligible_service_types");
+            sPost += "&percentage_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_plan_no)));
+            sPost += "&percentage_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_client_plan_id)));
+            sPost += "&percentage_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_service_no)));
+            sPost += "&percentage_client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_client_service_id)));
+            sPost += "&alt_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_service_no)));
+            sPost += "&alt_client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_service_id)));
+            sPost += "&client_credit_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_credit_template_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.coupon, "&coupon");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_coupon, "&existing_coupon");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1256,37 +1938,59 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_credit_template");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&credit_template_no=" + request.credit_template_no;
-            url += "&credit_template_name=" + request.credit_template_name;
-            url += "&discount_type=" + request.discount_type;
-            url += "&discount_amt=" + request.discount_amt;
-            url += "&no_of_credits=" + request.no_of_credits;
-            url += "&credit_interval_months=" + request.credit_interval_months;
-            url += "&client_credit_template_id=" + request.client_credit_template_id;
-            url += "&eligible_plan_no=" + request.eligible_plan_no;
-            url += "&eligible_client_plan_id=" + request.eligible_client_plan_id;
-            url += "&eligible_service_no=" + request.eligible_service_no;
-            url += "&eligible_client_service_id=" + request.eligible_client_service_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.eligible_service_types, "&eligible_service_types");
-            url += "&percentage_plan_no=" + request.percentage_plan_no;
-            url += "&percentage_client_plan_id=" + request.percentage_client_plan_id;
-            url += "&percentage_service_no=" + request.percentage_service_no;
-            url += "&percentage_client_service_id=" + request.percentage_client_service_id;
-            url += "&alt_service_no=" + request.alt_service_no;
-            url += "&alt_client_service_id=" + request.alt_client_service_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.coupon, "&coupon");
-            RestUtilities.addParameterValuesFromArray(ref url, request.existing_coupon, "&existing_coupon");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&credit_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_template_no)));
+            sPost += "&credit_template_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_template_name)));
+            sPost += "&discount_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.discount_type)));
+            sPost += "&discount_amt=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.discount_amt)));
+            sPost += "&no_of_credits=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.no_of_credits)));
+            sPost += "&credit_interval_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_interval_months)));
+            sPost += "&client_credit_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_credit_template_id)));
+            sPost += "&eligible_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_plan_no)));
+            sPost += "&eligible_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_client_plan_id)));
+            sPost += "&eligible_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_service_no)));
+            sPost += "&eligible_client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_client_service_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.eligible_service_types, "&eligible_service_types");
+            sPost += "&percentage_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_plan_no)));
+            sPost += "&percentage_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_client_plan_id)));
+            sPost += "&percentage_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_service_no)));
+            sPost += "&percentage_client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percentage_client_service_id)));
+            sPost += "&alt_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_service_no)));
+            sPost += "&alt_client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_service_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.coupon, "&coupon");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.existing_coupon, "&existing_coupon");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1309,18 +2013,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_templates");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.template_nos, "&template_nos");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.template_nos, "&template_nos");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1343,40 +2069,62 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_discount_rule");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&label=" + request.label;
-            url += "&rule_id=" + request.rule_id;
-            url += "&description=" + request.description;
-            url += "&ext_description=" + request.ext_description;
-            url += "&flat_percent_ind=" + request.flat_percent_ind;
-            url += "&amount=" + request.amount;
-            url += "&currency=" + request.currency;
-            url += "&duration_type_ind=" + request.duration_type_ind;
-            url += "&inline_offset_ind=" + request.inline_offset_ind;
-            url += "&service_code_to_use=" + request.service_code_to_use;
-            url += "&scope_no=" + request.scope_no;
-            url += "&max_applicable_months=" + request.max_applicable_months;
-            url += "&max_applications_per_acct=" + request.max_applications_per_acct;
-            url += "&alt_service_no_2_apply=" + request.alt_service_no_2_apply;
-            url += "&alt_service_id_2_apply=" + request.alt_service_id_2_apply;
-            url += "&applicable_trans_scope=" + request.applicable_trans_scope;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no, "&plan_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_id, "&client_plan_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.service_no, "&service_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_service_id, "&client_service_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.item_no, "&item_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_item_id, "&client_item_id");
-            url += "&use_all_or_nth_subs_rule=" + request.use_all_or_nth_subs_rule;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&label=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.label)));
+            sPost += "&rule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rule_id)));
+            sPost += "&description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.description)));
+            sPost += "&ext_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ext_description)));
+            sPost += "&flat_percent_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.flat_percent_ind)));
+            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
+            sPost += "&currency=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency)));
+            sPost += "&duration_type_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.duration_type_ind)));
+            sPost += "&inline_offset_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inline_offset_ind)));
+            sPost += "&service_code_to_use=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_code_to_use)));
+            sPost += "&scope_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.scope_no)));
+            sPost += "&max_applicable_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.max_applicable_months)));
+            sPost += "&max_applications_per_acct=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.max_applications_per_acct)));
+            sPost += "&alt_service_no_2_apply=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_service_no_2_apply)));
+            sPost += "&alt_service_id_2_apply=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_service_id_2_apply)));
+            sPost += "&applicable_trans_scope=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.applicable_trans_scope)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_no, "&plan_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_plan_id, "&client_plan_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.service_no, "&service_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_service_id, "&client_service_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.item_no, "&item_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_item_id, "&client_item_id");
+            sPost += "&use_all_or_nth_subs_rule=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.use_all_or_nth_subs_rule)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1399,23 +2147,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_discount_bundle");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&bundle_name=" + request.bundle_name;
-            url += "&bundle_id=" + request.bundle_id;
-            url += "&bundle_description=" + request.bundle_description;
-            url += "&allow_overlap_ind=" + request.allow_overlap_ind;
-            RestUtilities.addParameterValuesFromArray(ref url, request.rules, "&rules");
-            RestUtilities.addParameterValuesFromArray(ref url, request.rule_ids, "&rule_ids");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&bundle_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bundle_name)));
+            sPost += "&bundle_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bundle_id)));
+            sPost += "&bundle_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bundle_description)));
+            sPost += "&allow_overlap_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.allow_overlap_ind)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.rules, "&rules");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.rule_ids, "&rule_ids");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1438,17 +2208,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_discount_bundles");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1471,19 +2263,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_discount_bundle_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&bundle_no=" + request.bundle_no;
-            url += "&bundle_id=" + request.bundle_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&bundle_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bundle_no)));
+            sPost += "&bundle_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bundle_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1506,17 +2320,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_discount_rules");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1539,19 +2375,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_discount_rule_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&rule_no=" + request.rule_no;
-            url += "&client_rule_id=" + request.client_rule_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&rule_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rule_no)));
+            sPost += "&client_rule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_rule_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1574,18 +2432,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_rules");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.rule_nos, "&rule_nos");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.rule_nos, "&rule_nos");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1608,18 +2488,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_bundles");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.bundle_nos, "&bundle_nos");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.bundle_nos, "&bundle_nos");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1642,17 +2544,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_plans");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1675,19 +2599,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_plan_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1710,56 +2656,78 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_new_plan");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&plan_name=" + request.plan_name;
-            url += "&plan_description=" + request.plan_description;
-            url += "&plan_type=" + request.plan_type;
-            url += "&currency=" + request.currency;
-            url += "&billing_interval=" + request.billing_interval;
-            url += "&client_plan_id=" + request.client_plan_id;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_group, "&plan_group");
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_group_id, "&plan_group_id");
-            url += "&usage_billing_interval=" + request.usage_billing_interval;
-            url += "&active=" + request.active;
-            url += "&rollover_months=" + request.rollover_months;
-            url += "&rollover_plan_no=" + request.rollover_plan_no;
-            url += "&rollover_client_plan_id=" + request.rollover_client_plan_id;
-            url += "&initial_free_months=" + request.initial_free_months;
-            url += "&acct_status_cd=" + request.acct_status_cd;
-            url += "&rollover_status_days=" + request.rollover_status_days;
-            url += "&rollover_status_cd=" + request.rollover_status_cd;
-            url += "&dunning_plan_no=" + request.dunning_plan_no;
-            url += "&dunning_client_plan_id=" + request.dunning_client_plan_id;
-            url += "&template_no=" + request.template_no;
-            url += "&client_email_template_id=" + request.client_email_template_id;
-            url += "&apply_cancellation=" + request.apply_cancellation;
-            url += "&plan_cancel_min_month=" + request.plan_cancel_min_month;
-            url += "&apply_minimum_fee=" + request.apply_minimum_fee;
-            url += "&how_to_apply_minimum_fee=" + request.how_to_apply_minimum_fee;
-            RestUtilities.addParameterValuesFromArray(ref url, request.schedule, "&schedule");
-            RestUtilities.addParameterValuesFromArray(ref url, request.service, "&service");
-            RestUtilities.addParameterValuesFromArray(ref url, request.resource, "&resource");
-            url += "&arc_service_no=" + request.arc_service_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_plans, "&parent_plans");
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_client_plan_ids, "&parent_client_plan_ids");
-            RestUtilities.addParameterValuesFromArray(ref url, request.exclusion_plans, "&exclusion_plans");
-            RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
-            url += "&template_ind=" + request.template_ind;
-            RestUtilities.addParameterValuesFromArray(ref url, request.child_plans, "&child_plans");
-            url += "&notification_template_group_no=" + request.notification_template_group_no;
-            url += "&credit_note_template_no=" + request.credit_note_template_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_surcharge_id, "&client_surcharge_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&plan_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_name)));
+            sPost += "&plan_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_description)));
+            sPost += "&plan_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_type)));
+            sPost += "&currency=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency)));
+            sPost += "&billing_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_interval)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_group, "&plan_group");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_group_id, "&plan_group_id");
+            sPost += "&usage_billing_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_billing_interval)));
+            sPost += "&active=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.active)));
+            sPost += "&rollover_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_months)));
+            sPost += "&rollover_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_plan_no)));
+            sPost += "&rollover_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_client_plan_id)));
+            sPost += "&initial_free_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.initial_free_months)));
+            sPost += "&acct_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_status_cd)));
+            sPost += "&rollover_status_days=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_status_days)));
+            sPost += "&rollover_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_status_cd)));
+            sPost += "&dunning_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dunning_plan_no)));
+            sPost += "&dunning_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dunning_client_plan_id)));
+            sPost += "&template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_no)));
+            sPost += "&client_email_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_email_template_id)));
+            sPost += "&apply_cancellation=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_cancellation)));
+            sPost += "&plan_cancel_min_month=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_cancel_min_month)));
+            sPost += "&apply_minimum_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_minimum_fee)));
+            sPost += "&how_to_apply_minimum_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.how_to_apply_minimum_fee)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.schedule, "&schedule");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.service, "&service");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.resource, "&resource");
+            sPost += "&arc_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.arc_service_no)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_plans, "&parent_plans");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_client_plan_ids, "&parent_client_plan_ids");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.exclusion_plans, "&exclusion_plans");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.supplemental_obj_field, "&supplemental_obj_field");
+            sPost += "&template_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_ind)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.child_plans, "&child_plans");
+            sPost += "&notification_template_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notification_template_group_no)));
+            sPost += "&credit_note_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_note_template_no)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_surcharge_id, "&client_surcharge_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1782,57 +2750,79 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("edit_plan");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&plan_no=" + request.plan_no;
-            url += "&plan_name=" + request.plan_name;
-            url += "&client_plan_id=" + request.client_plan_id;
-            url += "&plan_type=" + request.plan_type;
-            url += "&billing_interval=" + request.billing_interval;
-            url += "&currency=" + request.currency;
-            url += "&plan_description=" + request.plan_description;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_group, "&plan_group");
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_group_id, "&plan_group_id");
-            url += "&active=" + request.active;
-            url += "&usage_billing_interval=" + request.usage_billing_interval;
-            url += "&template_no=" + request.template_no;
-            url += "&client_email_template_id=" + request.client_email_template_id;
-            url += "&rollover_months=" + request.rollover_months;
-            url += "&rollover_plan_no=" + request.rollover_plan_no;
-            url += "&rollover_client_plan_id=" + request.rollover_client_plan_id;
-            url += "&dunning_plan_no=" + request.dunning_plan_no;
-            url += "&dunning_client_plan_id=" + request.dunning_client_plan_id;
-            url += "&initial_free_months=" + request.initial_free_months;
-            url += "&acct_status_cd=" + request.acct_status_cd;
-            url += "&rollover_status_days=" + request.rollover_status_days;
-            url += "&rollover_status_cd=" + request.rollover_status_cd;
-            url += "&allow_child_accts=" + request.allow_child_accts;
-            url += "&apply_cancellation=" + request.apply_cancellation;
-            url += "&plan_cancel_min_month=" + request.plan_cancel_min_month;
-            url += "&apply_minimum_fee=" + request.apply_minimum_fee;
-            url += "&how_to_apply_minimum_fee=" + request.how_to_apply_minimum_fee;
-            RestUtilities.addParameterValuesFromArray(ref url, request.schedule, "&schedule");
-            RestUtilities.addParameterValuesFromArray(ref url, request.service, "&service");
-            RestUtilities.addParameterValuesFromArray(ref url, request.resource, "&resource");
-            url += "&arc_service_no=" + request.arc_service_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_plans, "&parent_plans");
-            RestUtilities.addParameterValuesFromArray(ref url, request.parent_client_plan_ids, "&parent_client_plan_ids");
-            RestUtilities.addParameterValuesFromArray(ref url, request.exclusion_plans, "&exclusion_plans");
-            RestUtilities.addParameterValuesFromArray(ref url, request.supplemental_obj_field, "&supplemental_obj_field");
-            RestUtilities.addParameterValuesFromArray(ref url, request.child_plans, "&child_plans");
-            url += "&notification_template_group_no=" + request.notification_template_group_no;
-            url += "&credit_note_template_no=" + request.credit_note_template_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_surcharge_id, "&client_surcharge_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&plan_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_name)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&plan_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_type)));
+            sPost += "&billing_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_interval)));
+            sPost += "&currency=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency)));
+            sPost += "&plan_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_description)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_group, "&plan_group");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_group_id, "&plan_group_id");
+            sPost += "&active=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.active)));
+            sPost += "&usage_billing_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_billing_interval)));
+            sPost += "&template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_no)));
+            sPost += "&client_email_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_email_template_id)));
+            sPost += "&rollover_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_months)));
+            sPost += "&rollover_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_plan_no)));
+            sPost += "&rollover_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_client_plan_id)));
+            sPost += "&dunning_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dunning_plan_no)));
+            sPost += "&dunning_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dunning_client_plan_id)));
+            sPost += "&initial_free_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.initial_free_months)));
+            sPost += "&acct_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_status_cd)));
+            sPost += "&rollover_status_days=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_status_days)));
+            sPost += "&rollover_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rollover_status_cd)));
+            sPost += "&allow_child_accts=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.allow_child_accts)));
+            sPost += "&apply_cancellation=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_cancellation)));
+            sPost += "&plan_cancel_min_month=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_cancel_min_month)));
+            sPost += "&apply_minimum_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_minimum_fee)));
+            sPost += "&how_to_apply_minimum_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.how_to_apply_minimum_fee)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.schedule, "&schedule");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.service, "&service");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.resource, "&resource");
+            sPost += "&arc_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.arc_service_no)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_plans, "&parent_plans");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.parent_client_plan_ids, "&parent_client_plan_ids");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.exclusion_plans, "&exclusion_plans");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.supplemental_obj_field, "&supplemental_obj_field");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.child_plans, "&child_plans");
+            sPost += "&notification_template_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notification_template_group_no)));
+            sPost += "&credit_note_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_note_template_no)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_surcharge_id, "&client_surcharge_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1855,18 +2845,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_plans");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_nos, "&plan_nos");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_nos, "&plan_nos");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1889,21 +2901,43 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("copy_plan");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&plan_no=" + request.plan_no;
-            url += "&client_plan_id=" + request.client_plan_id;
-            url += "&plan_name=" + request.plan_name;
-            url += "&new_client_plan_id=" + request.new_client_plan_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
+            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&plan_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_name)));
+            sPost += "&new_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.new_client_plan_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1926,17 +2960,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_master_plan");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1959,17 +3015,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_supplemental_plan");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -1992,17 +3070,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_promotions");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2025,18 +3125,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_promotion_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&promo_cd=" + request.promo_cd;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2059,23 +3181,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_promotion");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&promo_cd=" + request.promo_cd;
-            url += "&promo_desc=" + request.promo_desc;
-            url += "&promo_plan_set_no=" + request.promo_plan_set_no;
-            url += "&no_of_uses=" + request.no_of_uses;
-            url += "&start_date=" + request.start_date;
-            url += "&exp_date=" + request.exp_date;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd)));
+            sPost += "&promo_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_desc)));
+            sPost += "&promo_plan_set_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_no)));
+            sPost += "&no_of_uses=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.no_of_uses)));
+            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
+            sPost += "&exp_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exp_date)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2098,23 +3242,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_promotion");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&promo_cd=" + request.promo_cd;
-            url += "&promo_desc=" + request.promo_desc;
-            url += "&promo_plan_set_no=" + request.promo_plan_set_no;
-            url += "&no_of_uses=" + request.no_of_uses;
-            url += "&start_date=" + request.start_date;
-            url += "&exp_date=" + request.exp_date;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd)));
+            sPost += "&promo_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_desc)));
+            sPost += "&promo_plan_set_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_plan_set_no)));
+            sPost += "&no_of_uses=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.no_of_uses)));
+            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
+            sPost += "&exp_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exp_date)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2137,17 +3303,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_usage_types");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2170,18 +3358,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_usage_type_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&usage_type_no=" + request.usage_type_no;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&usage_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_no)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2204,17 +3414,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_usage_unit_types");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2237,22 +3469,44 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_usage_type");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&usage_type_name=" + request.usage_type_name;
-            url += "&usage_type_desc=" + request.usage_type_desc;
-            url += "&usage_unit_type_no=" + request.usage_unit_type_no;
-            url += "&usage_type_code=" + request.usage_type_code;
-            url += "&usage_type_display_string=" + request.usage_type_display_string;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&usage_type_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_name)));
+            sPost += "&usage_type_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_desc)));
+            sPost += "&usage_unit_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_unit_type_no)));
+            sPost += "&usage_type_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code)));
+            sPost += "&usage_type_display_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_display_string)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2275,23 +3529,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_usage_type");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&usage_type_no=" + request.usage_type_no;
-            url += "&usage_type_name=" + request.usage_type_name;
-            url += "&usage_type_desc=" + request.usage_type_desc;
-            url += "&usage_unit_type_no=" + request.usage_unit_type_no;
-            url += "&usage_type_code=" + request.usage_type_code;
-            url += "&usage_type_display_string=" + request.usage_type_display_string;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&usage_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_no)));
+            sPost += "&usage_type_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_name)));
+            sPost += "&usage_type_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_desc)));
+            sPost += "&usage_unit_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_unit_type_no)));
+            sPost += "&usage_type_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code)));
+            sPost += "&usage_type_display_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_display_string)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2314,26 +3590,48 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_supp_obj_field");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&field_name=" + request.field_name;
-            url += "&description=" + request.description;
-            url += "&min_no_sel=" + request.min_no_sel;
-            url += "&max_no_sel=" + request.max_no_sel;
-            url += "&datatype=" + request.datatype;
-            url += "&form_input_type=" + request.form_input_type;
-            url += "&use_allowed_vals_ind=" + request.use_allowed_vals_ind;
-            url += "&option_value=" + request.option_value;
-            url += "&option_value_order=" + request.option_value_order;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.description)));
+            sPost += "&min_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.min_no_sel)));
+            sPost += "&max_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.max_no_sel)));
+            sPost += "&datatype=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.datatype)));
+            sPost += "&form_input_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.form_input_type)));
+            sPost += "&use_allowed_vals_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.use_allowed_vals_ind)));
+            sPost += "&option_value=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value)));
+            sPost += "&option_value_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value_order)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2356,27 +3654,49 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_supp_obj_field");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&field_no=" + request.field_no;
-            url += "&field_name=" + request.field_name;
-            url += "&description=" + request.description;
-            url += "&min_no_sel=" + request.min_no_sel;
-            url += "&max_no_sel=" + request.max_no_sel;
-            url += "&datatype=" + request.datatype;
-            url += "&form_input_type=" + request.form_input_type;
-            url += "&use_allowed_vals_ind=" + request.use_allowed_vals_ind;
-            url += "&option_value=" + request.option_value;
-            url += "&option_value_order=" + request.option_value_order;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&field_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no)));
+            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.description)));
+            sPost += "&min_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.min_no_sel)));
+            sPost += "&max_no_sel=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.max_no_sel)));
+            sPost += "&datatype=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.datatype)));
+            sPost += "&form_input_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.form_input_type)));
+            sPost += "&use_allowed_vals_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.use_allowed_vals_ind)));
+            sPost += "&option_value=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value)));
+            sPost += "&option_value_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.option_value_order)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2399,18 +3719,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_supp_obj_fields");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&field_no=" + request.field_no;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&field_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2433,17 +3775,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_plan_groups");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2466,19 +3830,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_plan_group_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&group_no=" + request.group_no;
-            url += "&client_plan_change_group_id=" + request.client_plan_change_group_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no)));
+            sPost += "&client_plan_change_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_change_group_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2501,23 +3887,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_plan_group");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&group_name=" + request.group_name;
-            url += "&group_desc=" + request.group_desc;
-            url += "&group_usage=" + request.group_usage;
-            url += "&client_plan_change_group_id=" + request.client_plan_change_group_id;
-            url += "&group_plans=" + request.group_plans;
-            url += "&group_plan_ids=" + request.group_plan_ids;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&group_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_name)));
+            sPost += "&group_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_desc)));
+            sPost += "&group_usage=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_usage)));
+            sPost += "&client_plan_change_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_change_group_id)));
+            sPost += "&group_plans=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_plans)));
+            sPost += "&group_plan_ids=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_plan_ids)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2540,24 +3948,46 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("update_plan_group");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&group_no=" + request.group_no;
-            url += "&group_name=" + request.group_name;
-            url += "&group_desc=" + request.group_desc;
-            url += "&group_usage=" + request.group_usage;
-            url += "&client_plan_change_group_id=" + request.client_plan_change_group_id;
-            url += "&group_plans=" + request.group_plans;
-            url += "&group_plan_ids=" + request.group_plan_ids;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no)));
+            sPost += "&group_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_name)));
+            sPost += "&group_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_desc)));
+            sPost += "&group_usage=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_usage)));
+            sPost += "&client_plan_change_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_change_group_id)));
+            sPost += "&group_plans=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_plans)));
+            sPost += "&group_plan_ids=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_plan_ids)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2580,18 +4010,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_plan_group");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&group_list=" + request.group_list;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&group_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_list)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2614,17 +4066,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("list_coa");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2647,19 +4121,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("add_coa");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&coa_code=" + request.coa_code;
-            url += "&coa_description=" + request.coa_description;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&coa_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coa_code)));
+            sPost += "&coa_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coa_description)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2682,18 +4178,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_coa");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&coa_id=" + request.coa_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&coa_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coa_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2716,20 +4234,42 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("edit_coa");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&coa_id=" + request.coa_id;
-            url += "&coa_code=" + request.coa_code;
-            url += "&coa_description=" + request.coa_description;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&coa_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coa_id)));
+            sPost += "&coa_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coa_code)));
+            sPost += "&coa_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coa_description)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2752,17 +4292,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_surcharges");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2785,19 +4347,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("get_surcharge_details");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&surcharge_no=" + request.surcharge_no;
-            url += "&client_surcharge_id=" + request.client_surcharge_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&surcharge_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.surcharge_no)));
+            sPost += "&client_surcharge_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_surcharge_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2820,37 +4404,59 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("create_surcharge");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&surcharge_name=" + request.surcharge_name;
-            url += "&description=" + request.description;
-            url += "&ext_description=" + request.ext_description;
-            url += "&currency_cd=" + request.currency_cd;
-            url += "&surcharge_type_cd=" + request.surcharge_type_cd;
-            url += "&inline_offset_ind=" + request.inline_offset_ind;
-            url += "&apply_b4_or_after_discount_cd=" + request.apply_b4_or_after_discount_cd;
-            url += "&scope_no=" + request.scope_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_tier, "&surcharge_tier");
-            url += "&client_surcharge_id=" + request.client_surcharge_id;
-            url += "&apply_to_zero_invoice_ind=" + request.apply_to_zero_invoice_ind;
-            url += "&tax_group=" + request.tax_group;
-            url += "&gl_cd=" + request.gl_cd;
-            url += "&ar_gl_cd=" + request.ar_gl_cd;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no, "&plan_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_id, "&client_plan_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.service_no, "&service_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_service_id, "&client_service_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.item_no, "&item_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_item_id, "&client_item_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&surcharge_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.surcharge_name)));
+            sPost += "&description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.description)));
+            sPost += "&ext_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ext_description)));
+            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
+            sPost += "&surcharge_type_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.surcharge_type_cd)));
+            sPost += "&inline_offset_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inline_offset_ind)));
+            sPost += "&apply_b4_or_after_discount_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_b4_or_after_discount_cd)));
+            sPost += "&scope_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.scope_no)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_tier, "&surcharge_tier");
+            sPost += "&client_surcharge_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_surcharge_id)));
+            sPost += "&apply_to_zero_invoice_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_to_zero_invoice_ind)));
+            sPost += "&tax_group=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_group)));
+            sPost += "&gl_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.gl_cd)));
+            sPost += "&ar_gl_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ar_gl_cd)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_no, "&plan_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_plan_id, "&client_plan_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.service_no, "&service_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_service_id, "&client_service_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.item_no, "&item_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_item_id, "&client_item_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2873,32 +4479,54 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("edit_surcharge");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&surcharge_no=" + request.surcharge_no;
-            url += "&surcharge_name=" + request.surcharge_name;
-            url += "&client_surcharge_id=" + request.client_surcharge_id;
-            url += "&description=" + request.description;
-            url += "&ext_description=" + request.ext_description;
-            url += "&currency_cd=" + request.currency_cd;
-            url += "&scope_no=" + request.scope_no;
-            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_tier, "&surcharge_tier");
-            url += "&apply_to_zero_invoice_ind=" + request.apply_to_zero_invoice_ind;
-            RestUtilities.addParameterValuesFromArray(ref url, request.plan_no, "&plan_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_plan_id, "&client_plan_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.service_no, "&service_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_service_id, "&client_service_id");
-            RestUtilities.addParameterValuesFromArray(ref url, request.item_no, "&item_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_item_id, "&client_item_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&surcharge_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.surcharge_no)));
+            sPost += "&surcharge_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.surcharge_name)));
+            sPost += "&client_surcharge_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_surcharge_id)));
+            sPost += "&description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.description)));
+            sPost += "&ext_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ext_description)));
+            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
+            sPost += "&scope_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.scope_no)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_tier, "&surcharge_tier");
+            sPost += "&apply_to_zero_invoice_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.apply_to_zero_invoice_ind)));
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_no, "&plan_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_plan_id, "&client_plan_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.service_no, "&service_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_service_id, "&client_service_id");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.item_no, "&item_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_item_id, "&client_item_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2921,19 +4549,41 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("delete_surcharge");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            RestUtilities.addParameterValuesFromArray(ref url, request.surcharge_no, "&surcharge_no");
-            RestUtilities.addParameterValuesFromArray(ref url, request.client_surcharge_id, "&client_surcharge_id");
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
+            RestUtilities.addParameterValuesFromArray(ref sPost, request.client_surcharge_id, "&client_surcharge_id");
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,
@@ -2956,18 +4606,40 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             }
             var url = buildUrl("validate_admin_session");
 
-            url += "&client_no=" + request.client_no;
-            url += "&auth_key=" + request.auth_key;
-            url += "&session_id=" + request.session_id;
+            string sPost = "";
+
+            sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
+            sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
+
+            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
             
-            string returnString;
-            WebClient client = new WebClient();
-            client.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.34 Safari/537.36");
-            Stream data = client.OpenRead(url);
-            StreamReader StreamRead = new StreamReader(data);
-            returnString = StreamRead.ReadToEnd();
-            StreamRead.Close();
-            data.Close();
+            string returnString = "";
+            Stream dataStream = null;
+            StreamReader responseReader = null;
+            try{
+                byte[] content = Encoding.ASCII.GetBytes(sPost);
+                WebRequest webRequest = WebRequest.Create(url);
+                webRequest.Method = getMethod();
+                webRequest.ContentType = getContentType();
+                webRequest.ContentLength = content.Length;
+                dataStream = webRequest.GetRequestStream();
+                dataStream.Write(content, 0, content.Length);
+
+                responseReader = new StreamReader(webRequest.GetResponse().GetResponseStream());
+                returnString = responseReader.ReadToEnd();
+            }
+            finally
+            {
+                if (dataStream != null)
+                {
+                    dataStream.Close();
+                }
+                if (responseReader != null)
+                {
+                    responseReader.Close();
+                }
+            }
+
             JsonSerializer json = new JsonSerializer
                           {
                               NullValueHandling = NullValueHandling.Ignore,

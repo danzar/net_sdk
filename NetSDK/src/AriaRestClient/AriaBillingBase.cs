@@ -35,7 +35,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
         protected static string getContentType()
         {
-            return "application/Json";
+            return "application/x-www-form-urlencoded";
         }
 
         public string getURL()
