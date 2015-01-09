@@ -26,7 +26,8 @@ namespace Aria.SDK.AriaServices.AriaRestServices.Test
     [TestFixtureSetUp]
     public void setUp()
     {
-        mService = new AriaBillingObjectQuery(ConfigurationManager.AppSettings[ARIA_DISPATCHER_URL]);
+        //mService = new AriaBillingObjectQuery(ConfigurationManager.AppSettings[ARIA_DISPATCHER_URL]);
+        mService = new AriaBillingObjectQuery();
     }
 
     public long AccountNumber
