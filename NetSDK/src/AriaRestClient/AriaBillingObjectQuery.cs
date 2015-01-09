@@ -35,9 +35,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -93,9 +93,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -151,9 +151,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -209,9 +209,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -267,9 +267,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -325,9 +325,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -383,9 +383,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -441,9 +441,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -499,9 +499,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -557,9 +557,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -615,9 +615,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -673,9 +673,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -731,9 +731,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&query_string=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string)));
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
+            sPost += "&query_string=" + ((String.IsNullOrEmpty(Convert.ToString(request.query_string))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.query_string))));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
             
             string returnString = "";
             Stream dataStream = null;

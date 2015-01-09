@@ -35,16 +35,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&promo_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code)));
-            sPost += "&parent_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_plan_no)));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&promo_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code))));
+            sPost += "&parent_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.parent_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_plan_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_field_names, "&supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_field_values, "&supp_field_values");
-            sPost += "&include_all_rate_schedules=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_all_rate_schedules)));
-            sPost += "&include_plan_hierarchy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_plan_hierarchy)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
-            sPost += "&client_parent_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_parent_plan_id)));
+            sPost += "&include_all_rate_schedules=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_all_rate_schedules))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_all_rate_schedules))));
+            sPost += "&include_plan_hierarchy=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_plan_hierarchy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_plan_hierarchy))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
+            sPost += "&client_parent_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_parent_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_parent_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -100,7 +100,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&on_off_indicator=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.on_off_indicator)));
+            sPost += "&on_off_indicator=" + ((String.IsNullOrEmpty(Convert.ToString(request.on_off_indicator))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.on_off_indicator))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -156,7 +156,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&file_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.file_name)));
+            sPost += "&file_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.file_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.file_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -212,7 +212,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&ip_address=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ip_address)));
+            sPost += "&ip_address=" + ((String.IsNullOrEmpty(Convert.ToString(request.ip_address))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ip_address))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -268,10 +268,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd)));
-            sPost += "&return_no_cost_items=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items)));
-            sPost += "&filter_item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no)));
-            sPost += "&client_filter_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_filter_item_id)));
+            sPost += "&filter_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd))));
+            sPost += "&return_no_cost_items=" + ((String.IsNullOrEmpty(Convert.ToString(request.return_no_cost_items))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items))));
+            sPost += "&filter_item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no))));
+            sPost += "&client_filter_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_filter_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_filter_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -327,11 +327,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd)));
-            sPost += "&return_no_cost_items=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items)));
-            sPost += "&filter_item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no)));
-            sPost += "&include_inactive_items=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_inactive_items)));
-            sPost += "&filter_client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id)));
+            sPost += "&filter_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd))));
+            sPost += "&return_no_cost_items=" + ((String.IsNullOrEmpty(Convert.ToString(request.return_no_cost_items))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items))));
+            sPost += "&filter_item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no))));
+            sPost += "&include_inactive_items=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_inactive_items))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_inactive_items))));
+            sPost += "&filter_client_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_client_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -387,10 +387,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd)));
-            sPost += "&return_no_cost_items=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items)));
-            sPost += "&filter_item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no)));
-            sPost += "&filter_client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id)));
+            sPost += "&filter_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd))));
+            sPost += "&return_no_cost_items=" + ((String.IsNullOrEmpty(Convert.ToString(request.return_no_cost_items))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items))));
+            sPost += "&filter_item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no))));
+            sPost += "&filter_client_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_client_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -446,8 +446,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no)));
-            sPost += "&filter_client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id)));
+            sPost += "&filter_item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no))));
+            sPost += "&filter_client_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_client_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -503,8 +503,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no)));
-            sPost += "&filter_client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id)));
+            sPost += "&filter_item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no))));
+            sPost += "&filter_client_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_client_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -616,8 +616,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -673,8 +673,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -730,12 +730,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no)));
-            sPost += "&alt_rate_schedule_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
-            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
-            sPost += "&client_alt_rate_schedule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id)));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&service_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.service_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no))));
+            sPost += "&alt_rate_schedule_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_rate_schedule_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
+            sPost += "&client_service_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_service_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id))));
+            sPost += "&client_alt_rate_schedule_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_rate_schedule_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -846,8 +846,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
+            sPost += "&class_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.class_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -903,8 +903,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
+            sPost += "&class_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.class_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -960,7 +960,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&event_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.event_id)));
+            sPost += "&event_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.event_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.event_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1016,7 +1016,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&event_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.event_id)));
+            sPost += "&event_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.event_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.event_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1184,7 +1184,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no)));
+            sPost += "&class_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.class_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.class_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1240,9 +1240,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&rand_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rand_type)));
-            sPost += "&rand_length=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rand_length)));
-            sPost += "&rand_case=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rand_case)));
+            sPost += "&rand_type=" + ((String.IsNullOrEmpty(Convert.ToString(request.rand_type))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rand_type))));
+            sPost += "&rand_length=" + ((String.IsNullOrEmpty(Convert.ToString(request.rand_length))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rand_length))));
+            sPost += "&rand_case=" + ((String.IsNullOrEmpty(Convert.ToString(request.rand_case))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rand_case))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1298,9 +1298,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1411,8 +1411,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&start_date_range=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date_range)));
-            sPost += "&end_date_range=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date_range)));
+            sPost += "&start_date_range=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date_range))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date_range))));
+            sPost += "&end_date_range=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date_range))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date_range))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1468,11 +1468,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd)));
-            sPost += "&return_no_cost_items=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items)));
-            sPost += "&filter_item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no)));
-            sPost += "&include_inactive_items=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_inactive_items)));
-            sPost += "&filter_client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id)));
+            sPost += "&filter_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_currency_cd))));
+            sPost += "&return_no_cost_items=" + ((String.IsNullOrEmpty(Convert.ToString(request.return_no_cost_items))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.return_no_cost_items))));
+            sPost += "&filter_item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_item_no))));
+            sPost += "&include_inactive_items=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_inactive_items))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_inactive_items))));
+            sPost += "&filter_client_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_client_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_client_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1528,7 +1528,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1584,9 +1584,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.in_reg_uss_params, "&in_reg_uss_params");
-            sPost += "&override_timeout_minutes=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.override_timeout_minutes)));
+            sPost += "&override_timeout_minutes=" + ((String.IsNullOrEmpty(Convert.ToString(request.override_timeout_minutes))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.override_timeout_minutes))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1642,7 +1642,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.param_names, "&param_names");
             
             string returnString = "";
@@ -1699,7 +1699,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.in_reg_uss_params, "&in_reg_uss_params");
             
             string returnString = "";
@@ -1756,7 +1756,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1812,7 +1812,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name)));
+            sPost += "&set_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1868,10 +1868,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name)));
+            sPost += "&set_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.in_reg_uss_config_params, "&in_reg_uss_config_params");
-            sPost += "&set_description=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_description)));
-            sPost += "&set_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_type_no)));
+            sPost += "&set_description=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_description))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_description))));
+            sPost += "&set_type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_type_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -1927,7 +1927,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name)));
+            sPost += "&set_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.param_names, "&param_names");
             
             string returnString = "";
@@ -1984,7 +1984,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name)));
+            sPost += "&set_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.in_reg_uss_config_params, "&in_reg_uss_config_params");
             
             string returnString = "";
@@ -2041,7 +2041,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&set_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name)));
+            sPost += "&set_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.set_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.set_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2208,8 +2208,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&item_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_no)));
-            sPost += "&client_item_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_item_id)));
+            sPost += "&item_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.item_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.item_no))));
+            sPost += "&client_item_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_item_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_item_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2320,7 +2320,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_class_no)));
+            sPost += "&filter_class_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_class_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_class_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2376,7 +2376,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_class_no)));
+            sPost += "&filter_class_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_class_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_class_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2432,7 +2432,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&filter_class_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_class_no)));
+            sPost += "&filter_class_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_class_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_class_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2488,9 +2488,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&field_val=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_val)));
-            sPost += "&field_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no)));
-            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&field_val=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_val))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_val))));
+            sPost += "&field_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no))));
+            sPost += "&field_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2546,9 +2546,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&field_val=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_val)));
-            sPost += "&field_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no)));
-            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&field_val=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_val))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_val))));
+            sPost += "&field_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no))));
+            sPost += "&field_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2604,9 +2604,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&field_val=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_val)));
-            sPost += "&field_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no)));
-            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&field_val=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_val))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_val))));
+            sPost += "&field_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_no))));
+            sPost += "&field_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2772,7 +2772,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&offset_hours=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_hours)));
+            sPost += "&offset_hours=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_hours))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_hours))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2828,7 +2828,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&batch_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.batch_date)));
+            sPost += "&batch_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.batch_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.batch_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2884,11 +2884,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&destination_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.destination_id)));
-            sPost += "&source_type_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.source_type_id)));
-            sPost += "&object_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.object_id)));
-            sPost += "&external_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.external_id)));
-            sPost += "&action_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.action_directive)));
+            sPost += "&destination_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.destination_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.destination_id))));
+            sPost += "&source_type_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.source_type_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.source_type_id))));
+            sPost += "&object_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.object_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.object_id))));
+            sPost += "&external_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.external_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.external_id))));
+            sPost += "&action_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.action_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.action_directive))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -2944,8 +2944,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&include_detail_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_detail_ind)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&include_detail_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_detail_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_detail_ind))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3001,8 +3001,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&coupon_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3058,8 +3058,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&coupon_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3115,22 +3115,22 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name)));
-            sPost += "&last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name)));
-            sPost += "&mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mi)));
-            sPost += "&company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
-            sPost += "&state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov)));
-            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
-            sPost += "&postal_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_code)));
-            sPost += "&intl_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone)));
-            sPost += "&alt_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_email)));
-            sPost += "&birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.birthdate)));
-            sPost += "&address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name))));
+            sPost += "&last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name))));
+            sPost += "&mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mi))));
+            sPost += "&company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality))));
+            sPost += "&state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov))));
+            sPost += "&country=" + ((String.IsNullOrEmpty(Convert.ToString(request.country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country))));
+            sPost += "&postal_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.postal_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_code))));
+            sPost += "&intl_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.intl_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone))));
+            sPost += "&alt_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_email))));
+            sPost += "&birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.birthdate))));
+            sPost += "&address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3186,11 +3186,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password)));
-            sPost += "&secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question_answer)));
-            sPost += "&secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question)));
-            sPost += "&pin=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pin)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&password=" + ((String.IsNullOrEmpty(Convert.ToString(request.password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password))));
+            sPost += "&secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question_answer))));
+            sPost += "&secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question))));
+            sPost += "&pin=" + ((String.IsNullOrEmpty(Convert.ToString(request.pin))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pin))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3246,15 +3246,15 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_cd)));
-            sPost += "&queue_days=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.queue_days)));
-            sPost += "&queue_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.queue_date)));
-            sPost += "&force_bill_date_reset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_bill_date_reset)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&alt_do_dunning=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_do_dunning)));
-            sPost += "&status_degrade_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_degrade_date)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_cd))));
+            sPost += "&queue_days=" + ((String.IsNullOrEmpty(Convert.ToString(request.queue_days))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.queue_days))));
+            sPost += "&queue_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.queue_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.queue_date))));
+            sPost += "&force_bill_date_reset=" + ((String.IsNullOrEmpty(Convert.ToString(request.force_bill_date_reset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_bill_date_reset))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&alt_do_dunning=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_do_dunning))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_do_dunning))));
+            sPost += "&status_degrade_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.status_degrade_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_degrade_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3310,9 +3310,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
-            sPost += "&value_text=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.value_text)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&field_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name))));
+            sPost += "&value_text=" + ((String.IsNullOrEmpty(Convert.ToString(request.value_text))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.value_text))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3368,25 +3368,25 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name)));
-            sPost += "&last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name)));
-            sPost += "&middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.middle_initial)));
-            sPost += "&company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
-            sPost += "&state=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state)));
-            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
-            sPost += "&zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip)));
-            sPost += "&intl_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone)));
-            sPost += "&email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email)));
-            sPost += "&do_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect)));
-            sPost += "&change_status_after_coll=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll)));
-            sPost += "&reset_dates_after_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status)));
-            sPost += "&address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name))));
+            sPost += "&last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name))));
+            sPost += "&middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.middle_initial))));
+            sPost += "&company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality))));
+            sPost += "&state=" + ((String.IsNullOrEmpty(Convert.ToString(request.state))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state))));
+            sPost += "&country=" + ((String.IsNullOrEmpty(Convert.ToString(request.country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country))));
+            sPost += "&zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip))));
+            sPost += "&intl_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.intl_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone))));
+            sPost += "&email=" + ((String.IsNullOrEmpty(Convert.ToString(request.email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email))));
+            sPost += "&do_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect))));
+            sPost += "&change_status_after_coll=" + ((String.IsNullOrEmpty(Convert.ToString(request.change_status_after_coll))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll))));
+            sPost += "&reset_dates_after_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.reset_dates_after_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status))));
+            sPost += "&address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3442,8 +3442,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notify_method)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notify_method))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3499,7 +3499,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3555,13 +3555,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&do_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect)));
-            sPost += "&change_status_after_coll=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll)));
-            sPost += "&reset_dates_after_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&do_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect))));
+            sPost += "&change_status_after_coll=" + ((String.IsNullOrEmpty(Convert.ToString(request.change_status_after_coll))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll))));
+            sPost += "&reset_dates_after_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.reset_dates_after_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3617,14 +3617,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&do_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect)));
-            sPost += "&change_status_after_coll=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll)));
-            sPost += "&reset_dates_after_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&do_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect))));
+            sPost += "&change_status_after_coll=" + ((String.IsNullOrEmpty(Convert.ToString(request.change_status_after_coll))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll))));
+            sPost += "&reset_dates_after_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.reset_dates_after_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3680,8 +3680,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3737,11 +3737,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resp_level_cd)));
-            sPost += "&senior_account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_account_no)));
-            sPost += "&senior_acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_user_id)));
-            sPost += "&client_senior_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_senior_acct_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resp_level_cd))));
+            sPost += "&senior_account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.senior_account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_account_no))));
+            sPost += "&senior_acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.senior_acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_user_id))));
+            sPost += "&client_senior_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_senior_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_senior_acct_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3797,10 +3797,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3856,8 +3856,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.test_acct_ind)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.test_acct_ind))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -3913,39 +3913,39 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&CVV=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.CVV)));
-            sPost += "&seq_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_no)));
-            sPost += "&inTrackingNumber=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inTrackingNumber)));
-            sPost += "&inAuthValue=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inAuthValue)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
-            sPost += "&acct_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_group_no)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&CVV=" + ((String.IsNullOrEmpty(Convert.ToString(request.CVV))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.CVV))));
+            sPost += "&seq_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.seq_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_no))));
+            sPost += "&inTrackingNumber=" + ((String.IsNullOrEmpty(Convert.ToString(request.inTrackingNumber))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inTrackingNumber))));
+            sPost += "&inAuthValue=" + ((String.IsNullOrEmpty(Convert.ToString(request.inAuthValue))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inAuthValue))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd))));
+            sPost += "&acct_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_group_no))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4001,12 +4001,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid)));
-            sPost += "&days_to_restore=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.days_to_restore)));
-            sPost += "&date_to_restore=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_to_restore)));
-            sPost += "&reason_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_cd)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid))));
+            sPost += "&days_to_restore=" + ((String.IsNullOrEmpty(Convert.ToString(request.days_to_restore))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.days_to_restore))));
+            sPost += "&date_to_restore=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_to_restore))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_to_restore))));
+            sPost += "&reason_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.reason_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_cd))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4062,13 +4062,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&transaction_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_type)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
-            sPost += "&record_limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.record_limit)));
-            sPost += "&filter_statement_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_statement_no)));
-            sPost += "&include_void_transactions=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_void_transactions)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&transaction_type=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_type))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_type))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
+            sPost += "&record_limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.record_limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.record_limit))));
+            sPost += "&filter_statement_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_statement_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_statement_no))));
+            sPost += "&include_void_transactions=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_void_transactions))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_void_transactions))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4124,43 +4124,43 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number)));
-            sPost += "&first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name)));
-            sPost += "&last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name)));
-            sPost += "&middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.middle_initial)));
-            sPost += "&company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
-            sPost += "&state=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state)));
-            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
-            sPost += "&zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip)));
-            sPost += "&intl_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone)));
-            sPost += "&phone_npa=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_npa)));
-            sPost += "&phone_nxx=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_nxx)));
-            sPost += "&phone_suffix=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_suffix)));
-            sPost += "&phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_extension)));
-            sPost += "&email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email)));
-            sPost += "&pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&do_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect)));
-            sPost += "&change_status_after_coll=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll)));
-            sPost += "&reset_dates_after_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&primary_or_bkup_pay_method_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.primary_or_bkup_pay_method_ind)));
-            sPost += "&ref_bkup_seq_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ref_bkup_seq_no)));
+            sPost += "&account_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number))));
+            sPost += "&first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name))));
+            sPost += "&last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name))));
+            sPost += "&middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.middle_initial))));
+            sPost += "&company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality))));
+            sPost += "&state=" + ((String.IsNullOrEmpty(Convert.ToString(request.state))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state))));
+            sPost += "&country=" + ((String.IsNullOrEmpty(Convert.ToString(request.country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country))));
+            sPost += "&zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip))));
+            sPost += "&intl_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.intl_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone))));
+            sPost += "&phone_npa=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_npa))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_npa))));
+            sPost += "&phone_nxx=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_nxx))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_nxx))));
+            sPost += "&phone_suffix=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_suffix))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_suffix))));
+            sPost += "&phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_extension))));
+            sPost += "&email=" + ((String.IsNullOrEmpty(Convert.ToString(request.email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email))));
+            sPost += "&pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&do_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect))));
+            sPost += "&change_status_after_coll=" + ((String.IsNullOrEmpty(Convert.ToString(request.change_status_after_coll))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll))));
+            sPost += "&reset_dates_after_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.reset_dates_after_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&primary_or_bkup_pay_method_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.primary_or_bkup_pay_method_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.primary_or_bkup_pay_method_ind))));
+            sPost += "&ref_bkup_seq_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.ref_bkup_seq_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.ref_bkup_seq_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4216,48 +4216,48 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
-            sPost += "&payment_source=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_source)));
-            sPost += "&CVV=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.CVV)));
-            sPost += "&bill_seq=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq)));
-            sPost += "&inTrackingNumber=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inTrackingNumber)));
-            sPost += "&inAuthValue=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inAuthValue)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&record_cc_on_auth_failure=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.record_cc_on_auth_failure)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
+            sPost += "&account_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
+            sPost += "&payment_source=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_source))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_source))));
+            sPost += "&CVV=" + ((String.IsNullOrEmpty(Convert.ToString(request.CVV))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.CVV))));
+            sPost += "&bill_seq=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_seq))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq))));
+            sPost += "&inTrackingNumber=" + ((String.IsNullOrEmpty(Convert.ToString(request.inTrackingNumber))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inTrackingNumber))));
+            sPost += "&inAuthValue=" + ((String.IsNullOrEmpty(Convert.ToString(request.inAuthValue))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.inAuthValue))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&record_cc_on_auth_failure=" + ((String.IsNullOrEmpty(Convert.ToString(request.record_cc_on_auth_failure))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.record_cc_on_auth_failure))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4313,7 +4313,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number)));
+            sPost += "&account_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4369,10 +4369,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number)));
+            sPost += "&account_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_no_to_remove, "&plan_no_to_remove");
-            sPost += "&remove_all_queued_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.remove_all_queued_plan_no)));
-            sPost += "&remove_terminate_pending=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.remove_terminate_pending)));
+            sPost += "&remove_all_queued_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.remove_all_queued_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.remove_all_queued_plan_no))));
+            sPost += "&remove_terminate_pending=" + ((String.IsNullOrEmpty(Convert.ToString(request.remove_terminate_pending))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.remove_terminate_pending))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4428,7 +4428,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number)));
+            sPost += "&account_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4484,7 +4484,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number)));
+            sPost += "&account_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_number))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4540,9 +4540,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4598,7 +4598,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4654,7 +4654,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4710,7 +4710,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&promo_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code)));
+            sPost += "&promo_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4766,7 +4766,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&promo_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code)));
+            sPost += "&promo_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4822,7 +4822,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4878,8 +4878,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&parent_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_acct_no)));
-            sPost += "&do_multi_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_multi_level)));
+            sPost += "&parent_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.parent_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_acct_no))));
+            sPost += "&do_multi_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_multi_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_multi_level))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4935,13 +4935,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&parent_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_acct_no)));
-            sPost += "&do_multi_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_multi_level)));
-            sPost += "&trans_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.trans_type)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
-            sPost += "&record_limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.record_limit)));
-            sPost += "&include_void_transactions=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_void_transactions)));
+            sPost += "&parent_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.parent_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_acct_no))));
+            sPost += "&do_multi_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_multi_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_multi_level))));
+            sPost += "&trans_type=" + ((String.IsNullOrEmpty(Convert.ToString(request.trans_type))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.trans_type))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
+            sPost += "&record_limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.record_limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.record_limit))));
+            sPost += "&include_void_transactions=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_void_transactions))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_void_transactions))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -4997,36 +4997,36 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&seq_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_no)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&state=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state)));
-            sPost += "&zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip)));
-            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&phone_npa=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_npa)));
-            sPost += "&phone_nxx=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_nxx)));
-            sPost += "&phone_suffix=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_suffix)));
-            sPost += "&phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_ext)));
-            sPost += "&phone_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_country_cd)));
-            sPost += "&intl_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone)));
-            sPost += "&email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email)));
-            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
-            sPost += "&cell_phone_npa=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone_npa)));
-            sPost += "&cell_phone_nxx=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone_nxx)));
-            sPost += "&cell_phone_suffix=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone_suffix)));
-            sPost += "&work_phone_npa=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_npa)));
-            sPost += "&work_phone_nxx=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_nxx)));
-            sPost += "&work_phone_suffix=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_suffix)));
-            sPost += "&work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_ext)));
-            sPost += "&do_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect)));
-            sPost += "&change_status_after_coll=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll)));
-            sPost += "&reset_dates_after_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status)));
-            sPost += "&address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&seq_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.seq_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_no))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&state=" + ((String.IsNullOrEmpty(Convert.ToString(request.state))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state))));
+            sPost += "&zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip))));
+            sPost += "&country=" + ((String.IsNullOrEmpty(Convert.ToString(request.country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&phone_npa=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_npa))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_npa))));
+            sPost += "&phone_nxx=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_nxx))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_nxx))));
+            sPost += "&phone_suffix=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_suffix))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_suffix))));
+            sPost += "&phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_ext))));
+            sPost += "&phone_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_country_cd))));
+            sPost += "&intl_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.intl_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.intl_phone))));
+            sPost += "&email=" + ((String.IsNullOrEmpty(Convert.ToString(request.email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email))));
+            sPost += "&locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality))));
+            sPost += "&cell_phone_npa=" + ((String.IsNullOrEmpty(Convert.ToString(request.cell_phone_npa))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone_npa))));
+            sPost += "&cell_phone_nxx=" + ((String.IsNullOrEmpty(Convert.ToString(request.cell_phone_nxx))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone_nxx))));
+            sPost += "&cell_phone_suffix=" + ((String.IsNullOrEmpty(Convert.ToString(request.cell_phone_suffix))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone_suffix))));
+            sPost += "&work_phone_npa=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone_npa))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_npa))));
+            sPost += "&work_phone_nxx=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone_nxx))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_nxx))));
+            sPost += "&work_phone_suffix=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone_suffix))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_suffix))));
+            sPost += "&work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_ext))));
+            sPost += "&do_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect))));
+            sPost += "&change_status_after_coll=" + ((String.IsNullOrEmpty(Convert.ToString(request.change_status_after_coll))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll))));
+            sPost += "&reset_dates_after_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.reset_dates_after_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status))));
+            sPost += "&address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5082,11 +5082,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&template_class=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_class)));
-            sPost += "&template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_no)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&client_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_template_id)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&template_class=" + ((String.IsNullOrEmpty(Convert.ToString(request.template_class))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_class))));
+            sPost += "&template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_no))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&client_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_template_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5142,7 +5142,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5198,7 +5198,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5254,7 +5254,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5310,16 +5310,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&usage_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type)));
-            sPost += "&usage_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_units)));
-            sPost += "&next_usage_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.next_usage_date)));
-            sPost += "&alt_desc=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_desc)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&first_usage_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_usage_date)));
-            sPost += "&recurring_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.recurring_ind)));
-            sPost += "&usage_type_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&usage_type=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type))));
+            sPost += "&usage_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_units))));
+            sPost += "&next_usage_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.next_usage_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.next_usage_date))));
+            sPost += "&alt_desc=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_desc))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_desc))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&first_usage_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_usage_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_usage_date))));
+            sPost += "&recurring_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.recurring_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.recurring_ind))));
+            sPost += "&usage_type_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5375,9 +5375,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&standing_usage_rec_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_usage_rec_no)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&standing_usage_rec_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.standing_usage_rec_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_usage_rec_no))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5433,10 +5433,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5492,8 +5492,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5549,7 +5549,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5605,7 +5605,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5661,7 +5661,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5717,8 +5717,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&field_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&field_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.field_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.field_name))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5774,7 +5774,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&promo_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code)));
+            sPost += "&promo_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5830,7 +5830,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&promo_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code)));
+            sPost += "&promo_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -5886,32 +5886,32 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&supp_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.supp_plan_no)));
-            sPost += "&alt_rate_schedule_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no)));
-            sPost += "&num_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
-            sPost += "&assignment_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&contract_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_type_no)));
-            sPost += "&contract_alt_recur_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_alt_recur_fee)));
-            sPost += "&contract_length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_length_months)));
-            sPost += "&contract_cancel_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_cancel_fee)));
-            sPost += "&contract_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_comments)));
-            sPost += "&contract_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_start_date)));
-            sPost += "&offset_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months)));
-            sPost += "&auto_offset_months_option=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_offset_months_option)));
-            sPost += "&alt_proration_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&supp_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.supp_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.supp_plan_no))));
+            sPost += "&alt_rate_schedule_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_rate_schedule_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no))));
+            sPost += "&num_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.num_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
+            sPost += "&assignment_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.assignment_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&contract_type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_type_no))));
+            sPost += "&contract_alt_recur_fee=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_alt_recur_fee))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_alt_recur_fee))));
+            sPost += "&contract_length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_length_months))));
+            sPost += "&contract_cancel_fee=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_cancel_fee))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_cancel_fee))));
+            sPost += "&contract_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_comments))));
+            sPost += "&contract_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_start_date))));
+            sPost += "&offset_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months))));
+            sPost += "&auto_offset_months_option=" + ((String.IsNullOrEmpty(Convert.ToString(request.auto_offset_months_option))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_offset_months_option))));
+            sPost += "&alt_proration_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_proration_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.new_acct_custom_rates, "&new_acct_custom_rates");
-            sPost += "&effective_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date)));
-            sPost += "&offset_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval)));
-            sPost += "&contract_end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_end_date)));
-            sPost += "&sync_mstr_bill_dates_override=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override)));
-            sPost += "&client_supp_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_supp_plan_id)));
-            sPost += "&client_alt_rate_schedule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id)));
+            sPost += "&effective_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.effective_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date))));
+            sPost += "&offset_interval=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_interval))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval))));
+            sPost += "&contract_end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_end_date))));
+            sPost += "&sync_mstr_bill_dates_override=" + ((String.IsNullOrEmpty(Convert.ToString(request.sync_mstr_bill_dates_override))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override))));
+            sPost += "&client_supp_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_supp_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_supp_plan_id))));
+            sPost += "&client_alt_rate_schedule_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_rate_schedule_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
             
             string returnString = "";
@@ -5968,17 +5968,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&supp_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.supp_plan_no)));
-            sPost += "&assignment_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&alt_proration_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date)));
-            sPost += "&effective_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date)));
-            sPost += "&offset_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval)));
-            sPost += "&invoice_unbilled_usage=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage)));
-            sPost += "&client_supp_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_supp_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&supp_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.supp_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.supp_plan_no))));
+            sPost += "&assignment_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.assignment_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&alt_proration_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_proration_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date))));
+            sPost += "&effective_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.effective_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date))));
+            sPost += "&offset_interval=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_interval))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval))));
+            sPost += "&invoice_unbilled_usage=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_unbilled_usage))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage))));
+            sPost += "&client_supp_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_supp_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_supp_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6034,20 +6034,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&supp_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.supp_plan_no)));
-            sPost += "&alt_rate_schedule_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no)));
-            sPost += "&num_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
-            sPost += "&assignment_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&supp_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.supp_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.supp_plan_no))));
+            sPost += "&alt_rate_schedule_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_rate_schedule_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no))));
+            sPost += "&num_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.num_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
+            sPost += "&assignment_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.assignment_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.new_acct_custom_rates, "&new_acct_custom_rates");
-            sPost += "&effective_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date)));
-            sPost += "&offset_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
-            sPost += "&client_alt_rate_schedule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id)));
+            sPost += "&effective_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.effective_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date))));
+            sPost += "&offset_interval=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_interval))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
+            sPost += "&client_alt_rate_schedule_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_rate_schedule_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
             
             string returnString = "";
@@ -6104,27 +6104,27 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&existing_supp_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.existing_supp_plan_no)));
-            sPost += "&new_supp_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.new_supp_plan_no)));
-            sPost += "&alt_rate_schedule_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no)));
-            sPost += "&num_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
-            sPost += "&assignment_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&offset_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months)));
-            sPost += "&auto_offset_months_option=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_offset_months_option)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&existing_supp_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.existing_supp_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.existing_supp_plan_no))));
+            sPost += "&new_supp_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.new_supp_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.new_supp_plan_no))));
+            sPost += "&alt_rate_schedule_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_rate_schedule_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no))));
+            sPost += "&num_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.num_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
+            sPost += "&assignment_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.assignment_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&offset_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months))));
+            sPost += "&auto_offset_months_option=" + ((String.IsNullOrEmpty(Convert.ToString(request.auto_offset_months_option))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_offset_months_option))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.new_acct_custom_rates, "&new_acct_custom_rates");
-            sPost += "&effective_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date)));
-            sPost += "&offset_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval)));
-            sPost += "&invoice_unbilled_usage=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage)));
-            sPost += "&sync_mstr_bill_dates_override=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override)));
-            sPost += "&client_existing_supp_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_existing_supp_plan_id)));
-            sPost += "&client_new_supp_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_new_supp_plan_id)));
-            sPost += "&client_alt_rate_schedule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id)));
+            sPost += "&effective_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.effective_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date))));
+            sPost += "&offset_interval=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_interval))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval))));
+            sPost += "&invoice_unbilled_usage=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_unbilled_usage))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage))));
+            sPost += "&sync_mstr_bill_dates_override=" + ((String.IsNullOrEmpty(Convert.ToString(request.sync_mstr_bill_dates_override))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override))));
+            sPost += "&client_existing_supp_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_existing_supp_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_existing_supp_plan_id))));
+            sPost += "&client_new_supp_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_new_supp_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_new_supp_plan_id))));
+            sPost += "&client_alt_rate_schedule_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_rate_schedule_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
             
             string returnString = "";
@@ -6181,8 +6181,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&in_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_plan_no)));
-            sPost += "&in_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_client_plan_id)));
+            sPost += "&in_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.in_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_plan_no))));
+            sPost += "&in_client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.in_client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6238,8 +6238,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&in_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_plan_no)));
-            sPost += "&in_client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_client_plan_id)));
+            sPost += "&in_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.in_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_plan_no))));
+            sPost += "&in_client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.in_client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.in_client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6295,7 +6295,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6351,7 +6351,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6462,8 +6462,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6519,9 +6519,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no)));
-            sPost += "&client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no))));
+            sPost += "&client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6577,9 +6577,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no)));
-            sPost += "&client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no))));
+            sPost += "&client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6635,9 +6635,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no)));
-            sPost += "&client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.group_no))));
+            sPost += "&client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_group_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6693,144 +6693,144 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&alt_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_start_date)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
-            sPost += "&userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid)));
-            sPost += "&status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_cd)));
-            sPost += "&master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_no)));
-            sPost += "&master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_units)));
+            sPost += "&alt_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_start_date))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
+            sPost += "&userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid))));
+            sPost += "&status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_cd))));
+            sPost += "&master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_no))));
+            sPost += "&master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_units))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_plans, "&supp_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_plan_units, "&supp_plan_units");
-            sPost += "&notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notify_method)));
-            sPost += "&promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd)));
-            sPost += "&password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password)));
-            sPost += "&secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question)));
-            sPost += "&secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question_answer)));
-            sPost += "&first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name)));
-            sPost += "&mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mi)));
-            sPost += "&last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name)));
-            sPost += "&company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
-            sPost += "&state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov)));
-            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
-            sPost += "&postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_cd)));
-            sPost += "&phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone)));
-            sPost += "&phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_ext)));
-            sPost += "&cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone)));
-            sPost += "&work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone)));
-            sPost += "&work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_ext)));
-            sPost += "&email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email)));
-            sPost += "&birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.birthdate)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_mi)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_postal_cd)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_ext)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_ext)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_no)));
-            sPost += "&bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_no)));
-            sPost += "&resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resp_level_cd)));
-            sPost += "&senior_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_no)));
-            sPost += "&senior_acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_user_id)));
-            sPost += "&client_senior_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_senior_acct_id)));
+            sPost += "&notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notify_method))));
+            sPost += "&promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd))));
+            sPost += "&password=" + ((String.IsNullOrEmpty(Convert.ToString(request.password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password))));
+            sPost += "&secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question))));
+            sPost += "&secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question_answer))));
+            sPost += "&first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name))));
+            sPost += "&mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mi))));
+            sPost += "&last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name))));
+            sPost += "&company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality))));
+            sPost += "&state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov))));
+            sPost += "&country=" + ((String.IsNullOrEmpty(Convert.ToString(request.country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country))));
+            sPost += "&postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_cd))));
+            sPost += "&phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone))));
+            sPost += "&phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_ext))));
+            sPost += "&cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone))));
+            sPost += "&work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone))));
+            sPost += "&work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_ext))));
+            sPost += "&email=" + ((String.IsNullOrEmpty(Convert.ToString(request.email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email))));
+            sPost += "&birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.birthdate))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_mi))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_postal_cd))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_ext))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_ext))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_no))));
+            sPost += "&bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_no))));
+            sPost += "&resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resp_level_cd))));
+            sPost += "&senior_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.senior_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_no))));
+            sPost += "&senior_acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.senior_acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_user_id))));
+            sPost += "&client_senior_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_senior_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_senior_acct_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.functional_acct_groups, "&functional_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.collections_acct_groups, "&collections_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_field_names, "&supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_field_values, "&supp_field_values");
-            sPost += "&test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.test_acct_ind)));
-            sPost += "&status_until_alt_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_until_alt_start)));
-            sPost += "&balance_forward=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.balance_forward)));
-            sPost += "&alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_bill_day)));
-            sPost += "&do_full_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_full_invoicing)));
-            sPost += "&do_prorated_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_prorated_invoicing)));
-            sPost += "&master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_alt_rate_sched_no)));
+            sPost += "&test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.test_acct_ind))));
+            sPost += "&status_until_alt_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.status_until_alt_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_until_alt_start))));
+            sPost += "&balance_forward=" + ((String.IsNullOrEmpty(Convert.ToString(request.balance_forward))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.balance_forward))));
+            sPost += "&alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_bill_day))));
+            sPost += "&do_full_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_full_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_full_invoicing))));
+            sPost += "&do_prorated_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_prorated_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_prorated_invoicing))));
+            sPost += "&master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_alt_rate_sched_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_plan_alt_rate_sched_no, "&supp_plan_alt_rate_sched_no");
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.taxpayer_id)));
-            sPost += "&bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_agreement_id)));
-            sPost += "&retroactive_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.retroactive_start_date)));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_cd))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.taxpayer_id))));
+            sPost += "&bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_agreement_id))));
+            sPost += "&retroactive_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.retroactive_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.retroactive_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.coupon_codes, "&coupon_codes");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.new_acct_custom_rates, "&new_acct_custom_rates");
-            sPost += "&alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_msg_template_no)));
-            sPost += "&seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_no)));
+            sPost += "&alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_msg_template_no))));
+            sPost += "&seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.new_acct_plan_contracts, "&new_acct_plan_contracts");
-            sPost += "&address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
+            sPost += "&address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_accumulation_config, "&usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.enable_usage_pooling_plan_no, "&enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_func_acct_group_ids, "&client_func_acct_group_ids");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_coll_acct_group_ids, "&client_coll_acct_group_ids");
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_exemption_level)));
-            sPost += "&cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cn_alt_msg_template_no)));
-            sPost += "&invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_approval_required)));
-            sPost += "&create_session=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_session)));
-            sPost += "&client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_master_plan_id)));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_exemption_level))));
+            sPost += "&cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cn_alt_msg_template_no))));
+            sPost += "&invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_approval_required))));
+            sPost += "&create_session=" + ((String.IsNullOrEmpty(Convert.ToString(request.create_session))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_session))));
+            sPost += "&client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_master_plan_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_supp_plan_ids, "&client_supp_plan_ids");
-            sPost += "&client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_mp_alt_rate_sched_id)));
+            sPost += "&client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_mp_alt_rate_sched_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_sp_alt_rate_sched_ids, "&client_sp_alt_rate_sched_ids");
-            sPost += "&client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_msg_template_id)));
-            sPost += "&client_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_cn_alt_msg_template_no)));
+            sPost += "&client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_msg_template_id))));
+            sPost += "&client_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_cn_alt_msg_template_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_first_name)));
-            sPost += "&bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_mi)));
-            sPost += "&bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_last_name)));
-            sPost += "&bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_company_name)));
-            sPost += "&bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address1)));
-            sPost += "&bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address2)));
-            sPost += "&bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address3)));
-            sPost += "&bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_city)));
-            sPost += "&bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_locality)));
-            sPost += "&bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_state_prov)));
-            sPost += "&bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_country)));
-            sPost += "&bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_postal_cd)));
-            sPost += "&bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone)));
-            sPost += "&bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone_ext)));
-            sPost += "&bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_cell_phone)));
-            sPost += "&bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone)));
-            sPost += "&bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone_ext)));
-            sPost += "&bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_email)));
-            sPost += "&bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_pay_method)));
-            sPost += "&bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_number)));
-            sPost += "&bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_mm)));
-            sPost += "&bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_yyyy)));
-            sPost += "&bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_acct_no)));
-            sPost += "&bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_routing_no)));
-            sPost += "&bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_agreement_id)));
-            sPost += "&bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cvv)));
-            sPost += "&seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_id)));
-            sPost += "&revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_profile_id)));
-            sPost += "&revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_client_defined_id)));
-            sPost += "&stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stmnt_email_list)));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_first_name))));
+            sPost += "&bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_mi))));
+            sPost += "&bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_last_name))));
+            sPost += "&bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_company_name))));
+            sPost += "&bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address1))));
+            sPost += "&bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address2))));
+            sPost += "&bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address3))));
+            sPost += "&bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_city))));
+            sPost += "&bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_locality))));
+            sPost += "&bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_state_prov))));
+            sPost += "&bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_country))));
+            sPost += "&bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_postal_cd))));
+            sPost += "&bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone))));
+            sPost += "&bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone_ext))));
+            sPost += "&bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_cell_phone))));
+            sPost += "&bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone))));
+            sPost += "&bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone_ext))));
+            sPost += "&bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_email))));
+            sPost += "&bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_pay_method))));
+            sPost += "&bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_number))));
+            sPost += "&bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_mm))));
+            sPost += "&bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_yyyy))));
+            sPost += "&bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_acct_no))));
+            sPost += "&bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_routing_no))));
+            sPost += "&bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_agreement_id))));
+            sPost += "&bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cvv))));
+            sPost += "&seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_id))));
+            sPost += "&revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_profile_id))));
+            sPost += "&revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_client_defined_id))));
+            sPost += "&stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stmnt_email_list))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -6886,673 +6886,673 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&a1_alt_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_alt_start_date)));
-            sPost += "&a1_client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_acct_id)));
-            sPost += "&a1_userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_userid)));
-            sPost += "&a1_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_status_cd)));
-            sPost += "&a1_master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_master_plan_no)));
-            sPost += "&a1_master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_master_plan_units)));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&a1_alt_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_alt_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_alt_start_date))));
+            sPost += "&a1_client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_acct_id))));
+            sPost += "&a1_userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_userid))));
+            sPost += "&a1_status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_status_cd))));
+            sPost += "&a1_master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_master_plan_no))));
+            sPost += "&a1_master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_master_plan_units))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_supp_plans, "&a1_supp_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_supp_plan_units, "&a1_supp_plan_units");
-            sPost += "&a1_notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_notify_method)));
-            sPost += "&a1_promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_promo_cd)));
-            sPost += "&a1_password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_password)));
-            sPost += "&a1_secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_secret_question)));
-            sPost += "&a1_secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_secret_question_answer)));
-            sPost += "&a1_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_first_name)));
-            sPost += "&a1_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_mi)));
-            sPost += "&a1_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_last_name)));
-            sPost += "&a1_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_company_name)));
-            sPost += "&a1_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_address1)));
-            sPost += "&a1_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_address2)));
-            sPost += "&a1_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_city)));
-            sPost += "&a1_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_locality)));
-            sPost += "&a1_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_state_prov)));
-            sPost += "&a1_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_country)));
-            sPost += "&a1_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_postal_cd)));
-            sPost += "&a1_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_phone)));
-            sPost += "&a1_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_phone_ext)));
-            sPost += "&a1_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cell_phone)));
-            sPost += "&a1_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_work_phone)));
-            sPost += "&a1_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_work_phone_ext)));
-            sPost += "&a1_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_email)));
-            sPost += "&a1_birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_birthdate)));
-            sPost += "&a1_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_first_name)));
-            sPost += "&a1_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_mi)));
-            sPost += "&a1_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_last_name)));
-            sPost += "&a1_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_company_name)));
-            sPost += "&a1_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_address1)));
-            sPost += "&a1_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_address2)));
-            sPost += "&a1_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_city)));
-            sPost += "&a1_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_locality)));
-            sPost += "&a1_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_state_prov)));
-            sPost += "&a1_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_country)));
-            sPost += "&a1_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_postal_cd)));
-            sPost += "&a1_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_phone)));
-            sPost += "&a1_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_phone_ext)));
-            sPost += "&a1_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_cell_phone)));
-            sPost += "&a1_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_work_phone)));
-            sPost += "&a1_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_work_phone_ext)));
-            sPost += "&a1_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_email)));
-            sPost += "&a1_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_pay_method)));
-            sPost += "&a1_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cc_number)));
-            sPost += "&a1_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cc_expire_mm)));
-            sPost += "&a1_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cc_expire_yyyy)));
-            sPost += "&a1_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_acct_no)));
-            sPost += "&a1_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_routing_no)));
-            sPost += "&a1_resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_resp_level_cd)));
+            sPost += "&a1_notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_notify_method))));
+            sPost += "&a1_promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_promo_cd))));
+            sPost += "&a1_password=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_password))));
+            sPost += "&a1_secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_secret_question))));
+            sPost += "&a1_secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_secret_question_answer))));
+            sPost += "&a1_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_first_name))));
+            sPost += "&a1_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_mi))));
+            sPost += "&a1_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_last_name))));
+            sPost += "&a1_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_company_name))));
+            sPost += "&a1_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_address1))));
+            sPost += "&a1_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_address2))));
+            sPost += "&a1_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_city))));
+            sPost += "&a1_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_locality))));
+            sPost += "&a1_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_state_prov))));
+            sPost += "&a1_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_country))));
+            sPost += "&a1_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_postal_cd))));
+            sPost += "&a1_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_phone))));
+            sPost += "&a1_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_phone_ext))));
+            sPost += "&a1_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cell_phone))));
+            sPost += "&a1_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_work_phone))));
+            sPost += "&a1_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_work_phone_ext))));
+            sPost += "&a1_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_email))));
+            sPost += "&a1_birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_birthdate))));
+            sPost += "&a1_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_first_name))));
+            sPost += "&a1_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_mi))));
+            sPost += "&a1_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_last_name))));
+            sPost += "&a1_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_company_name))));
+            sPost += "&a1_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_address1))));
+            sPost += "&a1_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_address2))));
+            sPost += "&a1_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_city))));
+            sPost += "&a1_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_locality))));
+            sPost += "&a1_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_state_prov))));
+            sPost += "&a1_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_country))));
+            sPost += "&a1_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_postal_cd))));
+            sPost += "&a1_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_phone))));
+            sPost += "&a1_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_phone_ext))));
+            sPost += "&a1_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_cell_phone))));
+            sPost += "&a1_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_work_phone))));
+            sPost += "&a1_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_work_phone_ext))));
+            sPost += "&a1_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_email))));
+            sPost += "&a1_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_pay_method))));
+            sPost += "&a1_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cc_number))));
+            sPost += "&a1_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cc_expire_mm))));
+            sPost += "&a1_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cc_expire_yyyy))));
+            sPost += "&a1_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_acct_no))));
+            sPost += "&a1_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_routing_no))));
+            sPost += "&a1_resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_resp_level_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_functional_acct_groups, "&a1_functional_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_collections_acct_groups, "&a1_collections_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_supp_field_names, "&a1_supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_supp_field_values, "&a1_supp_field_values");
-            sPost += "&a1_test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_test_acct_ind)));
-            sPost += "&a1_status_until_alt_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_status_until_alt_start)));
-            sPost += "&a1_balance_forward=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_balance_forward)));
-            sPost += "&a1_alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_alt_bill_day)));
-            sPost += "&a1_do_full_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_do_full_invoicing)));
-            sPost += "&a1_do_prorated_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_do_prorated_invoicing)));
-            sPost += "&a1_master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_master_plan_alt_rate_sched_no)));
+            sPost += "&a1_test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_test_acct_ind))));
+            sPost += "&a1_status_until_alt_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_status_until_alt_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_status_until_alt_start))));
+            sPost += "&a1_balance_forward=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_balance_forward))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_balance_forward))));
+            sPost += "&a1_alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_alt_bill_day))));
+            sPost += "&a1_do_full_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_do_full_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_do_full_invoicing))));
+            sPost += "&a1_do_prorated_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_do_prorated_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_do_prorated_invoicing))));
+            sPost += "&a1_master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_master_plan_alt_rate_sched_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_supp_plan_alt_rate_sched_no, "&a1_supp_plan_alt_rate_sched_no");
-            sPost += "&a1_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_currency_cd)));
-            sPost += "&a1_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cvv)));
-            sPost += "&a1_taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_taxpayer_id)));
-            sPost += "&a1_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_agreement_id)));
-            sPost += "&a1_retroactive_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_retroactive_start_date)));
+            sPost += "&a1_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_currency_cd))));
+            sPost += "&a1_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cvv))));
+            sPost += "&a1_taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_taxpayer_id))));
+            sPost += "&a1_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_agreement_id))));
+            sPost += "&a1_retroactive_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_retroactive_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_retroactive_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_coupon_codes, "&a1_coupon_codes");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_new_acct_custom_rates, "&a1_new_acct_custom_rates");
-            sPost += "&a1_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_alt_msg_template_no)));
-            sPost += "&a1_seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_seq_func_group_no)));
+            sPost += "&a1_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_alt_msg_template_no))));
+            sPost += "&a1_seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_seq_func_group_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_new_acct_plan_contracts, "&a1_new_acct_plan_contracts");
-            sPost += "&a1_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_address3)));
-            sPost += "&a1_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_address3)));
+            sPost += "&a1_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_address3))));
+            sPost += "&a1_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_usage_accumulation_config, "&a1_usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_enable_usage_pooling_plan_no, "&a1_enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_client_func_acct_group_ids, "&a1_client_func_acct_group_ids");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_client_coll_acct_group_ids, "&a1_client_coll_acct_group_ids");
-            sPost += "&a1_track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_track_data1)));
-            sPost += "&a1_track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_track_data2)));
-            sPost += "&a1_tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_tax_exemption_level)));
-            sPost += "&a1_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cn_alt_msg_template_no)));
-            sPost += "&a1_invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_invoice_approval_required)));
-            sPost += "&a1_create_session=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_create_session)));
-            sPost += "&a1_client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_master_plan_id)));
+            sPost += "&a1_track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_track_data1))));
+            sPost += "&a1_track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_track_data2))));
+            sPost += "&a1_tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_tax_exemption_level))));
+            sPost += "&a1_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_cn_alt_msg_template_no))));
+            sPost += "&a1_invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_invoice_approval_required))));
+            sPost += "&a1_create_session=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_create_session))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_create_session))));
+            sPost += "&a1_client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_master_plan_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_client_supp_plan_ids, "&a1_client_supp_plan_ids");
-            sPost += "&a1_client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_mp_alt_rate_sched_id)));
+            sPost += "&a1_client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_mp_alt_rate_sched_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_client_sp_alt_rate_sched_ids, "&a1_client_sp_alt_rate_sched_ids");
-            sPost += "&a1_client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_alt_msg_template_id)));
-            sPost += "&a1_client_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_cn_alt_msg_template_no)));
-            sPost += "&a1_iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_iban)));
-            sPost += "&a1_bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_check_digit)));
-            sPost += "&a1_bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_swift_cd)));
-            sPost += "&a1_bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_country_cd)));
-            sPost += "&a1_mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_mandate_id)));
-            sPost += "&a1_bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_id_cd)));
-            sPost += "&a1_bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_branch_cd)));
+            sPost += "&a1_client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_alt_msg_template_id))));
+            sPost += "&a1_client_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_client_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_client_cn_alt_msg_template_no))));
+            sPost += "&a1_iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_iban))));
+            sPost += "&a1_bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_check_digit))));
+            sPost += "&a1_bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_swift_cd))));
+            sPost += "&a1_bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_country_cd))));
+            sPost += "&a1_mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_mandate_id))));
+            sPost += "&a1_bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_id_cd))));
+            sPost += "&a1_bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bank_branch_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a1_surcharge_no, "&a1_surcharge_no");
-            sPost += "&a1_bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_first_name)));
-            sPost += "&a1_bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_mi)));
-            sPost += "&a1_bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_last_name)));
-            sPost += "&a1_bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_company_name)));
-            sPost += "&a1_bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_address1)));
-            sPost += "&a1_bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_address2)));
-            sPost += "&a1_bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_address3)));
-            sPost += "&a1_bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_city)));
-            sPost += "&a1_bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_locality)));
-            sPost += "&a1_bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_state_prov)));
-            sPost += "&a1_bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_country)));
-            sPost += "&a1_bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_postal_cd)));
-            sPost += "&a1_bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_phone)));
-            sPost += "&a1_bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_phone_ext)));
-            sPost += "&a1_bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_cell_phone)));
-            sPost += "&a1_bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_work_phone)));
-            sPost += "&a1_bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_work_phone_ext)));
-            sPost += "&a1_bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_email)));
-            sPost += "&a1_bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_pay_method)));
-            sPost += "&a1_bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cc_number)));
-            sPost += "&a1_bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cc_expire_mm)));
-            sPost += "&a1_bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cc_expire_yyyy)));
-            sPost += "&a1_bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bank_acct_no)));
-            sPost += "&a1_bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bank_routing_no)));
-            sPost += "&a1_bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_agreement_id)));
-            sPost += "&a1_bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cvv)));
-            sPost += "&a1_seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_seq_func_group_id)));
-            sPost += "&a1_revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_revrec_profile_id)));
-            sPost += "&a1_revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_revrec_client_defined_id)));
-            sPost += "&a1_stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_stmnt_email_list)));
-            sPost += "&a2_alt_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_alt_start_date)));
-            sPost += "&a2_client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_acct_id)));
-            sPost += "&a2_userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_userid)));
-            sPost += "&a2_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_status_cd)));
-            sPost += "&a2_master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_master_plan_no)));
-            sPost += "&a2_master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_master_plan_units)));
+            sPost += "&a1_bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_first_name))));
+            sPost += "&a1_bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_mi))));
+            sPost += "&a1_bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_last_name))));
+            sPost += "&a1_bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_company_name))));
+            sPost += "&a1_bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_address1))));
+            sPost += "&a1_bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_address2))));
+            sPost += "&a1_bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_address3))));
+            sPost += "&a1_bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_city))));
+            sPost += "&a1_bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_locality))));
+            sPost += "&a1_bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_state_prov))));
+            sPost += "&a1_bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_country))));
+            sPost += "&a1_bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_postal_cd))));
+            sPost += "&a1_bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_phone))));
+            sPost += "&a1_bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_phone_ext))));
+            sPost += "&a1_bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_cell_phone))));
+            sPost += "&a1_bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_work_phone))));
+            sPost += "&a1_bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_work_phone_ext))));
+            sPost += "&a1_bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_email))));
+            sPost += "&a1_bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_pay_method))));
+            sPost += "&a1_bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cc_number))));
+            sPost += "&a1_bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cc_expire_mm))));
+            sPost += "&a1_bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cc_expire_yyyy))));
+            sPost += "&a1_bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bank_acct_no))));
+            sPost += "&a1_bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bank_routing_no))));
+            sPost += "&a1_bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_bill_agreement_id))));
+            sPost += "&a1_bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_bkup_cvv))));
+            sPost += "&a1_seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_seq_func_group_id))));
+            sPost += "&a1_revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_revrec_profile_id))));
+            sPost += "&a1_revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_revrec_client_defined_id))));
+            sPost += "&a1_stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.a1_stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a1_stmnt_email_list))));
+            sPost += "&a2_alt_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_alt_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_alt_start_date))));
+            sPost += "&a2_client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_acct_id))));
+            sPost += "&a2_userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_userid))));
+            sPost += "&a2_status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_status_cd))));
+            sPost += "&a2_master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_master_plan_no))));
+            sPost += "&a2_master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_master_plan_units))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_supp_plans, "&a2_supp_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_supp_plan_units, "&a2_supp_plan_units");
-            sPost += "&a2_notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_notify_method)));
-            sPost += "&a2_promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_promo_cd)));
-            sPost += "&a2_password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_password)));
-            sPost += "&a2_secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_secret_question)));
-            sPost += "&a2_secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_secret_question_answer)));
-            sPost += "&a2_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_first_name)));
-            sPost += "&a2_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_mi)));
-            sPost += "&a2_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_last_name)));
-            sPost += "&a2_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_company_name)));
-            sPost += "&a2_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_address1)));
-            sPost += "&a2_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_address2)));
-            sPost += "&a2_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_city)));
-            sPost += "&a2_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_locality)));
-            sPost += "&a2_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_state_prov)));
-            sPost += "&a2_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_country)));
-            sPost += "&a2_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_postal_cd)));
-            sPost += "&a2_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_phone)));
-            sPost += "&a2_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_phone_ext)));
-            sPost += "&a2_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cell_phone)));
-            sPost += "&a2_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_work_phone)));
-            sPost += "&a2_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_work_phone_ext)));
-            sPost += "&a2_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_email)));
-            sPost += "&a2_birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_birthdate)));
-            sPost += "&a2_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_first_name)));
-            sPost += "&a2_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_mi)));
-            sPost += "&a2_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_last_name)));
-            sPost += "&a2_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_company_name)));
-            sPost += "&a2_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_address1)));
-            sPost += "&a2_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_address2)));
-            sPost += "&a2_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_city)));
-            sPost += "&a2_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_locality)));
-            sPost += "&a2_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_state_prov)));
-            sPost += "&a2_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_country)));
-            sPost += "&a2_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_postal_cd)));
-            sPost += "&a2_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_phone)));
-            sPost += "&a2_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_phone_ext)));
-            sPost += "&a2_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_cell_phone)));
-            sPost += "&a2_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_work_phone)));
-            sPost += "&a2_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_work_phone_ext)));
-            sPost += "&a2_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_email)));
-            sPost += "&a2_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_pay_method)));
-            sPost += "&a2_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cc_number)));
-            sPost += "&a2_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cc_expire_mm)));
-            sPost += "&a2_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cc_expire_yyyy)));
-            sPost += "&a2_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_acct_no)));
-            sPost += "&a2_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_routing_no)));
-            sPost += "&a2_resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_resp_level_cd)));
+            sPost += "&a2_notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_notify_method))));
+            sPost += "&a2_promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_promo_cd))));
+            sPost += "&a2_password=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_password))));
+            sPost += "&a2_secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_secret_question))));
+            sPost += "&a2_secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_secret_question_answer))));
+            sPost += "&a2_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_first_name))));
+            sPost += "&a2_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_mi))));
+            sPost += "&a2_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_last_name))));
+            sPost += "&a2_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_company_name))));
+            sPost += "&a2_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_address1))));
+            sPost += "&a2_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_address2))));
+            sPost += "&a2_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_city))));
+            sPost += "&a2_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_locality))));
+            sPost += "&a2_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_state_prov))));
+            sPost += "&a2_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_country))));
+            sPost += "&a2_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_postal_cd))));
+            sPost += "&a2_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_phone))));
+            sPost += "&a2_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_phone_ext))));
+            sPost += "&a2_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cell_phone))));
+            sPost += "&a2_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_work_phone))));
+            sPost += "&a2_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_work_phone_ext))));
+            sPost += "&a2_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_email))));
+            sPost += "&a2_birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_birthdate))));
+            sPost += "&a2_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_first_name))));
+            sPost += "&a2_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_mi))));
+            sPost += "&a2_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_last_name))));
+            sPost += "&a2_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_company_name))));
+            sPost += "&a2_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_address1))));
+            sPost += "&a2_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_address2))));
+            sPost += "&a2_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_city))));
+            sPost += "&a2_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_locality))));
+            sPost += "&a2_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_state_prov))));
+            sPost += "&a2_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_country))));
+            sPost += "&a2_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_postal_cd))));
+            sPost += "&a2_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_phone))));
+            sPost += "&a2_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_phone_ext))));
+            sPost += "&a2_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_cell_phone))));
+            sPost += "&a2_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_work_phone))));
+            sPost += "&a2_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_work_phone_ext))));
+            sPost += "&a2_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_email))));
+            sPost += "&a2_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_pay_method))));
+            sPost += "&a2_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cc_number))));
+            sPost += "&a2_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cc_expire_mm))));
+            sPost += "&a2_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cc_expire_yyyy))));
+            sPost += "&a2_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_acct_no))));
+            sPost += "&a2_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_routing_no))));
+            sPost += "&a2_resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_resp_level_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_functional_acct_groups, "&a2_functional_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_collections_acct_groups, "&a2_collections_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_supp_field_names, "&a2_supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_supp_field_values, "&a2_supp_field_values");
-            sPost += "&a2_test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_test_acct_ind)));
-            sPost += "&a2_status_until_alt_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_status_until_alt_start)));
-            sPost += "&a2_balance_forward=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_balance_forward)));
-            sPost += "&a2_alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_alt_bill_day)));
-            sPost += "&a2_do_full_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_do_full_invoicing)));
-            sPost += "&a2_do_prorated_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_do_prorated_invoicing)));
-            sPost += "&a2_master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_master_plan_alt_rate_sched_no)));
+            sPost += "&a2_test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_test_acct_ind))));
+            sPost += "&a2_status_until_alt_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_status_until_alt_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_status_until_alt_start))));
+            sPost += "&a2_balance_forward=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_balance_forward))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_balance_forward))));
+            sPost += "&a2_alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_alt_bill_day))));
+            sPost += "&a2_do_full_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_do_full_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_do_full_invoicing))));
+            sPost += "&a2_do_prorated_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_do_prorated_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_do_prorated_invoicing))));
+            sPost += "&a2_master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_master_plan_alt_rate_sched_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_supp_plan_alt_rate_sched_no, "&a2_supp_plan_alt_rate_sched_no");
-            sPost += "&a2_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_currency_cd)));
-            sPost += "&a2_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cvv)));
-            sPost += "&a2_taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_taxpayer_id)));
-            sPost += "&a2_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_agreement_id)));
-            sPost += "&a2_retroactive_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_retroactive_start_date)));
+            sPost += "&a2_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_currency_cd))));
+            sPost += "&a2_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cvv))));
+            sPost += "&a2_taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_taxpayer_id))));
+            sPost += "&a2_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_agreement_id))));
+            sPost += "&a2_retroactive_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_retroactive_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_retroactive_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_coupon_codes, "&a2_coupon_codes");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_new_acct_custom_rates, "&a2_new_acct_custom_rates");
-            sPost += "&a2_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_alt_msg_template_no)));
-            sPost += "&a2_seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_seq_func_group_no)));
+            sPost += "&a2_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_alt_msg_template_no))));
+            sPost += "&a2_seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_seq_func_group_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_new_acct_plan_contracts, "&a2_new_acct_plan_contracts");
-            sPost += "&a2_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_address3)));
-            sPost += "&a2_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_address3)));
+            sPost += "&a2_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_address3))));
+            sPost += "&a2_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_usage_accumulation_config, "&a2_usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_enable_usage_pooling_plan_no, "&a2_enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_client_func_acct_group_ids, "&a2_client_func_acct_group_ids");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_client_coll_acct_group_ids, "&a2_client_coll_acct_group_ids");
-            sPost += "&a2_track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_track_data1)));
-            sPost += "&a2_track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_track_data2)));
-            sPost += "&a2_tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_tax_exemption_level)));
-            sPost += "&a2_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cn_alt_msg_template_no)));
-            sPost += "&a2_invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_invoice_approval_required)));
-            sPost += "&a2_create_session=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_create_session)));
-            sPost += "&a2_client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_master_plan_id)));
+            sPost += "&a2_track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_track_data1))));
+            sPost += "&a2_track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_track_data2))));
+            sPost += "&a2_tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_tax_exemption_level))));
+            sPost += "&a2_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_cn_alt_msg_template_no))));
+            sPost += "&a2_invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_invoice_approval_required))));
+            sPost += "&a2_create_session=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_create_session))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_create_session))));
+            sPost += "&a2_client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_master_plan_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_client_supp_plan_ids, "&a2_client_supp_plan_ids");
-            sPost += "&a2_client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_mp_alt_rate_sched_id)));
+            sPost += "&a2_client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_mp_alt_rate_sched_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_client_sp_alt_rate_sched_ids, "&a2_client_sp_alt_rate_sched_ids");
-            sPost += "&a2_client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_alt_msg_template_id)));
-            sPost += "&a2_client_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_cn_alt_msg_template_no)));
-            sPost += "&a2_iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_iban)));
-            sPost += "&a2_bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_check_digit)));
-            sPost += "&a2_bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_swift_cd)));
-            sPost += "&a2_bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_country_cd)));
-            sPost += "&a2_mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_mandate_id)));
-            sPost += "&a2_bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_id_cd)));
-            sPost += "&a2_bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_branch_cd)));
+            sPost += "&a2_client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_alt_msg_template_id))));
+            sPost += "&a2_client_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_client_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_client_cn_alt_msg_template_no))));
+            sPost += "&a2_iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_iban))));
+            sPost += "&a2_bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_check_digit))));
+            sPost += "&a2_bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_swift_cd))));
+            sPost += "&a2_bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_country_cd))));
+            sPost += "&a2_mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_mandate_id))));
+            sPost += "&a2_bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_id_cd))));
+            sPost += "&a2_bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bank_branch_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a2_surcharge_no, "&a2_surcharge_no");
-            sPost += "&a2_bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_first_name)));
-            sPost += "&a2_bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_mi)));
-            sPost += "&a2_bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_last_name)));
-            sPost += "&a2_bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_company_name)));
-            sPost += "&a2_bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_address1)));
-            sPost += "&a2_bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_address2)));
-            sPost += "&a2_bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_address3)));
-            sPost += "&a2_bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_city)));
-            sPost += "&a2_bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_locality)));
-            sPost += "&a2_bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_state_prov)));
-            sPost += "&a2_bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_country)));
-            sPost += "&a2_bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_postal_cd)));
-            sPost += "&a2_bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_phone)));
-            sPost += "&a2_bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_phone_ext)));
-            sPost += "&a2_bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_cell_phone)));
-            sPost += "&a2_bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_work_phone)));
-            sPost += "&a2_bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_work_phone_ext)));
-            sPost += "&a2_bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_email)));
-            sPost += "&a2_bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_pay_method)));
-            sPost += "&a2_bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cc_number)));
-            sPost += "&a2_bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cc_expire_mm)));
-            sPost += "&a2_bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cc_expire_yyyy)));
-            sPost += "&a2_bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bank_acct_no)));
-            sPost += "&a2_bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bank_routing_no)));
-            sPost += "&a2_bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_agreement_id)));
-            sPost += "&a2_bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cvv)));
-            sPost += "&a2_seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_seq_func_group_id)));
-            sPost += "&a2_revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_revrec_profile_id)));
-            sPost += "&a2_revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_revrec_client_defined_id)));
-            sPost += "&a2_stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_stmnt_email_list)));
-            sPost += "&a3_alt_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_alt_start_date)));
-            sPost += "&a3_client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_acct_id)));
-            sPost += "&a3_userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_userid)));
-            sPost += "&a3_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_status_cd)));
-            sPost += "&a3_master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_master_plan_no)));
-            sPost += "&a3_master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_master_plan_units)));
+            sPost += "&a2_bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_first_name))));
+            sPost += "&a2_bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_mi))));
+            sPost += "&a2_bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_last_name))));
+            sPost += "&a2_bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_company_name))));
+            sPost += "&a2_bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_address1))));
+            sPost += "&a2_bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_address2))));
+            sPost += "&a2_bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_address3))));
+            sPost += "&a2_bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_city))));
+            sPost += "&a2_bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_locality))));
+            sPost += "&a2_bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_state_prov))));
+            sPost += "&a2_bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_country))));
+            sPost += "&a2_bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_postal_cd))));
+            sPost += "&a2_bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_phone))));
+            sPost += "&a2_bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_phone_ext))));
+            sPost += "&a2_bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_cell_phone))));
+            sPost += "&a2_bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_work_phone))));
+            sPost += "&a2_bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_work_phone_ext))));
+            sPost += "&a2_bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_email))));
+            sPost += "&a2_bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_pay_method))));
+            sPost += "&a2_bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cc_number))));
+            sPost += "&a2_bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cc_expire_mm))));
+            sPost += "&a2_bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cc_expire_yyyy))));
+            sPost += "&a2_bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bank_acct_no))));
+            sPost += "&a2_bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bank_routing_no))));
+            sPost += "&a2_bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_bill_agreement_id))));
+            sPost += "&a2_bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_bkup_cvv))));
+            sPost += "&a2_seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_seq_func_group_id))));
+            sPost += "&a2_revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_revrec_profile_id))));
+            sPost += "&a2_revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_revrec_client_defined_id))));
+            sPost += "&a2_stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.a2_stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a2_stmnt_email_list))));
+            sPost += "&a3_alt_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_alt_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_alt_start_date))));
+            sPost += "&a3_client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_acct_id))));
+            sPost += "&a3_userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_userid))));
+            sPost += "&a3_status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_status_cd))));
+            sPost += "&a3_master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_master_plan_no))));
+            sPost += "&a3_master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_master_plan_units))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_supp_plans, "&a3_supp_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_supp_plan_units, "&a3_supp_plan_units");
-            sPost += "&a3_notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_notify_method)));
-            sPost += "&a3_promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_promo_cd)));
-            sPost += "&a3_password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_password)));
-            sPost += "&a3_secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_secret_question)));
-            sPost += "&a3_secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_secret_question_answer)));
-            sPost += "&a3_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_first_name)));
-            sPost += "&a3_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_mi)));
-            sPost += "&a3_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_last_name)));
-            sPost += "&a3_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_company_name)));
-            sPost += "&a3_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_address1)));
-            sPost += "&a3_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_address2)));
-            sPost += "&a3_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_city)));
-            sPost += "&a3_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_locality)));
-            sPost += "&a3_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_state_prov)));
-            sPost += "&a3_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_country)));
-            sPost += "&a3_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_postal_cd)));
-            sPost += "&a3_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_phone)));
-            sPost += "&a3_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_phone_ext)));
-            sPost += "&a3_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cell_phone)));
-            sPost += "&a3_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_work_phone)));
-            sPost += "&a3_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_work_phone_ext)));
-            sPost += "&a3_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_email)));
-            sPost += "&a3_birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_birthdate)));
-            sPost += "&a3_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_first_name)));
-            sPost += "&a3_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_mi)));
-            sPost += "&a3_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_last_name)));
-            sPost += "&a3_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_company_name)));
-            sPost += "&a3_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_address1)));
-            sPost += "&a3_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_address2)));
-            sPost += "&a3_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_city)));
-            sPost += "&a3_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_locality)));
-            sPost += "&a3_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_state_prov)));
-            sPost += "&a3_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_country)));
-            sPost += "&a3_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_postal_cd)));
-            sPost += "&a3_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_phone)));
-            sPost += "&a3_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_phone_ext)));
-            sPost += "&a3_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_cell_phone)));
-            sPost += "&a3_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_work_phone)));
-            sPost += "&a3_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_work_phone_ext)));
-            sPost += "&a3_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_email)));
-            sPost += "&a3_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_pay_method)));
-            sPost += "&a3_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cc_number)));
-            sPost += "&a3_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cc_expire_mm)));
-            sPost += "&a3_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cc_expire_yyyy)));
-            sPost += "&a3_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_acct_no)));
-            sPost += "&a3_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_routing_no)));
-            sPost += "&a3_resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_resp_level_cd)));
+            sPost += "&a3_notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_notify_method))));
+            sPost += "&a3_promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_promo_cd))));
+            sPost += "&a3_password=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_password))));
+            sPost += "&a3_secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_secret_question))));
+            sPost += "&a3_secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_secret_question_answer))));
+            sPost += "&a3_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_first_name))));
+            sPost += "&a3_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_mi))));
+            sPost += "&a3_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_last_name))));
+            sPost += "&a3_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_company_name))));
+            sPost += "&a3_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_address1))));
+            sPost += "&a3_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_address2))));
+            sPost += "&a3_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_city))));
+            sPost += "&a3_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_locality))));
+            sPost += "&a3_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_state_prov))));
+            sPost += "&a3_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_country))));
+            sPost += "&a3_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_postal_cd))));
+            sPost += "&a3_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_phone))));
+            sPost += "&a3_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_phone_ext))));
+            sPost += "&a3_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cell_phone))));
+            sPost += "&a3_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_work_phone))));
+            sPost += "&a3_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_work_phone_ext))));
+            sPost += "&a3_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_email))));
+            sPost += "&a3_birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_birthdate))));
+            sPost += "&a3_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_first_name))));
+            sPost += "&a3_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_mi))));
+            sPost += "&a3_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_last_name))));
+            sPost += "&a3_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_company_name))));
+            sPost += "&a3_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_address1))));
+            sPost += "&a3_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_address2))));
+            sPost += "&a3_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_city))));
+            sPost += "&a3_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_locality))));
+            sPost += "&a3_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_state_prov))));
+            sPost += "&a3_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_country))));
+            sPost += "&a3_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_postal_cd))));
+            sPost += "&a3_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_phone))));
+            sPost += "&a3_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_phone_ext))));
+            sPost += "&a3_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_cell_phone))));
+            sPost += "&a3_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_work_phone))));
+            sPost += "&a3_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_work_phone_ext))));
+            sPost += "&a3_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_email))));
+            sPost += "&a3_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_pay_method))));
+            sPost += "&a3_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cc_number))));
+            sPost += "&a3_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cc_expire_mm))));
+            sPost += "&a3_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cc_expire_yyyy))));
+            sPost += "&a3_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_acct_no))));
+            sPost += "&a3_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_routing_no))));
+            sPost += "&a3_resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_resp_level_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_functional_acct_groups, "&a3_functional_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_collections_acct_groups, "&a3_collections_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_supp_field_names, "&a3_supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_supp_field_values, "&a3_supp_field_values");
-            sPost += "&a3_test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_test_acct_ind)));
-            sPost += "&a3_status_until_alt_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_status_until_alt_start)));
-            sPost += "&a3_balance_forward=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_balance_forward)));
-            sPost += "&a3_alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_alt_bill_day)));
-            sPost += "&a3_do_full_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_do_full_invoicing)));
-            sPost += "&a3_do_prorated_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_do_prorated_invoicing)));
-            sPost += "&a3_master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_master_plan_alt_rate_sched_no)));
+            sPost += "&a3_test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_test_acct_ind))));
+            sPost += "&a3_status_until_alt_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_status_until_alt_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_status_until_alt_start))));
+            sPost += "&a3_balance_forward=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_balance_forward))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_balance_forward))));
+            sPost += "&a3_alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_alt_bill_day))));
+            sPost += "&a3_do_full_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_do_full_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_do_full_invoicing))));
+            sPost += "&a3_do_prorated_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_do_prorated_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_do_prorated_invoicing))));
+            sPost += "&a3_master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_master_plan_alt_rate_sched_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_supp_plan_alt_rate_sched_no, "&a3_supp_plan_alt_rate_sched_no");
-            sPost += "&a3_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_currency_cd)));
-            sPost += "&a3_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cvv)));
-            sPost += "&a3_taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_taxpayer_id)));
-            sPost += "&a3_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_agreement_id)));
-            sPost += "&a3_retroactive_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_retroactive_start_date)));
+            sPost += "&a3_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_currency_cd))));
+            sPost += "&a3_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cvv))));
+            sPost += "&a3_taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_taxpayer_id))));
+            sPost += "&a3_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_agreement_id))));
+            sPost += "&a3_retroactive_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_retroactive_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_retroactive_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_coupon_codes, "&a3_coupon_codes");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_new_acct_custom_rates, "&a3_new_acct_custom_rates");
-            sPost += "&a3_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_alt_msg_template_no)));
-            sPost += "&a3_seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_seq_func_group_no)));
+            sPost += "&a3_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_alt_msg_template_no))));
+            sPost += "&a3_seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_seq_func_group_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_new_acct_plan_contracts, "&a3_new_acct_plan_contracts");
-            sPost += "&a3_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_address3)));
-            sPost += "&a3_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_address3)));
+            sPost += "&a3_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_address3))));
+            sPost += "&a3_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_usage_accumulation_config, "&a3_usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_enable_usage_pooling_plan_no, "&a3_enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_client_func_acct_group_ids, "&a3_client_func_acct_group_ids");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_client_coll_acct_group_ids, "&a3_client_coll_acct_group_ids");
-            sPost += "&a3_track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_track_data1)));
-            sPost += "&a3_track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_track_data2)));
-            sPost += "&a3_tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_tax_exemption_level)));
-            sPost += "&a3_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cn_alt_msg_template_no)));
-            sPost += "&a3_invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_invoice_approval_required)));
-            sPost += "&a3_create_session=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_create_session)));
-            sPost += "&a3_client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_master_plan_id)));
+            sPost += "&a3_track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_track_data1))));
+            sPost += "&a3_track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_track_data2))));
+            sPost += "&a3_tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_tax_exemption_level))));
+            sPost += "&a3_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_cn_alt_msg_template_no))));
+            sPost += "&a3_invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_invoice_approval_required))));
+            sPost += "&a3_create_session=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_create_session))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_create_session))));
+            sPost += "&a3_client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_master_plan_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_client_supp_plan_ids, "&a3_client_supp_plan_ids");
-            sPost += "&a3_client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_mp_alt_rate_sched_id)));
+            sPost += "&a3_client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_mp_alt_rate_sched_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_client_sp_alt_rate_sched_ids, "&a3_client_sp_alt_rate_sched_ids");
-            sPost += "&a3_client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_alt_msg_template_id)));
-            sPost += "&a3_client_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_cn_alt_msg_template_no)));
-            sPost += "&a3_iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_iban)));
-            sPost += "&a3_bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_check_digit)));
-            sPost += "&a3_bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_swift_cd)));
-            sPost += "&a3_bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_country_cd)));
-            sPost += "&a3_mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_mandate_id)));
-            sPost += "&a3_bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_id_cd)));
-            sPost += "&a3_bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_branch_cd)));
+            sPost += "&a3_client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_alt_msg_template_id))));
+            sPost += "&a3_client_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_client_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_client_cn_alt_msg_template_no))));
+            sPost += "&a3_iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_iban))));
+            sPost += "&a3_bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_check_digit))));
+            sPost += "&a3_bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_swift_cd))));
+            sPost += "&a3_bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_country_cd))));
+            sPost += "&a3_mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_mandate_id))));
+            sPost += "&a3_bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_id_cd))));
+            sPost += "&a3_bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bank_branch_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a3_surcharge_no, "&a3_surcharge_no");
-            sPost += "&a3_bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_first_name)));
-            sPost += "&a3_bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_mi)));
-            sPost += "&a3_bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_last_name)));
-            sPost += "&a3_bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_company_name)));
-            sPost += "&a3_bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_address1)));
-            sPost += "&a3_bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_address2)));
-            sPost += "&a3_bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_address3)));
-            sPost += "&a3_bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_city)));
-            sPost += "&a3_bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_locality)));
-            sPost += "&a3_bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_state_prov)));
-            sPost += "&a3_bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_country)));
-            sPost += "&a3_bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_postal_cd)));
-            sPost += "&a3_bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_phone)));
-            sPost += "&a3_bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_phone_ext)));
-            sPost += "&a3_bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_cell_phone)));
-            sPost += "&a3_bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_work_phone)));
-            sPost += "&a3_bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_work_phone_ext)));
-            sPost += "&a3_bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_email)));
-            sPost += "&a3_bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_pay_method)));
-            sPost += "&a3_bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cc_number)));
-            sPost += "&a3_bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cc_expire_mm)));
-            sPost += "&a3_bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cc_expire_yyyy)));
-            sPost += "&a3_bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bank_acct_no)));
-            sPost += "&a3_bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bank_routing_no)));
-            sPost += "&a3_bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_agreement_id)));
-            sPost += "&a3_bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cvv)));
-            sPost += "&a3_seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_seq_func_group_id)));
-            sPost += "&a3_revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_revrec_profile_id)));
-            sPost += "&a3_revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_revrec_client_defined_id)));
-            sPost += "&a3_stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_stmnt_email_list)));
-            sPost += "&a4_alt_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_alt_start_date)));
-            sPost += "&a4_client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_acct_id)));
-            sPost += "&a4_userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_userid)));
-            sPost += "&a4_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_status_cd)));
-            sPost += "&a4_master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_master_plan_no)));
-            sPost += "&a4_master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_master_plan_units)));
+            sPost += "&a3_bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_first_name))));
+            sPost += "&a3_bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_mi))));
+            sPost += "&a3_bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_last_name))));
+            sPost += "&a3_bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_company_name))));
+            sPost += "&a3_bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_address1))));
+            sPost += "&a3_bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_address2))));
+            sPost += "&a3_bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_address3))));
+            sPost += "&a3_bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_city))));
+            sPost += "&a3_bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_locality))));
+            sPost += "&a3_bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_state_prov))));
+            sPost += "&a3_bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_country))));
+            sPost += "&a3_bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_postal_cd))));
+            sPost += "&a3_bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_phone))));
+            sPost += "&a3_bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_phone_ext))));
+            sPost += "&a3_bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_cell_phone))));
+            sPost += "&a3_bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_work_phone))));
+            sPost += "&a3_bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_work_phone_ext))));
+            sPost += "&a3_bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_email))));
+            sPost += "&a3_bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_pay_method))));
+            sPost += "&a3_bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cc_number))));
+            sPost += "&a3_bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cc_expire_mm))));
+            sPost += "&a3_bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cc_expire_yyyy))));
+            sPost += "&a3_bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bank_acct_no))));
+            sPost += "&a3_bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bank_routing_no))));
+            sPost += "&a3_bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_bill_agreement_id))));
+            sPost += "&a3_bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_bkup_cvv))));
+            sPost += "&a3_seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_seq_func_group_id))));
+            sPost += "&a3_revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_revrec_profile_id))));
+            sPost += "&a3_revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_revrec_client_defined_id))));
+            sPost += "&a3_stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.a3_stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a3_stmnt_email_list))));
+            sPost += "&a4_alt_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_alt_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_alt_start_date))));
+            sPost += "&a4_client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_acct_id))));
+            sPost += "&a4_userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_userid))));
+            sPost += "&a4_status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_status_cd))));
+            sPost += "&a4_master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_master_plan_no))));
+            sPost += "&a4_master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_master_plan_units))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_supp_plans, "&a4_supp_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_supp_plan_units, "&a4_supp_plan_units");
-            sPost += "&a4_notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_notify_method)));
-            sPost += "&a4_promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_promo_cd)));
-            sPost += "&a4_password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_password)));
-            sPost += "&a4_secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_secret_question)));
-            sPost += "&a4_secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_secret_question_answer)));
-            sPost += "&a4_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_first_name)));
-            sPost += "&a4_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_mi)));
-            sPost += "&a4_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_last_name)));
-            sPost += "&a4_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_company_name)));
-            sPost += "&a4_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_address1)));
-            sPost += "&a4_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_address2)));
-            sPost += "&a4_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_city)));
-            sPost += "&a4_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_locality)));
-            sPost += "&a4_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_state_prov)));
-            sPost += "&a4_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_country)));
-            sPost += "&a4_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_postal_cd)));
-            sPost += "&a4_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_phone)));
-            sPost += "&a4_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_phone_ext)));
-            sPost += "&a4_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cell_phone)));
-            sPost += "&a4_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_work_phone)));
-            sPost += "&a4_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_work_phone_ext)));
-            sPost += "&a4_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_email)));
-            sPost += "&a4_birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_birthdate)));
-            sPost += "&a4_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_first_name)));
-            sPost += "&a4_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_mi)));
-            sPost += "&a4_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_last_name)));
-            sPost += "&a4_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_company_name)));
-            sPost += "&a4_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_address1)));
-            sPost += "&a4_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_address2)));
-            sPost += "&a4_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_city)));
-            sPost += "&a4_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_locality)));
-            sPost += "&a4_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_state_prov)));
-            sPost += "&a4_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_country)));
-            sPost += "&a4_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_postal_cd)));
-            sPost += "&a4_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_phone)));
-            sPost += "&a4_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_phone_ext)));
-            sPost += "&a4_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_cell_phone)));
-            sPost += "&a4_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_work_phone)));
-            sPost += "&a4_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_work_phone_ext)));
-            sPost += "&a4_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_email)));
-            sPost += "&a4_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_pay_method)));
-            sPost += "&a4_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cc_number)));
-            sPost += "&a4_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cc_expire_mm)));
-            sPost += "&a4_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cc_expire_yyyy)));
-            sPost += "&a4_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_acct_no)));
-            sPost += "&a4_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_routing_no)));
-            sPost += "&a4_resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_resp_level_cd)));
+            sPost += "&a4_notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_notify_method))));
+            sPost += "&a4_promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_promo_cd))));
+            sPost += "&a4_password=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_password))));
+            sPost += "&a4_secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_secret_question))));
+            sPost += "&a4_secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_secret_question_answer))));
+            sPost += "&a4_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_first_name))));
+            sPost += "&a4_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_mi))));
+            sPost += "&a4_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_last_name))));
+            sPost += "&a4_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_company_name))));
+            sPost += "&a4_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_address1))));
+            sPost += "&a4_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_address2))));
+            sPost += "&a4_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_city))));
+            sPost += "&a4_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_locality))));
+            sPost += "&a4_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_state_prov))));
+            sPost += "&a4_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_country))));
+            sPost += "&a4_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_postal_cd))));
+            sPost += "&a4_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_phone))));
+            sPost += "&a4_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_phone_ext))));
+            sPost += "&a4_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cell_phone))));
+            sPost += "&a4_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_work_phone))));
+            sPost += "&a4_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_work_phone_ext))));
+            sPost += "&a4_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_email))));
+            sPost += "&a4_birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_birthdate))));
+            sPost += "&a4_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_first_name))));
+            sPost += "&a4_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_mi))));
+            sPost += "&a4_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_last_name))));
+            sPost += "&a4_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_company_name))));
+            sPost += "&a4_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_address1))));
+            sPost += "&a4_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_address2))));
+            sPost += "&a4_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_city))));
+            sPost += "&a4_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_locality))));
+            sPost += "&a4_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_state_prov))));
+            sPost += "&a4_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_country))));
+            sPost += "&a4_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_postal_cd))));
+            sPost += "&a4_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_phone))));
+            sPost += "&a4_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_phone_ext))));
+            sPost += "&a4_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_cell_phone))));
+            sPost += "&a4_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_work_phone))));
+            sPost += "&a4_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_work_phone_ext))));
+            sPost += "&a4_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_email))));
+            sPost += "&a4_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_pay_method))));
+            sPost += "&a4_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cc_number))));
+            sPost += "&a4_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cc_expire_mm))));
+            sPost += "&a4_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cc_expire_yyyy))));
+            sPost += "&a4_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_acct_no))));
+            sPost += "&a4_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_routing_no))));
+            sPost += "&a4_resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_resp_level_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_functional_acct_groups, "&a4_functional_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_collections_acct_groups, "&a4_collections_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_supp_field_names, "&a4_supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_supp_field_values, "&a4_supp_field_values");
-            sPost += "&a4_test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_test_acct_ind)));
-            sPost += "&a4_status_until_alt_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_status_until_alt_start)));
-            sPost += "&a4_balance_forward=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_balance_forward)));
-            sPost += "&a4_alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_alt_bill_day)));
-            sPost += "&a4_do_full_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_do_full_invoicing)));
-            sPost += "&a4_do_prorated_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_do_prorated_invoicing)));
-            sPost += "&a4_master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_master_plan_alt_rate_sched_no)));
+            sPost += "&a4_test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_test_acct_ind))));
+            sPost += "&a4_status_until_alt_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_status_until_alt_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_status_until_alt_start))));
+            sPost += "&a4_balance_forward=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_balance_forward))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_balance_forward))));
+            sPost += "&a4_alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_alt_bill_day))));
+            sPost += "&a4_do_full_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_do_full_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_do_full_invoicing))));
+            sPost += "&a4_do_prorated_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_do_prorated_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_do_prorated_invoicing))));
+            sPost += "&a4_master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_master_plan_alt_rate_sched_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_supp_plan_alt_rate_sched_no, "&a4_supp_plan_alt_rate_sched_no");
-            sPost += "&a4_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_currency_cd)));
-            sPost += "&a4_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cvv)));
-            sPost += "&a4_taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_taxpayer_id)));
-            sPost += "&a4_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_agreement_id)));
-            sPost += "&a4_retroactive_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_retroactive_start_date)));
+            sPost += "&a4_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_currency_cd))));
+            sPost += "&a4_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cvv))));
+            sPost += "&a4_taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_taxpayer_id))));
+            sPost += "&a4_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_agreement_id))));
+            sPost += "&a4_retroactive_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_retroactive_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_retroactive_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_coupon_codes, "&a4_coupon_codes");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_new_acct_custom_rates, "&a4_new_acct_custom_rates");
-            sPost += "&a4_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_alt_msg_template_no)));
-            sPost += "&a4_seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_seq_func_group_no)));
+            sPost += "&a4_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_alt_msg_template_no))));
+            sPost += "&a4_seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_seq_func_group_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_new_acct_plan_contracts, "&a4_new_acct_plan_contracts");
-            sPost += "&a4_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_address3)));
-            sPost += "&a4_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_address3)));
+            sPost += "&a4_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_address3))));
+            sPost += "&a4_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_usage_accumulation_config, "&a4_usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_enable_usage_pooling_plan_no, "&a4_enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_client_func_acct_group_ids, "&a4_client_func_acct_group_ids");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_client_coll_acct_group_ids, "&a4_client_coll_acct_group_ids");
-            sPost += "&a4_track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_track_data1)));
-            sPost += "&a4_track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_track_data2)));
-            sPost += "&a4_tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_tax_exemption_level)));
-            sPost += "&a4_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cn_alt_msg_template_no)));
-            sPost += "&a4_invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_invoice_approval_required)));
-            sPost += "&a4_create_session=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_create_session)));
-            sPost += "&a4_client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_master_plan_id)));
+            sPost += "&a4_track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_track_data1))));
+            sPost += "&a4_track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_track_data2))));
+            sPost += "&a4_tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_tax_exemption_level))));
+            sPost += "&a4_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_cn_alt_msg_template_no))));
+            sPost += "&a4_invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_invoice_approval_required))));
+            sPost += "&a4_create_session=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_create_session))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_create_session))));
+            sPost += "&a4_client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_master_plan_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_client_supp_plan_ids, "&a4_client_supp_plan_ids");
-            sPost += "&a4_client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_mp_alt_rate_sched_id)));
+            sPost += "&a4_client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_mp_alt_rate_sched_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_client_sp_alt_rate_sched_ids, "&a4_client_sp_alt_rate_sched_ids");
-            sPost += "&a4_client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_alt_msg_template_id)));
-            sPost += "&a4_client_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_cn_alt_msg_template_no)));
-            sPost += "&a4_iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_iban)));
-            sPost += "&a4_bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_check_digit)));
-            sPost += "&a4_bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_swift_cd)));
-            sPost += "&a4_bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_country_cd)));
-            sPost += "&a4_mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_mandate_id)));
-            sPost += "&a4_bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_id_cd)));
-            sPost += "&a4_bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_branch_cd)));
+            sPost += "&a4_client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_alt_msg_template_id))));
+            sPost += "&a4_client_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_client_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_client_cn_alt_msg_template_no))));
+            sPost += "&a4_iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_iban))));
+            sPost += "&a4_bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_check_digit))));
+            sPost += "&a4_bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_swift_cd))));
+            sPost += "&a4_bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_country_cd))));
+            sPost += "&a4_mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_mandate_id))));
+            sPost += "&a4_bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_id_cd))));
+            sPost += "&a4_bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bank_branch_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a4_surcharge_no, "&a4_surcharge_no");
-            sPost += "&a4_bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_first_name)));
-            sPost += "&a4_bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_mi)));
-            sPost += "&a4_bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_last_name)));
-            sPost += "&a4_bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_company_name)));
-            sPost += "&a4_bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_address1)));
-            sPost += "&a4_bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_address2)));
-            sPost += "&a4_bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_address3)));
-            sPost += "&a4_bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_city)));
-            sPost += "&a4_bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_locality)));
-            sPost += "&a4_bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_state_prov)));
-            sPost += "&a4_bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_country)));
-            sPost += "&a4_bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_postal_cd)));
-            sPost += "&a4_bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_phone)));
-            sPost += "&a4_bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_phone_ext)));
-            sPost += "&a4_bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_cell_phone)));
-            sPost += "&a4_bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_work_phone)));
-            sPost += "&a4_bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_work_phone_ext)));
-            sPost += "&a4_bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_email)));
-            sPost += "&a4_bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_pay_method)));
-            sPost += "&a4_bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cc_number)));
-            sPost += "&a4_bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cc_expire_mm)));
-            sPost += "&a4_bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cc_expire_yyyy)));
-            sPost += "&a4_bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bank_acct_no)));
-            sPost += "&a4_bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bank_routing_no)));
-            sPost += "&a4_bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_agreement_id)));
-            sPost += "&a4_bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cvv)));
-            sPost += "&a4_seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_seq_func_group_id)));
-            sPost += "&a4_revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_revrec_profile_id)));
-            sPost += "&a4_revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_revrec_client_defined_id)));
-            sPost += "&a4_stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_stmnt_email_list)));
-            sPost += "&a5_alt_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_alt_start_date)));
-            sPost += "&a5_client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_acct_id)));
-            sPost += "&a5_userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_userid)));
-            sPost += "&a5_status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_status_cd)));
-            sPost += "&a5_master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_master_plan_no)));
-            sPost += "&a5_master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_master_plan_units)));
+            sPost += "&a4_bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_first_name))));
+            sPost += "&a4_bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_mi))));
+            sPost += "&a4_bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_last_name))));
+            sPost += "&a4_bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_company_name))));
+            sPost += "&a4_bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_address1))));
+            sPost += "&a4_bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_address2))));
+            sPost += "&a4_bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_address3))));
+            sPost += "&a4_bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_city))));
+            sPost += "&a4_bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_locality))));
+            sPost += "&a4_bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_state_prov))));
+            sPost += "&a4_bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_country))));
+            sPost += "&a4_bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_postal_cd))));
+            sPost += "&a4_bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_phone))));
+            sPost += "&a4_bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_phone_ext))));
+            sPost += "&a4_bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_cell_phone))));
+            sPost += "&a4_bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_work_phone))));
+            sPost += "&a4_bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_work_phone_ext))));
+            sPost += "&a4_bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_email))));
+            sPost += "&a4_bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_pay_method))));
+            sPost += "&a4_bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cc_number))));
+            sPost += "&a4_bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cc_expire_mm))));
+            sPost += "&a4_bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cc_expire_yyyy))));
+            sPost += "&a4_bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bank_acct_no))));
+            sPost += "&a4_bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bank_routing_no))));
+            sPost += "&a4_bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_bill_agreement_id))));
+            sPost += "&a4_bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_bkup_cvv))));
+            sPost += "&a4_seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_seq_func_group_id))));
+            sPost += "&a4_revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_revrec_profile_id))));
+            sPost += "&a4_revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_revrec_client_defined_id))));
+            sPost += "&a4_stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.a4_stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a4_stmnt_email_list))));
+            sPost += "&a5_alt_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_alt_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_alt_start_date))));
+            sPost += "&a5_client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_acct_id))));
+            sPost += "&a5_userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_userid))));
+            sPost += "&a5_status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_status_cd))));
+            sPost += "&a5_master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_master_plan_no))));
+            sPost += "&a5_master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_master_plan_units))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_supp_plans, "&a5_supp_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_supp_plan_units, "&a5_supp_plan_units");
-            sPost += "&a5_notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_notify_method)));
-            sPost += "&a5_promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_promo_cd)));
-            sPost += "&a5_password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_password)));
-            sPost += "&a5_secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_secret_question)));
-            sPost += "&a5_secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_secret_question_answer)));
-            sPost += "&a5_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_first_name)));
-            sPost += "&a5_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_mi)));
-            sPost += "&a5_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_last_name)));
-            sPost += "&a5_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_company_name)));
-            sPost += "&a5_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_address1)));
-            sPost += "&a5_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_address2)));
-            sPost += "&a5_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_city)));
-            sPost += "&a5_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_locality)));
-            sPost += "&a5_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_state_prov)));
-            sPost += "&a5_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_country)));
-            sPost += "&a5_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_postal_cd)));
-            sPost += "&a5_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_phone)));
-            sPost += "&a5_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_phone_ext)));
-            sPost += "&a5_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cell_phone)));
-            sPost += "&a5_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_work_phone)));
-            sPost += "&a5_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_work_phone_ext)));
-            sPost += "&a5_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_email)));
-            sPost += "&a5_birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_birthdate)));
-            sPost += "&a5_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_first_name)));
-            sPost += "&a5_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_mi)));
-            sPost += "&a5_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_last_name)));
-            sPost += "&a5_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_company_name)));
-            sPost += "&a5_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_address1)));
-            sPost += "&a5_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_address2)));
-            sPost += "&a5_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_city)));
-            sPost += "&a5_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_locality)));
-            sPost += "&a5_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_state_prov)));
-            sPost += "&a5_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_country)));
-            sPost += "&a5_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_postal_cd)));
-            sPost += "&a5_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_phone)));
-            sPost += "&a5_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_phone_ext)));
-            sPost += "&a5_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_cell_phone)));
-            sPost += "&a5_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_work_phone)));
-            sPost += "&a5_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_work_phone_ext)));
-            sPost += "&a5_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_email)));
-            sPost += "&a5_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_pay_method)));
-            sPost += "&a5_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cc_number)));
-            sPost += "&a5_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cc_expire_mm)));
-            sPost += "&a5_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cc_expire_yyyy)));
-            sPost += "&a5_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_acct_no)));
-            sPost += "&a5_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_routing_no)));
-            sPost += "&a5_resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_resp_level_cd)));
+            sPost += "&a5_notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_notify_method))));
+            sPost += "&a5_promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_promo_cd))));
+            sPost += "&a5_password=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_password))));
+            sPost += "&a5_secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_secret_question))));
+            sPost += "&a5_secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_secret_question_answer))));
+            sPost += "&a5_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_first_name))));
+            sPost += "&a5_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_mi))));
+            sPost += "&a5_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_last_name))));
+            sPost += "&a5_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_company_name))));
+            sPost += "&a5_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_address1))));
+            sPost += "&a5_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_address2))));
+            sPost += "&a5_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_city))));
+            sPost += "&a5_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_locality))));
+            sPost += "&a5_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_state_prov))));
+            sPost += "&a5_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_country))));
+            sPost += "&a5_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_postal_cd))));
+            sPost += "&a5_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_phone))));
+            sPost += "&a5_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_phone_ext))));
+            sPost += "&a5_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cell_phone))));
+            sPost += "&a5_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_work_phone))));
+            sPost += "&a5_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_work_phone_ext))));
+            sPost += "&a5_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_email))));
+            sPost += "&a5_birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_birthdate))));
+            sPost += "&a5_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_first_name))));
+            sPost += "&a5_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_mi))));
+            sPost += "&a5_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_last_name))));
+            sPost += "&a5_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_company_name))));
+            sPost += "&a5_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_address1))));
+            sPost += "&a5_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_address2))));
+            sPost += "&a5_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_city))));
+            sPost += "&a5_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_locality))));
+            sPost += "&a5_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_state_prov))));
+            sPost += "&a5_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_country))));
+            sPost += "&a5_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_postal_cd))));
+            sPost += "&a5_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_phone))));
+            sPost += "&a5_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_phone_ext))));
+            sPost += "&a5_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_cell_phone))));
+            sPost += "&a5_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_work_phone))));
+            sPost += "&a5_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_work_phone_ext))));
+            sPost += "&a5_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_email))));
+            sPost += "&a5_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_pay_method))));
+            sPost += "&a5_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cc_number))));
+            sPost += "&a5_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cc_expire_mm))));
+            sPost += "&a5_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cc_expire_yyyy))));
+            sPost += "&a5_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_acct_no))));
+            sPost += "&a5_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_routing_no))));
+            sPost += "&a5_resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_resp_level_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_functional_acct_groups, "&a5_functional_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_collections_acct_groups, "&a5_collections_acct_groups");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_supp_field_names, "&a5_supp_field_names");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_supp_field_values, "&a5_supp_field_values");
-            sPost += "&a5_test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_test_acct_ind)));
-            sPost += "&a5_status_until_alt_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_status_until_alt_start)));
-            sPost += "&a5_balance_forward=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_balance_forward)));
-            sPost += "&a5_alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_alt_bill_day)));
-            sPost += "&a5_do_full_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_do_full_invoicing)));
-            sPost += "&a5_do_prorated_invoicing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_do_prorated_invoicing)));
-            sPost += "&a5_master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_master_plan_alt_rate_sched_no)));
+            sPost += "&a5_test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_test_acct_ind))));
+            sPost += "&a5_status_until_alt_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_status_until_alt_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_status_until_alt_start))));
+            sPost += "&a5_balance_forward=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_balance_forward))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_balance_forward))));
+            sPost += "&a5_alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_alt_bill_day))));
+            sPost += "&a5_do_full_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_do_full_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_do_full_invoicing))));
+            sPost += "&a5_do_prorated_invoicing=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_do_prorated_invoicing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_do_prorated_invoicing))));
+            sPost += "&a5_master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_master_plan_alt_rate_sched_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_supp_plan_alt_rate_sched_no, "&a5_supp_plan_alt_rate_sched_no");
-            sPost += "&a5_currency_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_currency_cd)));
-            sPost += "&a5_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cvv)));
-            sPost += "&a5_taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_taxpayer_id)));
-            sPost += "&a5_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_agreement_id)));
-            sPost += "&a5_retroactive_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_retroactive_start_date)));
+            sPost += "&a5_currency_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_currency_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_currency_cd))));
+            sPost += "&a5_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cvv))));
+            sPost += "&a5_taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_taxpayer_id))));
+            sPost += "&a5_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_agreement_id))));
+            sPost += "&a5_retroactive_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_retroactive_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_retroactive_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_coupon_codes, "&a5_coupon_codes");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_new_acct_custom_rates, "&a5_new_acct_custom_rates");
-            sPost += "&a5_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_alt_msg_template_no)));
-            sPost += "&a5_seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_seq_func_group_no)));
+            sPost += "&a5_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_alt_msg_template_no))));
+            sPost += "&a5_seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_seq_func_group_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_new_acct_plan_contracts, "&a5_new_acct_plan_contracts");
-            sPost += "&a5_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_address3)));
-            sPost += "&a5_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_address3)));
+            sPost += "&a5_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_address3))));
+            sPost += "&a5_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_usage_accumulation_config, "&a5_usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_enable_usage_pooling_plan_no, "&a5_enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_client_func_acct_group_ids, "&a5_client_func_acct_group_ids");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_client_coll_acct_group_ids, "&a5_client_coll_acct_group_ids");
-            sPost += "&a5_track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_track_data1)));
-            sPost += "&a5_track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_track_data2)));
-            sPost += "&a5_tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_tax_exemption_level)));
-            sPost += "&a5_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cn_alt_msg_template_no)));
-            sPost += "&a5_invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_invoice_approval_required)));
-            sPost += "&a5_create_session=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_create_session)));
-            sPost += "&a5_client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_master_plan_id)));
+            sPost += "&a5_track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_track_data1))));
+            sPost += "&a5_track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_track_data2))));
+            sPost += "&a5_tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_tax_exemption_level))));
+            sPost += "&a5_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_cn_alt_msg_template_no))));
+            sPost += "&a5_invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_invoice_approval_required))));
+            sPost += "&a5_create_session=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_create_session))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_create_session))));
+            sPost += "&a5_client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_master_plan_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_client_supp_plan_ids, "&a5_client_supp_plan_ids");
-            sPost += "&a5_client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_mp_alt_rate_sched_id)));
+            sPost += "&a5_client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_mp_alt_rate_sched_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_client_sp_alt_rate_sched_ids, "&a5_client_sp_alt_rate_sched_ids");
-            sPost += "&a5_client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_alt_msg_template_id)));
-            sPost += "&a5_client_cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_cn_alt_msg_template_no)));
-            sPost += "&a5_iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_iban)));
-            sPost += "&a5_bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_check_digit)));
-            sPost += "&a5_bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_swift_cd)));
-            sPost += "&a5_bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_country_cd)));
-            sPost += "&a5_mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_mandate_id)));
-            sPost += "&a5_bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_id_cd)));
-            sPost += "&a5_bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_branch_cd)));
+            sPost += "&a5_client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_alt_msg_template_id))));
+            sPost += "&a5_client_cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_client_cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_client_cn_alt_msg_template_no))));
+            sPost += "&a5_iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_iban))));
+            sPost += "&a5_bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_check_digit))));
+            sPost += "&a5_bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_swift_cd))));
+            sPost += "&a5_bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_country_cd))));
+            sPost += "&a5_mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_mandate_id))));
+            sPost += "&a5_bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_id_cd))));
+            sPost += "&a5_bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bank_branch_cd))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.a5_surcharge_no, "&a5_surcharge_no");
-            sPost += "&a5_bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_first_name)));
-            sPost += "&a5_bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_mi)));
-            sPost += "&a5_bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_last_name)));
-            sPost += "&a5_bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_company_name)));
-            sPost += "&a5_bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_address1)));
-            sPost += "&a5_bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_address2)));
-            sPost += "&a5_bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_address3)));
-            sPost += "&a5_bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_city)));
-            sPost += "&a5_bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_locality)));
-            sPost += "&a5_bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_state_prov)));
-            sPost += "&a5_bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_country)));
-            sPost += "&a5_bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_postal_cd)));
-            sPost += "&a5_bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_phone)));
-            sPost += "&a5_bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_phone_ext)));
-            sPost += "&a5_bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_cell_phone)));
-            sPost += "&a5_bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_work_phone)));
-            sPost += "&a5_bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_work_phone_ext)));
-            sPost += "&a5_bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_email)));
-            sPost += "&a5_bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_pay_method)));
-            sPost += "&a5_bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cc_number)));
-            sPost += "&a5_bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cc_expire_mm)));
-            sPost += "&a5_bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cc_expire_yyyy)));
-            sPost += "&a5_bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bank_acct_no)));
-            sPost += "&a5_bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bank_routing_no)));
-            sPost += "&a5_bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_agreement_id)));
-            sPost += "&a5_bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cvv)));
-            sPost += "&a5_seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_seq_func_group_id)));
-            sPost += "&a5_revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_revrec_profile_id)));
-            sPost += "&a5_revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_revrec_client_defined_id)));
-            sPost += "&a5_stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_stmnt_email_list)));
+            sPost += "&a5_bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_first_name))));
+            sPost += "&a5_bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_mi))));
+            sPost += "&a5_bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_last_name))));
+            sPost += "&a5_bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_company_name))));
+            sPost += "&a5_bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_address1))));
+            sPost += "&a5_bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_address2))));
+            sPost += "&a5_bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_address3))));
+            sPost += "&a5_bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_city))));
+            sPost += "&a5_bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_locality))));
+            sPost += "&a5_bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_state_prov))));
+            sPost += "&a5_bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_country))));
+            sPost += "&a5_bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_postal_cd))));
+            sPost += "&a5_bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_phone))));
+            sPost += "&a5_bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_phone_ext))));
+            sPost += "&a5_bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_cell_phone))));
+            sPost += "&a5_bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_work_phone))));
+            sPost += "&a5_bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_work_phone_ext))));
+            sPost += "&a5_bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_email))));
+            sPost += "&a5_bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_pay_method))));
+            sPost += "&a5_bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cc_number))));
+            sPost += "&a5_bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cc_expire_mm))));
+            sPost += "&a5_bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cc_expire_yyyy))));
+            sPost += "&a5_bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bank_acct_no))));
+            sPost += "&a5_bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bank_routing_no))));
+            sPost += "&a5_bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_bill_agreement_id))));
+            sPost += "&a5_bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_bkup_cvv))));
+            sPost += "&a5_seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_seq_func_group_id))));
+            sPost += "&a5_revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_revrec_profile_id))));
+            sPost += "&a5_revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_revrec_client_defined_id))));
+            sPost += "&a5_stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.a5_stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.a5_stmnt_email_list))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -7608,8 +7608,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -7665,28 +7665,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
-            sPost += "&reason_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&eligible_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_plan_no)));
-            sPost += "&eligible_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_service_no)));
-            sPost += "&alt_service_no_to_apply=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_service_no_to_apply)));
-            sPost += "&frequency_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.frequency_no)));
-            sPost += "&frequency_interval_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.frequency_interval_months)));
-            sPost += "&initial_credit_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.initial_credit_date)));
-            sPost += "&percent_amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percent_amount)));
-            sPost += "&percent_eval_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percent_eval_plan_no)));
-            sPost += "&percent_eval_service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percent_eval_service_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
+            sPost += "&reason_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.reason_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&eligible_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.eligible_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_plan_no))));
+            sPost += "&eligible_service_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.eligible_service_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.eligible_service_no))));
+            sPost += "&alt_service_no_to_apply=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_service_no_to_apply))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_service_no_to_apply))));
+            sPost += "&frequency_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.frequency_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.frequency_no))));
+            sPost += "&frequency_interval_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.frequency_interval_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.frequency_interval_months))));
+            sPost += "&initial_credit_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.initial_credit_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.initial_credit_date))));
+            sPost += "&percent_amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.percent_amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percent_amount))));
+            sPost += "&percent_eval_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.percent_eval_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percent_eval_plan_no))));
+            sPost += "&percent_eval_service_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.percent_eval_service_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.percent_eval_service_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.eligible_service_types, "&eligible_service_types");
-            sPost += "&client_eligible_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_eligible_plan_id)));
-            sPost += "&client_eligible_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_eligible_service_id)));
-            sPost += "&client_alt_service_id_to_apply=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_service_id_to_apply)));
-            sPost += "&client_percent_eval_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_percent_eval_plan_id)));
-            sPost += "&client_percent_eval_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_percent_eval_service_id)));
-            sPost += "&credit_expiry_type_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_expiry_type_ind)));
-            sPost += "&credit_expiry_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_expiry_months)));
-            sPost += "&credit_expiry_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_expiry_date)));
+            sPost += "&client_eligible_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_eligible_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_eligible_plan_id))));
+            sPost += "&client_eligible_service_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_eligible_service_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_eligible_service_id))));
+            sPost += "&client_alt_service_id_to_apply=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_service_id_to_apply))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_service_id_to_apply))));
+            sPost += "&client_percent_eval_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_percent_eval_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_percent_eval_plan_id))));
+            sPost += "&client_percent_eval_service_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_percent_eval_service_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_percent_eval_service_id))));
+            sPost += "&credit_expiry_type_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_expiry_type_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_expiry_type_ind))));
+            sPost += "&credit_expiry_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_expiry_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_expiry_months))));
+            sPost += "&credit_expiry_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_expiry_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_expiry_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.eligible_service_plans, "&eligible_service_plans");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_eligible_service_plan_ids, "&client_eligible_service_plan_ids");
             
@@ -7744,7 +7744,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -7800,7 +7800,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -7856,9 +7856,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -7914,17 +7914,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no)));
-            sPost += "&alt_recur_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_recur_fee)));
-            sPost += "&length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months)));
-            sPost += "&cancel_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_fee)));
-            sPost += "&create_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_comments)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&do_auto_discard=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_auto_discard)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no))));
+            sPost += "&alt_recur_fee=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_recur_fee))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_recur_fee))));
+            sPost += "&length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months))));
+            sPost += "&cancel_fee=" + ((String.IsNullOrEmpty(Convert.ToString(request.cancel_fee))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_fee))));
+            sPost += "&create_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.create_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_comments))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&do_auto_discard=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_auto_discard))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_auto_discard))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -7980,15 +7980,15 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&contract_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no)));
-            sPost += "&type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no)));
-            sPost += "&alt_recur_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_recur_fee)));
-            sPost += "&length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months)));
-            sPost += "&cancel_fee=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_fee)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&update_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&contract_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no))));
+            sPost += "&type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no))));
+            sPost += "&alt_recur_fee=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_recur_fee))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_recur_fee))));
+            sPost += "&length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months))));
+            sPost += "&cancel_fee=" + ((String.IsNullOrEmpty(Convert.ToString(request.cancel_fee))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_fee))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&update_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.update_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8044,10 +8044,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&contract_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no)));
-            sPost += "&update_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments)));
-            sPost += "&close_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.close_status)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&contract_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no))));
+            sPost += "&update_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.update_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments))));
+            sPost += "&close_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.close_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.close_status))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8103,20 +8103,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&specified_usage_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.specified_usage_type_no)));
-            sPost += "&date_range_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_start)));
-            sPost += "&date_range_end=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_end)));
-            sPost += "&specified_usage_type_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.specified_usage_type_code)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&specified_usage_type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.specified_usage_type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.specified_usage_type_no))));
+            sPost += "&date_range_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_range_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_start))));
+            sPost += "&date_range_end=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_range_end))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_end))));
+            sPost += "&specified_usage_type_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.specified_usage_type_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.specified_usage_type_code))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_1, "&usage_qualifier_1");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_2, "&usage_qualifier_2");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_3, "&usage_qualifier_3");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_4, "&usage_qualifier_4");
-            sPost += "&limit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit)));
-            sPost += "&offset=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset)));
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
-            sPost += "&invoice_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no)));
-            sPost += "&invoice_line_item=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_line_item)));
+            sPost += "&limit=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit))));
+            sPost += "&offset=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset))));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
+            sPost += "&invoice_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no))));
+            sPost += "&invoice_line_item=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_line_item))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_line_item))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8172,9 +8172,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&message_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.message_id)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&do_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding)));
+            sPost += "&message_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.message_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.message_id))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&do_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8230,9 +8230,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&message_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.message_id)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&do_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding)));
+            sPost += "&message_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.message_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.message_id))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&do_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8288,25 +8288,25 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_no)));
-            sPost += "&alt_rate_schedule_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no)));
-            sPost += "&num_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units)));
-            sPost += "&assignment_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&force_currency_change=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_currency_change)));
-            sPost += "&auto_cancel_supp_plans=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_cancel_supp_plans)));
-            sPost += "&offset_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months)));
-            sPost += "&alt_proration_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_no))));
+            sPost += "&alt_rate_schedule_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_rate_schedule_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_rate_schedule_no))));
+            sPost += "&num_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.num_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.num_plan_units))));
+            sPost += "&assignment_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.assignment_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&force_currency_change=" + ((String.IsNullOrEmpty(Convert.ToString(request.force_currency_change))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_currency_change))));
+            sPost += "&auto_cancel_supp_plans=" + ((String.IsNullOrEmpty(Convert.ToString(request.auto_cancel_supp_plans))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_cancel_supp_plans))));
+            sPost += "&offset_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months))));
+            sPost += "&alt_proration_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_proration_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.new_acct_custom_rates, "&new_acct_custom_rates");
-            sPost += "&effective_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date)));
-            sPost += "&offset_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval)));
-            sPost += "&invoice_unbilled_usage=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
-            sPost += "&client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_master_plan_id)));
-            sPost += "&client_alt_rate_schedule_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id)));
+            sPost += "&effective_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.effective_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date))));
+            sPost += "&offset_interval=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_interval))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval))));
+            sPost += "&invoice_unbilled_usage=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_unbilled_usage))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
+            sPost += "&client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_master_plan_id))));
+            sPost += "&client_alt_rate_schedule_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_rate_schedule_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_rate_schedule_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.surcharge_no, "&surcharge_no");
             
             string returnString = "";
@@ -8363,139 +8363,139 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name)));
-            sPost += "&last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name)));
-            sPost += "&middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.middle_initial)));
-            sPost += "&company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality)));
-            sPost += "&state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov)));
-            sPost += "&country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country)));
-            sPost += "&postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_cd)));
-            sPost += "&phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone)));
-            sPost += "&phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_ext)));
-            sPost += "&cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone)));
-            sPost += "&work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone)));
-            sPost += "&work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_ext)));
-            sPost += "&email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email)));
-            sPost += "&birthdate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.birthdate)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_postal_cd)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_ext)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_ext)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&master_plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_no)));
-            sPost += "&master_plan_alt_rate_sched_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_alt_rate_sched_no)));
-            sPost += "&master_plan_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_units)));
-            sPost += "&master_plan_assign_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_assign_directive)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name))));
+            sPost += "&last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name))));
+            sPost += "&middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.middle_initial))));
+            sPost += "&company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.company_name))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.locality))));
+            sPost += "&state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov))));
+            sPost += "&country=" + ((String.IsNullOrEmpty(Convert.ToString(request.country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country))));
+            sPost += "&postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.postal_cd))));
+            sPost += "&phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone))));
+            sPost += "&phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.phone_ext))));
+            sPost += "&cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cell_phone))));
+            sPost += "&work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone))));
+            sPost += "&work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.work_phone_ext))));
+            sPost += "&email=" + ((String.IsNullOrEmpty(Convert.ToString(request.email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.email))));
+            sPost += "&birthdate=" + ((String.IsNullOrEmpty(Convert.ToString(request.birthdate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.birthdate))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_postal_cd))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_ext))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_ext))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&master_plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_no))));
+            sPost += "&master_plan_alt_rate_sched_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_alt_rate_sched_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_alt_rate_sched_no))));
+            sPost += "&master_plan_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_units))));
+            sPost += "&master_plan_assign_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.master_plan_assign_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.master_plan_assign_directive))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.update_acct_supp_field, "&update_acct_supp_field");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.update_acct_func_group, "&update_acct_func_group");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.update_acct_coll_group, "&update_acct_coll_group");
-            sPost += "&status_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_cd)));
-            sPost += "&notify_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notify_method)));
-            sPost += "&password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password)));
-            sPost += "&secret_question=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question)));
-            sPost += "&secret_question_answer=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question_answer)));
-            sPost += "&pin=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pin)));
-            sPost += "&test_acct_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.test_acct_ind)));
-            sPost += "&resp_level_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resp_level_cd)));
-            sPost += "&senior_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_no)));
-            sPost += "&senior_acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_user_id)));
-            sPost += "&client_senior_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_senior_acct_id)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
-            sPost += "&do_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect)));
-            sPost += "&change_status_after_coll=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll)));
-            sPost += "&reset_dates_after_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&alt_do_dunning=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_do_dunning)));
-            sPost += "&force_currency_change=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_currency_change)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&taxpayer_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.taxpayer_id)));
-            sPost += "&bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_agreement_id)));
-            sPost += "&auto_cancel_supp_plans=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_cancel_supp_plans)));
-            sPost += "&offset_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months)));
-            sPost += "&alt_proration_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date)));
-            sPost += "&alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_msg_template_no)));
-            sPost += "&seq_func_group_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_no)));
-            sPost += "&address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
+            sPost += "&status_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.status_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.status_cd))));
+            sPost += "&notify_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.notify_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notify_method))));
+            sPost += "&password=" + ((String.IsNullOrEmpty(Convert.ToString(request.password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password))));
+            sPost += "&secret_question=" + ((String.IsNullOrEmpty(Convert.ToString(request.secret_question))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question))));
+            sPost += "&secret_question_answer=" + ((String.IsNullOrEmpty(Convert.ToString(request.secret_question_answer))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.secret_question_answer))));
+            sPost += "&pin=" + ((String.IsNullOrEmpty(Convert.ToString(request.pin))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pin))));
+            sPost += "&test_acct_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.test_acct_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.test_acct_ind))));
+            sPost += "&resp_level_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.resp_level_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resp_level_cd))));
+            sPost += "&senior_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.senior_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_no))));
+            sPost += "&senior_acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.senior_acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.senior_acct_user_id))));
+            sPost += "&client_senior_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_senior_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_senior_acct_id))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
+            sPost += "&do_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_collect))));
+            sPost += "&change_status_after_coll=" + ((String.IsNullOrEmpty(Convert.ToString(request.change_status_after_coll))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.change_status_after_coll))));
+            sPost += "&reset_dates_after_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.reset_dates_after_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reset_dates_after_status))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&alt_do_dunning=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_do_dunning))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_do_dunning))));
+            sPost += "&force_currency_change=" + ((String.IsNullOrEmpty(Convert.ToString(request.force_currency_change))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_currency_change))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&taxpayer_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.taxpayer_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.taxpayer_id))));
+            sPost += "&bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_agreement_id))));
+            sPost += "&auto_cancel_supp_plans=" + ((String.IsNullOrEmpty(Convert.ToString(request.auto_cancel_supp_plans))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_cancel_supp_plans))));
+            sPost += "&offset_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_months))));
+            sPost += "&alt_proration_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_proration_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date))));
+            sPost += "&alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_msg_template_no))));
+            sPost += "&seq_func_group_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.seq_func_group_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_no))));
+            sPost += "&address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_accumulation_config, "&usage_accumulation_config");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.enable_usage_pooling_plan_no, "&enable_usage_pooling_plan_no");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.disable_usage_pooling_plan_no, "&disable_usage_pooling_plan_no");
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&offset_interval=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval)));
-            sPost += "&tax_exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_exemption_level)));
-            sPost += "&cn_alt_msg_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cn_alt_msg_template_no)));
-            sPost += "&promo_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd)));
-            sPost += "&invoice_unbilled_usage=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
-            sPost += "&userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid)));
-            sPost += "&invoice_approval_required=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_approval_required)));
-            sPost += "&client_master_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_master_plan_id)));
-            sPost += "&client_mp_alt_rate_sched_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_mp_alt_rate_sched_id)));
-            sPost += "&client_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_msg_template_id)));
-            sPost += "&client_cn_alt_msg_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_cn_alt_msg_template_id)));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&offset_interval=" + ((String.IsNullOrEmpty(Convert.ToString(request.offset_interval))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.offset_interval))));
+            sPost += "&tax_exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.tax_exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_exemption_level))));
+            sPost += "&cn_alt_msg_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.cn_alt_msg_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cn_alt_msg_template_no))));
+            sPost += "&promo_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.promo_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.promo_cd))));
+            sPost += "&invoice_unbilled_usage=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_unbilled_usage))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_unbilled_usage))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
+            sPost += "&userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid))));
+            sPost += "&invoice_approval_required=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_approval_required))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_approval_required))));
+            sPost += "&client_master_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_master_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_master_plan_id))));
+            sPost += "&client_mp_alt_rate_sched_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_mp_alt_rate_sched_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_mp_alt_rate_sched_id))));
+            sPost += "&client_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_msg_template_id))));
+            sPost += "&client_cn_alt_msg_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_cn_alt_msg_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_cn_alt_msg_template_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.update_surcharge, "&update_surcharge");
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&bkup_bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_first_name)));
-            sPost += "&bkup_bill_mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_mi)));
-            sPost += "&bkup_bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_last_name)));
-            sPost += "&bkup_bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_company_name)));
-            sPost += "&bkup_bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address1)));
-            sPost += "&bkup_bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address2)));
-            sPost += "&bkup_bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address3)));
-            sPost += "&bkup_bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_city)));
-            sPost += "&bkup_bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_locality)));
-            sPost += "&bkup_bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_state_prov)));
-            sPost += "&bkup_bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_country)));
-            sPost += "&bkup_bill_postal_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_postal_cd)));
-            sPost += "&bkup_bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone)));
-            sPost += "&bkup_bill_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone_ext)));
-            sPost += "&bkup_bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_cell_phone)));
-            sPost += "&bkup_bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone)));
-            sPost += "&bkup_bill_work_phone_ext=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone_ext)));
-            sPost += "&bkup_bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_email)));
-            sPost += "&bkup_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_pay_method)));
-            sPost += "&bkup_cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_number)));
-            sPost += "&bkup_cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_mm)));
-            sPost += "&bkup_cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_yyyy)));
-            sPost += "&bkup_bank_acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_acct_no)));
-            sPost += "&bkup_bank_routing_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_routing_no)));
-            sPost += "&bkup_bill_agreement_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_agreement_id)));
-            sPost += "&bkup_cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cvv)));
-            sPost += "&seq_func_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_id)));
-            sPost += "&revrec_profile_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_profile_id)));
-            sPost += "&revrec_client_defined_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_client_defined_id)));
-            sPost += "&stmnt_email_list=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stmnt_email_list)));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&bkup_bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_first_name))));
+            sPost += "&bkup_bill_mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_mi))));
+            sPost += "&bkup_bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_last_name))));
+            sPost += "&bkup_bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_company_name))));
+            sPost += "&bkup_bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address1))));
+            sPost += "&bkup_bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address2))));
+            sPost += "&bkup_bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_address3))));
+            sPost += "&bkup_bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_city))));
+            sPost += "&bkup_bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_locality))));
+            sPost += "&bkup_bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_state_prov))));
+            sPost += "&bkup_bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_country))));
+            sPost += "&bkup_bill_postal_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_postal_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_postal_cd))));
+            sPost += "&bkup_bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone))));
+            sPost += "&bkup_bill_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_phone_ext))));
+            sPost += "&bkup_bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_cell_phone))));
+            sPost += "&bkup_bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone))));
+            sPost += "&bkup_bill_work_phone_ext=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_work_phone_ext))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_work_phone_ext))));
+            sPost += "&bkup_bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_email))));
+            sPost += "&bkup_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_pay_method))));
+            sPost += "&bkup_cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_number))));
+            sPost += "&bkup_cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_mm))));
+            sPost += "&bkup_cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cc_expire_yyyy))));
+            sPost += "&bkup_bank_acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bank_acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_acct_no))));
+            sPost += "&bkup_bank_routing_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bank_routing_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bank_routing_no))));
+            sPost += "&bkup_bill_agreement_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_bill_agreement_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_bill_agreement_id))));
+            sPost += "&bkup_cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.bkup_cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bkup_cvv))));
+            sPost += "&seq_func_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.seq_func_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.seq_func_group_id))));
+            sPost += "&revrec_profile_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.revrec_profile_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_profile_id))));
+            sPost += "&revrec_client_defined_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.revrec_client_defined_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.revrec_client_defined_id))));
+            sPost += "&stmnt_email_list=" + ((String.IsNullOrEmpty(Convert.ToString(request.stmnt_email_list))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.stmnt_email_list))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8551,9 +8551,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&start_date_range=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date_range)));
-            sPost += "&end_date_range=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date_range)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&start_date_range=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date_range))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date_range))));
+            sPost += "&end_date_range=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date_range))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date_range))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8609,11 +8609,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&resource_threshold_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_threshold_level)));
-            sPost += "&resource_balance=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_balance)));
-            sPost += "&resource_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_name)));
-            sPost += "&resource_units_label=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_units_label)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&resource_threshold_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.resource_threshold_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_threshold_level))));
+            sPost += "&resource_balance=" + ((String.IsNullOrEmpty(Convert.ToString(request.resource_balance))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_balance))));
+            sPost += "&resource_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.resource_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_name))));
+            sPost += "&resource_units_label=" + ((String.IsNullOrEmpty(Convert.ToString(request.resource_units_label))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.resource_units_label))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8669,8 +8669,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&exemption_level=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exemption_level)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&exemption_level=" + ((String.IsNullOrEmpty(Convert.ToString(request.exemption_level))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exemption_level))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8726,7 +8726,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8782,9 +8782,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&install_complete_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.install_complete_ind)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&install_complete_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.install_complete_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.install_complete_ind))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8840,7 +8840,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8896,8 +8896,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&filter_credit_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_credit_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&filter_credit_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_credit_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_credit_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -8953,7 +8953,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9009,8 +9009,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&primary_or_bkup_pay_mthd_ind=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.primary_or_bkup_pay_mthd_ind)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&primary_or_bkup_pay_mthd_ind=" + ((String.IsNullOrEmpty(Convert.ToString(request.primary_or_bkup_pay_mthd_ind))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.primary_or_bkup_pay_mthd_ind))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9066,12 +9066,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.custom_acct_rates, "&custom_acct_rates");
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&service_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
-            sPost += "&client_service_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id)));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&service_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.service_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.service_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
+            sPost += "&client_service_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_service_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_service_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9127,9 +9127,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method)));
-            sPost += "&form_payment_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.form_payment_acct_id)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
+            sPost += "&pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.pay_method))));
+            sPost += "&form_payment_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.form_payment_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.form_payment_acct_id))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9185,10 +9185,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&action_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.action_directive)));
-            sPost += "&adjustment_days=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.adjustment_days)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&action_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.action_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.action_directive))));
+            sPost += "&adjustment_days=" + ((String.IsNullOrEmpty(Convert.ToString(request.adjustment_days))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.adjustment_days))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9244,8 +9244,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&comment=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comment)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&comment=" + ((String.IsNullOrEmpty(Convert.ToString(request.comment))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comment))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9301,10 +9301,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&date_range_start=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_start)));
-            sPost += "&date_range_end=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_end)));
-            sPost += "&do_url_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_url_encoding)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&date_range_start=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_range_start))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_start))));
+            sPost += "&date_range_end=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_range_end))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_range_end))));
+            sPost += "&do_url_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_url_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_url_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9360,7 +9360,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.acct_supp_fields, "&acct_supp_fields");
             
             string returnString = "";
@@ -9417,9 +9417,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&client_plan_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&client_plan_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_plan_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_plan_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9475,11 +9475,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
-            sPost += "&include_invoice_activity_eligibility=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_invoice_activity_eligibility)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
+            sPost += "&include_invoice_activity_eligibility=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_invoice_activity_eligibility))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_invoice_activity_eligibility))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9535,11 +9535,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&start_bill_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_bill_date)));
-            sPost += "&end_bill_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_bill_date)));
-            sPost += "&include_voided=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_voided)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&start_bill_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_bill_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_bill_date))));
+            sPost += "&end_bill_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_bill_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_bill_date))));
+            sPost += "&include_voided=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_voided))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_voided))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9595,9 +9595,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&statement_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_no)));
-            sPost += "&do_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&statement_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.statement_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_no))));
+            sPost += "&do_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9653,9 +9653,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&statement_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_no)));
-            sPost += "&do_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&statement_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.statement_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_no))));
+            sPost += "&do_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9711,8 +9711,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&sku=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sku)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&sku=" + ((String.IsNullOrEmpty(Convert.ToString(request.sku))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sku))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9768,8 +9768,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&sku=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sku)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&sku=" + ((String.IsNullOrEmpty(Convert.ToString(request.sku))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sku))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9825,16 +9825,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_plans_to_assign, "&supp_plans_to_assign");
-            sPost += "&assignment_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&alt_proration_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date)));
+            sPost += "&assignment_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.assignment_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.assignment_directive))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&alt_proration_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_proration_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_proration_start_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.coupon_codes, "&coupon_codes");
-            sPost += "&effective_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date)));
-            sPost += "&sync_mstr_bill_dates_override=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override)));
+            sPost += "&effective_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.effective_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.effective_date))));
+            sPost += "&sync_mstr_bill_dates_override=" + ((String.IsNullOrEmpty(Convert.ToString(request.sync_mstr_bill_dates_override))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.supp_plan_surcharges, "&supp_plan_surcharges");
             
             string returnString = "";
@@ -9891,8 +9891,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&filter_seq_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_seq_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&filter_seq_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_seq_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_seq_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -9948,8 +9948,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&send_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.send_email)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&send_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.send_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.send_email))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10005,8 +10005,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&coupon_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10062,7 +10062,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.credit_ids, "&credit_ids");
             
             string returnString = "";
@@ -10119,7 +10119,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10175,12 +10175,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&usage_details_flag=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_details_flag)));
-            sPost += "&include_all_usage_unit_thresholds=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_all_usage_unit_thresholds)));
-            sPost += "&plan_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no)));
-            sPost += "&usage_type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_no)));
-            sPost += "&usage_type_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&usage_details_flag=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_details_flag))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_details_flag))));
+            sPost += "&include_all_usage_unit_thresholds=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_all_usage_unit_thresholds))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_all_usage_unit_thresholds))));
+            sPost += "&plan_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.plan_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.plan_no))));
+            sPost += "&usage_type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_no))));
+            sPost += "&usage_type_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10236,8 +10236,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_unit_thresholds, "&usage_unit_thresholds");
             
             string returnString = "";
@@ -10294,8 +10294,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_unit_thresholds, "&usage_unit_thresholds");
             
             string returnString = "";
@@ -10352,8 +10352,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_unit_thresholds, "&usage_unit_thresholds");
             
             string returnString = "";
@@ -10410,8 +10410,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_unit_thresholds, "&usage_unit_thresholds");
             
             string returnString = "";
@@ -10468,7 +10468,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10524,7 +10524,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10580,8 +10580,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&contract_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&contract_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10637,14 +10637,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.plan_no, "&plan_no");
-            sPost += "&type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no)));
-            sPost += "&length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months)));
-            sPost += "&create_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_comments)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&do_auto_discard=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_auto_discard)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no))));
+            sPost += "&length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months))));
+            sPost += "&create_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.create_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_comments))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&do_auto_discard=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_auto_discard))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_auto_discard))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_plan_id, "&client_plan_id");
             
             string returnString = "";
@@ -10701,15 +10701,15 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&contract_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no)));
-            sPost += "&type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no)));
-            sPost += "&length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&update_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments)));
-            sPost += "&modify_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.modify_directive)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&contract_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no))));
+            sPost += "&type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no))));
+            sPost += "&length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&update_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.update_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments))));
+            sPost += "&modify_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.modify_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.modify_directive))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.plans_input, "&plans_input");
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_plan_id, "&client_plan_id");
             
             string returnString = "";
@@ -10766,10 +10766,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&contract_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no)));
-            sPost += "&update_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments)));
-            sPost += "&close_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.close_status)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&contract_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no))));
+            sPost += "&update_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.update_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments))));
+            sPost += "&close_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.close_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.close_status))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10825,7 +10825,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10881,12 +10881,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no)));
-            sPost += "&length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months)));
-            sPost += "&create_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_comments)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no))));
+            sPost += "&length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months))));
+            sPost += "&create_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.create_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.create_comments))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -10942,13 +10942,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&contract_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no)));
-            sPost += "&type_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no)));
-            sPost += "&length_months=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&update_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&contract_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.contract_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.contract_no))));
+            sPost += "&type_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.type_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.type_no))));
+            sPost += "&length_months=" + ((String.IsNullOrEmpty(Convert.ToString(request.length_months))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.length_months))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&update_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.update_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11004,9 +11004,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&update_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments)));
-            sPost += "&close_status=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.close_status)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&update_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.update_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.update_comments))));
+            sPost += "&close_status=" + ((String.IsNullOrEmpty(Convert.ToString(request.close_status))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.close_status))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11062,7 +11062,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11118,9 +11118,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&hierarchy_filter=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.hierarchy_filter)));
-            sPost += "&include_current_acct=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_current_acct)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&hierarchy_filter=" + ((String.IsNullOrEmpty(Convert.ToString(request.hierarchy_filter))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.hierarchy_filter))));
+            sPost += "&include_current_acct=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_current_acct))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_current_acct))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11176,8 +11176,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&filter_status_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_status_code)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&filter_status_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.filter_status_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.filter_status_code))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11233,13 +11233,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&template_class=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_class)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
-            sPost += "&override_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.override_template_no)));
-            sPost += "&behavioral_option=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.behavioral_option)));
-            sPost += "&override_template_option=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.override_template_option)));
+            sPost += "&template_class=" + ((String.IsNullOrEmpty(Convert.ToString(request.template_class))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.template_class))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
+            sPost += "&override_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.override_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.override_template_no))));
+            sPost += "&behavioral_option=" + ((String.IsNullOrEmpty(Convert.ToString(request.behavioral_option))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.behavioral_option))));
+            sPost += "&override_template_option=" + ((String.IsNullOrEmpty(Convert.ToString(request.override_template_option))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.override_template_option))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11295,10 +11295,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&notification_template_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notification_template_group_id)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
+            sPost += "&notification_template_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.notification_template_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.notification_template_group_id))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11354,9 +11354,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11412,8 +11412,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&limit_records=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit_records)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&limit_records=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit_records))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit_records))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11469,8 +11469,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&credit_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&credit_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11581,8 +11581,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&token=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.token)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&token=" + ((String.IsNullOrEmpty(Convert.ToString(request.token))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.token))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11638,7 +11638,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11694,13 +11694,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&outage_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_start_date)));
-            sPost += "&outage_end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_end_date)));
-            sPost += "&outage_start_time=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_start_time)));
-            sPost += "&outage_end_time=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_end_time)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&outage_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.outage_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_start_date))));
+            sPost += "&outage_end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.outage_end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_end_date))));
+            sPost += "&outage_start_time=" + ((String.IsNullOrEmpty(Convert.ToString(request.outage_start_time))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_start_time))));
+            sPost += "&outage_end_time=" + ((String.IsNullOrEmpty(Convert.ToString(request.outage_end_time))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.outage_end_time))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.plans_to_get_outage, "&plans_to_get_outage");
-            sPost += "&adjust_percent=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.adjust_percent)));
+            sPost += "&adjust_percent=" + ((String.IsNullOrEmpty(Convert.ToString(request.adjust_percent))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.adjust_percent))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_plan_ids_to_get_outage, "&client_plan_ids_to_get_outage");
             
             string returnString = "";
@@ -11757,20 +11757,20 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&usage_type_filter=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_filter)));
-            sPost += "&date_filter_start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_start_date)));
-            sPost += "&date_filter_start_time=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_start_time)));
-            sPost += "&date_filter_end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_end_date)));
-            sPost += "&date_filter_end_time=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_end_time)));
-            sPost += "&billed_filter=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billed_filter)));
-            sPost += "&billing_period_flag=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_period_flag)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&usage_type_filter=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type_filter))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_filter))));
+            sPost += "&date_filter_start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_filter_start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_start_date))));
+            sPost += "&date_filter_start_time=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_filter_start_time))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_start_time))));
+            sPost += "&date_filter_end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_filter_end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_end_date))));
+            sPost += "&date_filter_end_time=" + ((String.IsNullOrEmpty(Convert.ToString(request.date_filter_end_time))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.date_filter_end_time))));
+            sPost += "&billed_filter=" + ((String.IsNullOrEmpty(Convert.ToString(request.billed_filter))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billed_filter))));
+            sPost += "&billing_period_flag=" + ((String.IsNullOrEmpty(Convert.ToString(request.billing_period_flag))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_period_flag))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_1, "&usage_qualifier_1");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_2, "&usage_qualifier_2");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_3, "&usage_qualifier_3");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_qualifier_4, "&usage_qualifier_4");
-            sPost += "&usage_type_cd_filter=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_cd_filter)));
+            sPost += "&usage_type_cd_filter=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type_cd_filter))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_cd_filter))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11826,7 +11826,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11882,7 +11882,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11938,11 +11938,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
-            sPost += "&reason_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
+            sPost += "&reason_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.reason_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -11998,9 +11998,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12056,9 +12056,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&source_account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.source_account_no)));
-            sPost += "&target_account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.target_account_no)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&source_account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.source_account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.source_account_no))));
+            sPost += "&target_account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.target_account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.target_account_no))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12114,54 +12114,54 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.order_line_items, "&order_line_items");
-            sPost += "&bill_immediately=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_immediately)));
-            sPost += "&bill_seq=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq)));
-            sPost += "&client_order_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_order_id)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&coupon_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&alt_inv_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_inv_template_no)));
-            sPost += "&client_alt_inv_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_inv_template_id)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&statement_message=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_message)));
-            sPost += "&fulfilled_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.fulfilled_date)));
-            sPost += "&order_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_comments)));
+            sPost += "&bill_immediately=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_immediately))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_immediately))));
+            sPost += "&bill_seq=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_seq))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq))));
+            sPost += "&client_order_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_order_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_order_id))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&coupon_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_cd))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&alt_inv_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_inv_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_inv_template_no))));
+            sPost += "&client_alt_inv_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_inv_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_inv_template_id))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&statement_message=" + ((String.IsNullOrEmpty(Convert.ToString(request.statement_message))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_message))));
+            sPost += "&fulfilled_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.fulfilled_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.fulfilled_date))));
+            sPost += "&order_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.order_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12217,44 +12217,44 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&force_balance_scope=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_balance_scope)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&force_balance_scope=" + ((String.IsNullOrEmpty(Convert.ToString(request.force_balance_scope))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_balance_scope))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12310,47 +12310,47 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&amount_to_collect=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount_to_collect)));
-            sPost += "&bill_seq=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&amount_to_collect=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount_to_collect))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount_to_collect))));
+            sPost += "&bill_seq=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_seq))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&payment_application_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_application_method)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&payment_application_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_application_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_application_method))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12406,14 +12406,14 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&reference_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reference_code)));
-            sPost += "&payment_amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_amount)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&reference_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.reference_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reference_code))));
+            sPost += "&payment_amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_amount))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
-            sPost += "&external_destination_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.external_destination_id)));
-            sPost += "&external_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.external_id)));
+            sPost += "&external_destination_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.external_destination_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.external_destination_id))));
+            sPost += "&external_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.external_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.external_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.invoice_no, "&invoice_no");
             
             string returnString = "";
@@ -12470,10 +12470,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&payment_amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_amount)));
-            sPost += "&reference_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reference_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&payment_amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_amount))));
+            sPost += "&reference_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.reference_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reference_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12529,10 +12529,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&credit_amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_amount)));
-            sPost += "&credit_reason_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_reason_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&credit_amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_amount))));
+            sPost += "&credit_reason_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_reason_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_reason_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12588,12 +12588,12 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&credit_amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_amount)));
-            sPost += "&credit_reason_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_reason_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&credit_amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_amount))));
+            sPost += "&credit_reason_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.credit_reason_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.credit_reason_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12649,16 +12649,16 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&billing_interval_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_interval_units)));
-            sPost += "&times_to_bill=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.times_to_bill)));
-            sPost += "&billing_interval_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_interval_type)));
-            sPost += "&first_bill_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_bill_date)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&billing_interval_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.billing_interval_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_interval_units))));
+            sPost += "&times_to_bill=" + ((String.IsNullOrEmpty(Convert.ToString(request.times_to_bill))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.times_to_bill))));
+            sPost += "&billing_interval_type=" + ((String.IsNullOrEmpty(Convert.ToString(request.billing_interval_type))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billing_interval_type))));
+            sPost += "&first_bill_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_bill_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_bill_date))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.standing_order, "&standing_order");
-            sPost += "&client_order_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_order_id)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&statement_message=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_message)));
-            sPost += "&order_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_comments)));
+            sPost += "&client_order_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_order_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_order_id))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&statement_message=" + ((String.IsNullOrEmpty(Convert.ToString(request.statement_message))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_message))));
+            sPost += "&order_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.order_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12714,7 +12714,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&standing_order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_order_no)));
+            sPost += "&standing_order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.standing_order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_order_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12770,8 +12770,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&payment_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_id)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&payment_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.specific_charge_transaction_id, "&specific_charge_transaction_id");
             
             string returnString = "";
@@ -12829,7 +12829,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_records, "&usage_records");
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12885,28 +12885,28 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&usage_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_units)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid)));
-            sPost += "&usage_type=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type)));
-            sPost += "&usage_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_date)));
-            sPost += "&billable_units=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billable_units)));
-            sPost += "&amt=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amt)));
-            sPost += "&rate=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rate)));
-            sPost += "&telco_from=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.telco_from)));
-            sPost += "&telco_to=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.telco_to)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&exclude_from_billing=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclude_from_billing)));
-            sPost += "&exclusion_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclusion_comments)));
-            sPost += "&qualifier_1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_1)));
-            sPost += "&qualifier_2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_2)));
-            sPost += "&qualifier_3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_3)));
-            sPost += "&qualifier_4=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_4)));
-            sPost += "&parent_usage_rec_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_usage_rec_no)));
-            sPost += "&usage_type_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code)));
-            sPost += "&client_record_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_record_id)));
-            sPost += "&caller_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.caller_id)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&usage_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_units))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid))));
+            sPost += "&usage_type=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type))));
+            sPost += "&usage_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_date))));
+            sPost += "&billable_units=" + ((String.IsNullOrEmpty(Convert.ToString(request.billable_units))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.billable_units))));
+            sPost += "&amt=" + ((String.IsNullOrEmpty(Convert.ToString(request.amt))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amt))));
+            sPost += "&rate=" + ((String.IsNullOrEmpty(Convert.ToString(request.rate))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.rate))));
+            sPost += "&telco_from=" + ((String.IsNullOrEmpty(Convert.ToString(request.telco_from))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.telco_from))));
+            sPost += "&telco_to=" + ((String.IsNullOrEmpty(Convert.ToString(request.telco_to))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.telco_to))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&exclude_from_billing=" + ((String.IsNullOrEmpty(Convert.ToString(request.exclude_from_billing))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclude_from_billing))));
+            sPost += "&exclusion_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.exclusion_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclusion_comments))));
+            sPost += "&qualifier_1=" + ((String.IsNullOrEmpty(Convert.ToString(request.qualifier_1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_1))));
+            sPost += "&qualifier_2=" + ((String.IsNullOrEmpty(Convert.ToString(request.qualifier_2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_2))));
+            sPost += "&qualifier_3=" + ((String.IsNullOrEmpty(Convert.ToString(request.qualifier_3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_3))));
+            sPost += "&qualifier_4=" + ((String.IsNullOrEmpty(Convert.ToString(request.qualifier_4))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.qualifier_4))));
+            sPost += "&parent_usage_rec_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.parent_usage_rec_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.parent_usage_rec_no))));
+            sPost += "&usage_type_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.usage_type_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.usage_type_code))));
+            sPost += "&client_record_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_record_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_record_id))));
+            sPost += "&caller_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.caller_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.caller_id))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -12962,11 +12962,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&my_order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_order_no)));
-            sPost += "&my_client_order_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_client_order_id)));
-            sPost += "&limit_records=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit_records)));
-            sPost += "&details_flag=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.details_flag)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&my_order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.my_order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_order_no))));
+            sPost += "&my_client_order_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.my_client_order_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_client_order_id))));
+            sPost += "&limit_records=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit_records))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit_records))));
+            sPost += "&details_flag=" + ((String.IsNullOrEmpty(Convert.ToString(request.details_flag))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.details_flag))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13022,9 +13022,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&my_standing_order=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_standing_order)));
-            sPost += "&my_client_order_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_client_order_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&my_standing_order=" + ((String.IsNullOrEmpty(Convert.ToString(request.my_standing_order))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_standing_order))));
+            sPost += "&my_client_order_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.my_client_order_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.my_client_order_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13080,7 +13080,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&standing_order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_order_no)));
+            sPost += "&standing_order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.standing_order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_order_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13136,7 +13136,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&standing_order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_order_no)));
+            sPost += "&standing_order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.standing_order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.standing_order_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13192,21 +13192,21 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&log_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.log_id)));
-            sPost += "&first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name)));
-            sPost += "&mi=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mi)));
-            sPost += "&last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name)));
-            sPost += "&address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1)));
-            sPost += "&address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2)));
-            sPost += "&city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city)));
-            sPost += "&state_prov_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov_code)));
-            sPost += "&zip_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip_code)));
-            sPost += "&country_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country_code)));
-            sPost += "&currency_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_code)));
+            sPost += "&log_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.log_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.log_id))));
+            sPost += "&first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.first_name))));
+            sPost += "&mi=" + ((String.IsNullOrEmpty(Convert.ToString(request.mi))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mi))));
+            sPost += "&last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.last_name))));
+            sPost += "&address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address1))));
+            sPost += "&address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address2))));
+            sPost += "&city=" + ((String.IsNullOrEmpty(Convert.ToString(request.city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.city))));
+            sPost += "&state_prov_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.state_prov_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.state_prov_code))));
+            sPost += "&zip_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.zip_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.zip_code))));
+            sPost += "&country_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.country_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.country_code))));
+            sPost += "&currency_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.currency_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.currency_code))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.pre_calc_plan, "&pre_calc_plan");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.pre_calc_sku, "&pre_calc_sku");
-            sPost += "&tax_exempt_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_exempt_cd)));
-            sPost += "&address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3)));
+            sPost += "&tax_exempt_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.tax_exempt_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.tax_exempt_cd))));
+            sPost += "&address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.address3))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13262,7 +13262,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_no)));
+            sPost += "&order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13318,10 +13318,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&force_pending=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_pending)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&alt_bill_day=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_bill_day)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&force_pending=" + ((String.IsNullOrEmpty(Convert.ToString(request.force_pending))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.force_pending))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&alt_bill_day=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_bill_day))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_bill_day))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13377,9 +13377,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&alt_stmt_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_stmt_template_no)));
-            sPost += "&auto_skip_to_next_bill_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_skip_to_next_bill_date)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&alt_stmt_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_stmt_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_stmt_template_no))));
+            sPost += "&auto_skip_to_next_bill_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.auto_skip_to_next_bill_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_skip_to_next_bill_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13435,9 +13435,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&invoice_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no)));
-            sPost += "&do_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&invoice_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no))));
+            sPost += "&do_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13493,9 +13493,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&invoice_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no)));
-            sPost += "&do_encoding=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&invoice_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no))));
+            sPost += "&do_encoding=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_encoding))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_encoding))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13551,8 +13551,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&src_transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&src_transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.src_transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13608,8 +13608,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&src_transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&src_transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.src_transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13665,8 +13665,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&src_transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&src_transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.src_transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13722,8 +13722,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13779,50 +13779,50 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&invoice_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&action_directive=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.action_directive)));
-            sPost += "&bill_seq=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&alt_collect_on_approve=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_collect_on_approve)));
-            sPost += "&alt_send_statement_on_approve=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_send_statement_on_approve)));
-            sPost += "&cancel_orders_on_discard=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_orders_on_discard)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&custom_status_label=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.custom_status_label)));
-            sPost += "&client_notes=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_notes)));
+            sPost += "&invoice_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&action_directive=" + ((String.IsNullOrEmpty(Convert.ToString(request.action_directive))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.action_directive))));
+            sPost += "&bill_seq=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_seq))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&alt_collect_on_approve=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_collect_on_approve))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_collect_on_approve))));
+            sPost += "&alt_send_statement_on_approve=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_send_statement_on_approve))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_send_statement_on_approve))));
+            sPost += "&cancel_orders_on_discard=" + ((String.IsNullOrEmpty(Convert.ToString(request.cancel_orders_on_discard))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_orders_on_discard))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&custom_status_label=" + ((String.IsNullOrEmpty(Convert.ToString(request.custom_status_label))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.custom_status_label))));
+            sPost += "&client_notes=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_notes))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_notes))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13878,8 +13878,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13935,9 +13935,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&include_voided=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_voided)));
-            sPost += "&aria_event_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.aria_event_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&include_voided=" + ((String.IsNullOrEmpty(Convert.ToString(request.include_voided))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.include_voided))));
+            sPost += "&aria_event_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.aria_event_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.aria_event_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -13993,55 +13993,55 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.order_line_items, "&order_line_items");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.cart_supp_plans, "&cart_supp_plans");
-            sPost += "&client_order_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_order_id)));
-            sPost += "&coupon_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&bill_seq=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension)));
-            sPost += "&bill_cell_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&alt_inv_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_inv_template_no)));
-            sPost += "&sync_mstr_bill_dates_override=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override)));
+            sPost += "&client_order_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_order_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_order_id))));
+            sPost += "&coupon_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.coupon_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.coupon_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&bill_seq=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_seq))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_seq))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone_extension))));
+            sPost += "&bill_cell_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_cell_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_cell_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&alt_inv_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_inv_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_inv_template_no))));
+            sPost += "&sync_mstr_bill_dates_override=" + ((String.IsNullOrEmpty(Convert.ToString(request.sync_mstr_bill_dates_override))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.sync_mstr_bill_dates_override))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.multiple_coupons, "&multiple_coupons");
-            sPost += "&client_alt_inv_template_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_inv_template_id)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&statement_message=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_message)));
-            sPost += "&order_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_comments)));
+            sPost += "&client_alt_inv_template_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_alt_inv_template_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_alt_inv_template_id))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&statement_message=" + ((String.IsNullOrEmpty(Convert.ToString(request.statement_message))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.statement_message))));
+            sPost += "&order_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.order_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14097,7 +14097,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14153,8 +14153,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&payment_transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_transaction_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&payment_transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14210,17 +14210,17 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&payment_transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_transaction_id)));
-            sPost += "&reason_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code)));
-            sPost += "&total_refund_amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.total_refund_amount)));
-            sPost += "&refund_check_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.refund_check_number)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&auto_calc_refund=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_calc_refund)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&payment_transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.payment_transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.payment_transaction_id))));
+            sPost += "&reason_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.reason_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code))));
+            sPost += "&total_refund_amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.total_refund_amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.total_refund_amount))));
+            sPost += "&refund_check_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.refund_check_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.refund_check_number))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&auto_calc_refund=" + ((String.IsNullOrEmpty(Convert.ToString(request.auto_calc_refund))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auto_calc_refund))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.invoices_to_reverse, "&invoices_to_reverse");
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
-            sPost += "&is_unlinked_refund=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.is_unlinked_refund)));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
+            sPost += "&is_unlinked_refund=" + ((String.IsNullOrEmpty(Convert.ToString(request.is_unlinked_refund))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.is_unlinked_refund))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14276,11 +14276,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
-            sPost += "&refund_check_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.refund_check_number)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&acct_user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
+            sPost += "&refund_check_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.refund_check_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.refund_check_number))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&acct_user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_user_id))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14336,8 +14336,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&aria_event_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.aria_event_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&aria_event_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.aria_event_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.aria_event_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14393,8 +14393,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&xml_statement_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.xml_statement_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&xml_statement_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.xml_statement_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.xml_statement_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14450,11 +14450,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&start_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date)));
-            sPost += "&end_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date)));
-            sPost += "&limit_records=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit_records)));
-            sPost += "&details_flag=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.details_flag)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&start_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.start_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.start_date))));
+            sPost += "&end_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.end_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.end_date))));
+            sPost += "&limit_records=" + ((String.IsNullOrEmpty(Convert.ToString(request.limit_records))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.limit_records))));
+            sPost += "&details_flag=" + ((String.IsNullOrEmpty(Convert.ToString(request.details_flag))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.details_flag))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14510,8 +14510,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14567,8 +14567,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.transaction_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14626,8 +14626,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
 
             RestUtilities.addParameterValuesFromArray(ref sPost, request.usage_record_nos, "&usage_record_nos");
             RestUtilities.addParameterValuesFromArray(ref sPost, request.client_record_ids, "&client_record_ids");
-            sPost += "&exclusion_reason_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclusion_reason_cd)));
-            sPost += "&exclusion_comment=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclusion_comment)));
+            sPost += "&exclusion_reason_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.exclusion_reason_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclusion_reason_cd))));
+            sPost += "&exclusion_comment=" + ((String.IsNullOrEmpty(Convert.ToString(request.exclusion_comment))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.exclusion_comment))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14683,13 +14683,13 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&invoice_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no)));
-            sPost += "&amount=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount)));
-            sPost += "&reason_code=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&do_dispute=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_dispute)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&invoice_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.invoice_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.invoice_no))));
+            sPost += "&amount=" + ((String.IsNullOrEmpty(Convert.ToString(request.amount))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.amount))));
+            sPost += "&reason_code=" + ((String.IsNullOrEmpty(Convert.ToString(request.reason_code))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.reason_code))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&do_dispute=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_dispute))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_dispute))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14745,9 +14745,9 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&dispute_or_writeoff_flag=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dispute_or_writeoff_flag)));
-            sPost += "&details_flag=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.details_flag)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&dispute_or_writeoff_flag=" + ((String.IsNullOrEmpty(Convert.ToString(request.dispute_or_writeoff_flag))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dispute_or_writeoff_flag))));
+            sPost += "&details_flag=" + ((String.IsNullOrEmpty(Convert.ToString(request.details_flag))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.details_flag))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14803,7 +14803,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14859,11 +14859,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&dispute_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dispute_no)));
-            sPost += "&settlement_action=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.settlement_action)));
-            sPost += "&comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments)));
-            sPost += "&client_receipt_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&dispute_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.dispute_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.dispute_no))));
+            sPost += "&settlement_action=" + ((String.IsNullOrEmpty(Convert.ToString(request.settlement_action))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.settlement_action))));
+            sPost += "&comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.comments))));
+            sPost += "&client_receipt_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_receipt_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_receipt_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14919,11 +14919,11 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
-            sPost += "&userid=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid)));
-            sPost += "&client_acct_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id)));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
+            sPost += "&userid=" + ((String.IsNullOrEmpty(Convert.ToString(request.userid))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.userid))));
+            sPost += "&client_acct_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_acct_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_acct_id))));
             RestUtilities.addParameterValuesFromArray(ref sPost, request.recurring_credit_no, "&recurring_credit_no");
-            sPost += "&cancel_comments=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_comments)));
+            sPost += "&cancel_comments=" + ((String.IsNullOrEmpty(Convert.ToString(request.cancel_comments))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cancel_comments))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -14979,45 +14979,45 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&order_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_no)));
-            sPost += "&bill_immediately=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_immediately)));
-            sPost += "&alt_pay_method=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method)));
-            sPost += "&cc_number=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number)));
-            sPost += "&cc_expire_mm=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm)));
-            sPost += "&cc_expire_yyyy=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy)));
-            sPost += "&bank_routing_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num)));
-            sPost += "&bank_acct_num=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num)));
-            sPost += "&bill_company_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name)));
-            sPost += "&bill_first_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name)));
-            sPost += "&bill_middle_initial=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial)));
-            sPost += "&bill_last_name=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name)));
-            sPost += "&bill_address1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1)));
-            sPost += "&bill_address2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2)));
-            sPost += "&bill_city=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city)));
-            sPost += "&bill_locality=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality)));
-            sPost += "&bill_state_prov=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov)));
-            sPost += "&bill_zip=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip)));
-            sPost += "&bill_country=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country)));
-            sPost += "&bill_email=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email)));
-            sPost += "&bill_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone)));
-            sPost += "&bill_work_phone=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone)));
-            sPost += "&bill_work_phone_extension=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension)));
-            sPost += "&cvv=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv)));
-            sPost += "&bill_address3=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3)));
-            sPost += "&do_write=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write)));
-            sPost += "&alt_client_acct_group_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id)));
-            sPost += "&track_data1=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1)));
-            sPost += "&track_data2=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2)));
-            sPost += "&alt_inv_template_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_inv_template_no)));
-            sPost += "&iban=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban)));
-            sPost += "&bank_check_digit=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit)));
-            sPost += "&bank_swift_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd)));
-            sPost += "&bank_country_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd)));
-            sPost += "&mandate_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id)));
-            sPost += "&bank_id_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd)));
-            sPost += "&bank_branch_cd=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd)));
-            sPost += "&fulfilled_date=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.fulfilled_date)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&order_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.order_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.order_no))));
+            sPost += "&bill_immediately=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_immediately))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_immediately))));
+            sPost += "&alt_pay_method=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_pay_method))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_pay_method))));
+            sPost += "&cc_number=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_number))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_number))));
+            sPost += "&cc_expire_mm=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_mm))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_mm))));
+            sPost += "&cc_expire_yyyy=" + ((String.IsNullOrEmpty(Convert.ToString(request.cc_expire_yyyy))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cc_expire_yyyy))));
+            sPost += "&bank_routing_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_routing_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_routing_num))));
+            sPost += "&bank_acct_num=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_acct_num))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_acct_num))));
+            sPost += "&bill_company_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_company_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_company_name))));
+            sPost += "&bill_first_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_first_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_first_name))));
+            sPost += "&bill_middle_initial=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_middle_initial))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_middle_initial))));
+            sPost += "&bill_last_name=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_last_name))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_last_name))));
+            sPost += "&bill_address1=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address1))));
+            sPost += "&bill_address2=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address2))));
+            sPost += "&bill_city=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_city))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_city))));
+            sPost += "&bill_locality=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_locality))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_locality))));
+            sPost += "&bill_state_prov=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_state_prov))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_state_prov))));
+            sPost += "&bill_zip=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_zip))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_zip))));
+            sPost += "&bill_country=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_country))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_country))));
+            sPost += "&bill_email=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_email))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_email))));
+            sPost += "&bill_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_phone))));
+            sPost += "&bill_work_phone=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone))));
+            sPost += "&bill_work_phone_extension=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_work_phone_extension))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_work_phone_extension))));
+            sPost += "&cvv=" + ((String.IsNullOrEmpty(Convert.ToString(request.cvv))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.cvv))));
+            sPost += "&bill_address3=" + ((String.IsNullOrEmpty(Convert.ToString(request.bill_address3))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bill_address3))));
+            sPost += "&do_write=" + ((String.IsNullOrEmpty(Convert.ToString(request.do_write))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.do_write))));
+            sPost += "&alt_client_acct_group_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_client_acct_group_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_client_acct_group_id))));
+            sPost += "&track_data1=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data1))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data1))));
+            sPost += "&track_data2=" + ((String.IsNullOrEmpty(Convert.ToString(request.track_data2))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.track_data2))));
+            sPost += "&alt_inv_template_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.alt_inv_template_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.alt_inv_template_no))));
+            sPost += "&iban=" + ((String.IsNullOrEmpty(Convert.ToString(request.iban))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.iban))));
+            sPost += "&bank_check_digit=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_check_digit))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_check_digit))));
+            sPost += "&bank_swift_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_swift_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_swift_cd))));
+            sPost += "&bank_country_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_country_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_country_cd))));
+            sPost += "&mandate_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.mandate_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.mandate_id))));
+            sPost += "&bank_id_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_id_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_id_cd))));
+            sPost += "&bank_branch_cd=" + ((String.IsNullOrEmpty(Convert.ToString(request.bank_branch_cd))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.bank_branch_cd))));
+            sPost += "&fulfilled_date=" + ((String.IsNullOrEmpty(Convert.ToString(request.fulfilled_date))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.fulfilled_date))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -15073,10 +15073,10 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&account_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no)));
-            sPost += "&src_transaction_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id)));
-            sPost += "&custom_status_label=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.custom_status_label)));
-            sPost += "&client_notes=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_notes)));
+            sPost += "&account_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.account_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.account_no))));
+            sPost += "&src_transaction_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.src_transaction_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.src_transaction_id))));
+            sPost += "&custom_status_label=" + ((String.IsNullOrEmpty(Convert.ToString(request.custom_status_label))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.custom_status_label))));
+            sPost += "&client_notes=" + ((String.IsNullOrEmpty(Convert.ToString(request.client_notes))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_notes))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -15132,8 +15132,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&password=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&password=" + ((String.IsNullOrEmpty(Convert.ToString(request.password))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.password))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -15189,8 +15189,8 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&user_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id)));
-            sPost += "&acct_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no)));
+            sPost += "&user_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.user_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.user_id))));
+            sPost += "&acct_no=" + ((String.IsNullOrEmpty(Convert.ToString(request.acct_no))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.acct_no))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -15246,7 +15246,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -15302,7 +15302,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             
             string returnString = "";
             Stream dataStream = null;
@@ -15358,7 +15358,7 @@ namespace Aria.SDK.AriaServices.AriaWebServices
             sPost += "&client_no=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.client_no)));
             sPost += "&auth_key=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.auth_key)));
 
-            sPost += "&session_id=" + HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id)));
+            sPost += "&session_id=" + ((String.IsNullOrEmpty(Convert.ToString(request.session_id))) ? "" : HttpUtility.UrlEncode(Encoding.UTF8.GetBytes(Convert.ToString(request.session_id))));
             
             string returnString = "";
             Stream dataStream = null;
